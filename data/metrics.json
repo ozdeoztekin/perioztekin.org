@@ -48,10 +48,10 @@
 
   "projects": [
     {
-      "name": "Voicify",
+      "name": "A.R.A.I.A.",
       "status": "shipped",
-      "context": "Stanford CNI-X 2025 capstone",
-      "metric": "Final demo presented to Stanford faculty"
+      "context": "Stanford CNI-X 2025 capstone &middot; six-person team",
+      "metric": "Final demo presented to Stanford faculty, staff, and families"
     },
     {
       "name": "NeuroCalm",
@@ -75,7 +75,7 @@
       "due": "2026-08-31"
     },
     {
-      "title": "Submit Voicify or NeuroCalm to Journal of Emerging Investigators",
+      "title": "Submit A.R.A.I.A. or NeuroCalm to Journal of Emerging Investigators",
       "target": "Peer-reviewed publication",
       "progress": 0,
       "due": "2026-12-31"
