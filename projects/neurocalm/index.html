@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroCalm &mdash; Brainwave-Responsive Sensory Regulation &middot; Peri Oztekin</title>
+  <meta name="description" content="NeuroCalm is an EEG-driven wearable headband concept that detects sensory overload and delivers calming feedback before distress escalates.">
+  <link rel="canonical" href="https://perioztekin.org/projects/neurocalm/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="NeuroCalm &mdash; Brainwave-Responsive Sensory Regulation">
+  <meta property="og:description" content="An EEG-driven wearable concept for sensory overload, designed for autistic individuals and anyone who can't always voice it in real time.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/peri.css">
+</head>
+<body>
+
+<header>
+<nav class="topnav" id="topnav">
+  <a class="brand" href="/">&#x1F9E0; Peri Oztekin</a>
+  <div class="nav-links" id="nav-links">
+    <a href="/">Home</a>
+    <a href="/academics/">Academics</a>
+    <a href="/projects/voicify/">Voicify</a>
+    <a href="/projects/neurocalm/" class="active">NeuroCalm</a>
+    <a href="/neurosense/">NeuroSense</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact" class="nav-cta">Contact</a>
+  </div>
+  <a class="hamburger" href="javascript:void(0)" onclick="document.getElementById('nav-links').classList.toggle('open')">&#9776;</a>
+</nav>
+</header>
+
+<section class="peri-hero compact">
+  <div class="peri-hero-inner">
+    <span class="hero-tag">Independent research concept</span>
+    <h1>NeuroCalm.</h1>
+    <p class="lede">A wearable that listens to alpha and theta rhythms and gives the brain a signal &mdash; a calming light, a gentle vibration &mdash; before sensory overload becomes crisis.</p>
+  </div>
+  <div class="wave-bottom" aria-hidden="true">
+    <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,27 C360,54 1080,0 1440,27 L1440,54 L0,54 Z" fill="#f4f7f9"/>
+    </svg>
+  </div>
+</section>
+
+<main>
+<div class="container" style="margin-top: 2rem;">
+
+<!-- WHY -->
+<section class="deep-section">
+  <span class="section-label">The need</span>
+  <h3>Many people who are overwhelmed cannot express it in real time.</h3>
+  <p>Sensory overload &mdash; especially in autistic individuals &mdash; tends to escalate before it is named. By the time someone can articulate &ldquo;I am too much,&rdquo; the regulatory window has often already closed. NeuroCalm aims to read the physiological signal underneath the experience and intervene early, with a quiet cue, before the loop spirals.</p>
+  <p>The hypothesis: a wearable that monitors EEG markers known to track stress and attention, paired with non-intrusive feedback the wearer can choose, can extend the window in which self-regulation is still possible.</p>
+</section>
+
+<!-- SCIENCE -->
+<section class="deep-section">
+  <span class="section-label">The science</span>
+  <h3>Why brainwaves?</h3>
+  <p>Autistic individuals frequently show altered alpha (8&ndash;12 Hz) and theta (4&ndash;7 Hz) rhythms. Lower alpha tracks reduced calm/focus; elevated theta tracks inattention, stress, and sensory overload. These bands are non-invasively monitorable using consumer-grade EEG.</p>
+  <p>Neurofeedback &mdash; training individuals to regulate brainwave activity through real-time cues &mdash; has been studied in autism for decades. The evidence is genuinely mixed: some protocols show meaningful gains in attention, social function, and anxiety; other reviews argue methodological weaknesses leave the picture unsettled. NeuroCalm is positioned honestly inside that controversy: a support tool, not a treatment, with its own limitations on the box.</p>
+
+  <h4>Key literature consulted during design:</h4>
+  <ul>
+    <li><strong>Coben, Linden &amp; Myers (2010)</strong> &mdash; review of neurofeedback in ASD; reports reduction in slow-wave activity and gains in focus and behavior.</li>
+    <li><strong>Kouijzer et al. (2009)</strong> &mdash; SMR enhancement and theta inhibition over 40&ndash;100 sessions improved executive function and reduced anxiety.</li>
+    <li><strong>Thompson et al. (2010)</strong> &mdash; brainwave training increased frontal alpha power, supporting calmer states in autistic participants.</li>
+    <li><strong>Cowan &amp; Markham (1994)</strong> &mdash; case study with 21 sessions; gains maintained at 2-year follow-up.</li>
+    <li><strong>ASAT (2017)</strong> &mdash; the contrary view: insufficient evidence to recommend neurofeedback as a treatment in autism. Cited deliberately.</li>
+  </ul>
+</section>
+
+<!-- HARDWARE -->
+<section class="deep-section">
+  <span class="section-label">The build</span>
+  <h3>Hardware specification.</h3>
+  <ul>
+    <li><strong>EEG input:</strong> NeuroSky MindWave Mobile 2 (single-channel, 12-bit, 512 Hz, 3&ndash;100 Hz) &mdash; or simulated input from a Python harness for development.</li>
+    <li><strong>Microcontroller:</strong> Arduino UNO (or ESP32 / Micro:bit), Bluetooth-paired to the EEG headset.</li>
+    <li><strong>Feedback outputs:</strong> programmable LED for visual cueing, mini vibration motor for haptic feedback, optional buzzer for low-volume auditory tones. User selects which channel(s) to enable.</li>
+    <li><strong>Form factor:</strong> soft fabric headband with foam-padded electrode mount and Velcro closure &mdash; sized for sensory tolerance, not data quality.</li>
+  </ul>
+
+  <h4>Detection logic.</h4>
+  <p>The firmware watches the alpha/theta ratio against a personalized threshold. When theta rises or alpha falls beyond the threshold, a calming routine fires: a slow LED fade-up, a brief haptic pulse, optionally a tone. The intervention is designed to be noticeable but not commanding &mdash; a tap on the shoulder, not an alarm.</p>
+</section>
+
+<!-- CODE -->
+<section class="deep-section">
+  <span class="section-label">The firmware</span>
+  <h3>Excerpt from the prototype Arduino sketch.</h3>
+  <p>The prototype runs on simulated EEG by default so the feedback loop can be tested without hardware, then switches to real input when the MindWave is paired.</p>
+<pre class="code">
+<span class="c">// NeuroCalm prototype loop (excerpt)</span>
+<span class="k">void</span> loop() {
+  <span class="c">// Replace with real EEG parsing once paired</span>
+  alpha = random(0, 100) / 100.0;
+  theta = random(0, 100) / 100.0;
+
+  <span class="c">// Stress thresholds</span>
+  <span class="k">if</span> (theta &gt; 0.5 || alpha &lt; 0.3) {
+    <span class="c">// Calming LED fade-up</span>
+    <span class="k">for</span> (int b = 0; b &lt;= 255; b += 5) {
+      analogWrite(ledPin, b);
+      delay(100);
+    }
+    <span class="c">// Single haptic pulse</span>
+    digitalWrite(motorPin, HIGH);
+    delay(1000);
+    digitalWrite(motorPin, LOW);
+  }
+  delay(1000);
+}
+</pre>
+</section>
+
+<!-- ETHICS -->
+<section class="deep-section">
+  <span class="section-label">Honesty</span>
+  <h3>What this is, and what it isn&rsquo;t.</h3>
+  <p>NeuroCalm is a prototype concept, not a medical device. It does not diagnose, treat, or cure anything. The evidence base for neurofeedback in autism is real but unsettled, and the system would need real-user testing across multiple sessions before any meaningful claim about effectiveness could be made. The framing is deliberate: a support tool that may help, presented honestly to users and their families, with its limitations visible.</p>
+</section>
+
+<!-- WHAT'S NEXT -->
+<section class="deep-section">
+  <span class="section-label">What&rsquo;s next</span>
+  <h3>Pushing it from concept to a real headband.</h3>
+  <ul>
+    <li>Build the physical headband and test fit / comfort across multiple wear sessions.</li>
+    <li>Replace simulated EEG with live MindWave input; calibrate thresholds per-user via baseline session.</li>
+    <li>Add a companion app for selecting feedback type, logging events, and reviewing patterns over time.</li>
+    <li>Run small-scale informal feasibility testing with consenting users; collect qualitative feedback.</li>
+  </ul>
+  <p>If you build assistive tech, work in autism support, or want to talk EEG hardware design, please <a href="mailto:perioztekinneuroscience@gmail.com">say hello</a>.</p>
+</section>
+
+<!-- BACK -->
+<section style="text-align: center; padding: 2rem 0 3rem;">
+  <a class="btn btn-outline" style="border-color:var(--peri-purple); color:var(--peri-purple);" href="/#projects">&larr; Back to all projects</a>
+</section>
+
+</div>
+</main>
+
+<footer>
+<div class="footer-inner">
+  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
+  <p>Neuroscience, brain-computer interfaces, and accessible science for every age.</p>
+</div>
+<div class="footer-bottom">
+  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
+</div>
+</footer>
+
+<script src="/js/animate.js"></script>
+<script src="/js/peri.js"></script>
+</body>
+</html>
