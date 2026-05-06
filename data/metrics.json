@@ -1,0 +1,135 @@
+{
+  "_comment": "Source of truth for quantifiable metrics. Update by editing this file and pushing to GitHub. The site reads it at runtime. All numbers must trace back to a verified source listed in 'verifiedBy'.",
+  "lastUpdated": "2026-05-06",
+
+  "headline": [
+    {
+      "label": "Donations channeled",
+      "value": 0,
+      "format": "currency",
+      "verifiedBy": "Every.org dashboard (pending setup)",
+      "note": "Total directed to partner 501(c)(3) nonprofits."
+    },
+    {
+      "label": "People reached",
+      "value": 0,
+      "format": "integer",
+      "verifiedBy": "Cloudflare Web Analytics (pending token)",
+      "note": "Unique visitors to perioztekin.org since launch."
+    },
+    {
+      "label": "Verified credentials",
+      "value": 7,
+      "format": "integer",
+      "verifiedBy": "Certiport, HarvardX/edX",
+      "note": "3 IT Specialist + 4 HarvardX MicroBachelors components."
+    },
+    {
+      "label": "Partner nonprofits supported",
+      "value": 6,
+      "format": "integer",
+      "verifiedBy": "Site neurodivergent page",
+      "note": "ASAN, CHADD, AANE, IDA, NAMI, BBRF."
+    }
+  ],
+
+  "education": {
+    "gpa": "4.0",
+    "gpaContext": "Unweighted, all middle-school years on record",
+    "honorsScienceFinalGrade": "100%",
+    "honorsScienceCourses": ["Chemistry 1 Honors (FLVS)", "French 1 (FLVS)"],
+    "harvardx": {
+      "creditEarned": "MicroBachelors equivalent",
+      "scoreAverage": "99.3% across MCB80.1 / .2 / .3",
+      "totalCourses": 4,
+      "estimatedHours": 60
+    }
+  },
+
+  "projects": [
+    {
+      "name": "Voicify",
+      "status": "shipped",
+      "context": "Stanford CNI-X 2025 capstone",
+      "metric": "Final demo presented to Stanford faculty"
+    },
+    {
+      "name": "NeuroCalm",
+      "status": "concept",
+      "context": "Independent research design",
+      "metric": "Hardware spec + Arduino prototype + 5-paper lit review"
+    },
+    {
+      "name": "NeuroSense",
+      "status": "in development",
+      "context": "Source-locked neuroscience YouTube channel",
+      "metric": "Master Automation Protocol v1.0 finalized"
+    }
+  ],
+
+  "goals": [
+    {
+      "title": "Apply to first university research lab",
+      "target": "Cold-email 10 PhD students / postdocs in neuroscience",
+      "progress": 0,
+      "due": "2026-08-31"
+    },
+    {
+      "title": "Submit Voicify or NeuroCalm to Journal of Emerging Investigators",
+      "target": "Peer-reviewed publication",
+      "progress": 0,
+      "due": "2026-12-31"
+    },
+    {
+      "title": "Compete in Brain Bee local round",
+      "target": "Place in top 3",
+      "progress": 0,
+      "due": "2027-03-31"
+    },
+    {
+      "title": "Launch NeuroSense pilot episode",
+      "target": "Episode 1 + Source Log live on YouTube",
+      "progress": 35,
+      "due": "2026-09-30",
+      "notes": "Protocol locked; characters and visual identity in design phase."
+    },
+    {
+      "title": "Open-source NeuroCalm",
+      "target": "Public GitHub repo with documentation, schematics, and Arduino sketch",
+      "progress": 20,
+      "due": "2026-08-31"
+    },
+    {
+      "title": "Apply for Stanford Pre-Collegiate Studies (Psychology & Bioscience)",
+      "target": "Admission decision",
+      "progress": 100,
+      "due": "2026-01-31",
+      "notes": "Application submitted; awaiting decision."
+    },
+    {
+      "title": "Raise first $1,000 for partner nonprofits",
+      "target": "$1,000 channeled via Every.org",
+      "progress": 0,
+      "due": "2026-12-31"
+    }
+  ],
+
+  "credentials": {
+    "verified": [
+      { "name": "MCB80.1x — Electrical Properties of the Neuron", "issuer": "HarvardX", "score": "99%", "year": 2026 },
+      { "name": "MCB80.2x — Neurons and Networks", "issuer": "HarvardX", "score": "99%", "year": 2026 },
+      { "name": "MCB80.3x — The Brain", "issuer": "HarvardX", "score": "100%", "year": 2026 },
+      { "name": "MCB80 Comprehensive Final Exam", "issuer": "HarvardX", "score": "Certified", "year": 2026 },
+      { "name": "IT Specialist: HTML and CSS", "issuer": "Certiport / Pearson VUE", "year": 2024 },
+      { "name": "IT Specialist: Python", "issuer": "Certiport / Pearson VUE", "year": 2025 },
+      { "name": "IT Specialist: Device Configuration & Management", "issuer": "Certiport / Pearson VUE", "year": 2025 }
+    ]
+  },
+
+  "honors": [
+    { "name": "Stanford CNI-X 2025 — youngest admit, Session 2", "year": 2025 },
+    { "name": "GEM Top Gemster (top across all sections, all 4 quarters)", "year": 2023, "context": "6th grade, cohort ~250" },
+    { "name": "Literary Fair winner", "year": 2023, "context": "6th grade" },
+    { "name": "Taekwondo blue belt", "year": 2024 }
+  ]
+}
