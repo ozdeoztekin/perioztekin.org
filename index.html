@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peri Oztekin &mdash; Neuroscience &amp; Brain-Computer Interfaces</title>
+  <meta name="description" content="Peri Oztekin is a high-school neuroscientist-in-training building brain-computer interfaces, AI-driven rehabilitation tools, and accessible neuroscience media.">
+
+  <link rel="canonical" href="https://perioztekin.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://perioztekin.org/">
+  <meta property="og:title" content="Peri Oztekin &mdash; Neuroscience &amp; Brain-Computer Interfaces">
+  <meta property="og:description" content="High-school neuroscientist-in-training. Stanford CNI-X 2025. HarvardX MicroBachelors in Neuroscience. Building Voicify, NeuroCalm, and NeuroSense.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Peri Oztekin">
+  <meta name="twitter:description" content="High-school neuroscientist-in-training. Stanford CNI-X 2025. HarvardX MicroBachelors in Neuroscience.">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    :root {
+      --peri-purple: #6c47b6;
+      --peri-purple-deep: #3f2870;
+      --peri-mint: #7ee8de;
+    }
+
+    /* === Hero === */
+    .peri-hero {
+      background:
+        radial-gradient(ellipse at 70% 30%, rgba(108, 71, 182, 0.45) 0%, transparent 55%),
+        radial-gradient(ellipse at 20% 80%, rgba(42, 157, 143, 0.30) 0%, transparent 55%),
+        linear-gradient(140deg, #0f2540 0%, #1d2e63 50%, #2a1f55 100%);
+      color: #fff;
+      padding: 5.5rem 1.5rem 9rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .peri-hero-inner { max-width: 820px; margin: 0 auto; position: relative; z-index: 2; }
+    .peri-hero h1 { color: #fff; font-size: 3.2rem; line-height: 1.1; margin-bottom: 1.25rem; letter-spacing: -0.01em; }
+    .peri-hero h1 em { color: var(--peri-mint); font-style: normal; }
+    .peri-hero p.lede { color: rgba(255,255,255,.9); font-size: 1.25rem; max-width: 680px; margin: 0 auto 2rem; line-height: 1.6; }
+    .peri-hero .hero-tag { background: rgba(126, 232, 222, 0.18); color: var(--peri-mint); }
+
+    /* EEG wave decoration */
+    .eeg {
+      position: absolute; left: 0; right: 0; bottom: 110px;
+      width: 100%; height: 60px; opacity: 0.55; z-index: 1;
+      pointer-events: none;
+    }
+    .eeg path { fill: none; stroke: var(--peri-mint); stroke-width: 1.6; opacity: 0.7; }
+
+    /* === Compact stat strip === */
+    .stat-strip {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+      max-width: 980px; margin: -4.5rem auto 3rem; position: relative; z-index: 5;
+      padding: 0 1.5rem;
+    }
+    .stat-card {
+      background: #fff; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,.14);
+      padding: 1.25rem 1rem; text-align: center; border-top: 3px solid var(--peri-purple);
+    }
+    .stat-card .num {
+      font-size: 1.9rem; font-weight: 800; color: var(--peri-purple-deep);
+      line-height: 1.1; display: block;
+    }
+    .stat-card .lbl {
+      font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--muted, #607080); margin-top: 0.35rem; font-weight: 600;
+    }
+    @media (max-width: 760px) {
+      .stat-strip { grid-template-columns: repeat(2, 1fr); margin-top: -3rem; }
+      .peri-hero h1 { font-size: 2.2rem; }
+      .peri-hero p.lede { font-size: 1.05rem; }
+    }
+
+    /* === Throughline (about) === */
+    .throughline {
+      max-width: 760px; margin: 0 auto; padding: 1rem 0 2rem; font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .throughline .pull {
+      border-left: 4px solid var(--peri-purple);
+      background: #f0ecf7;
+      padding: 1rem 1.25rem; border-radius: 0 6px 6px 0;
+      color: var(--navy, #1b3a5c); font-weight: 500; margin: 1.5rem 0;
+    }
+
+    /* === Project cards === */
+    .project-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 800px) { .project-grid { grid-template-columns: 1fr; } }
+    .proj {
+      background: #fff; border: 1px solid #dde4ec; border-radius: 12px;
+      padding: 1.75rem; box-shadow: 0 4px 16px rgba(0,0,0,.06);
+      display: flex; flex-direction: column; transition: transform .2s, box-shadow .2s;
+    }
+    .proj:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,.12); }
+    .proj .badge {
+      display: inline-block; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.25rem 0.7rem; border-radius: 20px;
+      background: rgba(108, 71, 182, 0.12); color: var(--peri-purple);
+      align-self: flex-start; margin-bottom: 0.8rem;
+    }
+    .proj .badge.live { background: rgba(39, 174, 96, 0.13); color: #1e9450; }
+    .proj .badge.concept { background: rgba(231, 111, 81, 0.13); color: #c8553d; }
+    .proj .badge.upcoming { background: rgba(42, 157, 143, 0.15); color: var(--teal-dark, #1f7a6f); }
+    .proj h3 { font-size: 1.4rem; margin: 0 0 0.5rem; color: var(--peri-purple-deep); }
+    .proj .role { font-size: 0.9rem; color: var(--muted, #607080); margin-bottom: 0.8rem; font-style: italic; }
+    .proj p { color: var(--text, #2c3e50); }
+    .proj ul { margin-top: 0.5rem; }
+    .proj ul li { font-size: 0.95rem; }
+
+    /* === Skills === */
+    .skill-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 880px) { .skill-grid { grid-template-columns: 1fr; } }
+    .skill-card {
+      background: #fff; border-radius: 10px; padding: 1.5rem;
+      border-top: 3px solid var(--peri-purple);
+      box-shadow: 0 4px 16px rgba(0,0,0,.07);
+    }
+    .skill-card h4 {
+      font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--peri-purple); margin: 0 0 1rem; font-weight: 700;
+    }
+    .skill-card.t-eng { border-top-color: var(--teal, #2a9d8f); }
+    .skill-card.t-eng h4 { color: var(--teal-dark, #1f7a6f); }
+    .skill-card.t-tools { border-top-color: #e76f51; }
+    .skill-card.t-tools h4 { color: #c8553d; }
+    .skill-card ul { padding-left: 1.1rem; margin: 0; }
+    .skill-card li { margin-bottom: 0.45rem; line-height: 1.5; }
+    .skill-card li strong { color: var(--navy, #1b3a5c); }
+
+    /* === Cert grid === */
+    .cert-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .cert {
+      background: #fff; border: 1px solid #dde4ec; border-radius: 8px;
+      padding: 1.1rem 1.25rem; display: flex; flex-direction: column; gap: 0.3rem;
+    }
+    .cert .issuer {
+      font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--muted, #607080); font-weight: 700;
+    }
+    .cert .name { font-weight: 700; color: var(--navy, #1b3a5c); font-size: 1.05rem; }
+    .cert .date { font-size: 0.85rem; color: var(--muted, #607080); }
+
+    /* === Coursework rows === */
+    .course-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.8rem 0; border-bottom: 1px solid #e7ecf2;
+      flex-wrap: wrap; gap: 0.5rem;
+    }
+    .course-row:last-child { border-bottom: none; }
+    .course-row .ctitle { font-weight: 600; color: var(--navy, #1b3a5c); }
+    .course-row .cmeta { font-size: 0.85rem; color: var(--muted, #607080); }
+    .course-row .cgrade {
+      font-weight: 700; color: #1e9450; font-size: 0.95rem;
+      background: rgba(39,174,96,0.10); padding: 0.2rem 0.7rem; border-radius: 12px;
+    }
+
+    /* === Roadmap === */
+    .roadmap {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 880px) { .roadmap { grid-template-columns: 1fr; } }
+    .road-step {
+      background: linear-gradient(160deg, #fff 0%, #f7f4fc 100%);
+      border-radius: 10px; padding: 1.5rem; border-left: 4px solid var(--peri-purple);
+    }
+    .road-step .when {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--peri-purple); font-weight: 700;
+    }
+    .road-step h4 { margin: 0.4rem 0 0.5rem; color: var(--peri-purple-deep); }
+
+    /* CTA */
+    .peri-cta {
+      background: linear-gradient(135deg, var(--peri-purple) 0%, #2a9d8f 100%);
+      color: #fff; padding: 3rem 2rem; border-radius: 14px;
+      text-align: center; margin: 3rem 0 1rem;
+    }
+    .peri-cta h2 { color: #fff; margin: 0 0 0.75rem; }
+    .peri-cta p { color: rgba(255,255,255,.92); max-width: 560px; margin: 0 auto 1.5rem; }
+    .peri-cta a.email {
+      color: #fff; font-weight: 700; text-decoration: none;
+      background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.4);
+      padding: 0.7rem 1.4rem; border-radius: 6px; display: inline-block;
+      transition: background .2s;
+    }
+    .peri-cta a.email:hover { background: rgba(255,255,255,0.3); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+<nav class="topnav" id="topnav">
+  <a class="brand" href="#top">&#x1F9E0; Peri Oztekin</a>
+  <div class="nav-links" id="nav-links">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#neurosense">NeuroSense</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </div>
+  <a class="hamburger" href="javascript:void(0)" onclick="document.getElementById('nav-links').classList.toggle('open')">&#9776;</a>
+</nav>
+</header>
+
+<a id="top"></a>
+<section class="peri-hero">
+  <div class="peri-hero-inner">
+    <span class="hero-tag">Neuroscience &middot; BCI &middot; Education</span>
+    <h1>I follow the question wherever <em>it goes</em>.</h1>
+    <p class="lede">High-school neuroscientist-in-training. I build at the place where misfiring synapses become lost words, where damaged circuits learn to come back, and where a brain at the edge of overload can be given a signal before distress becomes crisis.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">See the work</a>
+      <a href="#education" class="btn btn-outline">Education &amp; credentials</a>
+    </div>
+  </div>
+  <svg class="eeg" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,30 L120,30 L140,15 L160,45 L180,5 L200,55 L220,30 L380,30 L400,18 L420,42 L440,8 L460,52 L480,30 L640,30 L660,20 L680,40 L700,12 L720,48 L740,30 L900,30 L920,17 L940,43 L960,6 L980,54 L1000,30 L1160,30 L1180,21 L1200,39 L1220,11 L1240,49 L1260,30 L1440,30"/>
+  </svg>
+  <div class="wave-bottom" aria-hidden="true">
+    <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,27 C360,54 1080,0 1440,27 L1440,54 L0,54 Z" fill="#f4f7f9"/>
+    </svg>
+  </div>
+</section>
+
+<div class="stat-strip">
+  <div class="stat-card"><span class="num">100%</span><span class="lbl">HarvardX MCB80.3 (The Brain)</span></div>
+  <div class="stat-card"><span class="num">3</span><span class="lbl">IT Specialist Certifications</span></div>
+  <div class="stat-card"><span class="num">CNI-X</span><span class="lbl">Stanford 2025 &middot; youngest admit</span></div>
+  <div class="stat-card"><span class="num">2</span><span class="lbl">Brain-tech projects shipped</span></div>
+</div>
+
+<main>
+<div class="container">
+
+<!-- ABOUT -->
+<a id="about"></a>
+<section>
+  <div class="section-header">
+    <span class="section-label">About</span>
+    <h2>The throughline</h2>
+  </div>
+  <div class="throughline">
+    <p>I have always been drawn to the question underneath every science class I have taken: not just what happens, but why the body and mind bother. Why does a neuron fire at all? Why does a brain, damaged and disoriented, sometimes find its way back?</p>
+    <p>Honors Chemistry gave me molecular language. Honors Biology showed me that living systems are built from restlessness &mdash; membrane potentials flickering, enzymes reading signals, cells responding to a world they can&rsquo;t see. Honors Physics gave me the forces underneath both. Each course pointed me toward the same place.</p>
+    <div class="pull">
+      What draws me to neuroscience is that it sits at the intersection I have been trying to reach: the place where cellular mechanisms become human experience &mdash; where a misfiring synapse becomes a lost memory or a changed personality, and where neuroplasticity becomes clinical recovery.
+    </div>
+    <p>I don&rsquo;t treat my courses as separate tracks. I look for the connections: the electrochemical gradients in chemistry that map onto the ion channels in biology, the signal propagation in neurons that follows the wave mechanics of physics. Each course gives me discipline; together they give me direction. I am the kind of student who builds the curriculum when one does not exist.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- EDUCATION -->
+<a id="education"></a>
+<section>
+  <div class="section-header">
+    <span class="section-label">Education</span>
+    <h2>A self-designed path</h2>
+  </div>
+
+  <h3 style="margin-top:2rem;">Stanford University &middot; CNI-X 2025</h3>
+  <p><strong>Clinical Neuroscience Immersion Experience &middot; Session 2 (July 2025).</strong> Admitted as the youngest student in the cohort. Two weeks of intensive coursework spanning clinical neuroscience, design thinking (Saggar lab method), large-language-models in behavioral health, and a team capstone project shipped to a final demo.</p>
+
+  <h3>HarvardX &middot; MicroBachelors&reg; in Neuroscience (MCB80)</h3>
+  <p>Full three-course series plus comprehensive final exam, taught by Prof. David Cox (Harvard FAS). Completed alongside high-school honors science:</p>
+  <div style="background:#fff; border-radius:10px; padding:0.5rem 1.25rem; box-shadow:0 4px 16px rgba(0,0,0,.06); margin-top:1rem;">
+    <div class="course-row">
+      <div>
+        <div class="ctitle">MCB80.1x &mdash; The Electrical Properties of the Neuron</div>
+        <div class="cmeta">Resting potential &middot; passive membranes &middot; action potentials &middot; propagation &middot; DIY labs</div>
+      </div>
+      <span class="cgrade">99% &middot; Passed</span>
+    </div>
+    <div class="course-row">
+      <div>
+        <div class="ctitle">MCB80.2x &mdash; Neurons and Networks</div>
+        <div class="cmeta">Synapse &middot; excitation/inhibition &middot; small circuits &middot; neuromodulation &middot; neuronal plasticity</div>
+      </div>
+      <span class="cgrade">99% &middot; Passed</span>
+    </div>
+    <div class="course-row">
+      <div>
+        <div class="ctitle">MCB80.3x &mdash; The Brain</div>
+        <div class="cmeta">Vision &middot; audition &middot; somatosensation &middot; movement &amp; action &middot; subcortical brain areas</div>
+      </div>
+      <span class="cgrade">100% &middot; Passed</span>
+    </div>
+    <div class="course-row">
+      <div>
+        <div class="ctitle">MCB80.exam &mdash; Comprehensive Final</div>
+        <div class="cmeta">Cumulative assessment across all three parts</div>
+      </div>
+      <span class="cgrade">89% &middot; Passed</span>
+    </div>
+  </div>
+
+  <h3>High School &middot; Self-Directed Curriculum</h3>
+  <p>Florida Unschoolers, with college-prep coursework through Florida Virtual School (FLVS) and parallel university-level study. Honors Chemistry, Honors Biology, Honors Physics &mdash; all chosen to feed a single line of inquiry into how brains work.</p>
+
+  <h3>Up Next &middot; Stanford Pre-Collegiate Studies</h3>
+  <p>Applying to the Psychology &amp; Bioscience track to push from biological foundations into the behavioral and clinical dimensions that make neuroscience matter to real people: the conditions under which the brain fails and recovers, as two expressions of the same underlying plasticity.</p>
+</section>
+
+<hr class="divider">
+
+<!-- PROJECTS -->
+<a id="projects"></a>
+<section>
+  <div class="section-header">
+    <span class="section-label">Projects</span>
+    <h2>What I&rsquo;ve been building</h2>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="proj">
+      <span class="badge live">Stanford CNI-X 2025 Capstone</span>
+      <h3>Voicify</h3>
+      <p class="role">AI-driven rehabilitation app for aphasia &middot; Co-led capstone team</p>
+      <p>An AI-powered speech-recovery app for stroke survivors with aphasia &mdash; people whose minds remain intact but whose words have been taken away. Voicify operationalizes <strong>Melodic Intonation Therapy</strong>, recruiting intact right-hemisphere networks to compensate for damaged language areas. Neuroplasticity made clinical.</p>
+      <ul>
+        <li>Designed therapy modules grounded in published MIT protocols</li>
+        <li>Built interactive demo (React/TSX prototype + Canva slide deck)</li>
+        <li>Verified each clinical claim against primary aphasia literature</li>
+        <li>Presented to Stanford CNI-X cohort &amp; faculty in final demo</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <span class="badge concept">Independent Research Concept</span>
+      <h3>NeuroCalm</h3>
+      <p class="role">Brainwave-responsive headband for sensory regulation &middot; Sole researcher &amp; designer</p>
+      <p>A wearable that listens to alpha (8&ndash;12&nbsp;Hz) and theta (4&ndash;7&nbsp;Hz) rhythms and gives the brain a signal &mdash; a calming light, a gentle vibration &mdash; before sensory overload becomes crisis. Designed with autistic individuals in mind, useful to anyone who can&rsquo;t always speak overload in real time.</p>
+      <ul>
+        <li>Reviewed the neurofeedback literature (Coben 2010, Kouijzer 2009, Thompson 2010 et al.)</li>
+        <li>Specified architecture: NeuroSky MindWave Mobile 2 + Arduino + LED/haptic feedback</li>
+        <li>Wrote prototype Arduino C++ firmware with simulated EEG fallback</li>
+        <li>Framed transparently as experimental: the evidence is promising, not settled</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <span class="badge upcoming">Coming soon</span>
+      <h3>NeuroSense</h3>
+      <p class="role">Source-locked neuroscience for every age &middot; Founder</p>
+      <p>A YouTube channel that translates real research &mdash; starting with the Huberman Lab podcast &mdash; into four age-tiered video scripts (preschool, elementary, middle, high) without diluting the science. Every claim is anchored to a verbatim quote and timestamp; metaphors illustrate mechanism, never invent it.</p>
+      <ul>
+        <li>NeuroSense Master Automation Protocol v1.0 (locked workflow)</li>
+        <li>Audit-trail architecture: every script ships with a public source log</li>
+        <li>Four locked archetypes: Cozy Helper &middot; Sandbox Builder &middot; Quest &middot; Sim Dashboard</li>
+        <li>Premiering after the website launch</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <span class="badge upcoming">In progress</span>
+      <h3>Neuroscience research</h3>
+      <p class="role">Independent reading &amp; literature work</p>
+      <p>Building toward original research at the intersection of neuroplasticity, recovery from brain injury, and the conditions under which the brain fails &mdash; treating failure and recovery not as separate phenomena but as two expressions of the same underlying mechanism. Updates will live here as the work matures.</p>
+      <ul>
+        <li>Reading primary literature in stroke rehabilitation &amp; aphasia</li>
+        <li>Following the EEG / neurofeedback evidence base critically</li>
+        <li>Looking for a research mentor &mdash; please reach out below</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SKILLS -->
+<a id="skills"></a>
+<section>
+  <div class="section-header">
+    <span class="section-label">Skillset</span>
+    <h2>Three sides of the same question</h2>
+  </div>
+
+  <div class="skill-grid">
+
+    <div class="skill-card">
+      <h4>Neuroscience</h4>
+      <ul>
+        <li><strong>Cellular &amp; systems:</strong> resting &amp; action potentials, synaptic transmission, neuromodulation, plasticity</li>
+        <li><strong>Sensory &amp; motor:</strong> visual / auditory / somatosensory pathways, movement and subcortical circuits</li>
+        <li><strong>Clinical:</strong> aphasia &amp; Melodic Intonation Therapy, stroke recovery, neurofeedback in ASD</li>
+        <li><strong>Research literacy:</strong> reading primary literature, evaluating experimental design, separating signal from spin</li>
+      </ul>
+    </div>
+
+    <div class="skill-card t-eng">
+      <h4>Engineering &amp; BCI</h4>
+      <ul>
+        <li><strong>Languages:</strong> Python (certified), HTML/CSS (certified), Arduino C++, JavaScript / JSX / TSX</li>
+        <li><strong>Hardware:</strong> Arduino UNO, microcontrollers, single-channel EEG (NeuroSky MindWave), LED &amp; haptic actuators</li>
+        <li><strong>Signal work:</strong> alpha / theta / beta band reasoning, threshold-based feedback logic, simulated EEG harnesses</li>
+        <li><strong>Web:</strong> responsive layouts, accessible markup, React component prototyping</li>
+      </ul>
+    </div>
+
+    <div class="skill-card t-tools">
+      <h4>Design &amp; Communication</h4>
+      <ul>
+        <li><strong>Design thinking:</strong> Stanford / Saggar method &mdash; need statements, ideation, rapid prototyping</li>
+        <li><strong>AI tooling:</strong> ChatGPT, Claude, Gemini for research scaffolding; verified, never trusted blindly</li>
+        <li><strong>Media:</strong> Canva, InVideo, video scripting, demo recording, presentation design</li>
+        <li><strong>Public speaking:</strong> live capstone presentation at Stanford CNI-X 2025</li>
+        <li><strong>Languages:</strong> English (native), Turkish (heritage)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CERTIFICATIONS -->
+<section>
+  <div class="section-header">
+    <span class="section-label">Credentials</span>
+    <h2>Certifications</h2>
+  </div>
+
+  <div class="cert-grid">
+    <div class="cert">
+      <span class="issuer">Certiport &middot; IT Specialist</span>
+      <span class="name">HTML and CSS</span>
+      <span class="date">May 8, 2024</span>
+    </div>
+    <div class="cert">
+      <span class="issuer">Certiport &middot; IT Specialist</span>
+      <span class="name">Python</span>
+      <span class="date">May 2, 2025</span>
+    </div>
+    <div class="cert">
+      <span class="issuer">Certiport &middot; IT Specialist</span>
+      <span class="name">Device Configuration &amp; Management</span>
+      <span class="date">June 2, 2025</span>
+    </div>
+    <div class="cert">
+      <span class="issuer">HarvardX &middot; edX</span>
+      <span class="name">MCB80.1x &mdash; Electrical Properties of the Neuron</span>
+      <span class="date">Verified Certificate</span>
+    </div>
+    <div class="cert">
+      <span class="issuer">HarvardX &middot; edX</span>
+      <span class="name">MCB80.2x &mdash; Neurons and Networks</span>
+      <span class="date">Verified Certificate</span>
+    </div>
+    <div class="cert">
+      <span class="issuer">HarvardX &middot; edX</span>
+      <span class="name">MCB80.3x &mdash; The Brain</span>
+      <span class="date">Verified Certificate</span>
+    </div>
+    <div class="cert">
+      <span class="issuer">HarvardX &middot; edX</span>
+      <span class="name">MCB80 Comprehensive Final Exam</span>
+      <span class="date">Verified Certificate</span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- NEUROSENSE -->
+<a id="neurosense"></a>
+<section>
+  <div class="section-header">
+    <span class="section-label">Coming Soon</span>
+    <h2>NeuroSense &mdash; neuroscience that scales by age, not by hand-waving</h2>
+  </div>
+
+  <p style="max-width:760px; margin: 0 auto 1.5rem;">Most science communication for kids dilutes the science. Most communication for adults skips the audience. NeuroSense will do neither. The protocol is locked: every video starts from a primary source (transcripts of working scientists, beginning with the Huberman Lab), extracts the actual mechanism, then translates it &mdash; only the vocabulary, never the logic &mdash; into four age-tiered scripts. Every metaphor is checked against the science it represents, and every episode ships with a public source log so the audit trail is part of the product.</p>
+
+  <div class="roadmap">
+    <div class="road-step">
+      <div class="when">Step 1 &middot; Truth Layer</div>
+      <h4>Claim Cards</h4>
+      <p style="font-size:0.95rem; margin:0;">Every advice claim gets a card with timestamp, verbatim text, mechanism, and Huberman&rsquo;s cited papers. If it isn&rsquo;t in the source, it doesn&rsquo;t make the video.</p>
+    </div>
+    <div class="road-step">
+      <div class="when">Step 2 &middot; Access Layer</div>
+      <h4>Four Age Tiers</h4>
+      <p style="font-size:0.95rem; margin:0;">Preschool (Nori), elementary (Theo), middle (Kai), high (first-person sim). Same causal logic; vocabulary and visuals scale.</p>
+    </div>
+    <div class="road-step">
+      <div class="when">Step 3 &middot; Trust Layer</div>
+      <h4>Public Source Log</h4>
+      <p style="font-size:0.95rem; margin:0;">Every video paired with a published audit trail: what we said, what the source said verbatim, where to verify. Trust is engineered, not asked for.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTACT -->
+<a id="contact"></a>
+<section>
+  <div class="peri-cta">
+    <h2>Looking ahead</h2>
+    <p>I am open to research mentorship in neuroscience, conversations with brain-computer interface builders, and collaborators who want to make real science legible to people who don&rsquo;t already speak it.</p>
+    <a class="email" href="mailto:perioztekinneuroscience@gmail.com">perioztekinneuroscience@gmail.com</a>
+  </div>
+  <p style="text-align:center; color:var(--muted, #607080); font-size:0.95rem;">More work &mdash; original research, NeuroSense episodes, and project deep-dives &mdash; will land here as it ships.</p>
+</section>
+
+</div>
+</main>
+
+<footer>
+<div class="footer-inner">
+  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
+  <p>Neuroscience, brain-computer interfaces, and accessible science for every age.</p>
+</div>
+<div class="footer-bottom">
+  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
+  <script>document.getElementById('cp-year').textContent=new Date().getFullYear();</script>
+</div>
+</footer>
+
+</body>
+</html>
