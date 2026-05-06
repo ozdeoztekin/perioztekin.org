@@ -1,6 +1,6 @@
 /* Peri Oztekin - personal site animations
  * - hero rotator (typing word cycle with blinking cursor)
- * - nav pill slider (ports from ytyc.org pattern)
+ * - nav pill slider
  * - reveal-on-scroll for custom Peri classes (.proj, .skill-card, .cert, .road-step, .stat-card)
  * - EEG hero line draw-in (one-shot)
  */

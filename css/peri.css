@@ -1,5 +1,5 @@
 /* perioztekin.org — site-wide custom styles
- * Layered on top of vendored ytyc.org style.css
+ * Layered on top of /css/style.css
  */
 
 :root {
@@ -41,7 +41,7 @@
 .js .nav-links a:not(.nav-cta):hover { background: transparent; }
 .js .nav-links a:not(.nav-cta).active { background: transparent; }
 
-/* === Eyes mascot (cursor-tracking, drives via animate.js #surveillance-eyes hook) === */
+/* === Eyes mascot (cursor-tracking, animated via animate.js) === */
 .eyes-mascot {
   display: inline-flex;
   align-items: center;
