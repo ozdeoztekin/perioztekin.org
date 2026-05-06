@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peri Oztekin &mdash; Neuroscience &amp; Brain-Computer Interfaces</title>
-  <meta name="description" content="Peri Oztekin is a high-school neuroscientist-in-training building brain-computer interfaces, AI-driven rehabilitation tools, and accessible neuroscience media.">
+  <title>Peri Oztekin &mdash; Neuroscience student &middot; perioztekin.org</title>
+  <meta name="description" content="Peri Oztekin: high-school student, neuroscience-bound. Stanford CNI-X 2025 (youngest admit), HarvardX MicroBachelors in Neuroscience, Voicify and NeuroCalm.">
 
   <link rel="canonical" href="https://perioztekin.org/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://perioztekin.org/">
-  <meta property="og:title" content="Peri Oztekin &mdash; Neuroscience &amp; Brain-Computer Interfaces">
-  <meta property="og:description" content="High-school neuroscientist-in-training. Stanford CNI-X 2025. HarvardX MicroBachelors in Neuroscience. Building Voicify, NeuroCalm, and NeuroSense.">
+  <meta property="og:title" content="Peri Oztekin &mdash; neuroscience student">
+  <meta property="og:description" content="Stanford CNI-X 2025 youngest admit. HarvardX MicroBachelors in Neuroscience. Aspiring neuroscience researcher.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Peri Oztekin">
-  <meta name="twitter:description" content="High-school neuroscientist-in-training. Stanford CNI-X 2025. HarvardX MicroBachelors in Neuroscience.">
+  <meta name="twitter:description" content="High-school student, neuroscience-bound.">
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/peri.css">
+
+  <!-- Cloudflare Web Analytics: privacy-first, no cookies. Replace YOUR_TOKEN after registering perioztekin.org at cloudflare.com/web-analytics. -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
 </head>
 <body>
 
@@ -30,6 +33,8 @@
     <a href="/projects/voicify/">Voicify</a>
     <a href="/projects/neurocalm/">NeuroCalm</a>
     <a href="/neurosense/">NeuroSense</a>
+    <a href="/wellbeing/">Wellbeing</a>
+    <a href="/neurodivergent/">Neurodivergent</a>
     <a href="/blog/">Blog</a>
     <a href="#contact" class="nav-cta">Contact</a>
   </div>
@@ -38,14 +43,32 @@
 </header>
 
 <a id="top"></a>
-<section class="peri-hero">
+<section class="peri-hero with-portrait">
   <div class="peri-hero-inner">
-    <span class="hero-tag">Neuroscience &middot; BCI &middot; Education</span>
-    <h1>I follow <span id="peri-rotator" data-words="the question,neuroscience,plasticity,recovery,curiosity,wonder">the question</span> wherever it goes.</h1>
-    <p class="lede">High-school neuroscientist-in-training. I build at the place where misfiring synapses become lost words, where damaged circuits learn to come back, and where a brain at the edge of overload can be given a signal before distress becomes crisis.</p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn btn-primary">See the work</a>
-      <a href="/academics/" class="btn btn-outline">Academic record</a>
+    <div>
+      <span class="hero-tag">Neuroscience &middot; brain-computer interfaces</span>
+      <div class="eyes-mascot" aria-hidden="true">
+        <svg id="surveillance-eyes" viewBox="0 0 72 32" style="display:block;width:84px;height:38px;" xmlns="http://www.w3.org/2000/svg">
+          <g id="se-eye-l" style="transform-origin:17px 16px;transform-box:fill-box">
+            <circle cx="17" cy="16" r="13" fill="#fff" stroke="#7ee8de" stroke-width="1.4"/>
+            <circle id="se-l" cx="17" cy="16" r="5" fill="#3f2870"/>
+          </g>
+          <g id="se-eye-r" style="transform-origin:55px 16px;transform-box:fill-box">
+            <circle cx="55" cy="16" r="13" fill="#fff" stroke="#7ee8de" stroke-width="1.4"/>
+            <circle id="se-r" cx="55" cy="16" r="5" fill="#3f2870"/>
+          </g>
+        </svg>
+        <span>I follow <span id="peri-rotator" data-words="the question,neurons,plasticity,recovery,curiosity">the question</span></span>
+      </div>
+      <h1>Hi, I&rsquo;m Peri.</h1>
+      <p class="lede">I&rsquo;m a high-school student aiming for a career in neuroscience. Every science class I&rsquo;ve taken has pointed me back to the brain. The projects on this site are what I&rsquo;ve been doing with that interest.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">See my projects</a>
+        <a href="/academics/" class="btn btn-outline">Academic record</a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <img src="/img/peri-portrait.jpg" alt="Photo of Peri Oztekin">
     </div>
   </div>
   <svg class="eeg" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
@@ -58,11 +81,28 @@
   </div>
 </section>
 
-<div class="stat-strip">
-  <div class="stat-card"><span class="num">100%</span><span class="lbl">HarvardX MCB80.3 (The Brain)</span></div>
-  <div class="stat-card"><span class="num">3</span><span class="lbl">IT Specialist Certifications</span></div>
-  <div class="stat-card"><span class="num">CNI-X</span><span class="lbl">Stanford 2025 &middot; youngest admit</span></div>
-  <div class="stat-card"><span class="num">2</span><span class="lbl">Brain-tech projects shipped</span></div>
+<!-- HIGHLIGHTS — impossible to miss -->
+<div class="highlight-strip">
+  <a class="highlight-card" href="/projects/voicify/" style="text-decoration:none;">
+    <span class="hlbl">Stanford CNI-X 2025</span>
+    <span class="hbig">Youngest admit</span>
+    <span class="hsub">Capstone: Voicify, an AI app for aphasia rehabilitation.</span>
+  </a>
+  <a class="highlight-card" href="/academics/#harvardx" style="text-decoration:none;">
+    <span class="hlbl">HarvardX MicroBachelors</span>
+    <span class="hbig">99 / 99 / 100</span>
+    <span class="hsub">Three-course neuroscience series, all certified.</span>
+  </a>
+  <a class="highlight-card" href="/academics/#certifications" style="text-decoration:none;">
+    <span class="hlbl">IT Specialist credentials</span>
+    <span class="hbig">3 certified</span>
+    <span class="hsub">HTML/CSS, Python, and Device Configuration.</span>
+  </a>
+  <a class="highlight-card" href="/projects/neurocalm/" style="text-decoration:none;">
+    <span class="hlbl">Independent research</span>
+    <span class="hbig">NeuroCalm</span>
+    <span class="hsub">An EEG-based wearable for sensory regulation.</span>
+  </a>
 </div>
 
 <main>
@@ -72,71 +112,23 @@
 <a id="about"></a>
 <section>
   <div class="section-header">
-    <span class="section-label">About</span>
-    <h2>The throughline</h2>
-  </div>
-  <div class="throughline">
-    <p>I have always been drawn to the question underneath every science class I have taken: not just what happens, but why the body and mind bother. Why does a neuron fire at all? Why does a brain, damaged and disoriented, sometimes find its way back?</p>
-    <p>Honors Chemistry gave me molecular language. Honors Biology showed me that living systems are built from restlessness &mdash; membrane potentials flickering, enzymes reading signals, cells responding to a world they can&rsquo;t see. Honors Physics gave me the forces underneath both. Each course pointed me toward the same place.</p>
-    <div class="pull">
-      What draws me to neuroscience is that it sits at the intersection I have been trying to reach: the place where cellular mechanisms become human experience &mdash; where a misfiring synapse becomes a lost memory or a changed personality, and where neuroplasticity becomes clinical recovery.
-    </div>
-    <p>I don&rsquo;t treat my courses as separate tracks. I look for the connections: the electrochemical gradients in chemistry that map onto the ion channels in biology, the signal propagation in neurons that follows the wave mechanics of physics. Each course gives me discipline; together they give me direction. I am the kind of student who builds the curriculum when one does not exist.</p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- EDUCATION -->
-<a id="education"></a>
-<section>
-  <div class="section-header">
-    <span class="section-label">Education</span>
-    <h2>A self-designed path</h2>
+    <span class="section-label">About me</span>
+    <h2>Why neuroscience.</h2>
   </div>
 
-  <h3 style="margin-top:2rem;">Stanford University &middot; CNI-X 2025</h3>
-  <p><strong>Clinical Neuroscience Immersion Experience &middot; Session 2 (July 2025).</strong> Admitted as the youngest student in the cohort. Two weeks of intensive coursework spanning clinical neuroscience, design thinking (Saggar lab method), large-language-models in behavioral health, and a team capstone project shipped to a final demo.</p>
-
-  <h3>HarvardX &middot; MicroBachelors&reg; in Neuroscience (MCB80)</h3>
-  <p>Full three-course series plus comprehensive final exam, taught by Prof. David Cox (Harvard FAS). Completed alongside high-school honors science:</p>
-  <div class="course-list">
-    <div class="course-row">
-      <div>
-        <div class="ctitle">MCB80.1x &mdash; The Electrical Properties of the Neuron</div>
-        <div class="cmeta">Resting potential &middot; passive membranes &middot; action potentials &middot; propagation &middot; DIY labs</div>
-      </div>
-      <span class="cgrade">99% &middot; Passed</span>
-    </div>
-    <div class="course-row">
-      <div>
-        <div class="ctitle">MCB80.2x &mdash; Neurons and Networks</div>
-        <div class="cmeta">Synapse &middot; excitation/inhibition &middot; small circuits &middot; neuromodulation &middot; neuronal plasticity</div>
-      </div>
-      <span class="cgrade">99% &middot; Passed</span>
-    </div>
-    <div class="course-row">
-      <div>
-        <div class="ctitle">MCB80.3x &mdash; The Brain</div>
-        <div class="cmeta">Vision &middot; audition &middot; somatosensation &middot; movement &amp; action &middot; subcortical brain areas</div>
-      </div>
-      <span class="cgrade">100% &middot; Passed</span>
-    </div>
-    <div class="course-row">
-      <div>
-        <div class="ctitle">MCB80.exam &mdash; Comprehensive Final</div>
-        <div class="cmeta">Cumulative assessment across all three parts</div>
-      </div>
-      <span class="cgrade">Passed</span>
-    </div>
+  <div class="pull-quote">
+    <span class="qmark">&ldquo;</span>I have been fascinated by every science class I have taken and couldn&rsquo;t help but wonder not just <em>what</em> happens, but <em>why</em> the body and mind bother. Why does a neuron fire at all? Why does a brain, damaged and disoriented, sometimes find its way back?
+    <span class="attribution">&mdash; from my Stanford application essay</span>
   </div>
 
-  <h3>High School &middot; Self-Directed Curriculum</h3>
-  <p>Florida Unschoolers, with college-prep coursework through Florida Virtual School (FLVS) and parallel university-level study. Honors Chemistry, Honors Biology, Honors Physics, Algebra 1 Honors, Geometry Honors, French &mdash; all chosen to feed a single line of inquiry into how brains work. Maintained a 4.0 unweighted GPA across middle and high school courses.</p>
-  <p style="margin-top:1rem;"><a class="btn btn-outline" style="border-color:var(--peri-purple);color:var(--peri-purple);" href="/academics/">See the full academic record &rarr;</a></p>
+  <p>Honors Chemistry gave me a molecular language: electrons shifting, bonds breaking, energy moving through a system looking for equilibrium. Honors Biology showed me that living systems are built from that same restlessness &mdash; membrane potentials flickering, enzymes reading signals, cells responding to a world they can&rsquo;t see. Honors Physics gave me the forces that underlie both. Each class kept pointing me toward the same place. The brain.</p>
 
-  <h3>Up Next &middot; Stanford Pre-Collegiate Studies</h3>
-  <p>Applying to the Psychology &amp; Bioscience track to push from biological foundations into the behavioral and clinical dimensions that make neuroscience matter to real people: the conditions under which the brain fails and recovers, as two expressions of the same underlying plasticity.</p>
+  <p>What draws me most is the place where cellular mechanisms become human experience: where a misfiring synapse turns into a lost memory or a changed personality, and where neuroplasticity becomes clinical recovery. I want to study the conditions under which the brain fails and the conditions under which it comes back, not as separate phenomena but as two sides of the same plasticity.</p>
+
+  <div class="pull-quote">
+    <span class="qmark">&ldquo;</span>I do not stop at the edge of one subject. I follow the question wherever it goes.
+    <span class="attribution">&mdash; from the same essay</span>
+  </div>
 </section>
 
 <hr class="divider">
@@ -146,168 +138,75 @@
 <section>
   <div class="section-header">
     <span class="section-label">Projects</span>
-    <h2>What I&rsquo;ve been building</h2>
+    <h2>What I&rsquo;ve been working on.</h2>
+  </div>
+
+  <div class="featured-row">
+    <div class="feat-main">
+      <span class="hlbl" style="color:rgba(255,255,255,.7);">Featured project</span>
+      <h3>Voicify &mdash; AI rehab for aphasia</h3>
+      <p>Voicify is a speech-recovery app for stroke survivors with aphasia, the condition where the words are gone but the mind remains. We grounded it in Melodic Intonation Therapy: melody and rhythm recruit intact right-hemisphere networks to compensate for damaged left-hemisphere ones. Neuroplasticity, made clinical. Built in two weeks at Stanford CNI-X 2025.</p>
+      <a class="btn-feat" href="/projects/voicify/">Open the project &rarr;</a>
+    </div>
+    <div class="feat-side">
+      <a class="small-feat" href="/projects/neurocalm/" style="text-decoration:none;">
+        <h4>NeuroCalm</h4>
+        <p>An EEG headband concept that catches alpha/theta shifts and gives a calming cue before sensory overload escalates.</p>
+      </a>
+      <a class="small-feat" href="/neurosense/" style="text-decoration:none;">
+        <h4>NeuroSense</h4>
+        <p>A YouTube channel translating neuroscience research into four age-tier scripts. Source-locked, no hand-waving.</p>
+      </a>
+      <a class="small-feat" href="/wellbeing/" style="text-decoration:none;">
+        <h4>Teen wellbeing</h4>
+        <p>Statistics, evidence-based protocols, and resources for adolescent emotional and psychological health.</p>
+      </a>
+      <a class="small-feat" href="/neurodivergent/" style="text-decoration:none;">
+        <h4>Neurodivergent brains</h4>
+        <p>The science, the lived experience, and donation links to organizations supporting neurodivergent communities.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- EDUCATION SNAPSHOT -->
+<section>
+  <div class="section-header">
+    <span class="section-label">Education at a glance</span>
+    <h2>School, plus what I do beyond it.</h2>
   </div>
 
   <div class="project-grid">
-
     <article class="proj">
-      <span class="badge live">Stanford CNI-X 2025 Capstone</span>
-      <h3>Voicify</h3>
-      <p class="role">AI-driven rehabilitation app for aphasia &middot; Co-led capstone team</p>
-      <p>An AI-powered speech-recovery app for stroke survivors with aphasia &mdash; people whose minds remain intact but whose words have been taken away. Voicify operationalizes <strong>Melodic Intonation Therapy</strong>, recruiting intact right-hemisphere networks to compensate for damaged language areas. Neuroplasticity made clinical.</p>
-      <ul>
-        <li>Designed therapy modules grounded in published MIT protocols</li>
-        <li>Built interactive demo (React/TSX prototype + Canva slide deck)</li>
-        <li>Verified each clinical claim against primary aphasia literature</li>
-        <li>Presented to Stanford CNI-X cohort &amp; faculty in final demo</li>
-      </ul>
-      <p class="more"><a href="/projects/voicify/">Open the deep dive &rarr;</a></p>
+      <span class="badge">Current</span>
+      <h3>9th grade</h3>
+      <p class="role">Florida Virtual School (FLVS Flex) &middot; honors track, in progress</p>
+      <p>Honors Chemistry and French 1 finished with a 100% final grade in Term 1. Currently in Honors Physics, Computer Science, Principles of Biomedical Science, AICE History &amp; AICE General Paper, and Algebra 2.</p>
+      <p class="more"><a href="/academics/">Full transcript &rarr;</a></p>
     </article>
-
     <article class="proj">
-      <span class="badge concept">Independent Research Concept</span>
-      <h3>NeuroCalm</h3>
-      <p class="role">Brainwave-responsive headband for sensory regulation &middot; Sole researcher &amp; designer</p>
-      <p>A wearable that listens to alpha (8&ndash;12&nbsp;Hz) and theta (4&ndash;7&nbsp;Hz) rhythms and gives the brain a signal &mdash; a calming light, a gentle vibration &mdash; before sensory overload becomes crisis. Designed with autistic individuals in mind, useful to anyone who can&rsquo;t always speak overload in real time.</p>
-      <ul>
-        <li>Reviewed the neurofeedback literature (Coben 2010, Kouijzer 2009, Thompson 2010 et al.)</li>
-        <li>Specified architecture: NeuroSky MindWave Mobile 2 + Arduino + LED/haptic feedback</li>
-        <li>Wrote prototype Arduino C++ firmware with simulated EEG fallback</li>
-        <li>Framed transparently as experimental: the evidence is promising, not settled</li>
-      </ul>
-      <p class="more"><a href="/projects/neurocalm/">Open the deep dive &rarr;</a></p>
+      <span class="badge live">Verified credentials</span>
+      <h3>HarvardX MicroBachelors&reg; in Neuroscience</h3>
+      <p class="role">MCB80 series &middot; Prof. David Cox, Harvard Faculty of Arts &amp; Sciences</p>
+      <p>Three university-level courses plus the comprehensive final. From the electrical properties of a single neuron to the architecture of whole sensory and cognitive systems. All four certificates verified through edX.</p>
+      <p class="more"><a href="/academics/#harvardx">Course details &rarr;</a></p>
     </article>
-
     <article class="proj">
-      <span class="badge upcoming">Coming soon</span>
-      <h3>NeuroSense</h3>
-      <p class="role">Source-locked neuroscience for every age &middot; Founder</p>
-      <p>A YouTube channel that translates real research &mdash; starting with the Huberman Lab podcast &mdash; into four age-tiered video scripts (preschool, elementary, middle, high) without diluting the science. Every claim is anchored to a verbatim quote and timestamp; metaphors illustrate mechanism, never invent it.</p>
-      <ul>
-        <li>NeuroSense Master Automation Protocol v1.0 (locked workflow)</li>
-        <li>Audit-trail architecture: every script ships with a public source log</li>
-        <li>Four locked archetypes: Cozy Helper &middot; Sandbox Builder &middot; Quest &middot; Sim Dashboard</li>
-        <li>Premiering after the website launch</li>
-      </ul>
-      <p class="more"><a href="/neurosense/">See the full protocol &rarr;</a></p>
+      <span class="badge live">Stanford CNI-X 2025</span>
+      <h3>Clinical Neuroscience Immersion Experience</h3>
+      <p class="role">Pre-collegiate program &middot; admitted as the youngest in the Session 2 cohort</p>
+      <p>Two intensive weeks at Stanford on clinical neuroscience, design thinking (Saggar lab method), and large-language-models in behavioral health. Final capstone presented to faculty.</p>
+      <p class="more"><a href="/projects/voicify/">See the capstone &rarr;</a></p>
     </article>
-
     <article class="proj">
-      <span class="badge upcoming">In progress</span>
-      <h3>Neuroscience research</h3>
-      <p class="role">Independent reading &amp; literature work</p>
-      <p>Building toward original research at the intersection of neuroplasticity, recovery from brain injury, and the conditions under which the brain fails &mdash; treating failure and recovery not as separate phenomena but as two expressions of the same underlying mechanism. Updates will live here as the work matures.</p>
-      <ul>
-        <li>Reading primary literature in stroke rehabilitation &amp; aphasia</li>
-        <li>Following the EEG / neurofeedback evidence base critically</li>
-        <li>Looking for a research mentor &mdash; please reach out below</li>
-      </ul>
-      <p class="more"><a href="/blog/">Follow updates on the blog &rarr;</a></p>
+      <span class="badge">IT Specialist (Certiport)</span>
+      <h3>Three Pearson VUE certifications</h3>
+      <p class="role">HTML &amp; CSS &middot; Python &middot; Device Configuration &amp; Management</p>
+      <p>Practical credentials I picked up alongside coursework. They map onto the prototype work I do for projects like Voicify and NeuroCalm.</p>
+      <p class="more"><a href="/academics/#certifications">View certificates &rarr;</a></p>
     </article>
-
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- SKILLS -->
-<a id="skills"></a>
-<section>
-  <div class="section-header">
-    <span class="section-label">Skillset</span>
-    <h2>Three sides of the same question</h2>
-  </div>
-
-  <div class="skill-grid">
-
-    <div class="skill-card">
-      <h4>Neuroscience</h4>
-      <ul>
-        <li><strong>Cellular &amp; systems:</strong> resting &amp; action potentials, synaptic transmission, neuromodulation, plasticity</li>
-        <li><strong>Sensory &amp; motor:</strong> visual / auditory / somatosensory pathways, movement and subcortical circuits</li>
-        <li><strong>Clinical:</strong> aphasia &amp; Melodic Intonation Therapy, stroke recovery, neurofeedback in ASD</li>
-        <li><strong>Research literacy:</strong> reading primary literature, evaluating experimental design, separating signal from spin</li>
-      </ul>
-    </div>
-
-    <div class="skill-card t-eng">
-      <h4>Engineering &amp; BCI</h4>
-      <ul>
-        <li><strong>Languages:</strong> Python (certified), HTML/CSS (certified), Arduino C++, JavaScript / JSX / TSX</li>
-        <li><strong>Hardware:</strong> Arduino UNO, microcontrollers, single-channel EEG (NeuroSky MindWave), LED &amp; haptic actuators</li>
-        <li><strong>Signal work:</strong> alpha / theta / beta band reasoning, threshold-based feedback logic, simulated EEG harnesses</li>
-        <li><strong>Web:</strong> responsive layouts, accessible markup, React component prototyping</li>
-      </ul>
-    </div>
-
-    <div class="skill-card t-tools">
-      <h4>Design &amp; Communication</h4>
-      <ul>
-        <li><strong>Design thinking:</strong> Stanford / Saggar method &mdash; need statements, ideation, rapid prototyping</li>
-        <li><strong>AI tooling:</strong> ChatGPT, Claude, Gemini for research scaffolding; verified, never trusted blindly</li>
-        <li><strong>Media:</strong> Canva, InVideo, video scripting, demo recording, presentation design</li>
-        <li><strong>Public speaking:</strong> live capstone presentation at Stanford CNI-X 2025</li>
-        <li><strong>Languages:</strong> English (native), Turkish (heritage), French (in progress)</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- CERTIFICATIONS -->
-<section>
-  <div class="section-header">
-    <span class="section-label">Credentials</span>
-    <h2>Certifications</h2>
-    <p style="color:var(--muted, #607080); margin-top:.5rem;">Click any certificate to view the original.</p>
-  </div>
-
-  <div class="cert-grid">
-    <a class="cert" href="/certificates/itspecialist-html-css.pdf" target="_blank" rel="noopener">
-      <span class="issuer">Certiport &middot; IT Specialist</span>
-      <span class="name">HTML and CSS</span>
-      <span class="date">May 8, 2024</span>
-      <span class="view">View certificate</span>
-    </a>
-    <a class="cert" href="/certificates/itspecialist-python.pdf" target="_blank" rel="noopener">
-      <span class="issuer">Certiport &middot; IT Specialist</span>
-      <span class="name">Python</span>
-      <span class="date">May 2, 2025</span>
-      <span class="view">View certificate</span>
-    </a>
-    <a class="cert" href="/certificates/itspecialist-device-config.pdf" target="_blank" rel="noopener">
-      <span class="issuer">Certiport &middot; IT Specialist</span>
-      <span class="name">Device Configuration &amp; Management</span>
-      <span class="date">June 2, 2025</span>
-      <span class="view">View certificate</span>
-    </a>
-    <a class="cert" href="/certificates/harvardx-mcb80-1-electrical-properties.pdf" target="_blank" rel="noopener">
-      <span class="issuer">HarvardX &middot; edX Verified</span>
-      <span class="name">MCB80.1x &mdash; Electrical Properties of the Neuron</span>
-      <span class="date">2026</span>
-      <span class="view">View certificate</span>
-    </a>
-    <a class="cert" href="/certificates/harvardx-mcb80-2-neurons-and-networks.pdf" target="_blank" rel="noopener">
-      <span class="issuer">HarvardX &middot; edX Verified</span>
-      <span class="name">MCB80.2x &mdash; Neurons and Networks</span>
-      <span class="date">2026</span>
-      <span class="view">View certificate</span>
-    </a>
-    <a class="cert" href="/certificates/harvardx-mcb80-3-the-brain.pdf" target="_blank" rel="noopener">
-      <span class="issuer">HarvardX &middot; edX Verified</span>
-      <span class="name">MCB80.3x &mdash; The Brain</span>
-      <span class="date">2026</span>
-      <span class="view">View certificate</span>
-    </a>
-    <a class="cert" href="/certificates/harvardx-mcb80-4-final-exam.pdf" target="_blank" rel="noopener">
-      <span class="issuer">HarvardX &middot; edX Verified</span>
-      <span class="name">MCB80 Comprehensive Final Exam</span>
-      <span class="date">2026</span>
-      <span class="view">View certificate</span>
-    </a>
   </div>
 </section>
 
@@ -317,11 +216,10 @@
 <a id="contact"></a>
 <section>
   <div class="peri-cta">
-    <h2>Looking ahead</h2>
-    <p>I am open to research mentorship in neuroscience, conversations with brain-computer interface builders, and collaborators who want to make real science legible to people who don&rsquo;t already speak it.</p>
+    <h2>Get in touch.</h2>
+    <p>I&rsquo;m always glad to hear from researchers, teachers, students, or anyone working on neuroscience or assistive tech. If something on this site interests you, please write.</p>
     <a class="email" href="mailto:perioztekinneuroscience@gmail.com">perioztekinneuroscience@gmail.com</a>
   </div>
-  <p style="text-align:center; color:var(--muted, #607080); font-size:0.95rem;">More work &mdash; original research, NeuroSense episodes, and project deep-dives &mdash; will land here as it ships.</p>
 </section>
 
 </div>
@@ -330,7 +228,7 @@
 <footer>
 <div class="footer-inner">
   <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
-  <p>Neuroscience, brain-computer interfaces, and accessible science for every age.</p>
+  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
 </div>
 <div class="footer-bottom">
   Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroCalm &mdash; Brainwave-Responsive Sensory Regulation &middot; Peri Oztekin</title>
-  <meta name="description" content="NeuroCalm is an EEG-driven wearable headband concept that detects sensory overload and delivers calming feedback before distress escalates.">
+  <title>NeuroCalm &mdash; brainwave-responsive sensory regulation &middot; Peri Oztekin</title>
+  <meta name="description" content="NeuroCalm is an EEG-driven wearable concept that detects sensory overload and delivers calming feedback before distress escalates.">
   <link rel="canonical" href="https://perioztekin.org/projects/neurocalm/">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="NeuroCalm &mdash; Brainwave-Responsive Sensory Regulation">
-  <meta property="og:description" content="An EEG-driven wearable concept for sensory overload, designed for autistic individuals and anyone who can't always voice it in real time.">
+  <meta property="og:title" content="NeuroCalm &mdash; brainwave-responsive sensory regulation">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/peri.css">
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
 </head>
 <body>
 
@@ -24,6 +24,8 @@
     <a href="/projects/voicify/">Voicify</a>
     <a href="/projects/neurocalm/" class="active">NeuroCalm</a>
     <a href="/neurosense/">NeuroSense</a>
+    <a href="/wellbeing/">Wellbeing</a>
+    <a href="/neurodivergent/">Neurodivergent</a>
     <a href="/blog/">Blog</a>
     <a href="/#contact" class="nav-cta">Contact</a>
   </div>
@@ -47,20 +49,18 @@
 <main>
 <div class="container" style="margin-top: 2rem;">
 
-<!-- WHY -->
 <section class="deep-section">
   <span class="section-label">The need</span>
   <h3>Many people who are overwhelmed cannot express it in real time.</h3>
-  <p>Sensory overload &mdash; especially in autistic individuals &mdash; tends to escalate before it is named. By the time someone can articulate &ldquo;I am too much,&rdquo; the regulatory window has often already closed. NeuroCalm aims to read the physiological signal underneath the experience and intervene early, with a quiet cue, before the loop spirals.</p>
+  <p>Sensory overload tends to escalate before it is named. By the time someone can articulate &ldquo;I am too much,&rdquo; the regulatory window has often already closed. NeuroCalm aims to read the physiological signal underneath the experience and intervene early, with a quiet cue, before the loop spirals.</p>
   <p>The hypothesis: a wearable that monitors EEG markers known to track stress and attention, paired with non-intrusive feedback the wearer can choose, can extend the window in which self-regulation is still possible.</p>
 </section>
 
-<!-- SCIENCE -->
 <section class="deep-section">
   <span class="section-label">The science</span>
   <h3>Why brainwaves?</h3>
-  <p>Autistic individuals frequently show altered alpha (8&ndash;12 Hz) and theta (4&ndash;7 Hz) rhythms. Lower alpha tracks reduced calm/focus; elevated theta tracks inattention, stress, and sensory overload. These bands are non-invasively monitorable using consumer-grade EEG.</p>
-  <p>Neurofeedback &mdash; training individuals to regulate brainwave activity through real-time cues &mdash; has been studied in autism for decades. The evidence is genuinely mixed: some protocols show meaningful gains in attention, social function, and anxiety; other reviews argue methodological weaknesses leave the picture unsettled. NeuroCalm is positioned honestly inside that controversy: a support tool, not a treatment, with its own limitations on the box.</p>
+  <p>Autistic individuals frequently show altered alpha (8&ndash;12 Hz) and theta (4&ndash;7 Hz) rhythms. Lower alpha tracks reduced calm and focus; elevated theta tracks inattention, stress, and sensory overload. These bands can be non-invasively monitored using consumer-grade EEG.</p>
+  <p>Neurofeedback &mdash; training individuals to regulate brainwave activity through real-time cues &mdash; has been studied in autism for decades. The evidence is genuinely mixed: some protocols show meaningful gains in attention, social function, and anxiety; other reviews argue methodological weaknesses leave the picture unsettled. NeuroCalm sits honestly inside that controversy: a support tool, not a treatment, with its limitations on the box.</p>
 
   <h4>Key literature consulted during design:</h4>
   <ul>
@@ -72,14 +72,13 @@
   </ul>
 </section>
 
-<!-- HARDWARE -->
 <section class="deep-section">
   <span class="section-label">The build</span>
   <h3>Hardware specification.</h3>
   <ul>
     <li><strong>EEG input:</strong> NeuroSky MindWave Mobile 2 (single-channel, 12-bit, 512 Hz, 3&ndash;100 Hz) &mdash; or simulated input from a Python harness for development.</li>
     <li><strong>Microcontroller:</strong> Arduino UNO (or ESP32 / Micro:bit), Bluetooth-paired to the EEG headset.</li>
-    <li><strong>Feedback outputs:</strong> programmable LED for visual cueing, mini vibration motor for haptic feedback, optional buzzer for low-volume auditory tones. User selects which channel(s) to enable.</li>
+    <li><strong>Feedback outputs:</strong> programmable LED for visual cueing, mini vibration motor for haptic feedback, optional buzzer for low-volume auditory tones. User selects which channels are enabled.</li>
     <li><strong>Form factor:</strong> soft fabric headband with foam-padded electrode mount and Velcro closure &mdash; sized for sensory tolerance, not data quality.</li>
   </ul>
 
@@ -87,7 +86,6 @@
   <p>The firmware watches the alpha/theta ratio against a personalized threshold. When theta rises or alpha falls beyond the threshold, a calming routine fires: a slow LED fade-up, a brief haptic pulse, optionally a tone. The intervention is designed to be noticeable but not commanding &mdash; a tap on the shoulder, not an alarm.</p>
 </section>
 
-<!-- CODE -->
 <section class="deep-section">
   <span class="section-label">The firmware</span>
   <h3>Excerpt from the prototype Arduino sketch.</h3>
@@ -116,19 +114,17 @@
 </pre>
 </section>
 
-<!-- ETHICS -->
 <section class="deep-section">
-  <span class="section-label">Honesty</span>
+  <span class="section-label">Limits</span>
   <h3>What this is, and what it isn&rsquo;t.</h3>
   <p>NeuroCalm is a prototype concept, not a medical device. It does not diagnose, treat, or cure anything. The evidence base for neurofeedback in autism is real but unsettled, and the system would need real-user testing across multiple sessions before any meaningful claim about effectiveness could be made. The framing is deliberate: a support tool that may help, presented honestly to users and their families, with its limitations visible.</p>
 </section>
 
-<!-- WHAT'S NEXT -->
 <section class="deep-section">
-  <span class="section-label">What&rsquo;s next</span>
-  <h3>Pushing it from concept to a real headband.</h3>
+  <span class="section-label">Where this could go</span>
+  <h3>From concept to a real headband.</h3>
   <ul>
-    <li>Build the physical headband and test fit / comfort across multiple wear sessions.</li>
+    <li>Build the physical headband and test fit and comfort across multiple wear sessions.</li>
     <li>Replace simulated EEG with live MindWave input; calibrate thresholds per-user via baseline session.</li>
     <li>Add a companion app for selecting feedback type, logging events, and reviewing patterns over time.</li>
     <li>Run small-scale informal feasibility testing with consenting users; collect qualitative feedback.</li>
@@ -136,7 +132,6 @@
   <p>If you build assistive tech, work in autism support, or want to talk EEG hardware design, please <a href="mailto:perioztekinneuroscience@gmail.com">say hello</a>.</p>
 </section>
 
-<!-- BACK -->
 <section style="text-align: center; padding: 2rem 0 3rem;">
   <a class="btn btn-outline" style="border-color:var(--peri-purple); color:var(--peri-purple);" href="/#projects">&larr; Back to all projects</a>
 </section>
@@ -147,7 +142,7 @@
 <footer>
 <div class="footer-inner">
   <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
-  <p>Neuroscience, brain-computer interfaces, and accessible science for every age.</p>
+  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
 </div>
 <div class="footer-bottom">
   Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
