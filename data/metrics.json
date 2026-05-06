@@ -62,8 +62,14 @@
     {
       "name": "NeuroSense",
       "status": "in development",
-      "context": "Source-locked neuroscience YouTube channel",
-      "metric": "Master Automation Protocol v1.0 finalized"
+      "context": "Three-layer educational content pipeline",
+      "metric": "Atomic claim extraction + constrained vocabulary translation + annotated metaphor layers (v1.0 protocol locked)"
+    },
+    {
+      "name": "Independent reading in neuroscience",
+      "status": "ongoing",
+      "context": "Systems neuroscience, plasticity, sleep biology, neurobiology of learning",
+      "metric": "Building fluency for journal-club discussion and Grand Rounds engagement"
     }
   ],
 
