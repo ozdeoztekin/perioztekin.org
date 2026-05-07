@@ -53,97 +53,91 @@
 
 <section class="deep-section">
   <span class="section-label">What this is</span>
-  <h3>A three-layer pipeline for science communication that doesn&rsquo;t cheat.</h3>
-  <p>NeuroSense is an independent research and content design project. The aim is to support neuroscience literacy in pre-college audiences without compromising mechanistic accuracy &mdash; the kind of work that sits at the intersection of primary research and translational science communication.</p>
-  <p>The pipeline draws on peer-reviewed and primary-source neuroscience material (starting with Huberman Lab Podcast transcripts) and outputs short-form video content built for younger learners. Three architectural layers enforce scientific fidelity:</p>
-  <ul>
-    <li><strong>Atomic claim extraction with timestamps.</strong> Each scientific claim becomes a discrete unit anchored to its verbatim source quote and exact timestamp.</li>
-    <li><strong>Constrained vocabulary simplification that preserves causal and temporal logic.</strong> Translation happens at the word level only. The mechanism and its causal structure pass through unchanged.</li>
-    <li><strong>Annotated metaphor layers with explicit transformation notes.</strong> Every visual or narrative metaphor carries documentation explaining how it maps onto the underlying mechanism &mdash; and where it would distort if pushed too far.</li>
-  </ul>
-  <p>The output: age-tiered short-form content where every claim traces back to a primary source, and every metaphor is accountable for what it does and doesn&rsquo;t represent.</p>
+  <h3>One claim, four videos, none of them watered down.</h3>
+  <p>NeuroSense is a YouTube channel I&rsquo;m building. I take a real piece of neuroscience research &mdash; a paper, a podcast episode, a book chapter &mdash; and turn it into four short videos: one for preschoolers, one for elementary kids, one for middle schoolers, one for older teens and adults.</p>
+  <p>The rule I&rsquo;m working with: the actual science doesn&rsquo;t change between the four. The cause-and-effect stays the same. Only the vocabulary, the metaphors, and the level of detail are different. If the kids&rsquo; version says something the source paper didn&rsquo;t say, that&rsquo;s not &ldquo;age-appropriate simplification&rdquo; &mdash; that&rsquo;s a problem.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">The pipeline</span>
-  <h3>Master Automation Protocol &middot; v1.0.</h3>
+  <span class="section-label">How I&rsquo;m building it</span>
+  <h3>The five steps for every video.</h3>
 
-  <h4>Phase 1 &mdash; Truth Layer (ingestion &amp; atomic extraction)</h4>
-  <p>Each transcript is parsed into Claim Cards. Every card carries: the verbatim source quote, the timestamp, the underlying mechanism in plain English, the action implication, and the citations the source itself referenced. <strong>Hard rule:</strong> if the original source did not say it, it does not get a card.</p>
+  <h4>1. Find the actual claim.</h4>
+  <p>I start with a real source. I pull out the specific claim with the exact quote and timestamp, and note what the source itself cited. If the source didn&rsquo;t say it, it doesn&rsquo;t go in the video.</p>
 
-  <h4>Phase 2 &mdash; Access Layer (constrained simplification)</h4>
-  <p>Each Claim Card produces four scripts &mdash; one per age tier &mdash; under one rule: translate the vocabulary, never the logic. The causal and temporal structure of the source survives unchanged from preschool to high school; only word choice and the depth of unpacking changes.</p>
+  <h4>2. Translate, don&rsquo;t water down.</h4>
+  <p>Each claim becomes four scripts &mdash; preschool, elementary, middle school, older &mdash; under one constraint: the logic stays the same. A 5-year-old gets the same cause and effect as the high schooler. Only the words and the level of unpacking change.</p>
 
-  <h4>Phase 3 &mdash; Relevance Layer (action mapping)</h4>
-  <p>Each tier gets one concrete action grounded in the source claim. <strong>The No-Invention Rule:</strong> no fabricated gamified rewards (&ldquo;Sleep gives you +10 gold&rdquo;); only visualizations of the actual mechanism (&ldquo;Sleep repairs the bridge so you can cross faster&rdquo;).</p>
+  <h4>3. Ground it in something real.</h4>
+  <p>Each version ends with one concrete thing the viewer could actually do, tied back to the claim. No fake-gamified rewards (&ldquo;Sleep gives you +10 gold&rdquo;). The metaphor has to actually map onto the mechanism &mdash; e.g. &ldquo;Sleep repairs the bridge so you can cross faster.&rdquo;</p>
 
-  <h4>Phase 4 &mdash; Engaging Layer (production)</h4>
-  <p>Each script becomes a storyboard with scene description, action, on-screen text (3&ndash;5 words max), camera direction, and avatar gestures. Voice is consistent neural TTS &mdash; one calm, distinct voice per tier. Music is lo-fi instrumental, background only.</p>
+  <h4>4. Make the video.</h4>
+  <p>Each script becomes a storyboard with simple on-screen text (3&ndash;5 words max), one calm narrator voice per age tier, and lo-fi instrumental music in the background. The visual world is different per tier &mdash; that&rsquo;s the next section.</p>
 
-  <h4>Phase 5 &mdash; Trust Layer (audit trail)</h4>
-  <p>Every video is paired with a public Source Log: a four-column document mapping what the video said to what the source said verbatim, with timestamps and links. Verification path from any claim to primary literature is one click.</p>
+  <h4>5. Show my work.</h4>
+  <p>Every video gets a public source log: a side-by-side document of what the video said, what the source actually said (verbatim, with timestamps and links), and the citations behind it. One click to verify any claim.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">The audience tiers</span>
-  <h3>Four locked archetypes, one causal structure.</h3>
+  <span class="section-label">The four versions</span>
+  <h3>Same science. Four different worlds.</h3>
 
   <div class="project-grid">
     <article class="proj">
       <span class="badge">Preschool &middot; ages 4&ndash;6</span>
       <h3>Cozy Helper &middot; Nori</h3>
-      <p class="role">Translation logic: routine and comfort. Focus on safety and feeling good.</p>
-      <p>Soft, round, slow. A helper creature named Nori. The mechanism becomes a routine the child can recognize and copy: <em>say hello to the sun</em>, <em>cozy your eyes</em>, <em>rest your bridge</em>.</p>
+      <p class="role">What works at this age: routine and comfort.</p>
+      <p>Soft, round, slow. A helper creature named Nori. The mechanism becomes a routine a kid can recognize and copy: <em>say hello to the sun, cozy your eyes, rest your bridge.</em></p>
     </article>
 
     <article class="proj">
       <span class="badge">Elementary &middot; ages 7&ndash;10</span>
-      <h3>Sandbox Builder &middot; Theo / Alexa</h3>
-      <p class="role">Translation logic: building and energy. Focus on battery charge and speed.</p>
-      <p>Blocks, crafting, tangible cause-and-effect. The mechanism becomes a system you can construct: <em>charge your solar battery</em>, <em>repair the path</em>, <em>top off the engine</em>.</p>
+      <h3>Sandbox builder &middot; Theo or Alexa</h3>
+      <p class="role">What works at this age: building things, cause and effect you can see.</p>
+      <p>Blocks, crafting, a system you can put together. The mechanism becomes something you can construct: <em>charge your solar battery, repair the path, top off the engine.</em></p>
     </article>
 
     <article class="proj">
       <span class="badge">Middle school &middot; ages 11&ndash;13</span>
-      <h3>Quest / Obby &middot; Kai</h3>
-      <p class="role">Translation logic: skill and grind. Focus on leveling up and reducing lag.</p>
-      <p>Levels, obstacles, stylized challenge. The mechanism becomes a skill tree: <em>unlock the focus buff</em>, <em>cool down the lag</em>, <em>level up the lookout</em>.</p>
+      <h3>Quest format &middot; Kai</h3>
+      <p class="role">What works at this age: levels, skills, the feel of a game.</p>
+      <p>Obstacles, stylized challenge, a skill tree to unlock. The mechanism becomes: <em>unlock the focus buff, cool down the lag, level up the lookout.</em></p>
     </article>
 
     <article class="proj">
-      <span class="badge">High school &middot; ages 14&ndash;18</span>
-      <h3>Sim Dashboard &middot; first-person &ldquo;You&rdquo;</h3>
-      <p class="role">Translation logic: systems and metrics. Focus on optimization and stats.</p>
-      <p>Sliders, UI, instrumentation. The mechanism becomes a dashboard the viewer is operating: <em>calibrate the circadian timer</em>, <em>tune the alpha/theta ratio</em>, <em>watch the recovery curve</em>.</p>
+      <span class="badge">Older teens &amp; adults &middot; ages 14+</span>
+      <h3>First-person dashboard</h3>
+      <p class="role">What works at this age: numbers, sliders, optimization.</p>
+      <p>Instruments and UI. The viewer is operating the system from the inside: <em>calibrate the circadian timer, watch the recovery curve, tune the alpha-to-theta ratio.</em></p>
     </article>
   </div>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">Why this matters</span>
-  <h3>Most science content for kids dilutes the science. Most content for adults skips the audience.</h3>
-  <p>Edutainment for young children turns mechanism into spectacle and loses the actual claim. Long-form science podcasts assume an adult vocabulary, an adult attention budget, and adult prior knowledge. Younger audiences who could understand the science &mdash; if it were translated honestly &mdash; get either watered-down clich&eacute;s or nothing.</p>
-  <p>NeuroSense is the project I built to close that gap with a workflow rather than a guess. The protocol is the deliverable. If it works, it scales.</p>
+  <span class="section-label">Why I&rsquo;m making this</span>
+  <h3>Kids&rsquo; science usually loses the science.</h3>
+  <p>Most short videos for younger kids turn the mechanism into spectacle and lose the actual claim somewhere along the way. Most long-form science podcasts assume adult vocabulary, adult attention, and a lot of background you don&rsquo;t have at twelve. Kids who could understand the real thing &mdash; if someone translated it honestly &mdash; usually get watered-down clich&eacute;s or nothing.</p>
+  <p>NeuroSense is what I&rsquo;m trying to build to close that gap. If the process holds, one piece of research becomes four real videos, all different, all checkable.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">Roadmap</span>
-  <h3>From protocol to first episode.</h3>
+  <span class="section-label">What&rsquo;s next</span>
+  <h3>From plan to first episode.</h3>
   <div class="roadmap">
     <div class="road-step">
-      <div class="when">Phase 1 &middot; now</div>
-      <h4>Pilot transcript</h4>
-      <p style="margin:0;">First Huberman Lab transcript run through the full pipeline &mdash; all four scripts and the Source Log produced end to end.</p>
+      <div class="when">Now</div>
+      <h4>First transcript end to end</h4>
+      <p style="margin:0;">One Huberman Lab transcript taken all the way through &mdash; all four scripts and the source log produced from the same source.</p>
     </div>
     <div class="road-step">
-      <div class="when">Phase 2 &middot; next</div>
-      <h4>Visual identity</h4>
-      <p style="margin:0;">Lock the four character designs (Nori, Theo, Kai, &ldquo;You&rdquo;), the typography, the audio palette, and the on-screen-text style.</p>
+      <div class="when">Next</div>
+      <h4>Visual style</h4>
+      <p style="margin:0;">Settle the four characters (Nori, Theo, Kai, the first-person dashboard), typography, music palette, and the on-screen-text style.</p>
     </div>
     <div class="road-step">
-      <div class="when">Phase 3 &middot; launch</div>
+      <div class="when">Launch</div>
       <h4>First episode</h4>
-      <p style="margin:0;">Premiere across all four tiers simultaneously, with the Source Log live the same day.</p>
+      <p style="margin:0;">All four versions premiere the same day, with the source log live alongside.</p>
     </div>
   </div>
 </section>
