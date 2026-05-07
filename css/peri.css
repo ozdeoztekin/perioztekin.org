@@ -41,66 +41,6 @@
 .js .nav-links a:not(.nav-cta):hover { background: transparent; }
 .js .nav-links a:not(.nav-cta).active { background: transparent; }
 
-/* === Nav dropdown (Projects parent with A.R.A.I.A./NeuroCalm/NeuroSense children) === */
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown > .dropdown-toggle::after {
-  content: " \25BE";
-  font-size: .75em;
-  margin-left: .15em;
-  opacity: .8;
-}
-.nav-dropdown > .dropdown-menu {
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  min-width: 180px;
-  background: rgba(15, 37, 64, 0.96);
-  border: 1px solid rgba(255,255,255,.15);
-  border-radius: 8px;
-  padding: .35rem 0;
-  box-shadow: 0 12px 32px rgba(0,0,0,.4);
-  z-index: 100;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4px);
-  transition: opacity .15s, transform .15s, visibility 0s .15s;
-}
-.nav-dropdown:hover > .dropdown-menu,
-.nav-dropdown:focus-within > .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  transition: opacity .15s, transform .15s, visibility 0s 0s;
-}
-.nav-dropdown > .dropdown-menu a {
-  display: block;
-  padding: .5rem 1rem;
-  color: rgba(255,255,255,.92);
-  text-decoration: none;
-  font-size: .92rem;
-  white-space: nowrap;
-}
-.nav-dropdown > .dropdown-menu a:hover,
-.nav-dropdown > .dropdown-menu a.active {
-  background: rgba(126,232,222,.12);
-  color: var(--peri-mint);
-}
-/* Mobile: when hamburger is open, dropdown menu shows inline */
-@media (max-width: 760px) {
-  .nav-dropdown > .dropdown-menu {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0 0 0 1rem;
-    transition: none;
-  }
-  .nav-dropdown > .dropdown-toggle::after { content: ""; }
-}
-
 /* === Eyes mascot (cursor-tracking, animated via animate.js) === */
 .eyes-mascot {
   display: inline-flex;

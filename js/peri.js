@@ -38,7 +38,7 @@
     if (window.matchMedia('(max-width: 760px)').matches) return;
     var nav = document.getElementById('nav-links');
     if (!nav) return;
-    var items = Array.from(nav.querySelectorAll(':scope > a, :scope > .nav-dropdown > .dropdown-toggle'));
+    var items = Array.from(nav.querySelectorAll('a'));
     var active = items.find(function (a) { return a.classList.contains('active'); }) || items[0];
     if (!active) return;
 
