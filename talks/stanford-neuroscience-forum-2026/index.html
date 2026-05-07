@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6th Annual High School Neuroscience Forum &mdash; Stanford Medicine 2026 &middot; Peri Oztekin</title>
+  <meta name="description" content="Notes from the 6th Annual High School Neuroscience Virtual Forum hosted by Stanford Medicine on April 18, 2026 — keynotes by Dr. Frank Willett (BCI) and Dr. Tina Duong (digital biomarkers), plus international student research.">
+  <link rel="canonical" href="https://perioztekin.org/talks/stanford-neuroscience-forum-2026/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="6th Annual High School Neuroscience Forum &mdash; Stanford Medicine">
+  <meta property="og:description" content="Notes and synthesis from a Stanford Medicine high-school forum on brain-computer interfaces, digital biomarkers, and adolescent attention.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/peri.css">
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
+</head>
+<body>
+
+<header>
+<nav class="topnav" id="topnav">
+  <a class="brand" href="/">&#x1F9E0; Peri Oztekin</a>
+  <div class="nav-links" id="nav-links">
+    <a href="/">Home</a>
+    <a href="/academics/">Academics</a>
+    <a href="/projects/araia/">A.R.A.I.A.</a>
+    <a href="/projects/neurocalm/">NeuroCalm</a>
+    <a href="/neurosense/">NeuroSense</a>
+    <a href="/wellbeing/">Wellbeing</a>
+    <a href="/neurodivergent/">Neurodivergent</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact" class="nav-cta">Contact</a>
+  </div>
+  <a class="hamburger" href="javascript:void(0)" onclick="document.getElementById('nav-links').classList.toggle('open')">&#9776;</a>
+</nav>
+</header>
+
+<section class="peri-hero compact">
+  <div class="peri-hero-inner">
+    <span class="hero-tag">Talks &amp; forums &middot; participant</span>
+    <h1>6th Annual High School Neuroscience Virtual Forum.</h1>
+    <p class="lede">Stanford Medicine &middot; April 18, 2026 &middot; hosted by the Departments of Neurosurgery, Neurology &amp; Neurological Sciences, and Psychiatry &amp; Behavioral Sciences. Selective international high-school cohort. I attended as an invited participant.</p>
+  </div>
+  <div class="wave-bottom" aria-hidden="true">
+    <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,27 C360,54 1080,0 1440,27 L1440,54 L0,54 Z" fill="#f4f7f9"/>
+    </svg>
+  </div>
+</section>
+
+<main>
+<div class="container" style="margin-top: 2rem;">
+
+<!-- Faculty hosts -->
+<section class="deep-section">
+  <span class="section-label">The forum</span>
+  <h3>Hosts and speakers.</h3>
+  <p>The forum brings together international high-school students with Stanford faculty across three neuroscience departments. The 2026 program was anchored by two keynotes and four guest neuroscientists.</p>
+
+  <h4>Faculty hosts and introductions</h4>
+  <ul>
+    <li><strong>Dr. Michael Lim</strong> &mdash; Professor and Chair, Department of Neurosurgery; Stanford Medicine Endowed Chair of the Department of Neurosurgery</li>
+    <li><strong>Dr. Antonio Omuro</strong> &mdash; Chair, Department of Neurology and Neurological Sciences; Joseph D. Grant Professor and Professor of Neurology</li>
+    <li><strong>Dr. Victor G. Carri&oacute;n</strong> &mdash; The John A. Turner, M.D. Professor for Child and Adolescent Psychiatry; Vice-Chair, Department of Psychiatry &amp; Behavioral Sciences; Director, Stanford Early Life Stress and Resilience Program</li>
+  </ul>
+
+  <h4>Keynote speakers</h4>
+  <ul>
+    <li><strong>Dr. Frank Willett</strong> &mdash; Assistant Professor of Neurosurgery; Co-Director of the Neural Prosthetics Translational Laboratory (NPTL)</li>
+    <li><strong>Dr. Tina Duong</strong> &mdash; Department of Neurology and Neurological Sciences</li>
+  </ul>
+
+  <h4>Guest neuroscientists</h4>
+  <ul>
+    <li>Dr. Fred Lam</li>
+    <li>Dr. Maria Del Mar Sanchez</li>
+  </ul>
+</section>
+
+<!-- Keynote 1 -->
+<section class="deep-section">
+  <span class="section-label">Keynote 1 &middot; Dr. Frank Willett</span>
+  <h3>Brain-Computer Interfaces to Restore Communication.</h3>
+  <p>The driving question: when paralysis or disease severs the path from intent to speech, can we read the intent directly from motor cortex and route it to text or synthesized voice? Willett anchored the talk on a single number &mdash; <strong>words per minute</strong> &mdash; and walked the field's progress.</p>
+
+  <h4>The words-per-minute landscape</h4>
+  <ul>
+    <li>BCI Point-and-Click (Pandarinath 2017): ~10 wpm &mdash; the prior baseline</li>
+    <li>Handwriting BCI (Willett et al., <em>Nature</em> 2021): ~20 wpm</li>
+    <li>QWERTY typing (able-bodied baseline): ~50 wpm</li>
+    <li>Speech BCI (Willett, Kunz, Fan et al., <em>Nature</em> 2023): ~62 wpm at large vocabulary</li>
+    <li>Formal speech: ~120 wpm. Conversational speech: ~150 wpm</li>
+  </ul>
+
+  <h4>The architecture</h4>
+  <p>Microelectrode arrays in motor cortex record threshold-crossing features. A recurrent neural network (RNN) maps the time-series neural data to character probabilities (handwriting BCI) or phoneme probabilities (speech BCI). An online thresholding step gives a raw output stream; an offline Viterbi search combined with an English language model produces the final text. The same backbone, retargeted from characters to phonemes, is what made the speed jump from handwriting to speech possible.</p>
+
+  <h4>Performance</h4>
+  <ul>
+    <li>Handwriting: up to ~90 characters per minute on copy-typing tasks; character error rate near zero with the language-model post-processor</li>
+    <li>Speech: ~10% word error rate on a 50-word vocabulary, ~25% on a 125,000-word vocabulary &mdash; meaningful at conversational scale</li>
+    <li>Recent collaborator results (Card N. et al., <em>NEJM</em> 2024): doubled electrode count and improved real-time language model push performance closer to natural speech</li>
+  </ul>
+
+  <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--muted, #607080);"><em>Cortical regions involved: middle precentral gyrus (area 55b), ventral premotor cortex (6v), primary motor cortex (4).</em></p>
+</section>
+
+<!-- Keynote 2 -->
+<section class="deep-section">
+  <span class="section-label">Keynote 2 &middot; Dr. Tina Duong</span>
+  <h3>Digital biomarkers and clinical endpoints in neurology.</h3>
+  <p>Duong's framing question: <em>what are we actually measuring when we measure a disease?</em> The ICF model (International Classification of Functioning, Disability and Health) splits disease impact across three layers: body function (structure &amp; physiology), activity (what a person can do), and participation (life roles and daily living). Trials that fail often fail because they measured the wrong layer.</p>
+
+  <h4>Digital biomarkers in real environments</h4>
+  <p>Consumer-grade and research-grade wearables now capture body function and activity continuously, in the patient's real environment, instead of at a single clinic visit:</p>
+  <ul>
+    <li>ActiGraph &mdash; step count</li>
+    <li>Sysnav &mdash; gait velocity</li>
+    <li>OpenCap &mdash; joint angles from video</li>
+    <li>Wearable HR / SpO<sub>2</sub> &mdash; heart rate and oxygen saturation</li>
+  </ul>
+
+  <h4>Context of use (COU)</h4>
+  <p>The same biomarker plays different roles in different trials. The FDA/NIH BEST framework categorizes a biomarker's role as <em>monitoring, predictive, prognostic, primary efficacy,</em> or <em>secondary efficacy.</em> Patient-reported and functional clinical endpoints sit alongside these (e.g., SV95C wearable, PGI-C anchored MCID, ACTIVLIM-NMD PRO, DHT Fatigue Index).</p>
+</section>
+
+<!-- Student presentation 1 -->
+<section class="deep-section">
+  <span class="section-label">Student presentation</span>
+  <h3>Neuroethics of "Silent Notifications" &mdash; Gaurika &amp; Vedika Gautam (Delhi Private School, UAE, Grade 11).</h3>
+  <p>Subtitle: <em>How Silent Alerts Shape Teen Focus, Stress, and Control Over Attention.</em> Premise: <em>The smallest digital interruption may have the biggest cognitive cost.</em></p>
+
+  <h4>The five-stage neural cascade of a notification</h4>
+  <ol>
+    <li><strong>Notification cue</strong> &mdash; an external digital stimulus arrives</li>
+    <li><strong>Salience detection</strong> &mdash; anterior insula and dorsal anterior cingulate cortex (dACC) flag behavioral relevance and shift attention</li>
+    <li><strong>Reward motivation</strong> &mdash; ventral striatum / nucleus accumbens encode the anticipated social reward</li>
+    <li><strong>Affective amplification</strong> &mdash; amygdala increases emotional salience, urgency, and anxiety</li>
+    <li><strong>Top-down control (lagging)</strong> &mdash; prefrontal-parietal executive systems attempt regulation, but in adolescents these systems remain developmentally immature, so regulation arrives late</li>
+  </ol>
+
+  <h4>Empirical findings</h4>
+  <ul>
+    <li>Mean ~237 (SD 89) notifications per day &mdash; about <strong>39 per waking hour</strong></li>
+    <li>Focus drop after a notification: <strong>&minus;1.7 points</strong> on a 0&ndash;10 scale (<em>p</em> &lt; 0.001, <em>d</em> = 0.42); largest drop during study sessions (&minus;2.3 pts)</li>
+    <li>Stress increase after a notification: <strong>+1.9 points</strong> (<em>p</em> &lt; 0.001, <em>d</em> = 0.48); amplified in academic contexts (+2.6 pts)</li>
+    <li>Phone- or self-focused thoughts <strong>2.1&times; more likely</strong> in the 5-minute window after a social alert</li>
+    <li>Attention task: silent-condition accuracy 91% (RT 428ms) vs. interrupted 79% (RT 492ms); &minus;12% accuracy, +15% reaction time when interrupted</li>
+    <li>"Silent" notifications still triggered checking <strong>41%</strong> of the time</li>
+  </ul>
+
+  <h4>Headline survey numbers</h4>
+  <ul>
+    <li>69% of teens feel addicted to checking their phones</li>
+    <li>42% report anxiety from unread notifications</li>
+    <li>35% report shorter attention spans</li>
+    <li>23% report slower reaction times</li>
+    <li>~60&ndash;70% of Gen Z youth show moderate-to-severe nomophobia (anticipatory stress about being without the phone)</li>
+  </ul>
+
+  <p>Their conclusion: <em>notifications as pervasive neuromodulation of the adolescent brain.</em> Constant micro-notifications place adolescents in an unusually dense environment of digital interruptions that subtly but persistently erode focus, raise stress, and shift attention toward self-focused and phone-focused thought.</p>
+</section>
+
+<!-- Student presentation 2 -->
+<section class="deep-section">
+  <span class="section-label">Student presentation</span>
+  <h3>Spatial mapping of white matter injury &mdash; Amanda Chen, Keira Wong, et al. (Stanford Medicine, with PVA + CIRM).</h3>
+  <p>The question: after cervical spinal cord injury, why do similarly-sized lesions produce very different functional outcomes? Hypothesis: location matters more than size. The team built a probability map of region-of-interest damage across animals against a standard cervical spinal cord atlas.</p>
+
+  <h4>Findings</h4>
+  <ul>
+    <li>Lesion <em>area</em> showed weak correlation with behavioral outcome scores</li>
+    <li>Probability mapping revealed two consistent damage patterns: the <strong>lateral funiculus</strong> (carrying major motor and sensory tracts) and the <strong>ventral gray matter</strong> (motoneuron region)</li>
+    <li>Functional outcome tracks <em>where</em> the damage is, not <em>how much</em> damage there is</li>
+  </ul>
+
+  <p>The clinical implication: imaging-based prognosis after SCI should weight tract involvement, not just lesion size. The same logic carries to aphasia &mdash; outcomes after stroke depend on which language pathway was damaged, not just stroke volume.</p>
+</section>
+
+<!-- Student presentation 3 -->
+<section class="deep-section">
+  <span class="section-label">Student presentation</span>
+  <h3>Essencia &mdash; R&uuml;meysa Cennet Ocak.</h3>
+  <p>A subscription-free EEG software platform: a researcher-facing GUI for real-time visualization and configuration, plus a programmatic API for custom workflows, automation, and advanced analytics. Targets 128-electrode EEG with reported 98% accuracy via an upscaling pipeline. The team explicitly disclosed a current limitation &mdash; the prototype hardware does not yet integrate a PCB, so signal noise floor is higher than clinical-grade devices &mdash; an honest framing worth modeling.</p>
+</section>
+
+<!-- Cross-cutting takeaways -->
+<section class="deep-section">
+  <span class="section-label">What I took from the day</span>
+  <h3>Cross-cutting themes.</h3>
+  <ul>
+    <li><strong>Source-locked claims.</strong> Every faculty and student speaker anchored their work to specific publications (Pandarinath 2017, Willett 2021/2023, Card 2024, the FDA/NIH BEST framework, peer-reviewed effect sizes for the notification study). This is the bar for credible neuroscience communication.</li>
+    <li><strong>Anatomical specificity does the work.</strong> Willett targets specific cortical areas (55b, 6v, 4). Chen identifies specific tracts (lateral funiculus, ventral gray matter). The Gautams trace a specific circuit (insula &rarr; ventral striatum &rarr; amygdala &rarr; prefrontal). "The brain" is too coarse a unit to think with.</li>
+    <li><strong>Adolescence is a sensitive window.</strong> What the developing brain is exposed to during plasticity-rich years shapes adult neural architecture, not just current behavior. This is the scientific basis for taking teen mental health seriously.</li>
+    <li><strong>The same architecture keeps reappearing.</strong> Noisy fast signal &rarr; feature extraction &rarr; sequence model &rarr; language/context model &rarr; structured output. Willett's BCI, Essencia's EEG pipeline, and any modern speech-recognition system all share this shape.</li>
+    <li><strong>Translation matters as much as discovery.</strong> Every speaker had a concrete framework for moving findings from lab to use &mdash; via clinical endpoints, design guidelines, or device platforms.</li>
+  </ul>
+</section>
+
+<!-- Connection to my work -->
+<section class="deep-section">
+  <span class="section-label">Connection to my work</span>
+  <h3>How this changes what I'm building.</h3>
+  <ul>
+    <li><strong>A.R.A.I.A.</strong> sits downstream of Willett's BCI on the same recovery continuum: BCIs restore raw output, MIT-style aphasia rehabilitation rebuilds language production from intact networks. Future framing of A.R.A.I.A. should explicitly place it on this continuum and structure outcomes by ICF layer.</li>
+    <li><strong>NeuroCalm</strong> is naturally an "activity layer" intervention in Duong's vocabulary: it measures EEG (body function) but intervenes to extend the window of self-regulation (activity capability). Essencia is a candidate next-tier hardware platform if the project ever scales beyond single-channel consumer EEG.</li>
+    <li><strong>NeuroSense</strong> already embodies the Trust Layer principle modeled across the forum: every claim traces to a verbatim primary source. The Gautams' five-stage notification cascade is a strong candidate for an early NeuroSense episode &mdash; it's source-locked, mechanistically clear, and immediately practical for teen viewers.</li>
+    <li><strong>Wellbeing page on this site</strong> will be updated with the Gautam findings: 39 notifications per waking hour, 1.7-pt focus drop, 1.9-pt stress rise, 2.1&times; thought-shift toward self/phone post-alert.</li>
+  </ul>
+</section>
+
+<!-- Reading list -->
+<section class="deep-section">
+  <span class="section-label">My reading list from this forum</span>
+  <h3>Primary sources to follow up.</h3>
+  <ol>
+    <li>Pandarinath et al., "High performance communication by people with paralysis using an intracortical brain-computer interface," <em>eLife</em> 2017</li>
+    <li>Willett FR et al., "High-performance brain-to-text communication via handwriting," <em>Nature</em> 2021</li>
+    <li>Willett FR, Kunz E, Fan C et al., "A high-performance speech neuroprosthesis," <em>Nature</em> 2023</li>
+    <li>Card N. et al., "An accurate and rapidly calibrating speech neuroprosthesis," <em>NEJM</em> 2024</li>
+    <li>FDA-NIH Biomarker Working Group &mdash; BEST (Biomarkers, EndpointS, and other Tools) Resource</li>
+    <li>WHO ICF (International Classification of Functioning) overview</li>
+  </ol>
+</section>
+
+<section style="text-align: center; padding: 2rem 0 3rem;">
+  <a class="btn btn-outline" style="border-color:var(--peri-purple); color:var(--peri-purple);" href="/">&larr; Back to home</a>
+</section>
+
+</div>
+</main>
+
+<footer>
+<div class="footer-inner">
+  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
+  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
+</div>
+<div class="footer-bottom">
+  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
+</div>
+</footer>
+
+<script src="/js/animate.js"></script>
+<script src="/js/peri.js"></script>
+</body>
+</html>
