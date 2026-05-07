@@ -30,7 +30,6 @@
   <div class="nav-links" id="nav-links">
     <a href="/" class="active">Home</a>
     <a href="/academics/">Academics</a>
-    <a href="/impact/">Impact</a>
     <a href="/projects/araia/">A.R.A.I.A.</a>
     <a href="/projects/neurocalm/">NeuroCalm</a>
     <a href="/neurosense/">NeuroSense</a>
@@ -81,9 +80,6 @@
     </svg>
   </div>
 </section>
-
-<!-- LIVE IMPACT WIDGET (data-driven from /data/metrics.json) -->
-<div class="home-mini-impact" id="home-mini-impact"></div>
 
 <!-- HIGHLIGHTS — impossible to miss -->
 <div class="highlight-strip">
@@ -222,6 +218,24 @@
 
 <hr class="divider">
 
+<!-- NEWSLETTER -->
+<a id="newsletter"></a>
+<section>
+  <div class="newsletter-card">
+    <span class="section-label">Newsletter</span>
+    <h2>Updates from me, sent occasionally.</h2>
+    <p>When NeuroSense launches, when a project ships, when a paper I read changes how I think about the brain. No spam, no algorithms, just notes from a high-school student doing the work.</p>
+    <form class="newsletter-form" action="https://buttondown.email/api/emails/embed-subscribe/perioztekin" method="post" target="popupwindow">
+      <label for="bd-email" style="position:absolute;left:-9999px;">Email</label>
+      <input type="email" id="bd-email" name="email" placeholder="your@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="newsletter-note">Powered by Buttondown &middot; unsubscribe anytime.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
 <!-- CONTACT -->
 <a id="contact"></a>
 <section>
@@ -249,6 +263,5 @@
 <script src="/js/animate.js"></script>
 <script src="/js/tip.js"></script>
 <script src="/js/peri.js"></script>
-<script src="/js/impact.js"></script>
 </body>
 </html>

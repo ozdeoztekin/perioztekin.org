@@ -298,6 +298,39 @@ pre.code .k { color: #e9c46a; }
 .note-box { background: #f4f7f9; border: 1px solid #dde4ec; border-radius: 8px; padding: 1rem 1.25rem; margin: 1.5rem 0; font-size: .92rem; color: var(--muted, #607080); }
 .note-box strong { color: var(--navy, #1b3a5c); }
 
+/* === Newsletter card === */
+.newsletter-card {
+  background: linear-gradient(160deg, #fff 0%, #f6f3fc 100%);
+  border: 1px solid #e3dcf3;
+  border-radius: 14px;
+  padding: 2rem 2.25rem;
+  margin: 2rem 0;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(108,71,182,.08);
+}
+.newsletter-card h2 { color: var(--peri-purple-deep); margin: .5rem 0 .75rem; font-size: 1.6rem; }
+.newsletter-card p { color: var(--text, #2c3e50); max-width: 560px; margin: 0 auto 1.25rem; }
+.newsletter-form { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+.newsletter-form input[type="email"] {
+  flex: 1; min-width: 240px; padding: .7rem 1rem;
+  border: 1px solid #d4c8e8; border-radius: 6px;
+  font-size: 1rem; font-family: inherit; color: var(--text, #2c3e50);
+  background: #fff;
+  transition: border-color .15s, box-shadow .15s;
+}
+.newsletter-form input[type="email"]:focus {
+  outline: none; border-color: var(--peri-purple);
+  box-shadow: 0 0 0 3px rgba(108,71,182,.15);
+}
+.newsletter-form button {
+  padding: .7rem 1.5rem; border: none; border-radius: 6px;
+  background: var(--peri-purple); color: #fff;
+  font-size: 1rem; font-weight: 700; cursor: pointer;
+  transition: background .15s;
+}
+.newsletter-form button:hover { background: var(--peri-purple-deep); }
+.newsletter-note { font-size: .8rem; color: var(--muted, #607080); margin-top: 1rem !important; }
+
 /* === Impact / metrics dashboard === */
 .impact-headline {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
