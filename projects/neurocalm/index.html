@@ -39,7 +39,7 @@
   <div class="peri-hero-inner">
     <span class="hero-tag">Independent research concept</span>
     <h1>NeuroCalm.</h1>
-    <p class="lede">A wearable that listens to alpha and theta rhythms and gives the brain a signal &mdash; a calming light, a gentle vibration &mdash; before sensory overload becomes crisis.</p>
+    <p class="lede">A wearable that listens to alpha and theta rhythms and gives the brain a signal, a calming light, a gentle vibration, before sensory overload becomes crisis.</p>
   </div>
   <div class="wave-bottom" aria-hidden="true">
     <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,23 +54,23 @@
 <section class="deep-section">
   <span class="section-label">The need</span>
   <h3>A lot of people who are overwhelmed can&rsquo;t put it into words while it&rsquo;s happening.</h3>
-  <p>Sensory overload usually builds before anyone can name it. By the time someone can say &ldquo;this is too much,&rdquo; the chance to do anything calming has often already passed. NeuroCalm is meant to read what&rsquo;s happening underneath the experience &mdash; in the brainwaves &mdash; and step in early with something quiet, before things spiral.</p>
-  <p>The idea I&rsquo;m testing: if a headband watches the EEG bands that track stress and attention, and gives a small, optional cue when those bands shift, it might give someone a few extra seconds &mdash; the window where calming yourself down is still possible.</p>
+  <p>Sensory overload usually builds before anyone can name it. By the time someone can say &ldquo;this is too much,&rdquo; the chance to do anything calming has often already passed. NeuroCalm is meant to read what&rsquo;s happening underneath the experience, in the brainwaves, and step in early with something quiet, before things spiral.</p>
+  <p>The idea I&rsquo;m testing: if a headband watches the EEG bands that track stress and attention, and gives a small, optional cue when those bands shift, it might give someone a few extra seconds, the window where calming yourself down is still possible.</p>
 </section>
 
 <section class="deep-section">
   <span class="section-label">The science</span>
   <h3>Why brainwaves?</h3>
   <p>Autistic individuals frequently show altered alpha (8&ndash;12 Hz) and theta (4&ndash;7 Hz) rhythms. Lower alpha tracks reduced calm and focus; elevated theta tracks inattention, stress, and sensory overload. These bands can be non-invasively monitored using consumer-grade EEG.</p>
-  <p>Neurofeedback &mdash; training individuals to regulate brainwave activity through real-time cues &mdash; has been studied in autism for decades. The evidence is genuinely mixed: some protocols show meaningful gains in attention, social function, and anxiety; other reviews argue methodological weaknesses leave the picture unsettled. NeuroCalm sits honestly inside that controversy: a support tool, not a treatment, with its limitations on the box.</p>
+  <p>Neurofeedback, training individuals to regulate brainwave activity through real-time cues, has been studied in autism for decades. The evidence is genuinely mixed: some protocols show meaningful gains in attention, social function, and anxiety; other reviews argue methodological weaknesses leave the picture unsettled. NeuroCalm sits honestly inside that controversy: a support tool, not a treatment, with its limitations on the box.</p>
 
   <h4>Key literature consulted during design:</h4>
   <ul>
-    <li><strong>Coben, Linden &amp; Myers (2010)</strong> &mdash; review of neurofeedback in ASD; reports reduction in slow-wave activity and gains in focus and behavior.</li>
-    <li><strong>Kouijzer et al. (2009)</strong> &mdash; SMR enhancement and theta inhibition over 40&ndash;100 sessions improved executive function and reduced anxiety.</li>
-    <li><strong>Thompson et al. (2010)</strong> &mdash; brainwave training increased frontal alpha power, supporting calmer states in autistic participants.</li>
-    <li><strong>Cowan &amp; Markham (1994)</strong> &mdash; case study with 21 sessions; gains maintained at 2-year follow-up.</li>
-    <li><strong>ASAT (2017)</strong> &mdash; the contrary view: insufficient evidence to recommend neurofeedback as a treatment in autism. Cited deliberately.</li>
+    <li><strong>Coben, Linden &amp; Myers (2010)</strong>, review of neurofeedback in ASD; reports reduction in slow-wave activity and gains in focus and behavior.</li>
+    <li><strong>Kouijzer et al. (2009)</strong>, SMR enhancement and theta inhibition over 40&ndash;100 sessions improved executive function and reduced anxiety.</li>
+    <li><strong>Thompson et al. (2010)</strong>, brainwave training increased frontal alpha power, supporting calmer states in autistic participants.</li>
+    <li><strong>Cowan &amp; Markham (1994)</strong>, case study with 21 sessions; gains maintained at 2-year follow-up.</li>
+    <li><strong>ASAT (2017)</strong>, the contrary view: insufficient evidence to recommend neurofeedback as a treatment in autism. Cited deliberately.</li>
   </ul>
 </section>
 
@@ -78,14 +78,14 @@
   <span class="section-label">The build</span>
   <h3>Hardware specification.</h3>
   <ul>
-    <li><strong>EEG input:</strong> NeuroSky MindWave Mobile 2 (single-channel, 12-bit, 512 Hz, 3&ndash;100 Hz) &mdash; or simulated input from a Python harness for development.</li>
+    <li><strong>EEG input:</strong> NeuroSky MindWave Mobile 2 (single-channel, 12-bit, 512 Hz, 3&ndash;100 Hz), or simulated input from a Python harness for development.</li>
     <li><strong>Microcontroller:</strong> Arduino UNO (or ESP32 / Micro:bit), Bluetooth-paired to the EEG headset.</li>
     <li><strong>Feedback outputs:</strong> programmable LED for visual cueing, mini vibration motor for haptic feedback, optional buzzer for low-volume auditory tones. User selects which channels are enabled.</li>
-    <li><strong>Form factor:</strong> soft fabric headband with foam-padded electrode mount and Velcro closure &mdash; sized for sensory tolerance, not data quality.</li>
+    <li><strong>Form factor:</strong> soft fabric headband with foam-padded electrode mount and Velcro closure, sized for sensory tolerance, not data quality.</li>
   </ul>
 
   <h4>Detection logic.</h4>
-  <p>The firmware watches the alpha/theta ratio against a personalized threshold. When theta rises or alpha falls beyond the threshold, a calming routine fires: a slow LED fade-up, a brief haptic pulse, optionally a tone. The intervention is designed to be noticeable but not commanding &mdash; a tap on the shoulder, not an alarm.</p>
+  <p>The firmware watches the alpha/theta ratio against a personalized threshold. When theta rises or alpha falls beyond the threshold, a calming routine fires: a slow LED fade-up, a brief haptic pulse, optionally a tone. The intervention is designed to be noticeable but not commanding, a tap on the shoulder, not an alarm.</p>
 </section>
 
 <section class="deep-section">
@@ -119,7 +119,7 @@
 <section class="deep-section">
   <span class="section-label">Limits</span>
   <h3>What this is, and what it isn&rsquo;t.</h3>
-  <p>NeuroCalm is a prototype, not a medical device. It does not diagnose, treat, or cure anything. The research on neurofeedback for autism is real but unsettled, and a working version of NeuroCalm would need real testing with real users over time before anyone could honestly say it helps. I want to be clear about that &mdash; this is a support tool that might be useful, not a therapy. The limits should be on the box.</p>
+  <p>NeuroCalm is a prototype, not a medical device. It does not diagnose, treat, or cure anything. The research on neurofeedback for autism is real but unsettled, and a working version of NeuroCalm would need real testing with real users over time before anyone could honestly say it helps. I want to be clear about that, this is a support tool that might be useful, not a therapy. The limits should be on the box.</p>
 </section>
 
 <section class="deep-section">
