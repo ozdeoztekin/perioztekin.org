@@ -7,3 +7,9 @@ Thumbs.db
 .vscode/
 .idea/
 node_modules/
+
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock

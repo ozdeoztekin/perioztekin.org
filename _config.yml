@@ -1,0 +1,32 @@
+# Jekyll config for perioztekin.org.
+#
+# This enables Jekyll on GitHub Pages so .md pages can be authored as
+# plain markdown. Existing .html pages without front matter are passed
+# through unchanged.
+
+title: Peri Oztekin
+description: Aspiring neuroscientist, researcher, and builder.
+url: https://perioztekin.org
+
+# Use directory-based pretty URLs (e.g., /wellbeing/ -> wellbeing/index.html).
+permalink: pretty
+
+# Don't enable any plugins beyond what GitHub Pages allows by default.
+# We have our own sitemap.xml; do not let jekyll-sitemap overwrite it.
+plugins: []
+
+# Files and folders Jekyll should leave alone or skip from the output site.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - .gitignore
+  - partials.txt
+
+# Markdown processor.
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
