@@ -13,6 +13,13 @@
     var lineEl = document.querySelector('.brand-choice-line');
     var brainEl = document.getElementById('brand-brain-image');
     if (!wordEl || !lineEl || !brainEl) return;
+    var prefixEl = lineEl.querySelector('.brand-choice-prefix');
+    var suffixEl = lineEl.querySelector('.brand-choice-suffix');
+    var brainWrap = lineEl.querySelector('.brand-brain');
+    [prefixEl, wordEl, suffixEl, brainWrap].forEach(function (node) {
+      if (node) node.setAttribute('aria-hidden', 'true');
+    });
+    lineEl.setAttribute('role', 'img');
 
     var words = (wordEl.dataset.words || 'Mind,Thoughts,Feelings,Actions,Behavior')
       .split(',')
@@ -61,6 +68,7 @@
       var key = word.toLowerCase();
       lineEl.classList.remove('mind', 'thoughts', 'feelings', 'actions', 'behavior');
       lineEl.classList.add(key);
+      lineEl.setAttribute('aria-label', 'Your ' + word + ' Your Power');
       if (imageMap[key]) {
         brainEl.innerHTML = imageMap[key];
       }
@@ -86,7 +94,39 @@
     setTimeout(tick, 1200);
   })();
 
-  // === 2. Hero typing rotator ===
+  // === 2. Mobile nav toggle ===
+  (function mobileNav() {
+    var nav = document.getElementById('nav-links');
+    var button = document.querySelector('.hamburger');
+    if (!nav || !button) return;
+
+    function syncState(open) {
+      button.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    syncState(nav.classList.contains('open'));
+
+    button.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      syncState(open);
+    });
+
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (!window.matchMedia('(max-width: 760px)').matches) return;
+        nav.classList.remove('open');
+        syncState(false);
+      });
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.matchMedia('(max-width: 760px)').matches) return;
+      nav.classList.remove('open');
+      syncState(false);
+    });
+  })();
+
+  // === 3. Hero typing rotator ===
   (function rotator() {
     var el = document.getElementById('peri-rotator');
     if (!el) return;
@@ -112,7 +152,7 @@
     setTimeout(tick, 600);
   })();
 
-  // === 3. Nav pill slider ===
+  // === 4. Nav pill slider ===
   (function navPill() {
     if (window.matchMedia('(max-width: 760px)').matches) return;
     var nav = document.getElementById('nav-links');
@@ -148,7 +188,7 @@
     nav.addEventListener('mouseleave', function () { moveTo(getPos(active)); });
   })();
 
-  // === 4. Reveal on scroll for Peri-specific cards ===
+  // === 5. Reveal on scroll for Peri-specific cards ===
   (function reveal() {
     var sels = '.proj, .skill-card, .cert, .road-step, .stat-card, .post-card, .timeline-row, .deep-section';
     var nodes = document.querySelectorAll(sels);
@@ -168,7 +208,7 @@
     nodes.forEach(function (n) { io.observe(n); });
   })();
 
-  // === 5. EEG line draw-in ===
+  // === 6. EEG line draw-in ===
   (function eegDraw() {
     var path = document.querySelector('.eeg path');
     if (!path) return;

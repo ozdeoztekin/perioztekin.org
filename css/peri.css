@@ -97,6 +97,18 @@
 .brand-choice-line.actions .brand-brain { filter: drop-shadow(0 0 7px rgba(42,157,143,.3)); }
 .brand-choice-line.behavior .brand-brain { filter: drop-shadow(0 0 7px rgba(233,196,106,.3)); }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* === Eyes mascot (cursor-tracking, animated via animate.js) === */
 .hero-heading-row {
   display: flex;
@@ -129,6 +141,12 @@
   min-width: 0;
 }
 .eyes-mascot svg { display: block; }
+.hamburger {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  line-height: 1;
+}
 
 /* === Hero === */
 .peri-hero {
