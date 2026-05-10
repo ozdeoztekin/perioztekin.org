@@ -139,6 +139,7 @@
   margin-bottom: 0;
   flex: 0 0 auto;
   min-width: 0;
+  transform: translateY(-2px);
 }
 .eyes-mascot svg { display: block; }
 .hamburger {
