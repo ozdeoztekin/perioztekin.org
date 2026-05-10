@@ -90,7 +90,6 @@
   color: var(--peri-mint);
   font-weight: 700;
   display: inline-block;
-  min-width: 8.4ch;
 }
 .brand-choice-line.mind .brand-brain { filter: drop-shadow(0 0 7px rgba(126,232,222,.32)); }
 .brand-choice-line.thoughts .brand-brain { filter: drop-shadow(0 0 7px rgba(108,71,182,.32)); }
@@ -141,7 +140,6 @@
   .peri-hero p.lede { font-size: 1.02rem; }
   .brand-stack { gap: .05rem; }
   .brand-choice-line { font-size: .71rem; }
-  #brand-choice-word { min-width: 0; }
 }
 .peri-hero.compact { padding: 3.5rem 1.5rem 6rem; }
 .peri-hero.compact h1 { font-size: 2.4rem; }
