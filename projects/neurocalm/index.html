@@ -46,7 +46,7 @@
 <section class="peri-hero compact">
   <div class="peri-hero-inner">
     <span class="hero-tag">Independent research concept</span>
-    <h1>NeuroCalm.</h1>
+    <h1>NeuroCalm</h1>
     <p class="lede">A wearable that listens to alpha and theta rhythms and gives the brain a signal, a calming light, a gentle vibration, before sensory overload becomes crisis.</p>
   </div>
   <div class="wave-bottom" aria-hidden="true">
@@ -61,7 +61,7 @@
 
 <section class="deep-section">
   <span class="section-label">The need</span>
-  <h3>A lot of people who are overwhelmed can&rsquo;t put it into words while it&rsquo;s happening.</h3>
+  <h3>A lot of people who are overwhelmed can&rsquo;t put it into words while it&rsquo;s happening</h3>
   <p>Sensory overload usually builds before anyone can name it. By the time someone can say &ldquo;this is too much,&rdquo; the chance to do anything calming has often already passed. NeuroCalm is meant to read what&rsquo;s happening underneath the experience, in the brainwaves, and step in early with something quiet, before things spiral.</p>
   <p>The idea I&rsquo;m testing: if a headband watches the EEG bands that track stress and attention, and gives a small, optional cue when those bands shift, it might give someone a few extra seconds, the window where calming yourself down is still possible.</p>
 </section>
@@ -84,7 +84,7 @@
 
 <section class="deep-section">
   <span class="section-label">The build</span>
-  <h3>Hardware specification.</h3>
+  <h3>Hardware specification</h3>
   <ul>
     <li><strong>EEG input:</strong> NeuroSky MindWave Mobile 2 (single-channel, 12-bit, 512 Hz, 3&ndash;100 Hz), or simulated input from a Python harness for development.</li>
     <li><strong>Microcontroller:</strong> Arduino UNO (or ESP32 / Micro:bit), Bluetooth-paired to the EEG headset.</li>
@@ -98,7 +98,7 @@
 
 <section class="deep-section">
   <span class="section-label">The firmware</span>
-  <h3>Excerpt from the prototype Arduino sketch.</h3>
+  <h3>Excerpt from the prototype Arduino sketch</h3>
   <p>The prototype runs on simulated EEG by default so the feedback loop can be tested without hardware, then switches to real input when the MindWave is paired.</p>
 <pre class="code">
 <span class="c">// NeuroCalm prototype loop (excerpt)</span>
@@ -126,13 +126,13 @@
 
 <section class="deep-section">
   <span class="section-label">Limits</span>
-  <h3>What this is, and what it isn&rsquo;t.</h3>
+  <h3>What this is, and what it isn&rsquo;t</h3>
   <p>NeuroCalm is a prototype, not a medical device. It does not diagnose, treat, or cure anything. The research on neurofeedback for autism is real but unsettled, and a working version of NeuroCalm would need real testing with real users over time before anyone could honestly say it helps. I want to be clear about that, this is a support tool that might be useful, not a therapy. The limits should be on the box.</p>
 </section>
 
 <section class="deep-section">
   <span class="section-label">Where this could go</span>
-  <h3>From concept to a real headband.</h3>
+  <h3>From concept to a real headband</h3>
   <ul>
     <li>Build the physical headband and test fit and comfort across multiple wear sessions.</li>
     <li>Replace simulated EEG with live MindWave input; calibrate thresholds per-user via baseline session.</li>
