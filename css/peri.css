@@ -146,10 +146,10 @@
 .peri-hero.compact p.lede { font-size: 1.05rem; margin-bottom: 0; }
 
 /* === Hero with portrait variant === */
-.peri-hero.with-portrait .peri-hero-inner { display: grid; grid-template-columns: minmax(0,1fr) 220px; gap: 2.25rem; align-items: center; text-align: left; max-width: 1000px; }
-.peri-hero.with-portrait h1 { text-align: left; }
-.peri-hero.with-portrait p.lede { margin-left: 0; margin-right: 0; }
-.peri-hero.with-portrait .hero-btns { justify-content: flex-start; }
+.peri-hero.with-portrait .peri-hero-inner { display: grid; grid-template-columns: 1fr; gap: 1.6rem; align-items: center; text-align: center; max-width: 860px; }
+.peri-hero.with-portrait h1 { text-align: center; }
+.peri-hero.with-portrait p.lede { margin-left: auto; margin-right: auto; max-width: 760px; }
+.peri-hero.with-portrait .hero-btns { justify-content: center; }
 .peri-hero.with-portrait .hero-tag { display: inline-block; }
 .portrait-wrap {
   width: 220px; height: 220px;
@@ -157,6 +157,7 @@
   border: 4px solid rgba(126,232,222,.45);
   box-shadow: 0 16px 48px rgba(0,0,0,.35);
   background: rgba(255,255,255,.05);
+  margin: 0 auto;
 }
 .portrait-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
 @media (max-width: 760px) {
