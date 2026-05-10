@@ -41,6 +41,63 @@
 .js .nav-links a:not(.nav-cta):hover { background: transparent; }
 .js .nav-links a:not(.nav-cta).active { background: transparent; }
 
+/* === Brand stack under Peri Oztekin in the sticky header === */
+.brand-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .16rem;
+  margin-right: auto;
+  min-width: 0;
+}
+.topnav .brand {
+  margin-right: 0;
+  line-height: 1.05;
+}
+.brand-choice-line {
+  display: flex;
+  align-items: center;
+  gap: .05rem;
+  color: rgba(255,255,255,.86);
+  font-size: .8rem;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+.brand-brain {
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: .32rem;
+  flex: 0 0 2.2rem;
+  transform: translateY(-.01rem);
+  transition: filter .22s ease, transform .22s ease;
+}
+.brand-brain-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: visible;
+  transition: opacity .22s ease, transform .22s ease;
+}
+.brand-choice-prefix,
+.brand-choice-suffix {
+  color: #fff;
+  letter-spacing: .01em;
+  font-weight: 700;
+}
+#brand-choice-word {
+  color: var(--peri-mint);
+  font-weight: 700;
+  display: inline-block;
+  min-width: 8.4ch;
+}
+.brand-choice-line.mind .brand-brain { filter: drop-shadow(0 0 7px rgba(126,232,222,.32)); }
+.brand-choice-line.thoughts .brand-brain { filter: drop-shadow(0 0 7px rgba(108,71,182,.32)); }
+.brand-choice-line.feelings .brand-brain { filter: drop-shadow(0 0 7px rgba(231,111,81,.3)); }
+.brand-choice-line.actions .brand-brain { filter: drop-shadow(0 0 7px rgba(42,157,143,.3)); }
+.brand-choice-line.behavior .brand-brain { filter: drop-shadow(0 0 7px rgba(233,196,106,.3)); }
+
 /* === Eyes mascot (cursor-tracking, animated via animate.js) === */
 .eyes-mascot {
   display: inline-flex;
@@ -82,6 +139,9 @@
   .peri-hero { padding: 3.5rem 1.25rem 7rem; }
   .peri-hero h1 { font-size: 2.1rem; }
   .peri-hero p.lede { font-size: 1.02rem; }
+  .brand-stack { gap: .05rem; }
+  .brand-choice-line { font-size: .71rem; }
+  #brand-choice-word { min-width: 0; }
 }
 .peri-hero.compact { padding: 3.5rem 1.5rem 6rem; }
 .peri-hero.compact h1 { font-size: 2.4rem; }
