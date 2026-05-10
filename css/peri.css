@@ -98,6 +98,17 @@
 .brand-choice-line.behavior .brand-brain { filter: drop-shadow(0 0 7px rgba(233,196,106,.3)); }
 
 /* === Eyes mascot (cursor-tracking, animated via animate.js) === */
+.hero-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-heading-row h1 {
+  margin-bottom: 0;
+}
+
 .eyes-mascot {
   display: inline-flex;
   align-items: center;
@@ -110,6 +121,9 @@
   font-size: .85rem;
   color: rgba(255,255,255,.92);
   letter-spacing: .04em;
+}
+.hero-heading-row .eyes-mascot {
+  margin-bottom: 0;
 }
 .eyes-mascot svg { display: block; }
 
@@ -140,6 +154,7 @@
   .peri-hero p.lede { font-size: 1.02rem; }
   .brand-stack { gap: .05rem; }
   .brand-choice-line { font-size: .71rem; }
+  .hero-heading-row { justify-content: center; }
 }
 .peri-hero.compact { padding: 3.5rem 1.5rem 6rem; }
 .peri-hero.compact h1 { font-size: 2.4rem; }
