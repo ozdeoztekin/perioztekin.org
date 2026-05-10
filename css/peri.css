@@ -112,7 +112,7 @@
 /* === Eyes mascot (cursor-tracking, animated via animate.js) === */
 .hero-heading-row {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: .8rem;
   flex-wrap: nowrap;
 }
@@ -139,7 +139,6 @@
   margin-bottom: 0;
   flex: 0 0 auto;
   min-width: 0;
-  transform: translateY(-2px);
 }
 .eyes-mascot svg { display: block; }
 .hamburger {
