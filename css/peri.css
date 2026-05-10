@@ -175,7 +175,12 @@
   .peri-hero p.lede { font-size: 1.02rem; }
   .brand-stack { gap: .05rem; }
   .brand-choice-line { font-size: .71rem; }
-  .hero-heading-row { justify-content: center; flex-wrap: wrap; }
+  .hero-heading-row { justify-content: center; flex-wrap: nowrap; gap: .55rem; }
+  .hero-heading-row .eyes-mascot { gap: .65rem; padding: .42rem .75rem .42rem .58rem; font-size: .78rem; }
+  .hero-heading-row .eyes-mascot svg { width: 76px !important; height: 34px !important; }
+}
+@media (max-width: 560px) {
+  .hero-heading-row { flex-wrap: wrap; }
 }
 .peri-hero.compact { padding: 3.5rem 1.5rem 6rem; }
 .peri-hero.compact h1 { font-size: 2.4rem; }
