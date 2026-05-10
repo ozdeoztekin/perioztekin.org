@@ -144,11 +144,6 @@
 .peri-hero.compact { padding: 3.5rem 1.5rem 6rem; }
 .peri-hero.compact h1 { font-size: 2.4rem; }
 .peri-hero.compact p.lede { font-size: 1.05rem; margin-bottom: 0; }
-.peri-hero.compact .peri-hero-inner { max-width: 1000px; text-align: left; }
-.peri-hero.compact h1 { text-align: left; }
-.peri-hero.compact p.lede { margin-left: 0; margin-right: 0; }
-.peri-hero.compact .hero-btns { justify-content: flex-start; }
-.peri-hero.compact .hero-tag { display: inline-block; }
 
 /* === Hero with portrait variant === */
 .peri-hero.with-portrait .peri-hero-inner { display: grid; grid-template-columns: minmax(0,1fr) 220px; gap: 2.25rem; align-items: center; text-align: left; max-width: 1000px; }
@@ -169,10 +164,6 @@
   .peri-hero.with-portrait h1 { text-align: center; }
   .peri-hero.with-portrait .hero-btns { justify-content: center; }
   .portrait-wrap { width: 160px; height: 160px; margin: 0 auto; }
-  .peri-hero.compact .peri-hero-inner { text-align: center; }
-  .peri-hero.compact h1 { text-align: center; }
-  .peri-hero.compact p.lede { margin-left: auto; margin-right: auto; }
-  .peri-hero.compact .hero-btns { justify-content: center; }
 }
 
 /* === Highlight strip (above the fold, post-hero) === */
