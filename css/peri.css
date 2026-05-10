@@ -100,7 +100,7 @@
 /* === Eyes mascot (cursor-tracking, animated via animate.js) === */
 .hero-heading-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -124,6 +124,7 @@
 }
 .hero-heading-row .eyes-mascot {
   margin-bottom: 0;
+  transform: translateY(-0.12rem);
 }
 .eyes-mascot svg { display: block; }
 
