@@ -11,6 +11,29 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/peri.css">
+  <style>
+    /* Episodes grid — scoped to .ns-episodes-section; additive on top of site styles. */
+    .ns-episodes-section .section-lede { color: var(--muted); margin-bottom: 1.75rem; max-width: 640px; }
+    .ep-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .ep-card {
+      background: var(--card); border-radius: var(--radius); overflow: hidden;
+      box-shadow: var(--shadow); transition: box-shadow .2s, transform .2s;
+      display: flex; flex-direction: column; text-decoration: none; color: inherit;
+    }
+    .ep-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); text-decoration: none; }
+    .ep-card-thumb { width: 100%; aspect-ratio: 16/9; background: #0e1a30; }
+    .ep-card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ep-card-body { padding: 1.25rem 1.4rem 1.4rem; }
+    .ep-card-tag {
+      font-size: .72rem; font-weight: 800; letter-spacing: .12em;
+      text-transform: uppercase; margin-bottom: .35rem; display: block;
+    }
+    .ep-card-title { color: var(--navy); font-size: 1.08rem; font-weight: 700; line-height: 1.35; margin: 0; }
+  </style>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
 </head>
 <body>
@@ -60,6 +83,63 @@
 <main>
 <div class="container" style="margin-top: 2rem;">
 
+<section class="deep-section ns-episodes-section">
+  <span class="section-label">On the channel</span>
+  <h3>Episodes</h3>
+  <p class="section-lede">Each episode takes one piece of real brain research and turns it into something you can actually try this week. Every claim is sourced. Nothing is watered down.</p>
+  <div class="ep-card-grid">
+    <a class="ep-card" href="/neurosense/01/">
+      <div class="ep-card-thumb"><img src="/neurosense/01/thumb.png" alt="Why Your Last Study Hour Is Wasted"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 01 &middot; Focus &amp; Study</span>
+        <h4 class="ep-card-title">Why Your Last Study Hour Is Wasted</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/02/">
+      <div class="ep-card-thumb"><img src="/neurosense/02/thumb.png" alt="Why TikTok Makes Studying Feel Impossible"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #6c47b6;">Ep 02 &middot; Dopamine</span>
+        <h4 class="ep-card-title">Why TikTok Makes Studying Feel Impossible</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/03/">
+      <div class="ep-card-thumb"><img src="/neurosense/03/thumb.png" alt="Why Multitasking Is Slowing You Down"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #27ae60;">Ep 03 &middot; Attention</span>
+        <h4 class="ep-card-title">Why Multitasking Is Slowing You Down</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/05/">
+      <div class="ep-card-thumb"><img src="/neurosense/05/thumb.png" alt="Why Your Mind Goes Blank Under Stress"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #e76f51;">Ep 05 &middot; Anxiety &amp; Stress</span>
+        <h4 class="ep-card-title">Why Your Mind Goes Blank Under Stress</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/07/">
+      <div class="ep-card-thumb"><img src="/neurosense/07/thumb.png" alt="Why Cringe Feels Physical"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #e76f51;">Ep 07 &middot; Emotion</span>
+        <h4 class="ep-card-title">Why Cringe Feels Physical</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/08/">
+      <div class="ep-card-thumb"><img src="/neurosense/08/thumb.png" alt="Your Brain Learns the Room"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #27ae60;">Ep 08 &middot; Memory</span>
+        <h4 class="ep-card-title">Your Brain Learns the Room</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/10/">
+      <div class="ep-card-thumb"><img src="/neurosense/10/thumb.png" alt="All-Nighters Poison Your Brain"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #6c47b6;">Ep 10 &middot; Sleep</span>
+        <h4 class="ep-card-title">All-Nighters Poison Your Brain</h4>
+      </div>
+    </a>
+  </div>
+</section>
+
 <section class="deep-section">
   <span class="section-label">What this is</span>
   <h3>Science you can actually use</h3>
@@ -107,18 +187,18 @@
   <div class="roadmap">
     <div class="road-step">
       <div class="when">Now</div>
-      <h4>First Short live</h4>
-      <p style="margin:0;">The first NeuroSense Short is up. Now the work is tightening the system behind it: script quality, references, visuals, pacing, and consistency.</p>
+      <h4>First batch live</h4>
+      <p style="margin:0;">Seven episodes are up, covering focus, dopamine, attention, anxiety, social pain, memory, and sleep. The system behind the videos &mdash; script quality, references, visuals, pacing, consistency &mdash; is tightening with each release.</p>
     </div>
     <div class="road-step">
       <div class="when">Next</div>
-      <h4>Visual style</h4>
-      <p style="margin:0;">Settle the visual language, typography, music palette, pacing, and on-screen text style for the channel.</p>
+      <h4>Complete the first ten</h4>
+      <p style="margin:0;">Three videos are in revision (ADHD &amp; hyperfocus, the intense world theory of autism, neuroplasticity &amp; habits). When they ship, the first thematic arc &mdash; the applied protocols set &mdash; will be complete.</p>
     </div>
     <div class="road-step">
       <div class="when">Then</div>
-      <h4>Build out the series</h4>
-      <p style="margin:0;">Keep expanding the library with new topics, stronger references, and clearer translations that still preserve the real mechanism.</p>
+      <h4>Foundational neuroscience series</h4>
+      <p style="margin:0;">The next batch (episodes 11&ndash;20) goes deeper into the hardware: resting potential, action potentials, voltage-gated channels, myelination, hippocampal consolidation, neuropharmacology, the Nernst potential. The mechanisms underneath the protocols, drawn directly from Harvard&rsquo;s Fundamentals of Neuroscience courses.</p>
     </div>
   </div>
 </section>
