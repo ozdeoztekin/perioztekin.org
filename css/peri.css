@@ -285,11 +285,12 @@ a.cert:hover { transform: translateY(-2px); border-color: var(--peri-purple); bo
 
 /* === Course rows === */
 .course-list { background: #fff; border-radius: 10px; padding: .5rem 1.25rem; box-shadow: 0 4px 16px rgba(0,0,0,.06); margin-top: 1rem; }
-.course-row { display: flex; justify-content: space-between; align-items: center; padding: .8rem 0; border-bottom: 1px solid #e7ecf2; flex-wrap: wrap; gap: .5rem; }
+.course-row { display: flex; justify-content: space-between; align-items: flex-start; padding: .8rem 0; border-bottom: 1px solid #e7ecf2; flex-wrap: wrap; gap: .75rem; }
+.course-row > div:first-of-type { flex: 1; min-width: 0; }
 .course-row:last-child { border-bottom: none; }
 .course-row .ctitle { font-weight: 600; color: var(--navy, #1b3a5c); }
 .course-row .cmeta { font-size: .85rem; color: var(--muted, #607080); }
-.course-row .cgrade { font-weight: 700; color: #1e9450; font-size: .9rem; background: rgba(39,174,96,.10); padding: .2rem .7rem; border-radius: 12px; }
+.course-row .cgrade { font-weight: 700; color: #1e9450; font-size: .9rem; background: rgba(39,174,96,.10); padding: .2rem .7rem; border-radius: 12px; flex-shrink: 0; white-space: nowrap; }
 .course-row .cgrade.cert-mark { color: #6c47b6; background: rgba(108,71,182,.10); }
 .course-row .cgrade.in-prog { color: #c8553d; background: rgba(231,111,81,.12); }
 
