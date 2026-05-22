@@ -33,6 +33,18 @@
       text-transform: uppercase; margin-bottom: .35rem; display: block;
     }
     .ep-card-title { color: var(--navy); font-size: 1.08rem; font-weight: 700; line-height: 1.35; margin: 0; }
+    /* Track filter — scoped, additive. */
+    .ep-filter { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.75rem; }
+    .ep-filter-btn {
+      font: inherit; font-size: .78rem; font-weight: 700; line-height: 1;
+      padding: .45rem .9rem; border-radius: 20px;
+      border: 1.5px solid var(--border, #d8e0e8); background: #fff;
+      color: var(--muted, #607080); cursor: pointer;
+      transition: background .15s, color .15s, border-color .15s;
+    }
+    .ep-filter-btn:hover { border-color: var(--navy, #1b3a5c); color: var(--navy, #1b3a5c); }
+    .ep-filter-btn.active { background: var(--navy, #1b3a5c); color: #fff; border-color: var(--navy, #1b3a5c); }
+    .ep-card.is-hidden { display: none; }
   </style>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
 </head>
@@ -87,144 +99,156 @@
   <span class="section-label">On the channel</span>
   <h3>Episodes</h3>
   <p class="section-lede">Each episode takes one piece of real brain research and turns it into something you can actually try this week. Every claim is sourced. Nothing is watered down.</p>
+  <div class="ep-filter" role="group" aria-label="Filter episodes by track">
+    <button type="button" class="ep-filter-btn active" data-filter="all">All</button>
+    <button type="button" class="ep-filter-btn" data-filter="focus-attention">Focus &amp; Attention</button>
+    <button type="button" class="ep-filter-btn" data-filter="motivation-habits">Motivation &amp; Habits</button>
+    <button type="button" class="ep-filter-btn" data-filter="stress-emotion">Stress &amp; Emotion</button>
+    <button type="button" class="ep-filter-btn" data-filter="social-brain">The Social Brain</button>
+    <button type="button" class="ep-filter-btn" data-filter="learning-memory">Learning &amp; Memory</button>
+    <button type="button" class="ep-filter-btn" data-filter="sleep-recovery">Sleep, Recovery &amp; the Body</button>
+    <button type="button" class="ep-filter-btn" data-filter="senses-perception">Senses &amp; Perception</button>
+    <button type="button" class="ep-filter-btn" data-filter="neurodivergence">Neurodivergence</button>
+    <button type="button" class="ep-filter-btn" data-filter="how-brain-works">How the Brain Works</button>
+  </div>
   <div class="ep-card-grid">
-    <a class="ep-card" href="/neurosense/01/">
+    <a class="ep-card" href="/neurosense/01/" data-track="focus-attention sleep-recovery">
       <div class="ep-card-thumb"><img src="/neurosense/01/thumb.png" alt="Why Your Last Study Hour Is Wasted"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 01 &middot; Focus &amp; Study</span>
+        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 01 &middot; Focus &amp; Attention</span>
         <h4 class="ep-card-title">Why Your Last Study Hour Is Wasted</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/02/">
+    <a class="ep-card" href="/neurosense/02/" data-track="motivation-habits neurodivergence">
       <div class="ep-card-thumb"><img src="/neurosense/02/thumb.png" alt="Why TikTok Makes Studying Feel Impossible"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #6c47b6;">Ep 02 &middot; Dopamine</span>
+        <span class="ep-card-tag" style="color: #6c47b6;">Ep 02 &middot; Motivation &amp; Habits</span>
         <h4 class="ep-card-title">Why TikTok Makes Studying Feel Impossible</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/03/">
+    <a class="ep-card" href="/neurosense/03/" data-track="focus-attention">
       <div class="ep-card-thumb"><img src="/neurosense/03/thumb.png" alt="Why Multitasking Is Slowing You Down"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #27ae60;">Ep 03 &middot; Attention</span>
+        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 03 &middot; Focus &amp; Attention</span>
         <h4 class="ep-card-title">Why Multitasking Is Slowing You Down</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/04/">
+    <a class="ep-card" href="/neurosense/04/" data-track="neurodivergence motivation-habits focus-attention">
       <div class="ep-card-thumb"><img src="/neurosense/04/thumb.png" alt="Why ADHD Brains Can&rsquo;t Start (But Can Hyperfocus)"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #e76f51;">Ep 04 &middot; ADHD / Neurodivergent</span>
+        <span class="ep-card-tag" style="color: #4f5bd5;">Ep 04 &middot; Neurodivergence</span>
         <h4 class="ep-card-title">Why ADHD Brains Can&rsquo;t Start (But Can Hyperfocus)</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/05/">
+    <a class="ep-card" href="/neurosense/05/" data-track="stress-emotion focus-attention">
       <div class="ep-card-thumb"><img src="/neurosense/05/thumb.png" alt="Why Your Mind Goes Blank Under Stress"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #e76f51;">Ep 05 &middot; Anxiety &amp; Stress</span>
+        <span class="ep-card-tag" style="color: #e76f51;">Ep 05 &middot; Stress &amp; Emotion</span>
         <h4 class="ep-card-title">Why Your Mind Goes Blank Under Stress</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/06/">
+    <a class="ep-card" href="/neurosense/06/" data-track="neurodivergence senses-perception">
       <div class="ep-card-thumb"><img src="/neurosense/06/thumb.png" alt="What If Autism Isn&rsquo;t a Deficit?"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #e76f51;">Ep 06 &middot; Autism / Neurodivergent</span>
+        <span class="ep-card-tag" style="color: #4f5bd5;">Ep 06 &middot; Neurodivergence</span>
         <h4 class="ep-card-title">What If Autism Isn&rsquo;t a Deficit?</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/07/">
+    <a class="ep-card" href="/neurosense/07/" data-track="social-brain stress-emotion">
       <div class="ep-card-thumb"><img src="/neurosense/07/thumb.png" alt="Why Cringe Feels Physical"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #e76f51;">Ep 07 &middot; Emotion</span>
+        <span class="ep-card-tag" style="color: #d98e04;">Ep 07 &middot; The Social Brain</span>
         <h4 class="ep-card-title">Why Cringe Feels Physical</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/08/">
+    <a class="ep-card" href="/neurosense/08/" data-track="learning-memory focus-attention">
       <div class="ep-card-thumb"><img src="/neurosense/08/thumb.png" alt="Your Brain Learns the Room"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #27ae60;">Ep 08 &middot; Memory</span>
+        <span class="ep-card-tag" style="color: #27ae60;">Ep 08 &middot; Learning &amp; Memory</span>
         <h4 class="ep-card-title">Your Brain Learns the Room</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/09/">
+    <a class="ep-card" href="/neurosense/09/" data-track="motivation-habits learning-memory">
       <div class="ep-card-thumb"><img src="/neurosense/09/thumb.png" alt="Why You Quit New Habits by Day 4"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 09 &middot; Habits</span>
+        <span class="ep-card-tag" style="color: #6c47b6;">Ep 09 &middot; Motivation &amp; Habits</span>
         <h4 class="ep-card-title">Why You Quit New Habits by Day 4</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/10/">
+    <a class="ep-card" href="/neurosense/10/" data-track="sleep-recovery">
       <div class="ep-card-thumb"><img src="/neurosense/10/thumb.png" alt="All-Nighters Poison Your Brain"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #6c47b6;">Ep 10 &middot; Sleep</span>
+        <span class="ep-card-tag" style="color: #3a7ca5;">Ep 10 &middot; Sleep, Recovery &amp; the Body</span>
         <h4 class="ep-card-title">All-Nighters Poison Your Brain</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/11/">
+    <a class="ep-card" href="/neurosense/11/" data-track="how-brain-works">
       <div class="ep-card-thumb"><img src="/neurosense/11/thumb.png" alt="Your Brain Is a Biological Battery"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 11 &middot; Brain Hardware</span>
+        <span class="ep-card-tag" style="color: #64748b;">Ep 11 &middot; How the Brain Works</span>
         <h4 class="ep-card-title">Your Brain Is a Biological Battery</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/12/">
+    <a class="ep-card" href="/neurosense/12/" data-track="how-brain-works">
       <div class="ep-card-thumb"><img src="/neurosense/12/thumb.png" alt="The Protein That Eats 1/3 of Your Food"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #e9c46a;">Ep 12 &middot; Brain Hardware</span>
+        <span class="ep-card-tag" style="color: #64748b;">Ep 12 &middot; How the Brain Works</span>
         <h4 class="ep-card-title">The Protein That Eats 1/3 of Your Food</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/13/">
+    <a class="ep-card" href="/neurosense/13/" data-track="how-brain-works learning-memory">
       <div class="ep-card-thumb"><img src="/neurosense/13/thumb.png" alt="How Practice Wires Your Brain Faster"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #6c47b6;">Ep 13 &middot; Brain Hardware</span>
+        <span class="ep-card-tag" style="color: #64748b;">Ep 13 &middot; How the Brain Works</span>
         <h4 class="ep-card-title">How Practice Wires Your Brain Faster</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/14/">
+    <a class="ep-card" href="/neurosense/14/" data-track="how-brain-works">
       <div class="ep-card-thumb"><img src="/neurosense/14/thumb.png" alt="Your Brain Cheats Physics to Be Fast"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #27ae60;">Ep 14 &middot; Brain Hardware</span>
+        <span class="ep-card-tag" style="color: #64748b;">Ep 14 &middot; How the Brain Works</span>
         <h4 class="ep-card-title">Your Brain Cheats Physics to Be Fast</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/15/">
+    <a class="ep-card" href="/neurosense/15/" data-track="how-brain-works">
       <div class="ep-card-thumb"><img src="/neurosense/15/thumb.png" alt="Your Brain Has No Volume Knob"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 15 &middot; Brain Hardware</span>
+        <span class="ep-card-tag" style="color: #64748b;">Ep 15 &middot; How the Brain Works</span>
         <h4 class="ep-card-title">Your Brain Has No Volume Knob</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/16/">
+    <a class="ep-card" href="/neurosense/16/" data-track="how-brain-works">
       <div class="ep-card-thumb"><img src="/neurosense/16/thumb.png" alt="The Gatekeepers of Consciousness"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #e76f51;">Ep 16 &middot; Brain Hardware</span>
+        <span class="ep-card-tag" style="color: #64748b;">Ep 16 &middot; How the Brain Works</span>
         <h4 class="ep-card-title">The Gatekeepers of Consciousness</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/17/">
+    <a class="ep-card" href="/neurosense/17/" data-track="sleep-recovery focus-attention">
       <div class="ep-card-thumb"><img src="/neurosense/17/thumb.png" alt="Recharge Without Sleeping"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #6c47b6;">Ep 17 &middot; Recovery</span>
+        <span class="ep-card-tag" style="color: #3a7ca5;">Ep 17 &middot; Sleep, Recovery &amp; the Body</span>
         <h4 class="ep-card-title">Recharge Without Sleeping.</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/18/">
+    <a class="ep-card" href="/neurosense/18/" data-track="learning-memory sleep-recovery">
       <div class="ep-card-thumb"><img src="/neurosense/18/thumb.png" alt="Memories Are Made While You Sit Still"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #27ae60;">Ep 18 &middot; Memory</span>
+        <span class="ep-card-tag" style="color: #27ae60;">Ep 18 &middot; Learning &amp; Memory</span>
         <h4 class="ep-card-title">Memories Are Made While You Sit Still</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/19/">
+    <a class="ep-card" href="/neurosense/19/" data-track="how-brain-works">
       <div class="ep-card-thumb"><img src="/neurosense/19/thumb.png" alt="Caffeine Doesn&rsquo;t Give You Energy. It Steals Your Off Switch"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #e76f51;">Ep 19 &middot; Modulation</span>
+        <span class="ep-card-tag" style="color: #64748b;">Ep 19 &middot; How the Brain Works</span>
         <h4 class="ep-card-title">Caffeine Doesn&rsquo;t Give You Energy. It Steals Your Off Switch</h4>
       </div>
     </a>
-    <a class="ep-card" href="/neurosense/20/">
+    <a class="ep-card" href="/neurosense/20/" data-track="how-brain-works">
       <div class="ep-card-thumb"><img src="/neurosense/20/thumb.png" alt="The Math Behind Your Mind"></div>
       <div class="ep-card-body">
-        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 20 &middot; Brain Hardware</span>
+        <span class="ep-card-tag" style="color: #64748b;">Ep 20 &middot; How the Brain Works</span>
         <h4 class="ep-card-title">The Math Behind Your Mind.</h4>
       </div>
     </a>
@@ -323,6 +347,25 @@
 
 <script src="/js/animate.js"></script>
 <script src="/js/peri.js"></script>
+<script>
+/* NeuroSense episode track filter — additive, no dependencies. */
+(function () {
+  var buttons = document.querySelectorAll('.ep-filter-btn');
+  var cards = document.querySelectorAll('.ep-card[data-track]');
+  if (!buttons.length || !cards.length) return;
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filter = btn.getAttribute('data-filter');
+      buttons.forEach(function (b) { b.classList.toggle('active', b === btn); });
+      cards.forEach(function (card) {
+        var tracks = (card.getAttribute('data-track') || '').split(' ');
+        var show = filter === 'all' || tracks.indexOf(filter) !== -1;
+        card.classList.toggle('is-hidden', !show);
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
 
