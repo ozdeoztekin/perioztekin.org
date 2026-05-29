@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How Practice Wires Your Brain Faster &mdash; NeuroSense Episode 13 &middot; Peri Oztekin</title>
-  <meta name="description" content="NeuroSense Episode 13: How Practice Wires Your Brain Faster.">
+  <meta name="description" content="NeuroSense Episode 13: How Practice Wires Your Brain Faster. Myelin doesn&#x27;t just protect axons. It drops membrane capacitance, which speeds signal propagation and is built up by deliberate practice.">
   <link rel="canonical" href="https://perioztekin.org/neurosense/13/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
@@ -15,34 +15,53 @@
   <meta property="og:url" content="https://perioztekin.org/neurosense/13/">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
-  <style>
-    .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
-    .ep-tag { display: inline-block; background: #b79ce828; color: #b79ce8;
-      font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
-      padding: .35rem .9rem; border-radius: 20px; margin-bottom: 1.25rem; }
-    .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
-    .ep-grid { display: grid; grid-template-columns: 360px 1fr; gap: 2.5rem; align-items: start; margin-bottom: 3rem; }
-    .ep-video-wrap { width: 100%; aspect-ratio: 9/16; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); background: #000; }
-    .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
-    .ep-content h2 { margin-top: 0; }
-    .ep-list { padding-left: 1.4rem; }
-    .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
-    .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #b79ce8; margin-top: 1.5rem; }
-    .ep-protocol h3 { margin-top: 0; color: #b79ce8; }
-    .ep-section { margin: 3rem 0; }
-    .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
-    .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
-    .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
-    .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
-    .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
-    .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
-    .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-    .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-    .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
-    .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
-    .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
-    @media (max-width: 860px) { .ep-grid { grid-template-columns: 1fr; } .ep-video-wrap { max-width: 360px; margin: 0 auto; } }
-  </style>
+
+<style>
+  .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
+  .ep-tag {
+    display: inline-block; background: var(--accent-bg, rgba(126,232,222,.18));
+    color: #64748b;
+    font-size: .8rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; padding: .35rem .9rem; border-radius: 20px;
+    margin-bottom: 1.25rem;
+  }
+  .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
+  .ep-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .ep-video-wrap {
+    width: 100%; aspect-ratio: 9/16;
+    border-radius: var(--radius); overflow: hidden;
+    box-shadow: var(--shadow-lg); background: #000;
+  }
+  .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .ep-content h2 { margin-top: 0; }
+  .ep-list { padding-left: 1.4rem; }
+  .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
+  .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #64748b; margin-top: 1.5rem; }
+  .ep-protocol h3 { margin-top: 0; color: #64748b; }
+  .ep-section { margin: 3rem 0; }
+  .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
+  .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
+  .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
+  .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
+  .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
+  .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
+  .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
+  .ep-sources ul { margin: 0; padding-left: 1.4rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
+  .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
+  @media (max-width: 860px) {
+    .ep-grid { grid-template-columns: 1fr; }
+    .ep-video-wrap { max-width: 360px; margin: 0 auto; }
+  }
+</style>
+
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
 </head>
 <body>
@@ -76,10 +95,10 @@
 <main class="peri-page-shell">
   <div class="container" style="padding-top: 2.5rem;">
     <a href="/neurosense/" class="ep-nav-back">&larr; All episodes</a>
-    <span class="ep-tag">Episode 13 &middot; Brain Hardware</span>
+    <span class="ep-tag" style="background: #64748b28; color: #64748b;">Episode 13 &middot; How the Brain Works</span>
     <h1>How Practice Wires Your Brain Faster</h1>
     <p class="ep-meta">Myelination</p>
-    <p class="ep-hook">Myelin doesn't just protect axons — it changes the math. Wrapping the membrane thicker drops its capacitance, which drops its time constant, which means signals propagate faster and farther.</p>
+    <p class="ep-hook">Myelin doesn&#x27;t just protect axons. It drops membrane capacitance, which speeds signal propagation and is built up by deliberate practice.</p>
 
     <div class="ep-grid">
       <div class="ep-video-wrap">
@@ -91,16 +110,16 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Myelin is produced by glial cells — oligodendrocytes in the CNS, Schwann cells in the PNS. Wrapped around the axon multiple times, like electrical tape on a wire.</li>
-          <li>Two effects: ↑ membrane resistance (blocks ion leak) AND ↓ membrane capacitance (faster voltage changes).</li>
-          <li>TIME CONSTANT (τ = Rm × Cm): lower capacitance → smaller τ → 'snappier' membrane.</li>
-          <li>LENGTH CONSTANT (λ): how far a voltage change travels before decaying to ~37%. Higher resistance → longer λ → signal reaches further.</li>
+          <li>Myelin is wrapped around axons by oligodendrocytes in the central nervous system and Schwann cells in the peripheral nervous system. Each oligodendrocyte can myelinate up to 50 axon segments, forming the insulating sheath in concentric layers.</li>
+          <li>Two electrical effects: myelin (1) increases membrane resistance, blocking ion leak, and (2) decreases membrane capacitance, allowing voltage to change faster. The time constant tau = R*C drops, so depolarization propagates farther in less time.</li>
+          <li>Bengtsson et al. (Nature Neuroscience, 2005): MRI diffusion-tensor studies of pianists show that years of practice produce region-specific increases in white matter integrity in motor and sensorimotor tracts. Myelination is plastic and trainable in adults.</li>
+          <li>Fields (Trends in Neurosciences, 2008): activity-dependent myelination has been confirmed in cellular studies: action potentials in unmyelinated axons trigger ATP release that signals oligodendrocyte precursor cells to wrap. Practice literally rebuilds the wire.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
           <ul class="ep-list">
-          <li>Deep-focus blocks (60-90 min) with no interruption. Sub-threshold practice doesn't trigger wrapping.</li>
-          <li>Prioritize sleep — myelin synthesis peaks in deep sleep.</li>
+          <li>Deep-focus blocks (60-90 min) with no interruption. Sub-threshold practice doesn&#x27;t trigger wrapping.</li>
+          <li>Prioritize sleep, myelin synthesis peaks in deep sleep.</li>
           <li>Repetition of the SAME circuit beats variety. Plasticity is path-specific.</li>
           </ul>
         </div>
@@ -109,25 +128,28 @@
 
     <div class="ep-section">
       <h2>One-page summary</h2>
-      <p style="color: var(--muted);">Right-click &rarr; Save As to download.</p>
+      <p style="color: var(--muted);">Right-click &rarr; Save As to download. Or scan the QR code in the corner to come back here from print.</p>
       <div class="ep-infographic">
-        <a href="infographic.png" target="_blank"><img src="infographic.png" alt="How Practice Wires Your Brain Faster infographic"></a>
+        <a href="infographic.png" target="_blank">
+          <img src="infographic.png" alt="How Practice Wires Your Brain Faster infographic, one-page summary">
+        </a>
         <a href="infographic.png" download class="download">Download full-size PNG &darr;</a>
       </div>
     </div>
 
     <div class="ep-section">
       <h2>The science beat (5-sec loop)</h2>
-      <div class="ep-broll"><video src="broll.mp4" autoplay muted loop playsinline></video></div>
+      <div class="ep-broll">
+        <video src="broll.mp4" autoplay muted loop playsinline></video>
+      </div>
     </div>
 
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>McKenzie et al. (2014). Science, 346(6207): 318-322.</li>
-          <li>Bengtsson et al. (2005). Nat Neurosci, 8(9): 1148-1150.</li>
-          <li>Fields, R. D. (2015). Nat Rev Neurosci, 16(12): 756-767.</li>
-          <li>Harvard MCB80.1x, Lesson 4 §4E — Cox, D.</li>
+          <li>Bengtsson, S. L., Nagy, Z., Skare, S., et al. (2005). Extensive piano practicing has regionally specific effects on white matter development. Nature Neuroscience, 8(9): 1148-1150.</li>
+          <li>Fields, R. D. (2008). White matter in learning, cognition and psychiatric disorders. Trends in Neurosciences, 31(7): 361-370.</li>
+          <li>Bunge, R. P. (1968). Glial cells and the central myelin sheath. Physiological Reviews, 48(1): 197-251.</li>
       </ul>
     </div>
 

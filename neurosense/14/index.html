@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Brain Cheats Physics to Be Fast &mdash; NeuroSense Episode 14 &middot; Peri Oztekin</title>
-  <meta name="description" content="NeuroSense Episode 14: Your Brain Cheats Physics to Be Fast.">
+  <meta name="description" content="NeuroSense Episode 14: Your Brain Cheats Physics to Be Fast. Action potentials don&#x27;t crawl down an axon. They leap from gap to gap, and that physical leap is where the brain&#x27;s reaction speed lives.">
   <link rel="canonical" href="https://perioztekin.org/neurosense/14/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
@@ -15,34 +15,53 @@
   <meta property="og:url" content="https://perioztekin.org/neurosense/14/">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
-  <style>
-    .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
-    .ep-tag { display: inline-block; background: #95d5a828; color: #95d5a8;
-      font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
-      padding: .35rem .9rem; border-radius: 20px; margin-bottom: 1.25rem; }
-    .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
-    .ep-grid { display: grid; grid-template-columns: 360px 1fr; gap: 2.5rem; align-items: start; margin-bottom: 3rem; }
-    .ep-video-wrap { width: 100%; aspect-ratio: 9/16; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); background: #000; }
-    .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
-    .ep-content h2 { margin-top: 0; }
-    .ep-list { padding-left: 1.4rem; }
-    .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
-    .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #95d5a8; margin-top: 1.5rem; }
-    .ep-protocol h3 { margin-top: 0; color: #95d5a8; }
-    .ep-section { margin: 3rem 0; }
-    .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
-    .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
-    .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
-    .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
-    .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
-    .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
-    .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-    .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-    .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
-    .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
-    .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
-    @media (max-width: 860px) { .ep-grid { grid-template-columns: 1fr; } .ep-video-wrap { max-width: 360px; margin: 0 auto; } }
-  </style>
+
+<style>
+  .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
+  .ep-tag {
+    display: inline-block; background: var(--accent-bg, rgba(126,232,222,.18));
+    color: #64748b;
+    font-size: .8rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; padding: .35rem .9rem; border-radius: 20px;
+    margin-bottom: 1.25rem;
+  }
+  .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
+  .ep-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .ep-video-wrap {
+    width: 100%; aspect-ratio: 9/16;
+    border-radius: var(--radius); overflow: hidden;
+    box-shadow: var(--shadow-lg); background: #000;
+  }
+  .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .ep-content h2 { margin-top: 0; }
+  .ep-list { padding-left: 1.4rem; }
+  .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
+  .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #64748b; margin-top: 1.5rem; }
+  .ep-protocol h3 { margin-top: 0; color: #64748b; }
+  .ep-section { margin: 3rem 0; }
+  .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
+  .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
+  .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
+  .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
+  .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
+  .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
+  .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
+  .ep-sources ul { margin: 0; padding-left: 1.4rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
+  .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
+  @media (max-width: 860px) {
+    .ep-grid { grid-template-columns: 1fr; }
+    .ep-video-wrap { max-width: 360px; margin: 0 auto; }
+  }
+</style>
+
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
 </head>
 <body>
@@ -76,10 +95,10 @@
 <main class="peri-page-shell">
   <div class="container" style="padding-top: 2.5rem;">
     <a href="/neurosense/" class="ep-nav-back">&larr; All episodes</a>
-    <span class="ep-tag">Episode 14 &middot; Brain Hardware</span>
+    <span class="ep-tag" style="background: #64748b28; color: #64748b;">Episode 14 &middot; How the Brain Works</span>
     <h1>Your Brain Cheats Physics to Be Fast</h1>
     <p class="ep-meta">Saltatory Conduction</p>
-    <p class="ep-hook">Action potentials don't crawl down an axon. They leap from gap to gap. The gaps — Nodes of Ranvier — are where the brain's reaction speed lives.</p>
+    <p class="ep-hook">Action potentials don&#x27;t crawl down an axon. They leap from gap to gap, and that physical leap is where the brain&#x27;s reaction speed lives.</p>
 
     <div class="ep-grid">
       <div class="ep-video-wrap">
@@ -91,17 +110,17 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Nodes of Ranvier are the bare gaps between myelin segments. They hold 'a high density of voltage-gated sodium and potassium channels.'</li>
-          <li>The action potential is regenerated at each node, then travels passively through the insulated stretch. The leap is electrical.</li>
-          <li>Without saltatory conduction, sending 1 cm would need an impossible ~330,000 mV.</li>
-          <li>A giant axon would also work, but 'a human arm would require nerve fibers of over a meter diameter.' Myelination is nature's efficient version.</li>
+          <li>Huxley &amp; Stämpfli (J Physiol, 1949): action potentials in myelinated axons regenerate only at the Nodes of Ranvier, the small unmyelinated gaps between myelin segments. Between nodes, the voltage propagates passively through the insulated segment.</li>
+          <li>The nodes hold a very high density of voltage-gated Na+ channels (clusters of ~1000-2000 per square micron). Each regeneration step at a node restores the action potential to full amplitude before it travels passively to the next node.</li>
+          <li>Rasband (Annual Review of Neuroscience, 2010): the molecular architecture of nodes, paranodes, and juxtaparanodes is precisely organized: Na+ channels cluster at nodes, K+ channels at juxtaparanodes, and cell-adhesion molecules secure the structure. Disruption of this organization underlies multiple sclerosis symptoms.</li>
+          <li>Without saltatory conduction, the same axon would need to be approximately 330 times wider to achieve the same conduction velocity. Saltatory conduction is what allows fast reflexes to coexist with thin, energetically affordable axons.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
           <ul class="ep-list">
-          <li>Omega-3 fatty acids (walnuts, flaxseeds, fatty fish) — myelin is mostly lipid.</li>
-          <li>Same focused practice as V13 — myelination and saltatory speed are linked.</li>
-          <li>Avoid chronic inflammation (excess sugar, alcohol) — it degrades myelin.</li>
+          <li>Omega-3 fatty acids (walnuts, flaxseeds, fatty fish), myelin is mostly lipid.</li>
+          <li>Same focused practice as V13, myelination and saltatory speed are linked.</li>
+          <li>Avoid chronic inflammation (excess sugar, alcohol), it degrades myelin.</li>
           </ul>
         </div>
       </div>
@@ -109,25 +128,28 @@
 
     <div class="ep-section">
       <h2>One-page summary</h2>
-      <p style="color: var(--muted);">Right-click &rarr; Save As to download.</p>
+      <p style="color: var(--muted);">Right-click &rarr; Save As to download. Or scan the QR code in the corner to come back here from print.</p>
       <div class="ep-infographic">
-        <a href="infographic.png" target="_blank"><img src="infographic.png" alt="Your Brain Cheats Physics to Be Fast infographic"></a>
+        <a href="infographic.png" target="_blank">
+          <img src="infographic.png" alt="Your Brain Cheats Physics to Be Fast infographic, one-page summary">
+        </a>
         <a href="infographic.png" download class="download">Download full-size PNG &darr;</a>
       </div>
     </div>
 
     <div class="ep-section">
       <h2>The science beat (5-sec loop)</h2>
-      <div class="ep-broll"><video src="broll.mp4" autoplay muted loop playsinline></video></div>
+      <div class="ep-broll">
+        <video src="broll.mp4" autoplay muted loop playsinline></video>
+      </div>
     </div>
 
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Huxley, A. F., Stämpfli, R. (1949). J Physiol, 108(3): 315-339.</li>
-          <li>Bear, Connors, Paradiso (2016). Neuroscience (4th ed.), Ch. 4.</li>
-          <li>Bourre, J. M. (2004). J Nutr Health Aging, 8(3): 163-174.</li>
-          <li>Harvard MCB80.1x, Lesson 4 — Cox, D.</li>
+          <li>Huxley, A. F., &amp; Stämpfli, R. (1949). Evidence for saltatory conduction in peripheral myelinated nerve fibres. Journal of Physiology, 108(3): 315-339.</li>
+          <li>Rasband, M. N. (2010). The axon initial segment and the maintenance of neuronal polarity. Nature Reviews Neuroscience, 11(8): 552-562.</li>
+          <li>Tasaki, I. (1955). New measurements of the capacity and the resistance of the myelin sheath and the nodal membrane of the isolated frog nerve fiber. American Journal of Physiology, 181(3): 639-650.</li>
       </ul>
     </div>
 

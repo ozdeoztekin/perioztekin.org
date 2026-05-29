@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Math Behind Your Mind. &mdash; NeuroSense Episode 20 &middot; Peri Oztekin</title>
-  <meta name="description" content="NeuroSense Episode 20: The Math Behind Your Mind..">
+  <meta name="description" content="NeuroSense Episode 20: The Math Behind Your Mind.. The Nernst potential is the exact voltage where electrical and chemical forces on a single ion cancel out. Your neurons live perpetually just shy of that balance.">
   <link rel="canonical" href="https://perioztekin.org/neurosense/20/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
@@ -15,34 +15,53 @@
   <meta property="og:url" content="https://perioztekin.org/neurosense/20/">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
-  <style>
-    .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
-    .ep-tag { display: inline-block; background: #7ddfe828; color: #7ddfe8;
-      font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
-      padding: .35rem .9rem; border-radius: 20px; margin-bottom: 1.25rem; }
-    .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
-    .ep-grid { display: grid; grid-template-columns: 360px 1fr; gap: 2.5rem; align-items: start; margin-bottom: 3rem; }
-    .ep-video-wrap { width: 100%; aspect-ratio: 9/16; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); background: #000; }
-    .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
-    .ep-content h2 { margin-top: 0; }
-    .ep-list { padding-left: 1.4rem; }
-    .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
-    .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #7ddfe8; margin-top: 1.5rem; }
-    .ep-protocol h3 { margin-top: 0; color: #7ddfe8; }
-    .ep-section { margin: 3rem 0; }
-    .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
-    .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
-    .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
-    .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
-    .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
-    .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
-    .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-    .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-    .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
-    .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
-    .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
-    @media (max-width: 860px) { .ep-grid { grid-template-columns: 1fr; } .ep-video-wrap { max-width: 360px; margin: 0 auto; } }
-  </style>
+
+<style>
+  .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
+  .ep-tag {
+    display: inline-block; background: var(--accent-bg, rgba(126,232,222,.18));
+    color: #64748b;
+    font-size: .8rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; padding: .35rem .9rem; border-radius: 20px;
+    margin-bottom: 1.25rem;
+  }
+  .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
+  .ep-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .ep-video-wrap {
+    width: 100%; aspect-ratio: 9/16;
+    border-radius: var(--radius); overflow: hidden;
+    box-shadow: var(--shadow-lg); background: #000;
+  }
+  .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .ep-content h2 { margin-top: 0; }
+  .ep-list { padding-left: 1.4rem; }
+  .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
+  .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #64748b; margin-top: 1.5rem; }
+  .ep-protocol h3 { margin-top: 0; color: #64748b; }
+  .ep-section { margin: 3rem 0; }
+  .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
+  .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
+  .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
+  .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
+  .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
+  .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
+  .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
+  .ep-sources ul { margin: 0; padding-left: 1.4rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
+  .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
+  @media (max-width: 860px) {
+    .ep-grid { grid-template-columns: 1fr; }
+    .ep-video-wrap { max-width: 360px; margin: 0 auto; }
+  }
+</style>
+
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
 </head>
 <body>
@@ -76,10 +95,10 @@
 <main class="peri-page-shell">
   <div class="container" style="padding-top: 2.5rem;">
     <a href="/neurosense/" class="ep-nav-back">&larr; All episodes</a>
-    <span class="ep-tag">Episode 20 &middot; Brain Hardware</span>
+    <span class="ep-tag" style="background: #64748b28; color: #64748b;">Episode 20 &middot; How the Brain Works</span>
     <h1>The Math Behind Your Mind.</h1>
     <p class="ep-meta">The Nernst Potential</p>
-    <p class="ep-hook">The Nernst potential is the exact voltage where electrical and chemical forces on a single ion cancel out. Your neurons live perpetually just shy of that balance — loaded, ready.</p>
+    <p class="ep-hook">The Nernst potential is the exact voltage where electrical and chemical forces on a single ion cancel out. Your neurons live perpetually just shy of that balance.</p>
 
     <div class="ep-grid">
       <div class="ep-video-wrap">
@@ -91,17 +110,17 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Cox: 'when we solve the Nernst equation for a given ion, we're solving for the point at which the electrostatic force exactly balances out the diffusional force.'</li>
-          <li>Three terms refer to E: NERNST potential (the equation's output), EQUILIBRIUM potential (the system at balance), REVERSAL potential (where net ion flux switches direction).</li>
-          <li>Equation: E = (RT/zF) × ln([out]/[in]) — R = gas constant, T = absolute temp (K), z = ion valence, F = Faraday's constant.</li>
-          <li>Critical: 'For a neuron, the resting potential is close to the Nernst potential of potassium — but they are NOT the same.' Resting is multi-ion + active pumping; Nernst is per-ion, passive.</li>
+          <li>Nernst (Zeitschrift für Physikalische Chemie, 1889): the Nernst equation predicts the equilibrium potential for any single ion species across a semi-permeable membrane. At that voltage, the electrical driving force on the ion exactly cancels the chemical (concentration) driving force, and net flow stops.</li>
+          <li>For typical neuronal concentrations, the Nernst potential is approximately +60 mV for Na+, -90 mV for K+, and -65 mV for Cl-. The resting membrane potential of a neuron sits between these values, weighted by the relative permeabilities of each ion species.</li>
+          <li>Goldman (J Gen Physiol, 1943): the Goldman-Hodgkin-Katz equation generalizes the Nernst equation to multiple ions, predicting actual resting potential as a permeability-weighted average. This formalism is the quantitative bridge between ion biophysics and cellular electrophysiology.</li>
+          <li>Three closely related terms: NERNST potential is the equation&#x27;s output for a single ion; EQUILIBRIUM potential is the same concept used in measurements; REVERSAL potential is the experimentally measured voltage at which a current through a channel reverses direction.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
           <ul class="ep-list">
           <li>Identify one daily imbalance (sleep, diet, stress) and align it with your biology.</li>
-          <li>Audit your default state — if it's stress, your neurons live closer to the firing threshold than they should.</li>
-          <li>Consistency over intensity. Your 'equilibrium potential' is built from steady habits, not heroics.</li>
+          <li>Audit your default state, if it&#x27;s stress, your neurons live closer to the firing threshold than they should.</li>
+          <li>Consistency over intensity. Your &#x27;equilibrium potential&#x27; is built from steady habits, not heroics.</li>
           </ul>
         </div>
       </div>
@@ -109,25 +128,28 @@
 
     <div class="ep-section">
       <h2>One-page summary</h2>
-      <p style="color: var(--muted);">Right-click &rarr; Save As to download.</p>
+      <p style="color: var(--muted);">Right-click &rarr; Save As to download. Or scan the QR code in the corner to come back here from print.</p>
       <div class="ep-infographic">
-        <a href="infographic.png" target="_blank"><img src="infographic.png" alt="The Math Behind Your Mind. infographic"></a>
+        <a href="infographic.png" target="_blank">
+          <img src="infographic.png" alt="The Math Behind Your Mind. infographic, one-page summary">
+        </a>
         <a href="infographic.png" download class="download">Download full-size PNG &darr;</a>
       </div>
     </div>
 
     <div class="ep-section">
       <h2>The science beat (5-sec loop)</h2>
-      <div class="ep-broll"><video src="broll.mp4" autoplay muted loop playsinline></video></div>
+      <div class="ep-broll">
+        <video src="broll.mp4" autoplay muted loop playsinline></video>
+      </div>
     </div>
 
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Nernst, W. (1889). Z Phys Chem, 4: 129-181.</li>
-          <li>Goldman, D. E. (1943). J Gen Physiol, 27(1): 37-60.</li>
-          <li>Hille, B. (2001). Ion Channels of Excitable Membranes (3rd ed.), Ch. 1.</li>
-          <li>Harvard MCB80.1x, Lesson 1 — Cox, D.</li>
+          <li>Nernst, W. (1889). Die elektromotorische Wirksamkeit der Ionen. Zeitschrift für Physikalische Chemie, 4: 129-181.</li>
+          <li>Goldman, D. E. (1943). Potential, impedance, and rectification in membranes. Journal of General Physiology, 27(1): 37-60.</li>
+          <li>Hodgkin, A. L., &amp; Katz, B. (1949). The effect of sodium ions on the electrical activity of the giant axon of the squid. Journal of Physiology, 108(1): 37-77.</li>
       </ul>
     </div>
 
