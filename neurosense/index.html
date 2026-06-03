@@ -512,8 +512,29 @@
         <h4 class="ep-card-title">The Sixth Sense You Use Every Second</h4>
       </div>
     </a>
-
-
+    <a class="ep-card" href="/neurosense/58/" data-track="focus-attention learning-memory">
+      <div class="ep-card-thumb"><img src="/neurosense/58/thumb.png" alt="Creative Incubation: Step Away to Solve It"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 58 &middot; Focus &amp; Attention</span>
+        <h4 class="ep-card-title">Creative Incubation: Step Away to Solve It</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/59/" data-track="stress-emotion how-brain-works">
+      <div class="ep-card-thumb"><img src="/neurosense/59/thumb.png" alt="Your Fear Fires Before Your Logic Loads"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #e76f51;">Ep 59 &middot; Stress &amp; Emotion</span>
+        <h4 class="ep-card-title">Your Fear Fires Before Your Logic Loads</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/60/" data-track="social-brain stress-emotion">
+      <div class="ep-card-thumb"><img src="/neurosense/60/thumb.png" alt="Why a Friend's Embarrassment Hurts You"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #d98e04;">Ep 60 &middot; The Social Brain</span>
+        <h4 class="ep-card-title">Why a Friend's Embarrassment Hurts You</h4>
+      </div>
+    </a>
+  
+  
   </div>
 </section>
 
@@ -570,4 +591,64 @@
     <div class="road-step">
       <div class="when">Next</div>
       <h4>More on everyday behavior</h4>
-      <p style="margin:0;">Other topics in the same direction include ADHD and hyperfocus, the intense world theory of autism, and neuroplastici
+      <p style="margin:0;">Other topics in the same direction include ADHD and hyperfocus, the intense world theory of autism, and neuroplasticity and habits. The point is to give viewers a complete picture of how the brain shapes everyday life.</p>
+    </div>
+    <div class="road-step">
+      <div class="when">Then</div>
+      <h4>Foundational neuroscience</h4>
+      <p style="margin:0;">A deeper layer goes into the hardware itself. Topics include resting potential, action potentials, voltage-gated channels, myelination, hippocampal consolidation, neuropharmacology, and the Nernst potential. These are the mechanisms underneath the protocols.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="peri-cta">
+  <h2>Follow NeuroSense</h2>
+    <p>The first Shorts are live. Follow on YouTube and Instagram, or write if you want updates.</p>
+    <p style="margin-bottom:.35rem;"><a href="https://www.youtube.com/@neurosensebrain" target="_blank" rel="noopener" style="color:#fff; font-weight:700; text-decoration:underline;">youtube.com/@neurosensebrain</a></p>
+    <p style="margin-bottom:.9rem;"><a href="https://www.instagram.com/neurosensebrain/" target="_blank" rel="noopener" style="color:#fff; font-weight:700; text-decoration:underline;">instagram.com/neurosensebrain</a></p>
+    <a class="email" href="mailto:perioztekinneuroscience@gmail.com?subject=NeuroSense updates">perioztekinneuroscience@gmail.com</a>
+  </div>
+</section>
+
+<section style="text-align: center; padding: 1rem 0 3rem;">
+  <a class="btn btn-outline" style="border-color:var(--peri-purple); color:var(--peri-purple);" href="/">&larr; Back to home</a>
+</section>
+
+</div>
+</main>
+
+<footer>
+<div class="footer-inner">
+  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
+  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
+</div>
+<div class="footer-bottom">
+  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
+</div>
+</footer>
+
+<script src="/js/animate.js"></script>
+<script src="/js/peri.js"></script>
+<script>
+/* NeuroSense episode track filter — additive, no dependencies. */
+(function () {
+  var buttons = document.querySelectorAll('.ep-filter-btn');
+  var cards = document.querySelectorAll('.ep-card[data-track]');
+  if (!buttons.length || !cards.length) return;
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filter = btn.getAttribute('data-filter');
+      buttons.forEach(function (b) { b.classList.toggle('active', b === btn); });
+      cards.forEach(function (card) {
+        var tracks = (card.getAttribute('data-track') || '').split(' ');
+        var show = filter === 'all' || tracks.indexOf(filter) !== -1;
+        card.classList.toggle('is-hidden', !show);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
+
