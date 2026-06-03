@@ -470,8 +470,50 @@
         <h4 class="ep-card-title">Loneliness Is A Biological Alarm</h4>
       </div>
     </a>
-  
-  
+    <a class="ep-card" href="/neurosense/52/" data-track="focus-attention how-brain-works">
+      <div class="ep-card-thumb"><img src="/neurosense/52/thumb.png" alt="Your Brain Has a Volume Knob for Reality"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #2a9d8f;">Ep 52 &middot; Focus &amp; Attention</span>
+        <h4 class="ep-card-title">Your Brain Has a Volume Knob for Reality</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/53/" data-track="sleep-recovery">
+      <div class="ep-card-thumb"><img src="/neurosense/53/thumb.png" alt="Why 8 Hours of Sleep Still Left You Wrecked"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #3a7ca5;">Ep 53 &middot; Sleep, Recovery &amp; the Body</span>
+        <h4 class="ep-card-title">Why 8 Hours of Sleep Still Left You Wrecked</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/54/" data-track="motivation-habits how-brain-works">
+      <div class="ep-card-thumb"><img src="/neurosense/54/thumb.png" alt="The Gas and Brake System Behind Every Action"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #6c47b6;">Ep 54 &middot; Motivation &amp; Habits</span>
+        <h4 class="ep-card-title">The Gas and Brake System Behind Every Action</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/55/" data-track="motivation-habits focus-attention">
+      <div class="ep-card-thumb"><img src="/neurosense/55/thumb.png" alt="Why a Cliffhanger Is Physically Hard to Ignore"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #6c47b6;">Ep 55 &middot; Motivation &amp; Habits</span>
+        <h4 class="ep-card-title">Why a Cliffhanger Is Physically Hard to Ignore</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/56/" data-track="social-brain">
+      <div class="ep-card-thumb"><img src="/neurosense/56/thumb.png" alt="Why Shady Behavior Makes You Feel Sick"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #d98e04;">Ep 56 &middot; The Social Brain</span>
+        <h4 class="ep-card-title">Why Shady Behavior Makes You Feel Sick</h4>
+      </div>
+    </a>
+    <a class="ep-card" href="/neurosense/57/" data-track="senses-perception">
+      <div class="ep-card-thumb"><img src="/neurosense/57/thumb.png" alt="The Sixth Sense You Use Every Second"></div>
+      <div class="ep-card-body">
+        <span class="ep-card-tag" style="color: #9c5bb9;">Ep 57 &middot; Senses &amp; Perception</span>
+        <h4 class="ep-card-title">The Sixth Sense You Use Every Second</h4>
+      </div>
+    </a>
+
+
   </div>
 </section>
 
@@ -528,64 +570,4 @@
     <div class="road-step">
       <div class="when">Next</div>
       <h4>More on everyday behavior</h4>
-      <p style="margin:0;">Other topics in the same direction include ADHD and hyperfocus, the intense world theory of autism, and neuroplasticity and habits. The point is to give viewers a complete picture of how the brain shapes everyday life.</p>
-    </div>
-    <div class="road-step">
-      <div class="when">Then</div>
-      <h4>Foundational neuroscience</h4>
-      <p style="margin:0;">A deeper layer goes into the hardware itself. Topics include resting potential, action potentials, voltage-gated channels, myelination, hippocampal consolidation, neuropharmacology, and the Nernst potential. These are the mechanisms underneath the protocols.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="peri-cta">
-  <h2>Follow NeuroSense</h2>
-    <p>The first Shorts are live. Follow on YouTube and Instagram, or write if you want updates.</p>
-    <p style="margin-bottom:.35rem;"><a href="https://www.youtube.com/@neurosensebrain" target="_blank" rel="noopener" style="color:#fff; font-weight:700; text-decoration:underline;">youtube.com/@neurosensebrain</a></p>
-    <p style="margin-bottom:.9rem;"><a href="https://www.instagram.com/neurosensebrain/" target="_blank" rel="noopener" style="color:#fff; font-weight:700; text-decoration:underline;">instagram.com/neurosensebrain</a></p>
-    <a class="email" href="mailto:perioztekinneuroscience@gmail.com?subject=NeuroSense updates">perioztekinneuroscience@gmail.com</a>
-  </div>
-</section>
-
-<section style="text-align: center; padding: 1rem 0 3rem;">
-  <a class="btn btn-outline" style="border-color:var(--peri-purple); color:var(--peri-purple);" href="/">&larr; Back to home</a>
-</section>
-
-</div>
-</main>
-
-<footer>
-<div class="footer-inner">
-  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
-  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
-</div>
-<div class="footer-bottom">
-  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
-</div>
-</footer>
-
-<script src="/js/animate.js"></script>
-<script src="/js/peri.js"></script>
-<script>
-/* NeuroSense episode track filter — additive, no dependencies. */
-(function () {
-  var buttons = document.querySelectorAll('.ep-filter-btn');
-  var cards = document.querySelectorAll('.ep-card[data-track]');
-  if (!buttons.length || !cards.length) return;
-  buttons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var filter = btn.getAttribute('data-filter');
-      buttons.forEach(function (b) { b.classList.toggle('active', b === btn); });
-      cards.forEach(function (card) {
-        var tracks = (card.getAttribute('data-track') || '').split(' ');
-        var show = filter === 'all' || tracks.indexOf(filter) !== -1;
-        card.classList.toggle('is-hidden', !show);
-      });
-    });
-  });
-})();
-</script>
-</body>
-</html>
-
+      <p style="margin:0;">Other topics in the same direction include ADHD and hyperfocus, the intense world theory of autism, and neuroplastici
