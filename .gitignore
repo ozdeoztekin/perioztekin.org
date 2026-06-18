@@ -13,3 +13,5 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 Gemfile.lock
+.hf_cache_local/
+.numba_cache_local/
