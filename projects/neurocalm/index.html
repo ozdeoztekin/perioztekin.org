@@ -48,7 +48,7 @@
   <div class="peri-hero-inner">
     <span class="hero-tag">Independent research prototype</span>
     <h1>NeuroCalm</h1>
-    <p class="lede">An open-source school-wearable prototype testing whether personal EEG/body-signal patterns, a quiet wrist nudge, and a private trigger journal can help someone notice sensory overwhelm earlier.</p>
+    <p class="lede">A school-wearable prototype that combines personal EEG/body-signal baselines, a quiet haptic wrist cue, and private trigger journaling to test whether sensory overwhelm can be noticed earlier.</p>
   </div>
   <div class="wave-bottom" aria-hidden="true">
     <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,56 +61,95 @@
 <div class="container" style="margin-top: 2rem;">
 
 <section class="deep-section">
-  <span class="section-label">The question</span>
-  <h3>Can a wearable cue create a few extra seconds of self-awareness?</h3>
-  <p>Sensory overwhelm often becomes visible to other people only after it has already become difficult to manage. NeuroCalm is built around a narrower, testable question: can a personal baseline, a conservative cue algorithm, and a gentle haptic signal help the wearer notice the shift earlier?</p>
-  <p>The current version does not claim to diagnose, treat, or prove sensory overload. It logs features, cue decisions, and user-entered context so each session can be reviewed instead of guessed from memory.</p>
+  <span class="section-label">The problem</span>
+  <h3>The useful window may come before the words do</h3>
+  <p>Sensory overwhelm can build before someone can explain what is happening. NeuroCalm is my attempt to make that earlier window visible: not by claiming to read a person&rsquo;s mind, but by comparing current wearable signals against that person&rsquo;s own quiet baseline.</p>
+  <p>The testable question is concrete: can a soft wrist cue, delivered only when a conservative personal-baseline detector fires, help the wearer notice a shift early enough to choose a regulation strategy?</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Current build</span>
+  <h3>What exists in the prototype repo now</h3>
+  <ul>
+    <li><strong>Signal stream:</strong> synthetic EEG/body-signal stream works now; Muse 2 or Muse S/Athena through BrainFlow is the planned live sensing path.</li>
+    <li><strong>Feature extraction:</strong> 4-second windows produce alpha, theta, beta, motion, alpha/theta ratio, and signal-quality summaries. Raw EEG is not written to the session journal by default.</li>
+    <li><strong>Detector:</strong> an overload-risk cue score is computed against a personal baseline, then filtered through smoothing, dwell, hysteresis, and a refractory period so one noisy window cannot trigger the wrist.</li>
+    <li><strong>Output:</strong> ESP32 wristband with a DRV2605L haptic driver and small vibration motor. Live vibration is opt-in; dry-run logging stays the default.</li>
+    <li><strong>Review:</strong> a session-review command summarizes usable signal, cue decisions, delivered nudges, withheld catch trials, journal tags, and next-step flags.</li>
+  </ul>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Detector design</span>
+  <h3>The cue is gated, calibrated, and deliberately hard to annoy</h3>
+  <p>Each 4-second feature window is scored against the wearer&rsquo;s baseline:</p>
+<pre class="code">score = 0.33 * alpha_drop
+      + 0.32 * theta_rise
+      + 0.18 * beta_rise
+      + 0.17 * motion_rise</pre>
+  <p>The weights are a starting hypothesis, not a result. They are written down so real sessions can disagree with them. Four guardrails stand between the score and the wrist:</p>
+  <ul>
+    <li><strong>Smoothing:</strong> the score is averaged over time so it does not jump because of one noisy window.</li>
+    <li><strong>Dwell:</strong> the score has to stay high across consecutive windows before a cue is eligible.</li>
+    <li><strong>Hysteresis:</strong> after a cue, the score must fall below a release threshold before the system can re-arm.</li>
+    <li><strong>Refractory period:</strong> by default, the device can cue at most once every two minutes.</li>
+  </ul>
+  <p>The threshold is calibrated from a quiet session against a false-nudge budget. That matters because a hand-picked threshold is not comparable across people, headbands, or school days.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Hardware path</span>
+  <h3>The first wearable version is a headband plus a wristband</h3>
+  <ul>
+    <li><strong>Sensing:</strong> Muse 2 or Muse S/Athena as the EEG headband, read through BrainFlow.</li>
+    <li><strong>Controller:</strong> ESP32 board for the haptic wristband.</li>
+    <li><strong>Haptics:</strong> DRV2605L motor driver plus a small vibration motor.</li>
+    <li><strong>Safety:</strong> soft wrist strap, smooth enclosure, battery protection, strain relief, and a physical off switch.</li>
+    <li><strong>Not in v0:</strong> electrical stimulation, adhesive electrodes for school wear, loud buzzers, or anything that publicly exposes the wearer&rsquo;s state.</li>
+  </ul>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Firmware</span>
+  <h3>The wristband speaks simple serial commands</h3>
+  <p>The current ESP32 sketch listens for three cue patterns: <code>soft</code>, <code>ground</code>, and <code>pause</code>. This is the actual control idea in the repo: the Python loop decides when a cue is eligible, and the wristband only plays a named haptic pattern.</p>
+<pre class="code">if (command == "soft") {
+  playEffect(47);
+} else if (command == "ground") {
+  playEffect(52);
+  delay(120);
+  playEffect(52);
+} else if (command == "pause") {
+  playEffect(1);
+} else {
+  Serial.println("unknown:" + command);
+}</pre>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Test plan</span>
+  <h3>The next steps are staged on purpose</h3>
+  <ul>
+    <li><strong>Phase 0, synthetic loop:</strong> working. A 90-second synthetic smoke test created a JSONL session, logged 22 usable windows out of 22, delivered 1 dry-run nudge, and flagged the session as too short for claims.</li>
+    <li><strong>Phase 1, wristband bench test:</strong> connect the ESP32 wristband over USB and send <code>python -m neurocalm.cli cue --port COM5 --pattern soft</code>. Pass only if the cue is gentle, stoppable, and not startling.</li>
+    <li><strong>Phase 2, Muse sanity check:</strong> run an eyes-open/eyes-closed alpha check. Pass requires median closed/open alpha ratio at least 1.40, median AUC at least 0.75, and at least 3 of 4 pairs moving in the right direction.</li>
+    <li><strong>Phase 2b, calibration:</strong> record a quiet session and choose a threshold from a stated false-nudge budget, such as 2 unwanted cues per hour.</li>
+    <li><strong>Phase 3+, shadow before school:</strong> home shadow mode comes before haptic mode; school shadow mode comes before school nudge mode; caregiver notices stay off unless everyone agrees what they mean.</li>
+  </ul>
 </section>
 
 <section class="deep-section">
   <span class="section-label">Theory</span>
-  <h3>Personal baseline first, universal claims last</h3>
-  <p>There is a real neurophysiological literature on sensory processing differences in autism, including EEG, MEG, and fMRI findings (<a href="https://doi.org/10.1203/PDR.0b013e3182130c54" target="_blank" rel="noopener">Marco et al., 2011</a>). But the EEG literature is also heterogeneous: a recent meta-analysis found group-level resting-state differences, including reduced relative alpha and increased gamma on average, while also reporting substantial variation across studies (<a href="https://doi.org/10.1038/s41398-023-02681-2" target="_blank" rel="noopener">Neo et al., 2023</a>).</p>
-  <p>That is why NeuroCalm does not treat one band as a magic overload detector. Newer work links alpha activity with sensory behaviors in autistic adults, but also shows how strongly task and context matter (<a href="https://doi.org/10.1002/aur.3266" target="_blank" rel="noopener">Murray et al., 2025</a>). The prototype therefore asks a smaller question: did this wearer move far enough away from their own quiet baseline that a soft cue is worth testing?</p>
-</section>
-
-<section class="deep-section">
-  <span class="section-label">Current prototype</span>
-  <h3>The working loop</h3>
-  <ul>
-    <li><strong>Input:</strong> synthetic streams now; Muse 2 or Muse S/Athena through BrainFlow for live EEG testing.</li>
-    <li><strong>Features:</strong> alpha, theta, beta, motion, and signal quality, stored as summaries rather than raw EEG.</li>
-    <li><strong>Detector:</strong> personal baseline, calibrated threshold, smoothing, dwell, hysteresis, refractory period, and optional catch trials.</li>
-    <li><strong>Output:</strong> ESP32 wristband with DRV2605L haptic driver; live vibration is opt-in after bench testing.</li>
-    <li><strong>Reflection:</strong> local trigger journal plus a new session-review command for signal quality, cue count, contexts, and next-step flags.</li>
-  </ul>
-  <p>The newest prototype improvement is practical: after a run, the system can summarize whether the session had enough usable signal, how many cues fired, whether catch trials were withheld, and what contexts the wearer logged.</p>
-</section>
-
-<section class="deep-section">
-  <span class="section-label">Testing path</span>
-  <h3>What has to pass before school wear</h3>
-  <ul>
-    <li>Run the synthetic loop and confirm the session log contains no raw EEG samples.</li>
-    <li>Bench-test the ESP32 wristband off-body and make sure the vibration is gentle and easy to stop.</li>
-    <li>Run a Muse eyes-open/eyes-closed alpha sanity check at home. If alpha does not move reliably, the project should not pretend it has a useful EEG signal.</li>
-    <li>Calibrate on a quiet personal baseline and set a false-nudge budget before wearing it.</li>
-    <li>Use shadow mode before haptic mode; use school mode only with permission and no caregiver notices at first.</li>
-  </ul>
-</section>
-
-<section class="deep-section">
-  <span class="section-label">Why it is different</span>
-  <h3>Not a meditation headband, not a crisis alarm</h3>
-  <p>Commercial EEG products already exist. NeuroCalm is different because the workflow is school-specific: a tolerable wrist nudge, local privacy, trigger journaling, consent-based caregiver check-ins, and open-source documentation. Wearable stress research often combines automatic sensing with self-report, which fits this design better than pretending the sensor alone knows the whole story (<a href="https://doi.org/10.3390/healthcare11172369" target="_blank" rel="noopener">Gonzalez Ramirez et al., 2023</a>; <a href="https://doi.org/10.3390/s21103461" target="_blank" rel="noopener">Hickey et al., 2021</a>).</p>
+  <h3>What NeuroCalm can infer, and what it cannot</h3>
+  <p>The theory model has four layers: environment, latent state, cue decision, and user interpretation. NeuroCalm can record broad context tags, summarize wearable features, and make a cue decision. It cannot directly read distress, autism, anxiety, or sensory overload.</p>
+  <p>This boundary matters because EEG findings in autism and sensory processing are real but heterogeneous. Sensory processing differences have neurophysiological support across EEG, MEG, and fMRI work (<a href="https://doi.org/10.1203/PDR.0b013e3182130c54" target="_blank" rel="noopener">Marco et al., 2011</a>), but resting-state EEG findings vary across studies (<a href="https://doi.org/10.1038/s41398-023-02681-2" target="_blank" rel="noopener">Neo et al., 2023</a>). Alpha activity has also been linked to sensory behaviors in autistic adults, which supports measuring it while also warning against simple one-band claims (<a href="https://doi.org/10.1002/aur.3266" target="_blank" rel="noopener">Murray et al., 2025</a>).</p>
 </section>
 
 <section class="deep-section">
   <span class="section-label">Limits</span>
-  <h3>The limits belong on the box</h3>
-  <p>NeuroCalm is a prototype, not a medical device. It does not diagnose, treat, prevent, or cure anything. The current claim is feasibility: whether personalized physiology plus a quiet cue and a reviewable journal can support earlier self-awareness. A useful failure is still useful if it shows the signal is too noisy, the cue is intrusive, or the workflow does not help the wearer.</p>
+  <h3>The limits are part of the design</h3>
+  <p>NeuroCalm is a prototype, not a medical device. It does not diagnose, treat, prevent, or cure anything. The current claim is feasibility: whether personalized physiology plus a quiet cue and a reviewable journal can support earlier self-awareness. If the signal is too noisy, the cue is intrusive, or the journal is not useful, that is not failure to hide. It is exactly what the prototype is supposed to find out.</p>
 </section>
-
 <section style="text-align: center; padding: 2rem 0 3rem;">
   <a class="btn btn-outline" style="border-color:var(--peri-purple); color:var(--peri-purple);" href="/#projects">&larr; Back to all projects</a>
 </section>
