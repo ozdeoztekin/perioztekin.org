@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroCalm &mdash; brainwave-responsive sensory regulation &middot; Peri Oztekin</title>
-  <meta name="description" content="NeuroCalm is an EEG-driven wearable concept that detects sensory overload and delivers calming feedback before distress escalates.">
+  <title>NeuroCalm &mdash; school-wearable sensory regulation prototype &middot; Peri Oztekin</title>
+  <meta name="description" content="NeuroCalm is an open-source school-wearable prototype exploring personal EEG/body-signal cues, haptic feedback, trigger journaling, and consent-based caregiver check-ins.">
   <link rel="canonical" href="https://perioztekin.org/projects/neurocalm/">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="NeuroCalm &mdash; brainwave-responsive sensory regulation">
+  <meta property="og:title" content="NeuroCalm &mdash; school-wearable sensory regulation prototype">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/peri.css">
@@ -43,11 +43,12 @@
 </nav>
 </header>
 
+
 <section class="peri-hero compact">
   <div class="peri-hero-inner">
-    <span class="hero-tag">Independent research concept</span>
+    <span class="hero-tag">Independent research prototype</span>
     <h1>NeuroCalm</h1>
-    <p class="lede">A wearable that listens to alpha and theta rhythms and gives the brain a signal, a calming light, a gentle vibration, before sensory overload becomes crisis.</p>
+    <p class="lede">An open-source school-wearable prototype testing whether personal EEG/body-signal patterns, a quiet wrist nudge, and a private trigger journal can help someone notice sensory overwhelm earlier.</p>
   </div>
   <div class="wave-bottom" aria-hidden="true">
     <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,86 +61,54 @@
 <div class="container" style="margin-top: 2rem;">
 
 <section class="deep-section">
-  <span class="section-label">The need</span>
-  <h3>A lot of people who are overwhelmed can&rsquo;t put it into words while it&rsquo;s happening</h3>
-  <p>Sensory overload usually builds before anyone can name it. By the time someone can say &ldquo;this is too much,&rdquo; the chance to do anything calming has often already passed. NeuroCalm is meant to read what&rsquo;s happening underneath the experience, in the brainwaves, and step in early with something quiet, before things spiral.</p>
-  <p>The idea I&rsquo;m testing: if a headband watches the EEG bands that track stress and attention, and gives a small, optional cue when those bands shift, it might give someone a few extra seconds, the window where calming yourself down is still possible.</p>
+  <span class="section-label">The question</span>
+  <h3>Can a wearable cue create a few extra seconds of self-awareness?</h3>
+  <p>Sensory overwhelm often becomes visible to other people only after it has already become difficult to manage. NeuroCalm is built around a narrower, testable question: can a personal baseline, a conservative cue algorithm, and a gentle haptic signal help the wearer notice the shift earlier?</p>
+  <p>The current version does not claim to diagnose, treat, or prove sensory overload. It logs features, cue decisions, and user-entered context so each session can be reviewed instead of guessed from memory.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">The science</span>
-  <h3>Why brainwaves?</h3>
-  <p>Autistic individuals frequently show altered alpha (8&ndash;12 Hz) and theta (4&ndash;7 Hz) rhythms. Lower alpha tracks reduced calm and focus; elevated theta tracks inattention, stress, and sensory overload. These bands can be non-invasively monitored using consumer-grade EEG.</p>
-  <p>Neurofeedback, training individuals to regulate brainwave activity through real-time cues, has been studied in autism for decades. The evidence is genuinely mixed: some protocols show meaningful gains in attention, social function, and anxiety; other reviews argue methodological weaknesses leave the picture unsettled. NeuroCalm sits honestly inside that controversy: a support tool, not a treatment, with its limitations on the box.</p>
+  <span class="section-label">Theory</span>
+  <h3>Personal baseline first, universal claims last</h3>
+  <p>There is a real neurophysiological literature on sensory processing differences in autism, including EEG, MEG, and fMRI findings (<a href="https://doi.org/10.1203/PDR.0b013e3182130c54" target="_blank" rel="noopener">Marco et al., 2011</a>). But the EEG literature is also heterogeneous: a recent meta-analysis found group-level resting-state differences, including reduced relative alpha and increased gamma on average, while also reporting substantial variation across studies (<a href="https://doi.org/10.1038/s41398-023-02681-2" target="_blank" rel="noopener">Neo et al., 2023</a>).</p>
+  <p>That is why NeuroCalm does not treat one band as a magic overload detector. Newer work links alpha activity with sensory behaviors in autistic adults, but also shows how strongly task and context matter (<a href="https://doi.org/10.1002/aur.3266" target="_blank" rel="noopener">Murray et al., 2025</a>). The prototype therefore asks a smaller question: did this wearer move far enough away from their own quiet baseline that a soft cue is worth testing?</p>
+</section>
 
-  <h4>Key literature consulted during design:</h4>
+<section class="deep-section">
+  <span class="section-label">Current prototype</span>
+  <h3>The working loop</h3>
   <ul>
-    <li><strong>Coben, Linden &amp; Myers (2010)</strong>, review of neurofeedback in ASD; reports reduction in slow-wave activity and gains in focus and behavior.</li>
-    <li><strong>Kouijzer et al. (2009)</strong>, SMR enhancement and theta inhibition over 40&ndash;100 sessions improved executive function and reduced anxiety.</li>
-    <li><strong>Thompson et al. (2010)</strong>, brainwave training increased frontal alpha power, supporting calmer states in autistic participants.</li>
-    <li><strong>Cowan &amp; Markham (1994)</strong>, case study with 21 sessions; gains maintained at 2-year follow-up.</li>
-    <li><strong>ASAT (2017)</strong>, the contrary view: insufficient evidence to recommend neurofeedback as a treatment in autism. Cited deliberately.</li>
+    <li><strong>Input:</strong> synthetic streams now; Muse 2 or Muse S/Athena through BrainFlow for live EEG testing.</li>
+    <li><strong>Features:</strong> alpha, theta, beta, motion, and signal quality, stored as summaries rather than raw EEG.</li>
+    <li><strong>Detector:</strong> personal baseline, calibrated threshold, smoothing, dwell, hysteresis, refractory period, and optional catch trials.</li>
+    <li><strong>Output:</strong> ESP32 wristband with DRV2605L haptic driver; live vibration is opt-in after bench testing.</li>
+    <li><strong>Reflection:</strong> local trigger journal plus a new session-review command for signal quality, cue count, contexts, and next-step flags.</li>
+  </ul>
+  <p>The newest prototype improvement is practical: after a run, the system can summarize whether the session had enough usable signal, how many cues fired, whether catch trials were withheld, and what contexts the wearer logged.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Testing path</span>
+  <h3>What has to pass before school wear</h3>
+  <ul>
+    <li>Run the synthetic loop and confirm the session log contains no raw EEG samples.</li>
+    <li>Bench-test the ESP32 wristband off-body and make sure the vibration is gentle and easy to stop.</li>
+    <li>Run a Muse eyes-open/eyes-closed alpha sanity check at home. If alpha does not move reliably, the project should not pretend it has a useful EEG signal.</li>
+    <li>Calibrate on a quiet personal baseline and set a false-nudge budget before wearing it.</li>
+    <li>Use shadow mode before haptic mode; use school mode only with permission and no caregiver notices at first.</li>
   </ul>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">The build</span>
-  <h3>Hardware specification</h3>
-  <ul>
-    <li><strong>EEG input:</strong> NeuroSky MindWave Mobile 2 (single-channel, 12-bit, 512 Hz, 3&ndash;100 Hz), or simulated input from a Python harness for development.</li>
-    <li><strong>Microcontroller:</strong> Arduino UNO (or ESP32 / Micro:bit), Bluetooth-paired to the EEG headset.</li>
-    <li><strong>Feedback outputs:</strong> programmable LED for visual cueing, mini vibration motor for haptic feedback, optional buzzer for low-volume auditory tones. User selects which channels are enabled.</li>
-    <li><strong>Form factor:</strong> soft fabric headband with foam-padded electrode mount and Velcro closure, sized for sensory tolerance, not data quality.</li>
-  </ul>
-
-  <h4>Detection logic.</h4>
-  <p>The firmware watches the alpha/theta ratio against a personalized threshold. When theta rises or alpha falls beyond the threshold, a calming routine fires: a slow LED fade-up, a brief haptic pulse, optionally a tone. The intervention is designed to be noticeable but not commanding, a tap on the shoulder, not an alarm.</p>
-</section>
-
-<section class="deep-section">
-  <span class="section-label">The firmware</span>
-  <h3>Excerpt from the prototype Arduino sketch</h3>
-  <p>The prototype runs on simulated EEG by default so the feedback loop can be tested without hardware, then switches to real input when the MindWave is paired.</p>
-<pre class="code">
-<span class="c">// NeuroCalm prototype loop (excerpt)</span>
-<span class="k">void</span> loop() {
-  <span class="c">// Replace with real EEG parsing once paired</span>
-  alpha = random(0, 100) / 100.0;
-  theta = random(0, 100) / 100.0;
-
-  <span class="c">// Stress thresholds</span>
-  <span class="k">if</span> (theta &gt; 0.5 || alpha &lt; 0.3) {
-    <span class="c">// Calming LED fade-up</span>
-    <span class="k">for</span> (int b = 0; b &lt;= 255; b += 5) {
-      analogWrite(ledPin, b);
-      delay(100);
-    }
-    <span class="c">// Single haptic pulse</span>
-    digitalWrite(motorPin, HIGH);
-    delay(1000);
-    digitalWrite(motorPin, LOW);
-  }
-  delay(1000);
-}
-</pre>
+  <span class="section-label">Why it is different</span>
+  <h3>Not a meditation headband, not a crisis alarm</h3>
+  <p>Commercial EEG products already exist. NeuroCalm is different because the workflow is school-specific: a tolerable wrist nudge, local privacy, trigger journaling, consent-based caregiver check-ins, and open-source documentation. Wearable stress research often combines automatic sensing with self-report, which fits this design better than pretending the sensor alone knows the whole story (<a href="https://doi.org/10.3390/healthcare11172369" target="_blank" rel="noopener">Gonzalez Ramirez et al., 2023</a>; <a href="https://doi.org/10.3390/s21103461" target="_blank" rel="noopener">Hickey et al., 2021</a>).</p>
 </section>
 
 <section class="deep-section">
   <span class="section-label">Limits</span>
-  <h3>What this is, and what it isn&rsquo;t</h3>
-  <p>NeuroCalm is a prototype, not a medical device. It does not diagnose, treat, or cure anything. The research on neurofeedback for autism is real but unsettled, and a working version of NeuroCalm would need real testing with real users over time before anyone could honestly say it helps. I want to be clear about that, this is a support tool that might be useful, not a therapy. The limits should be on the box.</p>
-</section>
-
-<section class="deep-section">
-  <span class="section-label">Where this could go</span>
-  <h3>From concept to a real headband</h3>
-  <ul>
-    <li>Build the physical headband and test fit and comfort across multiple wear sessions.</li>
-    <li>Replace simulated EEG with live MindWave input; calibrate thresholds per-user via baseline session.</li>
-    <li>Add a companion app for selecting feedback type, logging events, and reviewing patterns over time.</li>
-    <li>Run small-scale informal feasibility testing with consenting users; collect qualitative feedback.</li>
-  </ul>
-  <p>If you build assistive tech, work in autism support, or want to talk EEG hardware design, please <a href="mailto:perioztekinneuroscience@gmail.com">say hello</a>.</p>
+  <h3>The limits belong on the box</h3>
+  <p>NeuroCalm is a prototype, not a medical device. It does not diagnose, treat, prevent, or cure anything. The current claim is feasibility: whether personalized physiology plus a quiet cue and a reviewable journal can support earlier self-awareness. A useful failure is still useful if it shows the signal is too noisy, the cue is intrusive, or the workflow does not help the wearer.</p>
 </section>
 
 <section style="text-align: center; padding: 2rem 0 3rem;">
