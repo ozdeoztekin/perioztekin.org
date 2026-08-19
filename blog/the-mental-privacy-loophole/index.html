@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mental Privacy Loophole &middot; Peri Oztekin</title>
+  <meta name="description" content="A source-backed AP Seminar blog essay on neural data, cognitive biometrics, mental-state inference, and why mental privacy law has to look beyond brain signals alone.">
+  <link rel="canonical" href="https://perioztekin.org/blog/the-mental-privacy-loophole/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Mental Privacy Loophole">
+  <meta property="og:description" content="If a device can infer attention, emotion, intention, or vulnerability without touching the brain, is that still a mental privacy problem?">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/peri.css">
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
+</head>
+<body>
+
+<header>
+<nav class="topnav" id="topnav">
+  <div class="brand-stack">
+    <a class="brand" href="/">Peri Oztekin</a>
+    <div class="brand-choice-line mind" aria-label="rotating brand line">
+      <span class="brand-brain" aria-hidden="true">
+        <svg id="brand-brain-image" class="brand-brain-image" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"></svg>
+      </span>
+      <span class="brand-choice-prefix">Your&nbsp;</span>
+      <span id="brand-choice-word" data-words="Mind,Thoughts,Feelings,Actions,Behavior">Mind</span>
+      <span class="brand-choice-suffix">&nbsp;Your Power</span>
+    </div>
+  </div>
+  <div class="nav-links" id="nav-links">
+    <a href="/">Home</a>
+    <a href="/academics/">Academics</a>
+    <a href="/projects/">Projects</a>
+    <a href="/research/">Research</a>
+    <a href="/neurosense/">NeuroSense</a>
+    <a href="/neurodivergent/">Neurodivergent</a>
+    <a href="/wellbeing/">Wellbeing</a>
+    <a href="/blog/" class="active">Blog</a>
+    <a href="/#contact" class="nav-cta">Contact</a>
+  </div>
+  <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">&#9776;</button>
+</nav>
+</header>
+
+<section class="peri-hero compact">
+  <div class="peri-hero-inner">
+    <span class="hero-tag">Neurorights &middot; Cognitive biometrics &middot; AP Seminar</span>
+    <h1>The Mental Privacy Loophole</h1>
+    <p class="lede">My AP Seminar question started with brain-computer interfaces, but the more I read, the stranger the problem became. What if the most important threat to mental privacy is not a futuristic machine that reads thoughts perfectly, but ordinary devices that infer attention, emotion, intention, or vulnerability from data that never looks like &ldquo;brain data&rdquo; at all?</p>
+  </div>
+  <div class="wave-bottom" aria-hidden="true">
+    <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,27 C360,54 1080,0 1440,27 L1440,54 L0,54 Z" fill="#f4f7f9"/>
+    </svg>
+  </div>
+</section>
+
+<main>
+<div class="container" style="margin-top: 2rem;">
+
+<section class="deep-section">
+  <span class="section-label">Why this needed a second post</span>
+  <h3>The obvious door, and the side door</h3>
+  <p>The obvious mental privacy problem is neural data: EEG, fMRI, implanted electrodes, or brain-computer interfaces that translate neural activity into text, cursor movement, or speech. That problem is real. In 2025 and 2026, the field kept moving from laboratory proof toward practical assistive systems: registered trials from Neuralink, Synchron, and Paradromics; a Nature Medicine report of long-term at-home BCI use for speech and cursor control; and brain-to-voice systems that make attempted speech audible again.</p>
+  <p>But the side door may matter just as much. A 2025 Nature paper from Reality Labs described a non-invasive wrist-based neuromotor interface that decodes muscle signals for gestures and handwriting. It is not reading secret thoughts. It is a serious human-computer interface built around electrical signals from the body, translating movement-related signals into commands. That is exactly why it belongs in the mental privacy conversation.</p>
+  <p>My revised research question became: <strong>To what extent should U.S. privacy law regulate mental-state inferences from neural and cognitive biometric data?</strong> The phrase that changed everything is not just <em>neural data</em>. It is <em>mental-state inferences</em>.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Question 1</span>
+  <h3>If it is not brain data, why does it feel like a brain-data problem?</h3>
+  <p>Because the privacy risk does not come only from where the signal starts. It comes from what the signal can reveal after analysis.</p>
+  <p>Magee, Ienca, and Farahany call this broader category cognitive biometrics: neural data, but also eye tracking, heart-rate patterns, voice analysis, facial expression, sleep, movement, typing behavior, and other signals that can be processed to infer cognitive, affective, or conative states. In simpler language: what someone notices, feels, wants, chooses, avoids, or may do next.</p>
+  <p>This is why a neural-data-only law can be underinclusive. If a company cannot collect brain data to infer stress, attention, or intention without strong protections, it should not be able to reach a similar inference through eyes, wrists, voice, sleep, or behavior just because the raw signal came from outside the skull.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Question 2</span>
+  <h3>Is the danger inaccurate inference, or accurate inference?</h3>
+  <p>Both, in different ways.</p>
+  <p>Chandler helped me see that mental-state inference is not a magic window into a person. It is a chain: data is collected, a model interprets it, a mental state is inferred, and then someone may act on that inference. Each step can go wrong. A brain pattern might fit more than one mental state. A model trained on one group might fail for a particular individual. A prediction might be treated as more objective than the person&rsquo;s own explanation.</p>
+  <p>That means bad inferences are dangerous because they can be wrong and still persuasive. But good inferences are also sensitive because they may reveal something real that the person never meant to disclose. Mental privacy has to care about both problems: unreliable guesses that harm people, and reliable guesses that expose them.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Question 3</span>
+  <h3>Why not wait until the technology is stronger?</h3>
+  <p>This was the counterargument I took seriously. Tang et al.&rsquo;s 2023 semantic decoder was limited: it needed participant-specific training, cooperation, and hours of fMRI data. People could interfere with it. It was not a universal mind-reading machine.</p>
+  <p>But Mecacci and Haselager give a name to the mistake of waiting too long: the delay fallacy. If a technology is still developing, that does not automatically mean the ethical and legal work should wait. It may mean the opposite. Rules written while the technology is forming can guide design, prevent bad defaults, and keep beneficial uses from being poisoned by distrust.</p>
+  <p>The newer Tang and Huth work on semantic decoding across participants also makes the timing question less comfortable. If some barriers are beginning to erode, then a law that waits for perfect decoding will arrive late by design.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Question 4</span>
+  <h3>Do the first state laws solve it?</h3>
+  <p>They start the conversation. They do not finish it.</p>
+  <p>Colorado&rsquo;s 2024 law brought neural data into a biological-data privacy framework, and California&rsquo;s 2024 SB 1223 added neural data to sensitive personal information under its consumer privacy law. Those are important proof-of-concept laws because they show U.S. privacy statutes can be updated for neurotechnology instead of pretending the issue is imaginary.</p>
+  <p>The gap is scope. A state law can be narrow. A consumer privacy law may not reach every school, employer, public agency, research setting, or high-stakes decision. And a neural-data definition may not catch non-neural cognitive biometrics. That is the loophole: the law can appear to protect mental privacy while still leaving out the data streams most likely to scale.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Question 5</span>
+  <h3>Does the U.S. need a brand-new neuroright?</h3>
+  <p>I am less convinced than I was at first.</p>
+  <p>Istace made the distinction clearer for me: the United States may not need to invent a sweeping new fundamental right from scratch. It may need a distinct statutory protection built from rights we already recognize: privacy, freedom of thought, autonomy, dignity, and mental integrity. That matters because a broad symbolic right can sound powerful and still be hard to enforce.</p>
+  <p>The better question is not, &ldquo;Can we name a new right?&rdquo; It is, &ldquo;Can we write a rule that tells companies, schools, employers, agencies, and courts what they may and may not do with neural data and mental-state inferences?&rdquo;</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Question 6</span>
+  <h3>What would a smarter rule ask?</h3>
+  <p>A smarter rule would ask about use and risk, not only data category.</p>
+  <p>It would ask: Does this data, alone or combined with other data, allow an inference about cognition, emotion, intention, attention, vulnerability, or neurological condition? Is the inference being used for healthcare, accessibility, communication, education, advertising, employment, insurance, law enforcement, or another high-stakes purpose? Can the person meaningfully refuse without losing an essential service? Is the model reliable for this person, not just for a group? Will the inference be used to help the person, judge the person, manipulate the person, or sell access to the person?</p>
+  <p>This is why the introduced federal MIND Act is worth watching even though it is not law. It explicitly includes &ldquo;other related data&rdquo; such as biometric, physiological, or behavioral information that can reveal cognitive, emotional, psychological, or neurological states. That is the same conceptual move my sources pushed me toward: the legal trigger should be what the data can do, not only what organ it came from.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">My current answer</span>
+  <h3>Protect the inference, not just the electrode</h3>
+  <p>My answer is becoming more precise: U.S. privacy law should regulate mental-state inferences from both neural data and cognitive biometric data when those inferences are intimate, high-risk, or hard to avoid. The law should not treat every heart-rate chart or gesture signal like a brain scan. That would be too broad and probably unworkable. But it also should not let companies avoid mental privacy rules by collecting everything except the brain signal itself.</p>
+  <p>The baseline should be clear consent, purpose limits, data minimization, security, deletion rights, restrictions on sale or targeted advertising, and stronger limits in high-stakes contexts like schools, workplaces, healthcare, insurance, and law enforcement. For assistive and medical neurotechnology, the point should be trust, not fear. A person who needs a BCI to communicate should not have to wonder whether the same system is quietly building a profile of their private mental life.</p>
+  <p>The sentence I keep coming back to is this: <strong>mental privacy should protect people from unauthorized access to the mind, including when access happens through inference.</strong></p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">What changed my thinking</span>
+  <h3>The most powerful question is smaller than &ldquo;Can machines read minds?&rdquo;</h3>
+  <p>&ldquo;Can machines read minds?&rdquo; is dramatic, but it is not the question I trust most anymore. It makes people imagine a perfect device, then dismiss the whole issue when the device is imperfect.</p>
+  <p>The better question is quieter: <strong>When does a useful guess about a person become private mental information?</strong></p>
+  <p>That question is harder to laugh off. We already live with useful guesses. Recommendation systems guess what we want. Wearables guess how we sleep or recover. XR systems can use gaze and hand movement. Neuromotor interfaces can turn subtle muscle signals into commands. Brain decoders are improving, but non-brain signals are already everywhere. The law has to learn to see the pattern before the pattern sees too much of us.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">Source trail</span>
+  <h3>The sources behind this post</h3>
+  <p>The AP Seminar sources that shaped this entry were Tang et al. on <a href="https://doi.org/10.1038/s41593-023-01304-9" target="_blank" rel="noopener">semantic reconstruction from non-invasive brain recordings</a>; Tang and Huth on <a href="https://doi.org/10.1016/j.cub.2025.01.024" target="_blank" rel="noopener">semantic decoding across participants</a>; Magee, Ienca, and Farahany on <a href="https://doi.org/10.1016/j.neuron.2024.09.004" target="_blank" rel="noopener">cognitive biometrics and mental privacy</a>; Chandler on <a href="https://doi.org/10.1002/hast.4958" target="_blank" rel="noopener">mental-state inference from brain data</a>; Mecacci and Haselager on <a href="https://doi.org/10.1007/s11948-017-0003-3" target="_blank" rel="noopener">criteria for brain-reading implications</a>; and Istace on <a href="https://doi.org/10.1093/jhuman/huae042" target="_blank" rel="noopener">new versus derived neurorights</a>.</p>
+  <p>For recent technology and governance context, I used stable primary or journal links where possible: ClinicalTrials.gov records for Neuralink <a href="https://clinicaltrials.gov/study/NCT06429735" target="_blank" rel="noopener">PRIME</a> and <a href="https://clinicaltrials.gov/study/NCT07224256" target="_blank" rel="noopener">VOICE</a>, Synchron <a href="https://clinicaltrials.gov/study/NCT07543367" target="_blank" rel="noopener">INTENT</a>, and Paradromics <a href="https://clinicaltrials.gov/study/NCT07357428" target="_blank" rel="noopener">Connect-One</a>; Nature Medicine on <a href="https://doi.org/10.1038/s41591-026-04414-6" target="_blank" rel="noopener">long-term independent BCI use</a>; Nature on <a href="https://doi.org/10.1038/s41586-025-09127-3" target="_blank" rel="noopener">instantaneous voice synthesis</a>; Nature on a <a href="https://doi.org/10.1038/s41586-025-09255-w" target="_blank" rel="noopener">non-invasive neuromotor wrist interface</a>; UNESCO&rsquo;s <a href="https://www.unesco.org/en/legal-affairs/recommendation-ethics-neurotechnology" target="_blank" rel="noopener">Recommendation on the Ethics of Neurotechnology</a>; Colorado <a href="https://leg.colorado.gov/bills/hb24-1058" target="_blank" rel="noopener">HB24-1058</a>; California <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1223" target="_blank" rel="noopener">SB 1223</a>; and the introduced federal <a href="https://www.congress.gov/bill/119th-congress/senate-bill/2925/text" target="_blank" rel="noopener">MIND Act of 2025</a>.</p>
+</section>
+
+<section style="text-align: center; padding: 2rem 0 3rem;">
+  <a class="btn btn-outline" style="border-color:var(--peri-purple); color:var(--peri-purple);" href="/blog/">&larr; Back to the blog</a>
+</section>
+
+</div>
+</main>
+
+<footer>
+<div class="footer-inner">
+  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
+  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
+</div>
+<div class="footer-bottom">
+  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
+</div>
+</footer>
+
+<script src="/js/animate.js"></script>
+<script src="/js/peri.js"></script>
+</body>
+</html>
