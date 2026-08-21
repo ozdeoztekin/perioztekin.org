@@ -112,6 +112,8 @@
     <button type="button" class="ep-filter-btn" data-filter="how-brain-works">How the Brain Works</button>
     <button type="button" class="ep-filter-btn" data-filter="neuro-nutrition-brain-fuel">Neuro-Nutrition &amp; Brain Fuel</button>
   </div>
+  <p id="ep-filter-status" role="status" aria-live="polite"
+     style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;"></p>
   <div class="ep-card-grid">
     <a class="ep-card" href="/neurosense/01/" data-track="focus-attention sleep-recovery">
       <div class="ep-card-thumb"><img src="/neurosense/01/thumb.png" alt="Why Your Last Study Hour Is Wasted"></div>
@@ -1273,4 +1275,64 @@
     <div class="road-step">
       <div class="when">Then</div>
       <h4>Foundational neuroscience</h4>
-      <p style="margin:0;">A deeper layer goes into the hardware itself. Topics include resting potential, action potentials, voltage-gated channels, myelination, hippocampal consolidation, neuropharmacology, and the Nernst potential. These
+      <p style="margin:0;">A deeper layer goes into the hardware itself. Topics include resting potential, action potentials, voltage-gated channels, myelination, hippocampal consolidation, neuropharmacology, and the Nernst potential. These</p>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<script>
+/* Episode track filter.
+   The buttons and the data-track attributes were already correct; the script that
+   listened to them was lost when this page was truncated, so every click did
+   nothing and the list stayed on "All". */
+(function () {
+  var filterBar = document.querySelector('.ep-filter');
+  var grid = document.querySelector('.ep-card-grid');
+  if (!filterBar || !grid) return;
+
+  var buttons = Array.prototype.slice.call(filterBar.querySelectorAll('.ep-filter-btn'));
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.ep-card'));
+
+  // Pre-split each card's tracks once, so filtering never does substring matching.
+  // "social-brain" must not match "how-brain-works", which a naive indexOf would.
+  var indexed = cards.map(function (card) {
+    var raw = card.getAttribute('data-track') || '';
+    return { el: card, tracks: raw.split(/\s+/).filter(Boolean) };
+  });
+
+  function apply(filter) {
+    var shown = 0;
+    indexed.forEach(function (item) {
+      var match = (filter === 'all') || item.tracks.indexOf(filter) !== -1;
+      item.el.hidden = !match;
+      item.el.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+    buttons.forEach(function (b) {
+      var on = b.getAttribute('data-filter') === filter;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    var live = document.getElementById('ep-filter-status');
+    if (live) {
+      live.textContent = shown + (shown === 1 ? ' episode' : ' episodes') +
+        (filter === 'all' ? '' : ' in this track');
+    }
+  }
+
+  filterBar.addEventListener('click', function (ev) {
+    var btn = ev.target.closest ? ev.target.closest('.ep-filter-btn') : null;
+    if (!btn || !filterBar.contains(btn)) return;
+    ev.preventDefault();
+    apply(btn.getAttribute('data-filter') || 'all');
+  });
+
+  apply('all');
+})();
+</script>
+
+</body>
+</html>
