@@ -361,6 +361,11 @@ pre.code .k { color: #e9c46a; }
 .activity-card { background: #fff; border-radius: 10px; padding: 1.1rem 1.25rem; border-top: 3px solid var(--peri-mint); box-shadow: 0 4px 16px rgba(0,0,0,.06); }
 .activity-card h4 { margin: 0 0 .35rem; color: var(--navy, #1b3a5c); font-size: 1.05rem; }
 .activity-card p { margin: 0; font-size: .9rem; color: var(--muted, #607080); }
+.book-collage { margin: 1rem 0 .85rem; }
+.book-collage img { width: 100%; height: auto; display: block; border: 1px solid #e3dcf3; border-radius: 8px; box-shadow: 0 8px 24px rgba(108,71,182,.12); }
+.book-collage figcaption { margin-top: .45rem; font-size: .84rem; color: var(--muted, #607080); }
+.activity-card .book-collage + p { margin-top: .85rem; }
+.activity-card .book-collage + p + p { margin-top: .55rem; }
 
 /* Wellbeing — stat highlights */
 .wb-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
