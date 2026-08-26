@@ -1,6 +1,6 @@
 {
   "_comment": "Source of truth for quantifiable metrics. Update by editing this file and pushing to GitHub. The site reads it at runtime. All numbers must trace back to a verified source listed in 'verifiedBy'.",
-  "lastUpdated": "2026-05-06",
+  "lastUpdated": "2026-08-26",
 
   "headline": [
     {
@@ -19,10 +19,10 @@
     },
     {
       "label": "Verified credentials",
-      "value": 7,
+      "value": 9,
       "format": "integer",
-      "verifiedBy": "Certiport, HarvardX/edX",
-      "note": "3 IT Specialist + 4 HarvardX MicroBachelors components."
+      "verifiedBy": "Certiport, HarvardX/edX, University of Cambridge/edX, Stanford Medicine",
+      "note": "3 IT Specialist + 4 HarvardX MicroBachelors components + Cambridge + Stanford CNI-X."
     },
     {
       "label": "Partner nonprofits supported",
@@ -125,6 +125,8 @@
       { "name": "MCB80.2x — Neurons and Networks", "issuer": "HarvardX", "score": "99%", "year": 2026 },
       { "name": "MCB80.3x — The Brain", "issuer": "HarvardX", "score": "100%", "year": 2026 },
       { "name": "MCB80 Comprehensive Final Exam", "issuer": "HarvardX", "score": "Certified", "year": 2026 },
+      { "name": "University of Cambridge: Introduction to Cognitive Psychology and Neuropsychology", "issuer": "University of Cambridge / edX", "score": "Verified Certificate", "year": 2026 },
+      { "name": "Stanford CNI-X Clinical Neuroscience Immersion Experience", "issuer": "Stanford Medicine Department of Psychiatry and Behavioral Sciences", "score": "Certificate of Completion", "year": 2025 },
       { "name": "IT Specialist: HTML and CSS", "issuer": "Certiport / Pearson VUE", "year": 2024 },
       { "name": "IT Specialist: Python", "issuer": "Certiport / Pearson VUE", "year": 2025 },
       { "name": "IT Specialist: Device Configuration & Management", "issuer": "Certiport / Pearson VUE", "year": 2025 }
