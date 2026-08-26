@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Mental-State Inference Loophole &middot; Peri Oztekin</title>
-  <meta name="description" content="Source-backed notes on neural data, cognitive biometrics, mental-state inference, and why mental privacy law has to look beyond brain signals alone.">
+  <meta name="description" content="A source-based AP Seminar note on statutory mental privacy, non-neural cognitive inferences, state-law gaps, agency jurisdiction, and federal design.">
   <link rel="canonical" href="https://perioztekin.org/blog/the-mental-privacy-loophole/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="The Mental-State Inference Loophole">
-  <meta property="og:description" content="If a device can infer attention, emotion, intention, or vulnerability without touching the brain, is that still a mental privacy problem?">
+  <meta property="og:description" content="If consumer technology can infer mental states without collecting neural data, U.S. mental privacy law needs an inference-based statutory design.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/peri.css">
@@ -46,9 +46,9 @@
 
 <section class="peri-hero compact">
   <div class="peri-hero-inner">
-    <span class="hero-tag">Neurorights &middot; Cognitive biometrics &middot; Mental privacy</span>
+    <span class="hero-tag">Policy note &middot; AP Seminar &middot; Mental privacy</span>
     <h1>The Mental-State Inference Loophole</h1>
-    <p class="lede">The mental privacy debate often starts with brain-computer interfaces, but the deeper problem is stranger. What if the most important threat is not a futuristic machine that reads thoughts perfectly, but ordinary devices that infer attention, emotion, intention, or vulnerability from data that never looks like &ldquo;brain data&rdquo; at all?</p>
+    <p class="lede">My AP Seminar question is whether the United States should codify statutory protection for mental privacy that reaches inferences drawn from non-neural data. My answer is yes, but carefully: the legal trigger should be the mental-state inference, not only the sensor. A rule that protects brain signals while ignoring eye movement, typing cadence, facial expression, heart rate, app behavior, or other cognitive biometrics leaves the most scalable privacy problem outside the frame.</p>
   </div>
   <div class="wave-bottom" aria-hidden="true">
     <svg viewBox="0 0 1440 54" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,81 +61,73 @@
 <div class="container" style="margin-top: 2rem;">
 
 <section class="deep-section">
-  <span class="section-label">Why this needed a second post</span>
-  <h3>The obvious door, and the side door</h3>
-  <p>Brain data is the obvious doorway into mental privacy: EEG, fMRI, implanted electrodes, and BCIs that translate attempted speech or movement. I wrote about that doorway in the previous post. This one starts with the side door: if the legal problem is mental privacy, why should the law stop at brain signals?</p>
-  <p>That question became harder after I read about a Reality Labs paper describing a non-invasive wrist-based neuromotor interface. It decodes muscle signals for gestures and handwriting, not secret thoughts. Still, it shows how intimate human-computer interfaces can be built from signals outside the brain, then translated by models into action (<a href="https://doi.org/10.1038/s41586-025-09255-w" target="_blank" rel="noopener">Kaifosh et al., 2025</a>).</p>
-  <p>That is the phrase that changes the whole debate: <em>mental-state inferences</em>. If the law protects only the raw signal, it may miss the actual harm.</p>
+  <span class="section-label">AP Seminar question</span>
+  <h3>The legal problem is inference, not just electrodes.</h3>
+  <p>The research question I am working with is: to what extent should the United States codify statutory protection for mental privacy that reaches inferences drawn from non-neural data? The reason the question matters is that consumer technologies can infer mental states from signals that do not look like brain data at all: eye movement, typing cadence, facial expression, heart rate, sleep, app behavior, location, and attention patterns.</p>
+  <p>Magee, Ienca, and Farahany describe this broader category as cognitive biometrics: data that can be processed to infer cognitive, affective, or conative states (<a href="https://doi.org/10.1016/j.neuron.2024.09.004" target="_blank" rel="noopener">Magee et al., 2024</a>). That framing changed the policy question for me. If a company can infer stress, attention, vulnerability, or intention from non-neural data, then a neural-data-only statute can protect the doorway while leaving the side entrance open.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">Question 1</span>
-  <h3>If it is not brain data, why does it feel like a brain-data problem?</h3>
-  <p>Because the privacy risk does not come only from where the signal starts. It comes from what the signal can reveal after analysis.</p>
-  <p>Magee, Ienca, and Farahany call this broader category cognitive biometrics: neural data, but also eye tracking, heart-rate patterns, voice analysis, facial expression, sleep, movement, typing behavior, and other signals that can be processed to infer cognitive, affective, or conative states. In simpler language: what someone notices, feels, wants, chooses, avoids, or may do next (<a href="https://doi.org/10.1016/j.neuron.2024.09.004" target="_blank" rel="noopener">Magee et al., 2024</a>).</p>
-  <p>This is why a neural-data-only law can be underinclusive. If a company cannot collect brain data to infer stress, attention, or intention without strong protections, it should not be able to reach a similar inference through eyes, wrists, voice, sleep, or behavior just because the raw signal came from outside the skull.</p>
+  <span class="section-label">The evidence problem</span>
+  <h3>Imperfect decoding is not a reason to wait.</h3>
+  <p>The technical evidence is not perfect mind reading, and that matters. Tang et al. used fMRI and a language model to reconstruct the meaning of language people heard, imagined, or watched silently. The system required participant-specific training and cooperation, and it often recovered gist rather than exact words (<a href="https://doi.org/10.1038/s41593-023-01304-9" target="_blank" rel="noopener">Tang et al., 2023</a>). Chandler also warns that mental-state inference is a chain of interpretation, not a transparent window into the mind (<a href="https://doi.org/10.1002/hast.4958" target="_blank" rel="noopener">Chandler, 2025</a>).</p>
+  <p>Those limits do not eliminate the legal problem. They define it. An inaccurate inference can still harm someone if a school, employer, insurer, platform, or agency treats it as objective. An accurate inference can also be sensitive if it exposes a private mental state the person never chose to disclose. That is why I do not think the law should wait for perfect decoding.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">Question 2</span>
-  <h3>Is the danger inaccurate inference, or accurate inference?</h3>
-  <p>Both, in different ways.</p>
-  <p>Chandler helped me see that mental-state inference is not a magic window into a person. It is a chain: data is collected, a model interprets it, a mental state is inferred, and then someone may act on that inference. Each step can go wrong. A brain pattern might fit more than one mental state. A model trained on one group might fail for a particular individual. A prediction might be treated as more objective than the person&rsquo;s own explanation (<a href="https://doi.org/10.1002/hast.4958" target="_blank" rel="noopener">Chandler, 2025</a>).</p>
-  <p>That means bad inferences are dangerous because they can be wrong and still persuasive. But good inferences are also sensitive because they may reveal something real that the person never meant to disclose. Mental privacy has to care about both problems: unreliable guesses that harm people, and reliable guesses that expose them.</p>
+  <span class="section-label">State-law gap</span>
+  <h3>The first state statutes are important, but they are too sensor-centered.</h3>
+  <p>Colorado and California show that U.S. privacy law can be updated for neurotechnology. Colorado&rsquo;s HB24-1058 brought neural data into its consumer privacy framework, and California&rsquo;s SB 1223 added neural data to sensitive personal information (<a href="https://leg.colorado.gov/bills/hb24-1058" target="_blank" rel="noopener">Colorado General Assembly, 2024</a>; <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1223" target="_blank" rel="noopener">California Legislature, 2024</a>). These are real gains.</p>
+  <p>The problem is that the next generation of mental privacy risk may come from non-neural inputs. Montana&rsquo;s neurotechnology definition excludes several bodily measures, including pupil dilation, motor activity, and breathing rate, while Connecticut&rsquo;s proposal centers data generated by the central or peripheral nervous system (<a href="https://mca.legmt.gov/bills/mca/title_0300/chapter_0230/part_0010/section_0020/0300-0230-0010-0020.html" target="_blank" rel="noopener">Montana Code</a>; <a href="https://www.cga.ct.gov/asp/CGABillStatus/cgabillstatus.asp?bill_num=SB01295&amp;selBillType=Bill&amp;which_year=2025" target="_blank" rel="noopener">Connecticut General Assembly, 2025</a>). A statute can therefore look modern while still missing cognitive inferences produced from non-neural data.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">Question 3</span>
-  <h3>Why not wait until the technology is stronger?</h3>
-  <p>This was the counterargument I took seriously. The semantic decoder was constrained: participant-specific training, cooperation, and hours of fMRI data. But limits are not the same as irrelevance. They are a chance to define the problem while the technology is still governable (<a href="https://doi.org/10.1038/s41593-023-01304-9" target="_blank" rel="noopener">Tang et al., 2023</a>).</p>
-  <p>Mecacci and Haselager give a name to the opposite mistake: the delay fallacy. If rules wait for perfect decoding, they arrive late by design. Newer Tang and Huth work on semantic decoding across participants makes that timing question even less comfortable (<a href="https://doi.org/10.1007/s11948-017-0003-3" target="_blank" rel="noopener">Mecacci & Haselager, 2017</a>; <a href="https://doi.org/10.1016/j.cub.2025.01.024" target="_blank" rel="noopener">Tang & Huth, 2025</a>).</p>
+  <span class="section-label">What to change</span>
+  <h3>The statute should follow the inference.</h3>
+  <p>My current policy answer has three parts. First, Colorado-style language should be modified so protection is not limited by an identification-purpose frame when the real harm is mental-state inference. Second, the United States should create a federal definition keyed to the inference drawn, not only to the sensor used. Third, non-neural carve-outs should be eliminated where they allow companies to infer intimate mental states from eyes, muscles, breathing, behavior, or other bodily signals while avoiding neuroprivacy rules.</p>
+  <p>That does not mean every fitness metric or typing pattern should be treated like a medical brain scan. The legal standard should be risk-sensitive. It should ask whether the data, alone or combined with other data, is used to infer cognition, emotion, attention, intention, vulnerability, neurological condition, or psychological state, especially in high-stakes contexts such as education, employment, insurance, healthcare, advertising, policing, or access to essential services.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">Question 4</span>
-  <h3>Do the first state laws solve it?</h3>
-  <p>They start the conversation. They do not finish it.</p>
-  <p>Colorado&rsquo;s 2024 law brought neural data into a biological-data privacy framework, and California&rsquo;s 2024 SB 1223 added neural data to sensitive personal information under its consumer privacy law. Those are useful proof-of-concept laws: U.S. privacy statutes can be updated for neurotechnology (<a href="https://leg.colorado.gov/bills/hb24-1058" target="_blank" rel="noopener">Colorado General Assembly, 2024</a>; <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1223" target="_blank" rel="noopener">California Legislature, 2024</a>).</p>
-  <p>The gap is scope. A neural-data definition may not catch non-neural cognitive biometrics, and a consumer privacy law may not reach every school, employer, public agency, research setting, or high-stakes decision. That is the loophole: the law can appear to protect mental privacy while still leaving out the data streams most likely to scale.</p>
+  <span class="section-label">Federalism</span>
+  <h3>A national floor would solve the patchwork problem.</h3>
+  <p>State experimentation is useful, but mental-state data does not stay inside state borders. A patchwork of different definitions can leave people protected in one jurisdiction and exposed in another. The introduced MIND Act is useful because it recognizes the need to study neural data and related biometric, physiological, and behavioral data that may reveal cognitive, emotional, psychological, or neurological states (<a href="https://www.congress.gov/bill/119th-congress/senate-bill/2925/text" target="_blank" rel="noopener">U.S. Congress, 2025</a>). But a study bill is not the same as a binding privacy floor.</p>
+  <p>That is why I favor federal statutory protection rather than relying only on state-by-state reform. A federal rule could set minimum protections while allowing states to go further. It would also give companies, schools, medical providers, and courts a clearer definition of mental-state inference than a patchwork of sensor-specific statutes.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">Question 5</span>
-  <h3>Does the U.S. need a brand-new neuroright?</h3>
-  <p>I am less convinced than I was at first.</p>
-  <p>Istace made the distinction clearer for me: the United States may not need to invent a sweeping new fundamental right from scratch. It may need a distinct statutory protection built from rights we already recognize: privacy, freedom of thought, autonomy, dignity, and mental integrity. That matters because a broad symbolic right can sound powerful and still be hard to enforce (<a href="https://doi.org/10.1093/jhuman/huae042" target="_blank" rel="noopener">Istace, 2025</a>).</p>
-  <p>The better question is not, &ldquo;Can we name a new right?&rdquo; It is, &ldquo;Can we write a rule that tells companies, schools, employers, agencies, and courts what they may and may not do with neural data and mental-state inferences?&rdquo;</p>
+  <span class="section-label">Rights design</span>
+  <h3>Statutory protection is more practical than a sweeping new constitutional right.</h3>
+  <p>Some scholars argue for constitutional protection of mental privacy and freedom of thought; Tomain, for example, develops a constitutional route for the digital age (<a href="https://www.repository.law.indiana.edu/ilj/vol100/iss4/15/" target="_blank" rel="noopener">Tomain, 2025</a>). Istace&rsquo;s rights framework pushed me toward a more cautious conclusion: new rights can be symbolically powerful, but derived rights and statutory translation may be clearer and more enforceable (<a href="https://doi.org/10.1093/jhuman/huae042" target="_blank" rel="noopener">Istace, 2025</a>).</p>
+  <p>In the United States, a statute also handles a major practical problem: many mental-privacy risks come from private actors. A constitutional claim can run into state-action limits, while a statute can directly regulate companies, platforms, employers, schools, insurers, and data brokers. For this project, I am not arguing for a broad new fundamental rights category. I am arguing for limited statutory protection that gives existing privacy, autonomy, and freedom-of-thought principles a workable rule.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">Question 6</span>
-  <h3>What would a smarter rule ask?</h3>
-  <p>A smarter rule would ask about use and risk, not only data category.</p>
-  <p>It would ask: Does this data, alone or combined with other data, allow an inference about cognition, emotion, intention, attention, vulnerability, or neurological condition? Is the inference being used for healthcare, accessibility, communication, education, advertising, employment, insurance, law enforcement, or another high-stakes purpose? Can the person meaningfully refuse without losing an essential service? Is the model reliable for this person, not just for a group? Will the inference be used to help the person, judge the person, manipulate the person, or sell access to the person?</p>
-  <p>This is why the introduced federal MIND Act is worth watching even though it is not law. It explicitly includes &ldquo;other related data&rdquo; such as biometric, physiological, or behavioral information that can reveal cognitive, emotional, psychological, or neurological states. That is the same conceptual move my sources pushed me toward: the legal trigger should be what the data can do, not only what organ it came from (<a href="https://www.congress.gov/bill/119th-congress/senate-bill/2925/text" target="_blank" rel="noopener">U.S. Congress, 2025</a>).</p>
+  <span class="section-label">Agency limits</span>
+  <h3>HIPAA, FDA, and FTC authority do not fully cover the conduct.</h3>
+  <p>Existing federal regimes cover pieces of the problem, but not the whole pattern. HIPAA is strongest in covered healthcare relationships, not in ordinary consumer technology (<a href="https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html" target="_blank" rel="noopener">HHS, n.d.</a>). FDA authority is tied to medical-device regulation and includes software exclusions under the 21st Century Cures Act framework, which means general wellness or non-medical products can fall outside the core medical-device pathway (<a href="https://uscode.house.gov/view.xhtml?edition=prelim&amp;num=0&amp;req=granuleid%3AUSC-prelim-title21-section360j" target="_blank" rel="noopener">21 U.S.C. &sect; 360j(o)</a>). The FTC can police unfair or deceptive practices, but after-the-fact enforcement is not the same as a clear statutory rule for mental-state inference (<a href="https://www.ftc.gov/about-ftc/mission/enforcement-authority" target="_blank" rel="noopener">FTC, n.d.</a>).</p>
+  <p>The regulatory target should therefore be conduct, not hardware. The question should not only be whether a device is implanted, medical, or explicitly neural. It should be whether the actor is collecting or using data to make sensitive mental-state inferences, and whether the person has meaningful notice, consent, limits on use, security, access, deletion, and protection from high-stakes misuse.</p>
+</section>
+
+<section class="deep-section">
+  <span class="section-label">International signals</span>
+  <h3>Other legal systems already point beyond raw neural data.</h3>
+  <p>International examples are not templates that the United States can copy wholesale, but they help show what the conceptual move looks like. Chile&rsquo;s neurorights law protects brain activity and information derived from it, which is important because it recognizes that the protected interest includes derived information, not only raw signals (<a href="https://www.bcn.cl/leychile/navegar?idNorma=1166983" target="_blank" rel="noopener">Chile Ley 21.383</a>). UNESCO&rsquo;s Recommendation on the Ethics of Neurotechnology also treats neurotechnology governance as a question about neural data, indirect data, dignity, autonomy, and mental privacy (<a href="https://www.unesco.org/en/node/86248" target="_blank" rel="noopener">UNESCO, 2025</a>).</p>
+  <p>The European Union&rsquo;s AI Act is also relevant because it restricts certain emotion-recognition uses in workplace and education settings (<a href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32024R1689" target="_blank" rel="noopener">European Union, 2024</a>). That does not solve the U.S. problem, but it supports the idea that mental-state inference can be regulated by use context, not only by the physical sensor.</p>
 </section>
 
 <section class="deep-section">
   <span class="section-label">My current answer</span>
-  <h3>Protect the inference, not just the electrode</h3>
-  <p>My answer is becoming more precise: U.S. privacy law should regulate mental-state inferences from both neural data and cognitive biometric data when those inferences are intimate, high-risk, or hard to avoid. The law should not treat every heart-rate chart or gesture signal like a brain scan. That would be too broad and probably unworkable. But it also should not let companies avoid mental privacy rules by collecting everything except the brain signal itself.</p>
-  <p>The baseline should be clear consent, purpose limits, data minimization, security, deletion rights, restrictions on sale or targeted advertising, and stronger limits in high-stakes contexts like schools, workplaces, healthcare, insurance, and law enforcement. For assistive and medical neurotechnology, the point should be trust, not fear. A person who needs a BCI to communicate should not have to wonder whether the same system is quietly building a profile of their private mental life.</p>
-  <p>The sentence I keep coming back to is this: <strong>mental privacy should protect people from unauthorized access to the mind, including when access happens through inference.</strong></p>
+  <h3>Protect mental privacy without freezing useful technology.</h3>
+  <p>My answer is not that every cognitive signal should be locked down. It is that U.S. law should codify a limited statutory protection for high-risk mental-state inferences from both neural and non-neural data. The rule should include opt-in consent, purpose limits, data minimization, security duties, access and deletion rights, limits on sale and targeted advertising, and stronger restrictions in schools, workplaces, insurance, healthcare, and law enforcement.</p>
+  <p>The goal is not to scare people away from assistive neurotechnology. It is to make trust possible. A person who needs a BCI to communicate should not have to wonder whether the same ecosystem is quietly building a profile of their private mental life. And a person using ordinary consumer technology should not lose mental privacy simply because the inference came from eyes, hands, heart rate, behavior, or attention rather than from a brain electrode.</p>
 </section>
 
 <section class="deep-section">
-  <span class="section-label">What changed my thinking</span>
-  <h3>The most powerful question is smaller than &ldquo;Can machines read minds?&rdquo;</h3>
-  <p>&ldquo;Can machines read minds?&rdquo; is dramatic, but it is not the question I trust most anymore. It makes people imagine a perfect device, then dismiss the whole issue when the device is imperfect.</p>
-  <p>The better question is quieter: <strong>When does a useful guess about a person become private mental information?</strong></p>
-  <p>That question is harder to laugh off. Recommendation systems guess what we want. Wearables guess how we sleep or recover. XR systems can use gaze and hand movement. Neuromotor interfaces can turn muscle signals into commands. The law has to learn to see the pattern before the pattern sees too much of us (<a href="https://doi.org/10.1038/s41586-025-09255-w" target="_blank" rel="noopener">Kaifosh et al., 2025</a>).</p>
-</section>
-
-<section class="deep-section">
-  <span class="section-label">Source trail</span>
-  <h3>The sources behind this post</h3>
-  <p>The sources that shaped this entry were Tang et al. on <a href="https://doi.org/10.1038/s41593-023-01304-9" target="_blank" rel="noopener">semantic reconstruction from non-invasive brain recordings</a>; Tang and Huth on <a href="https://doi.org/10.1016/j.cub.2025.01.024" target="_blank" rel="noopener">semantic decoding across participants</a>; Magee, Ienca, and Farahany on <a href="https://doi.org/10.1016/j.neuron.2024.09.004" target="_blank" rel="noopener">cognitive biometrics and mental privacy</a>; Chandler on <a href="https://doi.org/10.1002/hast.4958" target="_blank" rel="noopener">mental-state inference from brain data</a>; Mecacci and Haselager on <a href="https://doi.org/10.1007/s11948-017-0003-3" target="_blank" rel="noopener">criteria for brain-reading implications</a>; and Istace on <a href="https://doi.org/10.1093/jhuman/huae042" target="_blank" rel="noopener">new versus derived neurorights</a>.</p>
-  <p>For recent technology and governance context, I used stable primary or journal links where possible: ClinicalTrials.gov records for Neuralink <a href="https://clinicaltrials.gov/study/NCT06429735" target="_blank" rel="noopener">PRIME</a> and <a href="https://clinicaltrials.gov/study/NCT07224256" target="_blank" rel="noopener">VOICE</a>, Synchron <a href="https://clinicaltrials.gov/study/NCT07543367" target="_blank" rel="noopener">INTENT</a>, and Paradromics <a href="https://clinicaltrials.gov/study/NCT07357428" target="_blank" rel="noopener">Connect-One</a>; Nature Medicine on <a href="https://doi.org/10.1038/s41591-026-04414-6" target="_blank" rel="noopener">long-term independent BCI use</a>; Nature on <a href="https://doi.org/10.1038/s41586-025-09127-3" target="_blank" rel="noopener">instantaneous voice synthesis</a>; Nature on a <a href="https://doi.org/10.1038/s41586-025-09255-w" target="_blank" rel="noopener">non-invasive neuromotor wrist interface</a>; UNESCO&rsquo;s <a href="https://www.unesco.org/en/legal-affairs/recommendation-ethics-neurotechnology" target="_blank" rel="noopener">Recommendation on the Ethics of Neurotechnology</a>; Colorado <a href="https://leg.colorado.gov/bills/hb24-1058" target="_blank" rel="noopener">HB24-1058</a>; California <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1223" target="_blank" rel="noopener">SB 1223</a>; and the introduced federal <a href="https://www.congress.gov/bill/119th-congress/senate-bill/2925/text" target="_blank" rel="noopener">MIND Act of 2025</a>.</p>
+  <span class="section-label">References</span>
+  <h3>Sources used in this policy note</h3>
+  <p>The AP Seminar argument draws on Magee, Ienca, and Farahany (2024), <a href="https://doi.org/10.1016/j.neuron.2024.09.004" target="_blank" rel="noopener">Beyond neural data: Cognitive biometrics and mental privacy</a>; Tang et al. (2023), <a href="https://doi.org/10.1038/s41593-023-01304-9" target="_blank" rel="noopener">Semantic reconstruction of continuous language from non-invasive brain recordings</a>; Chandler (2025), <a href="https://doi.org/10.1002/hast.4958" target="_blank" rel="noopener">Inferring Mental States from Brain Data</a>; Istace (2025), <a href="https://doi.org/10.1093/jhuman/huae042" target="_blank" rel="noopener">Establishing Neurorights: New Rights versus Derived Rights</a>; and Tomain (2025), <a href="https://www.repository.law.indiana.edu/ilj/vol100/iss4/15/" target="_blank" rel="noopener">Mental Privacy as a Constitutional Right for the Digital Age</a>.</p>
+  <p>For statutes and governance materials, I used Colorado <a href="https://leg.colorado.gov/bills/hb24-1058" target="_blank" rel="noopener">HB24-1058</a>, California <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1223" target="_blank" rel="noopener">SB 1223</a>, <a href="https://mca.legmt.gov/bills/mca/title_0300/chapter_0230/part_0010/section_0020/0300-0230-0010-0020.html" target="_blank" rel="noopener">Montana Code neurotechnology-data language</a>, Connecticut <a href="https://www.cga.ct.gov/asp/CGABillStatus/cgabillstatus.asp?bill_num=SB01295&amp;selBillType=Bill&amp;which_year=2025" target="_blank" rel="noopener">SB 1295</a>, the introduced federal <a href="https://www.congress.gov/bill/119th-congress/senate-bill/2925/text" target="_blank" rel="noopener">MIND Act of 2025</a>, HHS <a href="https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html" target="_blank" rel="noopener">HIPAA covered-entity guidance</a>, <a href="https://uscode.house.gov/view.xhtml?edition=prelim&amp;num=0&amp;req=granuleid%3AUSC-prelim-title21-section360j" target="_blank" rel="noopener">21 U.S.C. &sect; 360j(o)</a>, the FTC <a href="https://www.ftc.gov/about-ftc/mission/enforcement-authority" target="_blank" rel="noopener">enforcement-authority overview</a>, Chile <a href="https://www.bcn.cl/leychile/navegar?idNorma=1166983" target="_blank" rel="noopener">Ley 21.383</a>, the <a href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32024R1689" target="_blank" rel="noopener">EU AI Act</a>, and UNESCO&rsquo;s <a href="https://www.unesco.org/en/node/86248" target="_blank" rel="noopener">Recommendation on the Ethics of Neurotechnology</a>.</p>
 </section>
 
 <section style="text-align: center; padding: 2rem 0 3rem;">
