@@ -544,3 +544,77 @@ pre.code .k { color: #e9c46a; }
 .featured-row .feat-side .small-feat h4 { margin: 0 0 .25rem; color: var(--peri-purple-deep); font-size: 1rem; }
 .featured-row .feat-side .small-feat p { margin: 0; font-size: .88rem; color: var(--muted, #607080); }
 @media (max-width: 800px) { .featured-row { grid-template-columns: 1fr; } }
+
+/* === Blog dates and series navigation === */
+.post-date {
+  max-width: 880px;
+  margin: 0 auto 1.25rem;
+  color: var(--muted, #607080);
+  font-size: .86rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.series-card {
+  background: linear-gradient(160deg, #fff 0%, #f8f5ff 100%);
+  border: 1px solid #e3dcf3;
+  border-left: 4px solid var(--peri-purple);
+  border-radius: 12px;
+  padding: 1.4rem 1.6rem;
+  box-shadow: 0 6px 24px rgba(108,71,182,.08);
+  margin-bottom: 1.5rem;
+}
+.series-card .series-kicker {
+  display: block;
+  color: var(--peri-purple);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.series-card h2 {
+  color: var(--peri-purple-deep);
+  font-size: 1.15rem;
+  margin: .3rem 0 .45rem;
+}
+.series-card p {
+  color: var(--text, #2c3e50);
+  font-size: .95rem;
+  margin: 0 0 .9rem;
+}
+.series-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+}
+.series-links a {
+  background: #fff;
+  border: 1px solid #d7cbed;
+  border-radius: 6px;
+  color: var(--peri-purple);
+  font-size: .86rem;
+  font-weight: 700;
+  padding: .45rem .7rem;
+}
+.series-links a:hover {
+  border-color: var(--peri-purple);
+  color: var(--peri-purple-deep);
+  text-decoration: none;
+}
+
+/* Stronger keyboard focus for clickable cards and pill-like links */
+a.stat-card:focus-visible,
+a.hl-card:focus-visible,
+a.highlight-card:focus-visible,
+a.cert:focus-visible,
+a.proj:focus-visible,
+a.post-list-card:focus-visible,
+.series-links a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--peri-mint);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 5px rgba(108,71,182,.18), 0 8px 24px rgba(108,71,182,.16);
+  text-decoration: none;
+}
+
