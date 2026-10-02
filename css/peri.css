@@ -618,3 +618,7 @@ a.post-list-card:focus-visible,
   text-decoration: none;
 }
 
+
+/* APA 7 reference lists at the end of research and blog posts: hanging indent, wrap long DOIs/URLs */
+.apa-references .apa-ref { padding-left: 2em; text-indent: -2em; margin: 0 0 .75rem; overflow-wrap: anywhere; }
+.apa-references .apa-ref:last-child { margin-bottom: 0; }
