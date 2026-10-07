@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,7 +112,7 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Craig (Nature Reviews Neuroscience, 2002): &#x27;interoception&#x27; is the brain&#x27;s sense of the physiological condition of the body, heart rate, breathing, gut state, temperature, muscle tension. Signals from organs and tissues ascend through dedicated body-brain pathways and converge in the insular cortex, which builds a living map of your internal state.</li>
-          <li>Critchley, Wiens, Rotshtein, Ohman &amp; Dolan (Nature Neuroscience, 2004): how accurately people could sense their own heartbeat tracked activity in the right anterior insula, and people with more gray matter there were more accurate and reported being more aware of their body&#x27;s sensations.</li>
+          <li>Critchley, Wiens, Rotshtein, Öhman &amp; Dolan (Nature Neuroscience, 2004): how accurately people could sense their own heartbeat tracked activity in the right anterior insula, and people with more gray matter there were more accurate and reported being more aware of their body&#x27;s sensations.</li>
           <li>Khalsa et al. (Biological Psychiatry: Cognitive Neuroscience and Neuroimaging, 2018): a major review linking problems with interoception to anxiety, depression, eating disorders, addiction and somatic symptom disorders, and calling for better ways to measure and train it.</li>
           <li>One leading idea is that brain regions such as the insula and anterior cingulate judge what body signals mean, and that when a signal is vague, the brain may fill in a worried story before you notice the body clue.</li>
         </ul>
@@ -137,11 +137,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Sixty seconds at gate D31</h3>
-          <p>The gate number on the screen changes from B12 to D31 while Daphne is still reading it. Then the word DELAYED appears next to it.</p>
-          <p>It’s her first time flying alone, Tampa to a six-week summer program in Minnesota, and the Atlanta connection was already tight. On the train between concourses her heart is pounding, her breath is high and shallow, and the story is running ahead of her: she’ll miss the flight, get stuck overnight, cry in front of everyone. Her jaw has been clenched since takeoff. She noticed it over Florida and ignored it.</p>
-          <p>Her brain has a sense for the inside of her body, called interoception. Signals from the heart, lungs, gut and muscles travel up to the insula, which builds a living map of her internal state. Anxious, excited, hungry and overloaded can feel a lot alike until the brain decides what the signals mean, and when the signals are vague, it may fill in a story. The story can spiral long before she reads the body clue.</p>
-          <p>At D31 she sits down and, before fixing anything, reads the dashboard. In her notes app, one to five: heartbeat 4, breath 3, stomach 4, jaw 5, shoulders 4. The stomach number makes her check the time. It’s 1:40, and she hasn’t eaten since a granola bar at six that morning. The smallest useful thing: unclench her jaw, buy a sandwich and a water at the stand twenty steps away, and text her mom the new gate.</p>
-          <p>Twenty minutes later she scans again: 3, 2, 2, 2, 2. The flight is still delayed. She reads until they call her group, and at takeoff she checks her jaw. It’s a 2.</p>
+          <p>The gate number on the screen changes from B12 to D31 while Daphne is still reading it, and then the word DELAYED appears next to it.</p>
+          <p>It’s her first time flying alone, from Tampa to a six-week summer program in Minnesota, and the connection in Atlanta was already tight. On the train between concourses her heart is pounding, her breathing is high and shallow, and the story is running ahead of her. She’ll miss the flight, get stuck overnight and cry in front of everyone. Her jaw has been clenched since takeoff. She noticed it somewhere over Florida and ignored it.</p>
+          <p>The brain has a sense for what’s happening inside the body, called interoception. Signals from the heart, lungs, stomach and muscles travel up to an area called the insula, which builds a running picture of how the body is doing. Being anxious, excited, hungry and overloaded can feel a lot alike until the brain decides what the signals mean. One leading idea is that when the signals are vague, the brain fills in a story, and a worried story can take off before you’ve noticed the body clue.</p>
+          <p>At D31 she sits down and, before trying to fix anything, checks in with her body. In her notes app she rates five things from 1 to 5. Her heartbeat gets a 4, her breathing a 3, her stomach a 4, her jaw a 5 and her shoulders a 4. The stomach number makes her look at the time. It’s 1:40, and she hasn’t eaten anything since a granola bar at six that morning. So she unclenches her jaw, buys a sandwich and a water at the stand twenty steps away and texts her mom the new gate.</p>
+          <p>Twenty minutes later she checks again, and most of the numbers are down to 2s. The flight is still delayed. She reads until they call her group, and at takeoff she checks her jaw, which is a 2.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -155,7 +155,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A gate change, a delay, and a story spiraling on the train</span></li>
+><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A gate change and a delay set the worried story running.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-scan-heart"
   xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7.828 13.07A3 3 0 0 1 12 8.764a3 3 0 0 1 4.172 4.306l-3.447 3.62a1 1 0 0 1-1.449 0z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Five channels rated, a jaw at 5, nothing eaten since six</span></li>
+><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7.828 13.07A3 3 0 0 1 12 8.764a3 3 0 0 1 4.172 4.306l-3.447 3.62a1 1 0 0 1-1.449 0z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She rates five body signals and realizes she hasn’t eaten since six.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sandwich"
   xmlns="http://www.w3.org/2000/svg"
@@ -179,20 +179,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777" /><path d="M21 15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-5.25" /><path d="M3 15a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h9" /><path d="m6.67 15 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" /><rect width="20" height="4" x="2" y="11" rx="1" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">A sandwich, a text home, and a second scan of mostly 2s</span></li>
+><path d="m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777" /><path d="M21 15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-5.25" /><path d="M3 15a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h9" /><path d="m6.67 15 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" /><rect width="20" height="4" x="2" y="11" rx="1" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">After a sandwich and a text home, most of her numbers are down to 2s.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>Read the dashboard</h3>
-        <p class="ns-demo-intro">Do it twice: once now, while things are calm, and once later today when something stirs you up a little. You need your notes app or a scrap of paper.</p>
+        <p class="ns-demo-intro">Do it twice, once now while things are calm and once later today when something stirs you up a little. You’ll need your notes app or a scrap of paper.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Sit still. Don’t change anything yet. The point is to read, not to fix.</li>
-            <li>Go down the five channels in the box and give each a number from 1 to 5. Write the numbers down.</li>
+            <li>Sit still and don’t change anything yet, since the point is to read, not to fix.</li>
+            <li>Go down the five channels in the box and give each one a number from 1 to 5, then write the numbers down.</li>
             <li>Later today, when something stirs you up a little, like a message you’ve been dreading or the minutes before practice, take sixty seconds and rate all five again.</li>
-            <li>Compare the two sets. Which channel moved most?</li>
+            <li>Compare the two sets and notice which channel moved the most.</li>
           </ol>
           <div class="ns-demo-side">
             <div class="ns-material">
@@ -235,7 +235,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Read before you fix.</strong> When something feels off, stop for sixty seconds. Don’t try to calm down yet. Just look.</div></li>
+><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Read before you fix.</strong> When something feels off, stop for sixty seconds. Don’t try to calm down yet, and only look.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-scan-heart"
   xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7.828 13.07A3 3 0 0 1 12 8.764a3 3 0 0 1 4.172 4.306l-3.447 3.62a1 1 0 0 1-1.449 0z" /></svg></span><div><strong>Check five channels.</strong> Heartbeat, breath, stomach, jaw and shoulders, in the same order every time.</div></li>
+><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7.828 13.07A3 3 0 0 1 12 8.764a3 3 0 0 1 4.172 4.306l-3.447 3.62a1 1 0 0 1-1.449 0z" /></svg></span><div><strong>Check five channels.</strong> Check your heartbeat, breath, stomach, jaw and shoulders, in the same order every time.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-gauge"
   xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m12 14 4-4" /><path d="M3.34 19a10 10 0 1 1 17.32 0" /></svg></span><div><strong>Give each a number from 1 to 5.</strong> Numbers make you choose. “Stomach 4, jaw 5” tells you more than “bad.”</div></li>
+><path d="m12 14 4-4" /><path d="M3.34 19a10 10 0 1 1 17.32 0" /></svg></span><div><strong>Give each a number from 1 to 5.</strong> Numbers make you choose, and “stomach 4, jaw 5” tells you more than “bad.”</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
   xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Take the smallest useful next step.</strong> Eat something, drink water, unclench, step outside, text someone, ask a question. One small move is enough.</div></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Take the smallest useful next step.</strong> Eat something, drink water, unclench, step outside, text someone or ask a question. One small move is enough.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-notebook-pen"
   xmlns="http://www.w3.org/2000/svg"
@@ -309,7 +309,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The scan can turn into worrying about the numbers. If that happens, stop after one pass and take the small step anyway. One pass is enough.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The scan can turn into worrying about the numbers. If that happens, stop after one pass and take the small step anyway, since one pass is enough.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -353,9 +353,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Craig, A. D. (2002). How do you feel? Interoception: the sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8): 655-666.</li>
-          <li>Critchley, H. D., Wiens, S., Rotshtein, P., Ohman, A., &amp; Dolan, R. J. (2004). Neural systems supporting interoceptive awareness. Nature Neuroscience, 7(2): 189-195.</li>
-          <li>Khalsa, S. S., Adolphs, R., Cameron, O. G., et al. (2018). Interoception and mental health: a roadmap. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging, 3(6): 501-513.</li>
+          <li>Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. <em>Nature Reviews Neuroscience</em>, <em>3</em>(8), 655–666. <a href="https://doi.org/10.1038/nrn894" target="_blank" rel="noopener">https://doi.org/10.1038/nrn894</a></li>
+          <li>Critchley, H. D., Wiens, S., Rotshtein, P., Öhman, A., &amp; Dolan, R. J. (2004). Neural systems supporting interoceptive awareness. <em>Nature Neuroscience</em>, <em>7</em>(2), 189–195. <a href="https://doi.org/10.1038/nn1176" target="_blank" rel="noopener">https://doi.org/10.1038/nn1176</a></li>
+          <li>Khalsa, S. S., Adolphs, R., Cameron, O. G., Critchley, H. D., Davenport, P. W., Feinstein, J. S., Feusner, J. D., Garfinkel, S. N., Lane, R. D., Mehling, W. E., Meuret, A. E., Nemeroff, C. B., Oppenheimer, S., Petzschner, F. H., Pollatos, O., Rhudy, J. L., Schramm, L. P., Simmons, W. K., Stein, M. B., . . . Interoception Summit 2016 participants. (2018). Interoception and mental health: A roadmap. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>, <em>3</em>(6), 501–513. <a href="https://doi.org/10.1016/j.bpsc.2017.12.004" target="_blank" rel="noopener">https://doi.org/10.1016/j.bpsc.2017.12.004</a></li>
       </ul>
     </div>
 

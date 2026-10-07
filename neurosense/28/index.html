@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Eleven jump scares and a tape recorder</h3>
-          <p>Omar has eleven ideas for the last room of the haunted garage, and every one is a jump scare they’ve already done. This is the third Halloween he, Rory and Petra have turned his garage into a haunted house for the neighborhood, and this year they promised the kids a last room that’s actually scary.</p>
-          <p>Halloween is Saturday. He has been at his desk since nine in the morning, watching clips of haunted attractions between ideas, and Rory has sent three question marks and a skull.</p>
-          <p>All of Omar’s attention is pointed outward: the list, the clips, the texts. When attention is locked on the outside world, a network called the default mode network quiets down. When input drops, it gets more active, pulling memories, goals and half-finished problems into the same room. Mind-wandering brings some of the brain’s control regions along, and in one study an easy break that let minds wander helped people come up with more creative ideas than rest or hard work did.</p>
-          <p>At 1:15 he leaves his phone on the desk, puts a pencil and an index card in his pocket, and walks to the hardware store for more duct tape. Ten minutes each way, no earbuds, no trying. Halfway there he’s thinking about his grandfather’s old tape recorder, and the day it played his own six-year-old voice back to him and he didn’t recognize it.</p>
-          <p>At the store’s door he has it, and he writes it on the card: at the entrance, every visitor says their name into a microphone for the “guest book.” In the last room, in the dark, a whisper says it back. On Saturday a sixth grader screams at her own name, runs out and gets right back in line.</p>
+          <p>Omar has eleven ideas for the last room of the haunted garage, and every one of them is a jump scare they’ve already done. This is the third Halloween that he, Rory and Petra have turned his garage into a haunted house, and this year they promised the kids a last room that’s really scary.</p>
+          <p>Halloween is on Saturday. He has been at his desk since nine in the morning, watching clips of haunted attractions, and Rory has texted three question marks and a skull.</p>
+          <p>All of Omar’s attention is pointed outward, at the list, the clips and the texts. When attention is locked on the world outside, a set of brain areas called the default mode network quiets down. When outside input drops off, that network gets more active, and it’s involved in remembering the past, picturing the future and thinking about other people. In one study, people who took a break doing something easy that let their minds wander came up with more creative ideas for a problem they’d already started on than people who rested, worked hard or took no break.</p>
+          <p>After lunch he leaves his phone on the desk, puts a pencil and an index card in his pocket, and walks to the hardware store for duct tape. It’s ten minutes each way, and he doesn’t bring earbuds or try to think about the room. Halfway there he’s remembering his grandfather’s old tape recorder, and the day it played his own six-year-old voice back to him and he didn’t recognize it.</p>
+          <p>By the time he reaches the store, he has the idea, and he writes it on the card. At the entrance, every visitor will say their name into a microphone for the guest book, and in the last room, in the dark, a whisper will say it back. On Saturday a sixth grader screams when she hears her own name, runs out and gets right back in line.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 10v1" /><path d="M7.528 20.472a1.6 1.6 0 012.277 0l1.057 1.056a1.6 1.6 0 002.276 0l1.057-1.056a1.6 1.6 0 012.277 0l1.114 1.114a1.4 1.4 0 002.414-1V10a8 8 0 00-16 0v10.586a1.4 1.4 0 002.414 1z" /><path d="M9 10v1" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Eleven ideas for the last room, every one already done</span></li>
+><path d="M15 10v1" /><path d="M7.528 20.472a1.6 1.6 0 012.277 0l1.057 1.056a1.6 1.6 0 002.276 0l1.057-1.056a1.6 1.6 0 012.277 0l1.114 1.114a1.4 1.4 0 002.414-1V10a8 8 0 00-16 0v10.586a1.4 1.4 0 002.414 1z" /><path d="M9 10v1" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">He has eleven ideas for the last room, and they’ve done every one.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Phone left behind, a walk to the hardware store for tape</span></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He leaves his phone behind and walks to the hardware store for tape.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-mic"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,19 +178,19 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">A tape recorder memory, and a girl screaming at her own name</span></li>
+><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">A girl screams at her own name and gets right back in line.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
         <h3>Same walk, two ways</h3>
-        <p class="ns-demo-intro">You need a five-minute route you can walk twice (a hallway, a yard, the block), headphones, paper and a pen.</p>
+        <p class="ns-demo-intro">You’ll need a five-minute route you can walk twice, like a hallway, a yard or the block, plus headphones, paper and a pen.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Walk the route for five minutes with music or a podcast playing.</li>
             <li>Right after, write down everything you remember thinking about, one line each.</li>
-            <li>Leave the headphones and your phone behind and walk the same route for five more minutes, with nothing playing.</li>
+            <li>Leave the headphones and your phone behind and walk the same route for five more minutes with nothing playing.</li>
             <li>Write down everything you thought about this time.</li>
             <li>Compare the two lists. Mark the lines that are your own memories, plans or unfinished problems, and star any idea you didn’t have before.</li>
           </ol>
@@ -206,7 +206,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Often the quiet walk’s list is longer and more personal: something from years ago, something coming up, a problem you hadn’t finished. With audio playing, attention keeps getting handed the next bit of input. Without it, the default mode network gets more active and starts pulling your own material together, and that material is what ideas that seem to come from nowhere are made of.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Often the list from the quiet walk is longer and more personal, with something from years ago, something coming up or a problem you hadn’t finished. With audio playing, your attention keeps getting handed the next thing to listen to. Without it, the default mode network gets more active and starts pulling your own material together, and that’s the stuff ideas that seem to come from nowhere are made of.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -226,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10.1 13.9a14 14 0 0 0 3.732 2.668 1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 18 18 0 0 1-12.728-5.272" /><path d="M22 2 2 22" /><path d="M4.76 13.582A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 .244.473" /></svg></span><div><strong>Leave every input behind.</strong> No phone, no music, no podcast, ten minutes a day. Leave the phone in a different room so it isn’t asking for a turn.</div></li>
+><path d="M10.1 13.9a14 14 0 0 0 3.732 2.668 1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 18 18 0 0 1-12.728-5.272" /><path d="M22 2 2 22" /><path d="M4.76 13.582A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 .244.473" /></svg></span><div><strong>Leave every input behind.</strong> Spend ten minutes a day with no phone, music or podcast. Leave the phone in a different room so it isn’t asking for a turn.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Do something low-input.</strong> Walk, shower, fold laundry, shoot free throws or doodle. Anything your hands can do without your attention.</div></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Do something low-input.</strong> Walk, shower, fold laundry, shoot free throws or doodle, or anything else your hands can do without your attention.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-wind"
   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12.8 19.6A2 2 0 1 0 14 16H2" /><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" /><path d="M9.8 4.4A2 2 0 1 1 11 8H2" /></svg></span><div><strong>Let your mind wander.</strong> Don’t steer it back to the problem, and don’t grade what shows up. If it feels boring at first, let it.</div></li>
+><path d="M12.8 19.6A2 2 0 1 0 14 16H2" /><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" /><path d="M9.8 4.4A2 2 0 1 1 11 8H2" /></svg></span><div><strong>Let your mind wander.</strong> Don’t steer it back to the problem, and don’t judge what shows up. If it feels boring at first, let it be boring.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pencil"
   xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +262,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Keep paper nearby.</strong> When something shows up, write it down right away, even if it’s messy, then go back to wandering. Ideas from these minutes slip away fast.</div></li>
+><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Keep paper nearby.</strong> When something shows up, write it down right away, even if it’s messy, and then go back to wandering. Ideas from these minutes slip away fast.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -276,7 +276,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Keep every idea from the ten minutes in one place for a week, and mark the ones you actually use. At the end, count them and compare with how many usable ideas came out of your phone breaks the week before.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, keep every idea from the ten minutes in one place and mark the ones you end up using. At the end of the week, count them and compare with how many usable ideas came out of your phone breaks the week before.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -288,11 +288,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The first few times, nothing shows up and the ten minutes feel long. That’s normal, so keep the paper anyway and don’t judge until the end of the week.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The first few times, nothing shows up and the ten minutes feel long. That’s normal, so keep the paper anyway and wait until the end of the week to judge.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 28: Ten empty minutes a day. Step 1: No phone, music or podcast. Step 2: Walk, shower or look out a window. Step 3: Let your mind wander, don’t steer. Step 4: Paper nearby: write it down, messy. How to tell it is working: Keep every idea for a week. Count the ones you used against last week’s phone breaks." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 28: Ten empty minutes a day. Step 1: No phone, music or podcast. Step 2: Walk, shower or look out a window. Step 3: Let your mind wander without steering. Step 4: Keep paper nearby for messy ideas. How to tell it is working: Keep every idea for a week and count the ones you use against last week’s." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -320,10 +320,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Raichle, M. E., MacLeod, A. M., Snyder, A. Z., et al. (2001). "A default mode of brain function." PNAS, 98(2): 676-682.</li>
-          <li>Buckner, R. L., Andrews-Hanna, J. R., & Schacter, D. L. (2008). "The brain's default network: anatomy, function, and relevance to disease." Annals of the New York Academy of Sciences, 1124: 1-38.</li>
-          <li>Christoff, K., Gordon, A. M., Smallwood, J., Smith, R., & Schooler, J. W. (2009). "Experience sampling during fMRI reveals default network and executive system contributions to mind wandering." PNAS, 106(21): 8719-8724.</li>
-          <li>Baird, B., Smallwood, J., Mrazek, M. D., Kam, J. W. Y., Franklin, M. S., &amp; Schooler, J. W. (2012). Inspired by distraction: mind wandering facilitates creative incubation. Psychological Science, 23(10): 1117-1122.</li>
+          <li>Baird, B., Smallwood, J., Mrazek, M. D., Kam, J. W. Y., Franklin, M. S., &amp; Schooler, J. W. (2012). Inspired by distraction: Mind wandering facilitates creative incubation. <em>Psychological Science</em>, <em>23</em>(10), 1117–1122. <a href="https://doi.org/10.1177/0956797612446024" target="_blank" rel="noopener">https://doi.org/10.1177/0956797612446024</a></li>
+          <li>Buckner, R. L., Andrews-Hanna, J. R., &amp; Schacter, D. L. (2008). The brain's default network: Anatomy, function, and relevance to disease. <em>Annals of the New York Academy of Sciences</em>, <em>1124</em>(1), 1–38. <a href="https://doi.org/10.1196/annals.1440.011" target="_blank" rel="noopener">https://doi.org/10.1196/annals.1440.011</a></li>
+          <li>Christoff, K., Gordon, A. M., Smallwood, J., Smith, R., &amp; Schooler, J. W. (2009). Experience sampling during fMRI reveals default network and executive system contributions to mind wandering. <em>Proceedings of the National Academy of Sciences</em>, <em>106</em>(21), 8719–8724. <a href="https://doi.org/10.1073/pnas.0900234106" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.0900234106</a></li>
+          <li>Raichle, M. E., MacLeod, A. M., Snyder, A. Z., Powers, W. J., Gusnard, D. A., &amp; Shulman, G. L. (2001). A default mode of brain function. <em>Proceedings of the National Academy of Sciences</em>, <em>98</em>(2), 676–682. <a href="https://doi.org/10.1073/pnas.98.2.676" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.98.2.676</a></li>
       </ul>
     </div>
 

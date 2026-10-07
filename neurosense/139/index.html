@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,9 +111,9 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>The brain discounts distant rewards when the future feels vague or emotionally disconnected.</li>
-          <li>Future-self visualization can make the future emotionally real enough to care about.</li>
-          <li>Identity is built from behaviors, thoughts, relationships, and what you keep practicing.</li>
+          <li>In a small brain-scan study, people whose brains treated their future self more like another person valued later rewards less.</li>
+          <li>In four experiments, people shown their own face aged by a computer were more willing to wait for later money.</li>
+          <li>Cognitive scientist Maya Shankar suggests identity may be built from what you keep doing and thinking.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>A note taped inside the shoebox lid</h3>
-          <p>Grandpa Joe stopped driving in the spring, and his fishing rods have leaned against the garage wall ever since. Orion’s plan, announced at dinner in April, was a used car by next spring, so Sundays at the lake could start again with him behind the wheel.</p>
-          <p>He has mowed lawns all summer at $40 a yard. The shoebox under his bed holds $85. Money comes in on Friday and is gone by Monday, on delivery fries, a game skin, a hoodie he wore twice. His sister calls it the leak, and the whole family laughs, Orion too.</p>
-          <p>Next spring is a long way from Friday night, and the brain marks down rewards that feel distant and blurry, so a someday car can’t compete with fries in twenty minutes. Identity runs on evidence too. It’s built from what someone keeps doing, and every Monday told the same story about Orion, which made the old pattern easy for everyone to believe, him included.</p>
-          <p>One Tuesday night he writes a note to himself a year from now and shows no one. Three sentences: the lake, the rods in the trunk, and the reason, which is that Grandpa taught him to cast off that dock and should get to watch him do it again. He tapes it inside the shoebox lid. Then he picks one move small enough to beat a mood: when he gets home from a lawn, $20 goes in the box before his shoes come off, and he writes the date under the note.</p>
-          <p>By October the lid has nine dates in a column and the box has $265. Some weekends still leak. When his sister brings it up at dinner, Orion says, “Check the lid,” and keeps eating.</p>
+          <p>Grandpa Joe stopped driving in the spring, and his fishing rods have been leaning against the garage wall ever since. At dinner in April, Orion announced his plan to buy a used car by next spring, so their Sundays at the lake could start again with him driving.</p>
+          <p>He has mowed lawns all summer at $40 a yard, and the shoebox under his bed holds $85. Money comes in on Friday and is gone by Monday, spent on delivery fries, a game skin or a hoodie he wore twice. His sister calls it the leak, and the whole family laughs, Orion included.</p>
+          <p>Next spring is a long way from Friday night, and the brain marks down rewards that feel far away and blurry, so a someday car can’t compete with fries that arrive in twenty minutes. Identity runs on evidence too, because it’s partly built from what someone keeps doing. Every Monday told the same story about Orion, which made the old pattern easy for everyone to believe, including him.</p>
+          <p>One Tuesday night he writes a note to himself a year from now and shows it to no one. It’s three sentences about the lake, the rods in the trunk and the reason, which is that Grandpa taught him to cast off that dock and should get to watch him do it again. He tapes it inside the shoebox lid. Then he picks one move small enough to beat a bad mood. When he gets home from a lawn, $20 goes in the box before his shoes come off, and he writes the date under the note.</p>
+          <p>By October the lid has nine dates in a column and the box holds $265. Some weekends still leak. When his sister brings it up at dinner, Orion tells her to check the lid and keeps eating.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A whole summer of mowing, and $85 in the shoebox</span></li>
+><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">After a whole summer of mowing, the shoebox holds $85.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-scroll-text"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 12h-5" /><path d="M15 8h-5" /><path d="M19 17V5a2 2 0 0 0-2-2H4" /><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A private note in the lid, $20 in before his shoes come off</span></li>
+><path d="M15 12h-5" /><path d="M15 8h-5" /><path d="M19 17V5a2 2 0 0 0-2-2H4" /><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He tapes a private note in the lid and puts in $20 before his shoes come off.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-fishing-rod"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,20 +176,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 11h1" /><path d="M8 15a2 2 0 0 1-4 0V3a1 1 0 0 1 1-1h.5C14 2 20 9 20 18v4" /><circle cx="18" cy="18" r="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Nine dates on the lid, $265, and a new answer at dinner</span></li>
+><path d="M4 11h1" /><path d="M8 15a2 2 0 0 1-4 0V3a1 1 0 0 1 1-1h.5C14 2 20 9 20 18v4" /><circle cx="18" cy="18" r="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The lid has nine dates, the box has $265, and he has a new answer at dinner.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
         <h3>The note and the next move</h3>
-        <p class="ns-demo-intro">You need paper, a pen and a private place to keep the note: a drawer, a box, the back of a notebook.</p>
+        <p class="ns-demo-intro">You’ll need paper, a pen and a private place to keep the note, like a drawer, a box or the back of a notebook.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Write three sentences to yourself a year from now: where you hope you are, what you’re working toward, and the reason underneath it. Nobody else reads it.</li>
-            <li>Under it, finish this line: “I’m becoming someone who …”</li>
-            <li>Pick one action so small you could do it in the next five minutes, like putting $5 aside, lacing your running shoes, sending the email or playing one scale. Do it now.</li>
-            <li>On the back of the note, write today’s date and what you did. That’s your first line of evidence. Add a line every time you repeat it.</li>
+            <li>Write three sentences to yourself a year from now, about where you hope you are, what you’re working toward and the reason underneath it. Nobody else reads it.</li>
+            <li>Under it, finish the sentence “I’m becoming someone who …”</li>
+            <li>Pick one action so small you could do it in the next five minutes, like putting $5 aside, lacing your running shoes, sending the email or playing one scale, and do it now.</li>
+            <li>On the back of the note, write today’s date and what you did. That’s your first line of evidence, and you add a line every time you repeat it.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -223,7 +223,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 12h-5" /><path d="M15 8h-5" /><path d="M19 17V5a2 2 0 0 0-2-2H4" /><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></svg></span><div><strong>Write one private note forward.</strong> Three sentences to yourself a year from now: the place, the goal and the reason under it. Keep it where you’ll see it, and don’t post it.</div></li>
+><path d="M15 12h-5" /><path d="M15 8h-5" /><path d="M19 17V5a2 2 0 0 0-2-2H4" /><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></svg></span><div><strong>Write one private note forward.</strong> Write three sentences to yourself a year from now about the place, the goal and the reason under it. Keep it where you’ll see it, and don’t post it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hand"
   xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><div><strong>Choose a move smaller than a mood.</strong> One action that takes a few minutes and comes right after something that already happens, like getting paid or walking in the door.</div></li>
+><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><div><strong>Choose a move smaller than a mood.</strong> Pick one action that takes a few minutes and comes right after something that already happens, like getting paid or walking in the door.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-list-checks"
   xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></svg></span><div><strong>Write the date every time.</strong> A date and a few words, on the note, a calendar or a box lid. That list is the evidence.</div></li>
+><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></svg></span><div><strong>Write the date every time.</strong> Add a date and a few words on the note, a calendar or a box lid, since that list is the evidence.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-compass"
   xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></span><div><strong>Restart without a speech.</strong> Missed a few days? Do the small move at the next chance and add the line. People may know your old pattern, but it doesn’t lock you in.</div></li>
+><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></span><div><strong>Restart without a speech.</strong> If you miss a few days, do the small move at the next chance and add the line. People may know your old pattern, but it doesn’t lock you in.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -285,7 +285,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Count the lines at the end of each week. If the column keeps growing, even slowly, and the goal feels a little less like someday, it’s working.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Count the lines at the end of each week. If the column keeps growing, even slowly, and the goal feels a little less like someday, you’re building the evidence.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -297,11 +297,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The move will feel too small to count. That’s on purpose: a move small enough for a bad day keeps the column growing on bad days too.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The move will feel too small to count, and that’s on purpose, because a move small enough for a bad day keeps the column growing on bad days too.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 139: Leave evidence for future you. Step 1: One private note to future you. Step 2: A move smaller than a mood. Step 3: Write the date every time. Step 4: Tie it to the why, not the plan. Step 5: Missed? Do the next one, no speech. How to tell it is working: Count the lines of evidence each week, and watch the column grow." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 139: Leave evidence for future you. Step 1: One private note to future you. Step 2: A move smaller than a mood. Step 3: Write the date every time. Step 4: Tie it to the why, not the plan. Step 5: Missed a day? Do the next one. How to tell it is working: Count the lines of evidence each week, and watch the column grow." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -329,10 +329,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Saving for the future self: Neural measures of future self-continuity predict temporal discounting. Social Cognitive and Affective Neuroscience.</li>
-          <li>The somatic marker hypothesis and the possible functions of the prefrontal cortex. Philosophical Transactions of the Royal Society B.</li>
-          <li>Huberman, A., with Ari Wallach. Create Your Ideal Future Using Science-Based Protocols. Huberman Lab Podcast, October 15, 2024.</li>
-          <li>Huberman, A., with Dr. Maya Shankar. How to Shape Your Identity &amp; Goals. Huberman Lab Podcast, July 26, 2023.</li>
+          <li>Ersner-Hershfield, H., Wimmer, G. E., &amp; Knutson, B. (2009). Saving for the future self: Neural measures of future self-continuity predict temporal discounting. <em>Social Cognitive and Affective Neuroscience</em>, <em>4</em>(1), 85–92. <a href="https://doi.org/10.1093/scan/nsn042" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsn042</a></li>
+          <li>Hershfield, H. E., Goldstein, D. G., Sharpe, W. F., Fox, J., Yeykelis, L., Carstensen, L. L., &amp; Bailenson, J. N. (2011). Increasing saving behavior through age-progressed renderings of the future self. <em>Journal of Marketing Research</em>, <em>48</em>(SPL), S23–S37. <a href="https://doi.org/10.1509/jmkr.48.SPL.S23" target="_blank" rel="noopener">https://doi.org/10.1509/jmkr.48.SPL.S23</a></li>
+          <li>Huberman, A. (Host). (2023, July 24). Dr. Maya Shankar: How to shape your identity &amp; goals [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-maya-shankar-how-to-shape-your-identity-and-goals" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-maya-shankar-how-to-shape-your-identity-and-goals</a></li>
+          <li>Huberman, A. (Host). (2024, October 14). Ari Wallach: Create your ideal future using science-based protocols [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/ari-wallach-create-your-ideal-future-using-science-based-protocols" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/ari-wallach-create-your-ideal-future-using-science-based-protocols</a></li>
       </ul>
     </div>
 

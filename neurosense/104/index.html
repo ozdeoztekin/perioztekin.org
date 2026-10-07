@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,9 +111,9 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Cicerone et al. (2011, Arch Phys Med Rehabil): evidence-based cognitive rehabilitation relies heavily on compensatory strategies, external aids, and restructured environments, not only on tissue recovery.</li>
+          <li>Cicerone et al. (2011), Archives of Physical Medicine and Rehabilitation: a review of 112 studies of people with brain injury or stroke supported teaching workarounds, such as memory notebooks, and found that some training may also improve the underlying skills.</li>
           <li>Clinical neuropsychology distinguishes restoration of function from compensation, where external supports carry a load the brain no longer handles alone.</li>
-          <li>Kleim &amp; Jones (2008, J Speech Lang Hear Res): plasticity supports relearning, but strategy and environment determine how much regained skill transfers to real life.</li>
+          <li>Kleim and Jones (2008), Journal of Speech, Language, and Hearing Research: plasticity, the brain's ability to change with experience, is believed to underlie relearning after brain damage, though some workarounds can get in its way.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -135,11 +135,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The ticket rail by the stove</h3>
-          <p>“I ran a grill for thirty-one years,” Grandpa says, loud enough that Emerson hears it from the front door. Her dad wants to pull the knobs off the stove.</p>
-          <p>Since his stroke in March, Grandpa has lived with them, and he makes his own lunch while everyone is out. Twice this month Emerson has come home to a burner glowing on low under nothing, the pan already washed. With the radio going, he loses track of things halfway through them.</p>
-          <p>Some of what a stroke takes comes back as tissue and connections repair. A lot of recovery is quieter. Clinicians separate restoring a function from compensating for it, when outside supports like a calendar, a checklist or a changed room carry part of a load the brain no longer handles alone. Rehabilitation leans on them, and strategy and environment decide how much of what comes back works in daily life. Grandpa can make lunch without a perfect memory if the kitchen holds part of it.</p>
-          <p>Emerson’s answer is a ticket rail like the one over his grill at the diner: a strip of magnetic tape on the backsplash and a stack of index cards. Every lunch gets a ticket with three lines: burner on, timer set, burner off. A kitchen timer clips to his shirt pocket whenever a burner is lit, and the radio stays off until the pan is in the sink. Grandpa calls it ridiculous, then writes GRILLED CHEESE across the first ticket.</p>
-          <p>Two weeks later there are fourteen tickets on the rail, every “burner off” checked, and the knobs are still on the stove. On Saturday he makes pancakes for all five of them, the timer clipped to his apron.</p>
+          <p>“I ran a grill for thirty-one years,” Grandpa says, loudly enough that Emerson hears it from the front door. Her dad wants to pull the knobs off the stove.</p>
+          <p>Since his stroke in March, Grandpa has lived with them, and he makes his own lunch while everyone is out. Twice this month Emerson has come home to a burner glowing on low under nothing, with the pan already washed. With the radio going, he loses track of things halfway through them.</p>
+          <p>Some of what a stroke takes comes back as tissue and connections repair. But a lot of recovery is quieter. Doctors and therapists separate restoring an ability from working around it, using outside supports like a calendar, a checklist or a rearranged room to carry part of a load the brain no longer handles alone. Rehabilitation leans on those supports, and they help decide how much of what comes back works in daily life. Grandpa can make lunch without a perfect memory if the kitchen holds part of it for him.</p>
+          <p>Emerson’s answer is a ticket rail like the one over his grill at the diner, a strip of magnetic tape on the backsplash with a stack of index cards. Every lunch gets a ticket with three lines, burner on, timer set and burner off. A kitchen timer clips to his shirt pocket whenever a burner is lit, and the radio stays off until the pan is in the sink. Grandpa calls it ridiculous, then writes GRILLED CHEESE across the first ticket.</p>
+          <p>Two weeks later there are fourteen tickets on the rail with every “burner off” checked, and the knobs are still on the stove. On Saturday he makes pancakes for all five of them with the timer clipped to his apron.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A burner left on twice, and Dad talking about pulling the knobs</span></li>
+><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Grandpa leaves a burner on twice, and Dad talks about pulling the knobs.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-clipboard-list"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A ticket rail by the stove, a clip-on timer, the radio off</span></li>
+><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Emerson sets up a ticket rail by the stove, a clip-on timer and a quiet kitchen.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-check-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,19 +177,19 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M18 6 7 17l-5-5" /><path d="m22 10-7.5 7.5L13 16" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Fourteen lunches, every burner checked off, pancakes on Saturday</span></li>
+><path d="M18 6 7 17l-5-5" /><path d="m22 10-7.5 7.5L13 16" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Fourteen lunches later every burner is checked off, and he makes pancakes.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>The five-step job</h3>
-        <p class="ns-demo-intro">You need one other person, an index card and a pen. A TV, radio or music playing helps for the first round.</p>
+        <p class="ns-demo-intro">You’ll need one other person, an index card and a pen. Having a TV, radio or music playing helps for the first round.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Ask the other person to make up a five-step job around the room and say it once, for example: put a spoon on the table, fold one towel, fill a glass halfway, set a pen by the door, switch off one light.</li>
-            <li>With the TV or music on, do the job from memory. They count how many steps you get right, in the right order.</li>
-            <li>Have them make up a different five-step job. This time, write it on the card as they say it, turn the TV or music off, and do the job with the card in your hand.</li>
+            <li>Ask the other person to make up a five-step job around the room and say it once, like putting a spoon on the table, folding one towel, filling a glass halfway, setting a pen by the door and switching off one light.</li>
+            <li>With the TV or music on, do the job from memory while they count how many steps you get right, in the right order.</li>
+            <li>Have them make up a different five-step job. This time, write it on the card as they say it, turn off the TV or music, and do the job with the card in your hand.</li>
             <li>Compare the two scores, and how hard each round felt.</li>
           </ol>
         </div>
@@ -204,7 +204,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Five steps sounds easy, yet the first round often ends with a step missed or swapped, and the second round usually feels lighter. Nothing in your brain changed between rounds. The card held the order and the quiet removed the competition, so your attention had one job. That’s what a lot of rehabilitation does after a brain injury: the supports carry part of the load, so the person can still do the thing.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Five steps sounds easy, yet the first round often ends with a step missed or swapped, and the second round usually feels lighter. Nothing in your brain changed between rounds. The card held the order and the quiet removed the competition, so your attention had one job. That’s what a lot of rehabilitation does after a brain injury, with supports carrying part of the load so the person can still do the thing.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Name the task that keeps slipping.</strong> One task, said plainly: the burner, the practice bag, the reply you owe, the 4:00 call.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Name the task that keeps slipping.</strong> Pick one task and say it plainly, like the burner, the practice bag, the reply you owe or the four o’clock call.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-list-checks"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11 4.702a.7.7 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.7.7 0 0 0 11 19.298z" /><path d="m16.5 14.5 5-5" /><path d="m16.5 9.5 5 5" /></svg></span><div><strong>Cut the inputs around it.</strong> One task at a time: radio off, extra tabs closed, questions saved until it’s done.</div></li>
+><path d="M11 4.702a.7.7 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.7.7 0 0 0 11 19.298z" /><path d="m16.5 14.5 5-5" /><path d="m16.5 9.5 5 5" /></svg></span><div><strong>Cut the inputs around it.</strong> Do one task at a time, with the radio off, extra tabs closed and questions saved until it’s done.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-home"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></span><div><strong>Make the right move the easy one.</strong> Put the reminder where the task happens: the card by the stove, the bag on the doorknob, the timer where the hand already goes.</div></li>
+><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></span><div><strong>Make the right move the easy one.</strong> Put the reminder where the task happens, like the card by the stove, the bag on the doorknob or the timer where the hand already goes.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-repeat"
   xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +272,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Reuse it until it runs itself.</strong> Same system, same place, every day. Change the part that doesn’t work instead of dropping the whole thing.</div></li>
+><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Reuse it until it runs itself.</strong> Use the same system in the same place every day, and change the part that doesn’t work instead of dropping the whole thing.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For one week, mark each time the task gets missed. Then run a week with the scaffold in place and mark again. Fewer misses means it’s working.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For one week, mark each time the task gets missed. Then run a week with the scaffold in place and mark again, and if there are fewer misses, the scaffold is earning its place.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +298,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Pride. A checklist can feel like an insult, especially to someone who used to do it all from memory. Build it with them, in their words and their system, and let them be the one who checks the boxes.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Pride can get in the way, since a checklist can feel like an insult, especially to someone who used to do it all from memory. Build it with them, in their words and their system, and let them be the one who checks the boxes.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -314,7 +314,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 104: Build a scaffold that holds. Step 1: Name the task that keeps slipping. Step 2: Put it on a list, calendar or alarm. Step 3: One task at a time, fewer inputs. Step 4: Put the reminder where the task happens. Step 5: Same system, same place, every day. How to tell it is working: Mark misses for a week, then a week with the scaffold. Compare the counts." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 104: Build a scaffold that holds. Step 1: Name the task that keeps slipping. Step 2: Put it on a list, calendar or alarm. Step 3: One task at a time, fewer inputs. Step 4: Put the reminder where the task happens. Step 5: Same system, same place, every day. How to tell it is working: Mark the misses for a week, then for a week with the scaffold, and compare." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -342,8 +342,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Cicerone KD, Langenbahn DM, Braden C, et al. (2011). Evidence-based cognitive rehabilitation: updated review of the literature from 2003 through 2008. Archives of Physical Medicine and Rehabilitation, 92(4), 519-530.</li>
-          <li>Kleim JA, Jones TA. (2008). Principles of experience-dependent neural plasticity: implications for rehabilitation after brain damage. Journal of Speech, Language, and Hearing Research, 51(1), S225-S239.</li>
+          <li>Cicerone, K. D., Langenbahn, D. M., Braden, C., Malec, J. F., Kalmar, K., Fraas, M., Felicetti, T., Laatsch, L., Harley, J. P., Bergquist, T., Azulay, J., Cantor, J., &amp; Ashman, T. (2011). Evidence-based cognitive rehabilitation: Updated review of the literature from 2003 through 2008. <em>Archives of Physical Medicine and Rehabilitation</em>, <em>92</em>(4), 519–530. <a href="https://doi.org/10.1016/j.apmr.2010.11.015" target="_blank" rel="noopener">https://doi.org/10.1016/j.apmr.2010.11.015</a></li>
+          <li>Kleim, J. A., &amp; Jones, T. A. (2008). Principles of experience-dependent neural plasticity: Implications for rehabilitation after brain damage. <em>Journal of Speech, Language, and Hearing Research</em>, <em>51</em>(1), S225–S239. <a href="https://doi.org/10.1044/1092-4388(2008/018)" target="_blank" rel="noopener">https://doi.org/10.1044/1092-4388(2008/018)</a></li>
       </ul>
     </div>
 

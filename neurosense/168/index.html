@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,9 +111,9 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Your nervous system still tracks the phone as a nearby portal, waiting and socially loaded.</li>
-          <li>That tracked possibility occupies part of your limited working memory and attention.</li>
-          <li>Moving the phone farther away makes the cue less available, so less attention stays tied to it.</li>
+          <li>Researchers have proposed that your own phone uses up some of your limited mental capacity, even when you leave it alone.</li>
+          <li>In a 2017 study, college students with their phone on the desk scored lower on a working memory test than those with it in another room.</li>
+          <li>A 2022 study that repeated part of that work found no such effect, so the evidence is mixed, but moving the phone away is easy to try.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The repeat sign on page two</h3>
-          <p>Kamila’s cousin Lidia gets married on Saturday, and Kamila is playing the piano piece the bridesmaids walk in to. Since dinner she has started it from the top seven times, and seven times she has lost her place in the same spot: page two, where the left hand changes pattern and the first ending loops back.</p>
-          <p>Her phone lies face down on the piano lid, on silent. She hasn’t picked it up in forty minutes, and she’s been keeping track. The cousins’ chat is planning hair appointments and rides for Saturday, and Lidia could ask her something any minute.</p>
-          <p>Even like that, the phone is a door to the whole weekend. Part of her attention stays posted at that door, ready to resist it or wonder what’s behind it, and that part comes out of the same limited working memory page two needs: the new left-hand pattern, the repeat sign, which ending she’s on.</p>
-          <p>Before the eighth try, she moves it. It goes on the kitchen charger, down the hall, where getting it means standing up and walking. On a piece of masking tape she writes “9:15,” her next check, and sticks it to the music stand. On the piano she leaves the music, a pencil and the metronome. Nothing else.</p>
-          <p>She circles the first ending in pencil, plays page two twice at a slow tempo, then starts from the top. This time she takes the repeat, lands the second ending and keeps going to the last chord. By 9:15 she has played it through three times without stopping. The phone holds twenty-six messages about hair and one from Lidia, asking if Kamila can play it a little slower so the flower girl can keep up.</p>
+          <p>Kamila’s cousin Lidia gets married on Saturday, and Kamila is playing the piano piece the bridesmaids walk in to. Since dinner she has started it from the top seven times, and all seven times she has lost her place in the same spot on page two, where the left hand changes pattern and the first ending loops back.</p>
+          <p>Her phone lies face down on the piano lid, on silent. She hasn’t picked it up in forty minutes, and she’s been keeping track. The cousins’ group chat is planning hair appointments and rides for Saturday, and Lidia could ask her something any minute.</p>
+          <p>Even face down and silent, the phone is a door to the whole weekend. Part of her attention stays posted at that door, either resisting it or wondering what’s behind it, and that part may come out of the same limited working memory page two needs for the new left-hand pattern, the repeat sign and which ending she’s on. Moving the phone farther away may free up some of that attention, though studies testing this have had mixed results.</p>
+          <p>Before the eighth try, she moves it to the kitchen charger down the hall, where getting it means standing up and walking. On a piece of masking tape she writes her next check time, quarter past nine, and sticks it to the music stand. On the piano she leaves the music, a pencil and the metronome and nothing else.</p>
+          <p>She circles the first ending in pencil, plays page two twice at a slow tempo and then starts from the top. This time she takes the repeat, lands the second ending and keeps going to the last chord, and by quarter past nine she has played it through three times without stopping. The phone holds twenty-six messages about hair and one from Lidia, asking if Kamila can play it a little slower so the flower girl can keep up.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Phone face down on the piano, lost on page two seven times</span></li>
+><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">With her phone face down on the piano, she gets lost on page two seven times.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Phone down the hall, 9:15 on tape, only the music on the piano</span></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She moves the phone down the hall and writes her next check time on tape.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-piano"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,20 +176,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 13v4" /><path d="M14 13v4" /><path d="M18 13v4" /><path d="M2 13h20" /><path d="M22 11.5A3.5 3.5 0 0018.5 8a3.52 3.52 0 01-3.173-2A7 7 0 002 9v10a2 2 0 002 2h16a2 2 0 002-2z" /><path d="M6 13v4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Three run-throughs without stopping by 9:15, repeat and all</span></li>
+><path d="M10 13v4" /><path d="M14 13v4" /><path d="M18 13v4" /><path d="M2 13h20" /><path d="M22 11.5A3.5 3.5 0 0018.5 8a3.52 3.52 0 01-3.173-2A7 7 0 002 9v10a2 2 0 002 2h16a2 2 0 002-2z" /><path d="M6 13v4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She plays it through three times without stopping, repeat and all.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
         <h3>Count the phone thoughts</h3>
-        <p class="ns-demo-intro">Do this during real work today, anything that takes thinking: practice problems, a puzzle, a page to memorize. You need your phone, a scrap of paper and a pen.</p>
+        <p class="ns-demo-intro">Do this during real work today, anything that takes thinking, like practice problems, a puzzle or a page to memorize. You’ll need your phone, a scrap of paper and a pen.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Put your phone face down on the table beside you, on silent, and start working.</li>
-            <li>Make a tally mark every time your eyes or your thoughts go to the phone, even for a second, even if you don’t touch it.</li>
+            <li>Make a tally mark every time your eyes or your thoughts go to the phone, even for a second and even if you don’t touch it.</li>
             <li>After ten minutes, count the marks.</li>
-            <li>Next to the count, write what most of them were about: a message you’re waiting on, plans being made, just checking whether it lit up.</li>
+            <li>Next to the count, write what most of them were about, like a message you’re waiting on, plans being made or checking whether it lit up.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -203,14 +203,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Even silent and face down the whole time, the phone may draw more marks than you expected. Each one is a small piece of attention spent keeping track of it, drawn from the same limited supply your work needs. If you want a comparison, do the next ten minutes with the phone in another room and count again.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Even silent and face down the whole time, the phone may draw more marks than you expected. Each one is a small piece of attention spent keeping track of it, taken from the same limited supply your work needs. If you want a comparison, do the next ten minutes with the phone in another room and count again.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Phone across the room</h3>
-          <p class="ns-plan-intro">For any block of work that takes real thinking.</p>
+          <p class="ns-plan-intro">Use it for any block of work that takes real thinking.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
@@ -223,7 +223,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Make it a stand-up trip.</strong> Before you start, put the phone where you’d have to stand up and walk to reach it: another room, the kitchen counter, a bag by the door. Face down beside you still counts as beside you.</div></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Make it a stand-up trip.</strong> Before you start, put the phone where you’d have to stand up and walk to reach it, like another room, the kitchen counter or a bag by the door. Face down beside you still counts as beside you.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-alarm-clock"
   xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></svg></span><div><strong>Decide the next check time first.</strong> Pick it before the block begins, like 9:15, and write it where you’ll see it, on a sticky note or a piece of tape. Then the question of when to check is already settled.</div></li>
+><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></svg></span><div><strong>Decide the next check time first.</strong> Pick it before the block begins and write it where you’ll see it, on a sticky note or a piece of tape, so the question of when to check is already settled.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pencil"
   xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Keep only the tool you need.</strong> The book, the calculator, the music and a pencil. Everything else goes off the table.</div></li>
+><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Keep only the tool you need.</strong> Keep the book, the calculator, the music and a pencil, and take everything else off the table.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-app-window"
   xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M10 4v4" /><path d="M2 8h20" /><path d="M6 4v4" /></svg></span><div><strong>Need the phone? Open only that.</strong> If the phone is your calculator or your timer, open that one thing, close everything else, and silence notifications for the block.</div></li>
+><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M10 4v4" /><path d="M2 8h20" /><path d="M6 4v4" /></svg></span><div><strong>Open only one tool if you need the phone.</strong> If the phone is your calculator or your timer, open that one thing, close everything else and silence notifications for the block.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -273,7 +273,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Do one block with the phone face down beside you and one with it across the room, same kind of task, same time of day. Count what you finish in each, and the tally marks you make.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Do one block with the phone face down beside you and one with it across the room, on the same kind of task at the same time of day. Count what you finish in each, and the tally marks you make.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -285,11 +285,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The first few times, you might get up to check “just the time.” Put a watch or a clock where you can see it, so the phone has nothing left to offer.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The first few times, you might get up to check what time it is. Put a watch or a clock where you can see it, so the phone has nothing left to offer.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 168: Phone across the room. Step 1: Put it where you have to stand up. Step 2: Decide your next check time first. Step 3: Only the tool you need within reach. Step 4: Need the phone? Open only that tool. How to tell it is working: Count what you finish with the phone beside you, then across the room." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 168: Phone across the room. Step 1: Put it where you have to stand up. Step 2: Decide your next check time first. Step 3: Only the tool you need within reach. Step 4: Need the phone? Open only that tool. How to tell it is working: Count what you finish with the phone beside you, and then with it across the room." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -317,8 +317,11 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Ward, A. F., Duke, K., Gneezy, A., &amp; Bos, M. W. Brain Drain: The Mere Presence of One&#x27;s Own Smartphone Reduces Available Cognitive Capacity. Journal of the Association for Consumer Research, 2017.</li>
-          <li>Huberman, A., with Cal Newport. Dr. Cal Newport: How to Enhance Focus and Improve Productivity. Huberman Lab Podcast, March 11, 2024.</li>
+          <li>Huberman, A. (Host). (2024a, January 29). Tools to enhance working memory &amp; attention (No. 161) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/tools-to-enhance-working-memory-attention" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/tools-to-enhance-working-memory-attention</a></li>
+          <li>Huberman, A. (Host). (2024b, March 11). Dr. Cal Newport: How to enhance focus and improve productivity (No. 167) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-cal-newport-how-to-enhance-focus-and-improve-productivity" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-cal-newport-how-to-enhance-focus-and-improve-productivity</a></li>
+          <li>Ruiz Pardo, A. C., &amp; Minda, J. P. (2022). Reexamining the "brain drain" effect: A replication of Ward et al. (2017). <em>Acta Psychologica</em>, <em>230</em>, Article 103717. <a href="https://doi.org/10.1016/j.actpsy.2022.103717" target="_blank" rel="noopener">https://doi.org/10.1016/j.actpsy.2022.103717</a></li>
+          <li>Thornton, B., Faires, A., Robbins, M., &amp; Rollins, E. (2014). The mere presence of a cell phone may be distracting: Implications for attention and task performance. <em>Social Psychology</em>, <em>45</em>(6), 479–488. <a href="https://doi.org/10.1027/1864-9335/a000216" target="_blank" rel="noopener">https://doi.org/10.1027/1864-9335/a000216</a></li>
+          <li>Ward, A. F., Duke, K., Gneezy, A., &amp; Bos, M. W. (2017). Brain drain: The mere presence of one's own smartphone reduces available cognitive capacity. <em>Journal of the Association for Consumer Research</em>, <em>2</em>(2), 140–154. <a href="https://doi.org/10.1086/691462" target="_blank" rel="noopener">https://doi.org/10.1086/691462</a></li>
       </ul>
     </div>
 

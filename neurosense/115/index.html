@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,9 +111,9 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>There is no single emotion switch in the brain.</li>
-          <li>Emotion is constructed from body regulation, context, past instances, and meaning.</li>
-          <li>More precise emotion words can support better action by improving the internal map.</li>
+          <li>Brain scan studies have not found a single switch or spot for each emotion.</li>
+          <li>One leading theory, from Lisa Feldman Barrett, holds that the brain builds emotions from body signals, context, past experience and meaning.</li>
+          <li>People who name their feelings precisely tend to handle distress in healthier ways, though most of this research shows a link rather than cause.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Tied 6 to 6 in game three</h3>
-          <p>Game three of the tournament is tied 6 to 6 when Reza’s throw floats into the other team’s hands, his second turnover in two points. He snaps at Ruben, loud enough for both sidelines: “If you’re not going to cut, get out of the lane.” Ruben, the team’s newest player, says nothing and asks to sit the next point.</p>
-          <p>Reza sits too, and everything feels bad, one heavy lump of it. By the end of the point he’s decided what it means: he’s a bad teammate, and he’ll ask the captain to keep him off the line for the rest of the day.</p>
-          <p>There’s no single switch in the brain for a feeling like this. The brain seems to build it from body signals, the situation and past moments that felt similar. Given a label as blurry as “bad,” it has to guess what kind of bad this is, and Reza’s guess is a verdict on himself. A more precise word gives it a better map.</p>
-          <p>Under the team tent he tries three exact words. Underfed: a granola bar at 6:30, orange slices since, and it’s almost two. Tired: he’s played nearly every point since eight. Embarrassed: both turnovers were his throws, not Ruben’s cuts. Each word points to a different fix. He eats the sandwich in his bag, drinks a full bottle of water and sits out one more point. Then he crouches next to Ruben. “That was my throw. Sorry I yelled.”</p>
-          <p>Two points later they’re both back on the line. Ruben cuts to the open side, and Reza puts the disc out in front of him for the score. When both teams circle up after the game, Ruben stands next to him.</p>
+          <p>Game three of the tournament is tied 6 to 6 when Reza’s throw floats into the other team’s hands, his second turnover in two points. He snaps at Ruben, loudly enough for both sidelines to hear, “If you’re not going to cut, get out of the lane.” Ruben, the team’s newest player, says nothing and asks to sit out the next point.</p>
+          <p>Reza sits out too, and everything feels bad, all in one heavy lump. By the end of the point he has decided what it means, that he’s a bad teammate, and he plans to ask the captain to keep him off the field for the rest of the day.</p>
+          <p>Scientists haven’t found a single switch in the brain for a feeling like this. The brain seems to build feelings out of body signals, the situation and past moments that felt similar. Given a label as blurry as “bad,” it has to guess what kind of bad this is, and Reza’s guess is a verdict on himself. A more precise word may give the brain a better map.</p>
+          <p>Under the team tent he tries three exact words. The first is underfed, since he had a granola bar at 6:30 and only orange slices since, and it’s almost two. The second is tired, because he has played nearly every point since eight. The third is embarrassed, because both turnovers were his throws, not Ruben’s cuts. Each word points to a different fix. He eats the sandwich in his bag, drinks a full bottle of water and sits out one more point, and then he crouches next to Ruben. “That was my throw. Sorry I yelled.”</p>
+          <p>Two points later they’re both back on the field. Ruben cuts to the open side, and Reza puts the disc out in front of him for the score. When both teams circle up after the game, Ruben stands next to him.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 10V9" /><path d="M9 10V9" /><path d="M9 16a5 5 0 016 0" /><circle cx="12" cy="12" r="10" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Two turnovers, a yell at Ruben, and a verdict: bad teammate</span></li>
+><path d="M15 10V9" /><path d="M9 10V9" /><path d="M9 16a5 5 0 016 0" /><circle cx="12" cy="12" r="10" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">After two turnovers he yells at Ruben and decides he’s a bad teammate.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-tags"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z" /><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193" /><circle cx="10.5" cy="6.5" r=".5" fill="currentColor" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Three exact words, then food, water, a point off and an apology</span></li>
+><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z" /><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193" /><circle cx="10.5" cy="6.5" r=".5" fill="currentColor" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He finds three exact words, then eats, drinks water and apologizes.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-handshake"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,21 +176,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Both back on the line, and Ruben catches the score</span></li>
+><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">They’re both back on the field, and Ruben catches the score.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Three words for one bad</h3>
-        <p class="ns-demo-intro">You need a pen, paper and a moment from the last few days when you felt bad, off or annoyed without being sure why.</p>
+        <p class="ns-demo-intro">You’ll need a pen, paper and a moment from the last few days when you felt bad, off or annoyed without being sure why.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Write down the blurry word you’d have used then, like bad, awful, off or done.</li>
-            <li>From the lists here, pick two or three words that might fit better. It’s fine if they point in different directions.</li>
-            <li>Check three things about that moment: your body (food, sleep, noise), the situation, and what happened in the hours before.</li>
-            <li>Circle the word that fits best now. Next to it, write one thing that would have helped that word and not the others.</li>
-            <li>Compare that with what you actually did at the time.</li>
+            <li>From the lists in the box, pick two or three words that might fit better, even if they point in different directions.</li>
+            <li>Check three things about that moment, which are your body, including food, sleep and noise, the situation, and what happened in the hours before.</li>
+            <li>Circle the word that fits best now, and next to it, write one thing that would have helped that word and not the others.</li>
+            <li>Compare that with what you did at the time.</li>
           </ol>
           <div class="ns-demo-side">
             <div class="ns-material">
@@ -212,13 +212,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> That one blurry word may have been covering two or three things at once, and one of them, like hunger, tiredness or noise, might have had a fix that had nothing to do with anyone else. A more precise word usually changes what you feel like doing next. That’s the better map from The Science above.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> That one blurry word may have been covering two or three things at once, and one of them, like hunger, tiredness or noise, might have had a fix that had nothing to do with anyone else. A more precise word often changes what you feel like doing next, maybe because it gives your brain a better map of what’s going on.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Swap the blurry word</h3>
+          <p class="ns-plan-intro">Pull it out the next time everything feels bad at once.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-pause"
@@ -243,7 +244,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z" /><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193" /><circle cx="10.5" cy="6.5" r=".5" fill="currentColor" /></svg></span><div><strong>Offer two or three precise words.</strong> Underfed, embarrassed, lonely, overstimulated, worried, disappointed. You don’t need the perfect word, just better options.</div></li>
+><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z" /><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193" /><circle cx="10.5" cy="6.5" r=".5" fill="currentColor" /></svg></span><div><strong>Offer two or three precise words.</strong> Try words like underfed, embarrassed, lonely, overstimulated, worried or disappointed. You don’t need the perfect word, only better options.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-scan-search"
   xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +256,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><circle cx="12" cy="12" r="3" /><path d="m16 16-1.9-1.9" /></svg></span><div><strong>Check body, situation, last few hours.</strong> When did you last eat? How did you sleep? How loud is it? What happened earlier today?</div></li>
+><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><circle cx="12" cy="12" r="3" /><path d="m16 16-1.9-1.9" /></svg></span><div><strong>Check your body, the situation and the last few hours.</strong> Ask when you last ate, how you slept, how loud it is and what happened earlier today.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
   xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +268,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Act on the word that fits.</strong> Underfed means food, and tired means a short rest. Overstimulated means a few quiet minutes. Embarrassed can mean owning your part once you’re calm enough to say it.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Act on the word that fits.</strong> If you’re underfed, eat, and if you’re tired, rest a little. If you’re overstimulated, find a few quiet minutes, and if you’re embarrassed, own your part once you’re calm enough to say it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-repeat"
   xmlns="http://www.w3.org/2000/svg"
@@ -279,7 +280,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Practice on small feelings.</strong> Run it on everyday annoyances this week, like a slow line or a late reply, so it’s familiar when a big one shows up.</div></li>
+><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Practice on small feelings.</strong> Try it on everyday annoyances this week, like a slow line or a late reply, so it’s familiar when a big one shows up.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -293,7 +294,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, jot down three things each time: the blurry word, the better word and what you did. Notice how often the better word changed your next move, and whether the feeling got easier to steer.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, write down three things each time, the blurry word, the better word and what you did. Notice how often the better word changed your next move, and whether the feeling got easier to steer.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -305,7 +306,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> In the moment, words can be hard to find. Start with the body check, since food, sleep and noise are the easiest to spot, and come back to the words once those are handled.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> In the moment, the words can be hard to find. Start with the body check, since food, sleep and noise are the easiest to spot, and come back to the words once those are handled.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -321,7 +322,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 115: Name it before you act. Step 1: Pause at the blurry word. Step 2: Try two or three precise words. Step 3: Check food, sleep, noise, last few hours. Step 4: Do what fits that word. Step 5: Practice on small feelings. How to tell it is working: Log the blurry word, the better word and what you did. Watch your next move change." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 115: Name it before you act. Step 1: Pause at the blurry word. Step 2: Try two or three precise words. Step 3: Check food, sleep, noise and the day. Step 4: Do what fits that word. Step 5: Practice on small feelings. How to tell it is working: Write down the blurry word, the better word and what you did, for a week." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -349,8 +350,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Emotional Expressions Reconsidered: Challenges to Inferring Emotion From Human Facial Movements. Psychological Science in the Public Interest.</li>
-          <li>Huberman, A., with Dr. Lisa Feldman Barrett. How to Understand Emotions. Huberman Lab Podcast, October 20, 2023.</li>
+          <li>Barrett, L. F., Adolphs, R., Marsella, S., Martinez, A. M., &amp; Pollak, S. D. (2019). Emotional expressions reconsidered: Challenges to inferring emotion from human facial movements. <em>Psychological Science in the Public Interest</em>, <em>20</em>(1), 1–68. <a href="https://doi.org/10.1177/1529100619832930" target="_blank" rel="noopener">https://doi.org/10.1177/1529100619832930</a></li>
+          <li>Huberman, A. (Host). (2023, October 16). Dr. Lisa Feldman Barrett: How to understand emotions [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-lisa-feldman-barrett-how-to-understand-emotions" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-lisa-feldman-barrett-how-to-understand-emotions</a></li>
+          <li>Kashdan, T. B., Barrett, L. F., &amp; McKnight, P. E. (2015). Unpacking emotion differentiation: Transforming unpleasant experience by perceiving distinctions in negativity. <em>Current Directions in Psychological Science</em>, <em>24</em>(1), 10–16. <a href="https://doi.org/10.1177/0963721414550708" target="_blank" rel="noopener">https://doi.org/10.1177/0963721414550708</a></li>
+          <li>Lindquist, K. A., Wager, T. D., Kober, H., Bliss-Moreau, E., &amp; Barrett, L. F. (2012). The brain basis of emotion: A meta-analytic review. <em>Behavioral and Brain Sciences</em>, <em>35</em>(3), 121–143. <a href="https://doi.org/10.1017/S0140525X11000446" target="_blank" rel="noopener">https://doi.org/10.1017/S0140525X11000446</a></li>
       </ul>
     </div>
 

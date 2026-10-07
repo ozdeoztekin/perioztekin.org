@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,7 +112,7 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Stress depends partly on how your brain reads the demand in front of you.</li>
-          <li>Label a body signal as threat and attention narrows around escape.</li>
+          <li>Label a body signal as threat and attention tends to get pulled toward negative information.</li>
           <li>Label the same signal as readiness and that energy can support action.</li>
         </ul>
         <div class="ep-protocol">
@@ -133,11 +133,11 @@
       <article class="ns-story">
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
-          <h3>Two free throws, down one</h3>
-          <p>Leo’s team is down one with 3.1 seconds left in the league semifinal, and he’s on the free-throw line for two. He has already missed two free throws in the fourth quarter, both short off the front of the rim. Miss both and the season ends here.</p>
-          <p>Both times his heart was slamming before the referee handed him the ball, and he kept telling himself to calm down. It only slammed harder. All he could see was the rim, and his routine came out rushed, his knees barely bending, as if part of him was hitting the brakes.</p>
-          <p>Stress depends partly on how the brain reads the demand in front of it. Leo has been reading the pounding as a warning, and when a body signal is labeled as threat, attention narrows around escape. At the line, escape looks like holding back. And “calm down” tends to backfire once a body is already charged. The same racing heart can also mean energy is being mobilized, and labeled as readiness, that energy can support action.</p>
-          <p>This time he stops arguing with it. He names what’s there, plainly: heart pounding, hands buzzing, mouth dry. Then, under his breath: this is energy for the shot. He doesn’t check whether he feels any calmer. He goes straight into the routine he has drilled since October: three dribbles, spin the ball, bend the knees.</p>
+          <h3>Two free throws, down by one</h3>
+          <p>Leo’s team is down by one with 3.1 seconds left in the league semifinal, and he’s on the free-throw line for two shots. He already missed two free throws in the fourth quarter, both short off the front of the rim, and if he misses both now, the season ends here.</p>
+          <p>Both times, his heart was slamming before the referee handed him the ball, and he kept telling himself to calm down, which only made it slam harder. All he could see was the rim, and his routine came out rushed, with his knees barely bending, as if part of him was hitting the brakes.</p>
+          <p>Stress depends partly on how the brain reads what’s in front of it. Leo has been reading the pounding as a warning, and when a body signal gets labeled as a threat, attention tends to get pulled toward what could go wrong, which at the line looks like holding back. Telling a body that’s already charged up to calm down tends to work less well than calling the feeling excitement. The same racing heart can also mean the body is getting energy ready, and when it’s read that way, the energy can help.</p>
+          <p>This time he stops arguing with it. He names what’s there, plainly, a pounding heart, buzzing hands and a dry mouth, and then he says under his breath that this is energy for the shot. He doesn’t check whether he feels any calmer. He goes straight into the routine he has drilled since October, three dribbles, a spin of the ball and a bend of the knees.</p>
           <p>The first shot drops through without touching the rim. The second rolls around and falls out, and the game goes to overtime. They lose by two, but on Monday Coach Ames puts Leo’s name first on the list of who shoots free throws at the end of close games.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Two short misses at the line, heart slamming, routine rushed</span></li>
+><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">He misses two free throws short, with his heart slamming and his routine rushed.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-zap"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Names the pounding, calls it energy, goes straight into his routine</span></li>
+><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He names the pounding, calls it energy and goes straight into his routine.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-badge-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,21 +176,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Ties it on the first shot, and first on the coach’s list Monday</span></li>
+><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">He ties the game on the first shot and is first on the coach’s list on Monday.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>The calm-down test</h3>
-        <p class="ns-demo-intro">Pick a moment coming up that makes your heart speed up, like a tryout, a presentation or a phone call you’ve been dreading. You need a little space to stand.</p>
+        <p class="ns-demo-intro">Pick a moment coming up that makes your heart speed up, like a tryout, a presentation or a phone call you’ve been dreading. You’ll need a little space to stand.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Stand up, close your eyes and run the ten seconds right before that moment: where you are, what you hear, who’s watching. Let your body react.</li>
-            <li>Round one: tell yourself “calm down” three times, firmly. Notice whether anything in your body actually calms.</li>
-            <li>Run the same ten seconds again. Round two: name what’s there in plain words, like “heart fast, stomach tight,” then say, “This is energy for the task.”</li>
-            <li>Within three seconds, do the first move of the moment for real: say your first sentence out loud, take the first step of your run-up, or put your hand where it goes first.</li>
-            <li>Compare the two rounds. At the end of each, was your attention on your body or on the move?</li>
+            <li>Stand up, close your eyes and run through the ten seconds right before that moment, including where you are, what you hear and who’s watching, and let your body react.</li>
+            <li>In round one, tell yourself “calm down” three times, firmly, and notice whether anything in your body calms.</li>
+            <li>Run the same ten seconds again. In round two, name what’s there in plain words, like “heart fast, stomach tight,” and then say, “This is energy for the task.”</li>
+            <li>Within three seconds, do the first move of the moment for real, like saying your first sentence out loud, taking the first step of your run-up or putting your hand where it goes first.</li>
+            <li>Compare the two rounds, and notice whether your attention ended up on your body or on the move.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,7 +204,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> “Calm down” rarely does much once the body is going, and for some the heart even speeds up. The second round usually ends with attention on the move instead of the pounding, even if the pounding hasn’t changed. That’s The Science above in two minutes: the same signal, read as readiness, gets a job instead of a fight.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> “Calm down” may not do much once the body is going. The second round usually ends with attention on the move instead of the pounding, even if the pounding hasn’t changed. The pounding is the same signal either way, but read as readiness, it gets a job instead of a fight.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Choose your first move ahead of time.</strong> Decide the first two seconds of the thing before the day comes: your start, your first sentence, your first note. Drill it until it runs on its own.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Choose your first move ahead of time.</strong> Decide the first two seconds of the thing before the day comes, like your start, your first sentence or your first note, and drill it until it runs on its own.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-heart-pulse"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg></span><div><strong>Name the signal, no verdict.</strong> When your heart speeds up, say what’s there in plain words: fast heart, tight stomach, shaky hands. Leave out “bad” and “wrong.”</div></li>
+><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg></span><div><strong>Name the signal without a verdict.</strong> When your heart speeds up, say what’s there in plain words, like a fast heart, a tight stomach or shaky hands, and leave out “bad” and “wrong.”</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-zap"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><div><strong>Call it energy for the task.</strong> In your head or under your breath: “This is energy for the task, a readiness cue I can use.” Skip “calm down,” which tends to backfire once your body is already charged.</div></li>
+><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" /></svg></span><div><strong>Call it energy for the task.</strong> In your head or under your breath, say, “This is energy for the task.” Skip “calm down,” which tends to work less well once your body is already charged up.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Move first, check the fear after.</strong> Go straight from the words into your first move, within a few seconds. If fear is still loud, breathe out once, slow and long, and then go.</div></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Move first and check the fear after.</strong> Go straight from the words into your first move, within a few seconds. If the fear is still loud, breathe out once, slow and long, and then go.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-repeat"
   xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +272,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Use it on small spikes too.</strong> Before you raise your hand, call to order food or take a free throw in gym class. The words come easier on a big day when they’re already worn in.</div></li>
+><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Use it on small spikes too.</strong> Try it before you raise your hand, call to order food or take a free throw in gym class, since the words come easier on a big day when they’re already worn in.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After each try, write down two things: whether your first move happened on time, and where your attention was in the first seconds, on the task or on your heart. Over a few tries, see whether the first move comes sooner.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After each try, write down whether your first move happened on time and where your attention was in the first seconds, on the task or on your heart. Over a few tries, see whether the first move comes sooner.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +298,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The words can feel fake at first, especially with your heart slamming. Say them anyway and go straight to the first move, since acting first keeps the reframe from turning into overthinking.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The words can feel fake at first, especially with your heart slamming. Say them anyway and go straight to the first move, since acting first keeps the new label from turning into overthinking.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -310,11 +310,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> A racing heart before a big moment is normal. If yours races often for no clear reason, or comes with chest pain or fainting, tell a parent and see a doctor.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> A racing heart before a big moment is normal. If yours races often for no clear reason, or it comes with chest pain or fainting, tell a parent and see a doctor.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 171: Turn the pounding into fuel. Step 1: Choose your first move ahead of time. Step 2: Name the signal, no verdict. Step 3: Say: “This is energy for the task”. Step 4: Move first, check the fear after. Step 5: Practice on small spikes too. How to tell it is working: Note whether your first move came on time, and where your attention went." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 171: Turn the pounding into fuel. Step 1: Choose your first move ahead of time. Step 2: Name the signal, no verdict. Step 3: Say it’s energy for the task. Step 4: Move first, check the fear after. Step 5: Practice on small spikes too. How to tell it is working: Note whether your first move came on time, and where your attention went." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -342,8 +342,11 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Jamieson, J. P., Nock, M. K., &amp; Mendes, W. B. Mind Over Matter: Reappraising Arousal Improves Cardiovascular and Cognitive Responses to Stress. Journal of Experimental Psychology: General, 2012.</li>
-          <li>Huberman, A. Master Stress: Tools for Managing Stress &amp; Anxiety. Huberman Lab Podcast, Ep. 10, March 8, 2021.</li>
+          <li>Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. <em>Journal of Experimental Psychology: General</em>, <em>143</em>(3), 1144–1158. <a href="https://doi.org/10.1037/a0035325" target="_blank" rel="noopener">https://doi.org/10.1037/a0035325</a></li>
+          <li>Huberman, A. (Host). (2021a, March 8). Tools for managing stress &amp; anxiety (No. 10) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/tools-for-managing-stress-and-anxiety" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/tools-for-managing-stress-and-anxiety</a></li>
+          <li>Huberman, A. (Host). (2021b, August 30). Dr. Robert Sapolsky: Science of stress, testosterone &amp; free will (No. 35) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-robert-sapolsky-science-of-stress-testosterone-and-free-will" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-robert-sapolsky-science-of-stress-testosterone-and-free-will</a></li>
+          <li>Jamieson, J. P., Mendes, W. B., Blackstock, E., &amp; Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. <em>Journal of Experimental Social Psychology</em>, <em>46</em>(1), 208–212. <a href="https://doi.org/10.1016/j.jesp.2009.08.015" target="_blank" rel="noopener">https://doi.org/10.1016/j.jesp.2009.08.015</a></li>
+          <li>Jamieson, J. P., Nock, M. K., &amp; Mendes, W. B. (2012). Mind over matter: Reappraising arousal improves cardiovascular and cognitive responses to stress. <em>Journal of Experimental Psychology: General</em>, <em>141</em>(3), 417–422. <a href="https://doi.org/10.1037/a0025719" target="_blank" rel="noopener">https://doi.org/10.1037/a0025719</a></li>
       </ul>
     </div>
 

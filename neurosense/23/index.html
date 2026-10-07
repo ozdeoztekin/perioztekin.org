@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -135,11 +135,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The test folded in quarters</h3>
-          <p>Sky’s physics test has been folded in quarters at the bottom of her backpack since Tuesday. It says 58 on the front, and she hasn’t looked past that. It’s a fifth of her semester grade.</p>
-          <p>At lunch she hears that Julian, who got a 71 on the last quiz, got a 94. “He’s just a physics person,” she tells Bex, and she means it as the end of the conversation.</p>
-          <p>That sentence is doing a job. After a setback, the brain can go looking for a better strategy, or it can shut the search down to protect how she feels about herself. Calling Julian a physics person shuts it down: if it’s a trait, there’s nothing to ask him. Brain recordings suggest that people who expect to improve pay closer attention to the right answer after a mistake, and fix more of their errors later. And the belief does the most when there’s support around you and a better strategy to try.</p>
-          <p>On Thursday she catches Julian at the door after class, too fast to back out, and asks what he did first. “Drew the picture. Every problem, an arrow for every force, before any numbers.” Then what he did when he got stuck. “Wrote down what it gave me and what it wanted.” Then what he changed since the quiz. “Stopped rereading my notes. Redid the homework on blank paper.” That night she unfolds the test. Seven of her misses are force problems, and she didn’t draw a thing for any of them.</p>
-          <p>She tests one answer. This week’s problem set has twelve problems, and every one starts with a sketch. She gets ten right. On Friday’s quiz she gets four of five, and she tapes Julian’s three answers inside her binder.</p>
+          <p>Sky’s physics test has been folded in quarters at the bottom of her backpack since Tuesday. The front says 58, and she hasn’t looked past that. It counts for a fifth of her grade.</p>
+          <p>At lunch she hears that Julian, who got a 71 on the last quiz, got a 94 this time. “He’s just a physics person,” she tells Bex, and she means it to end the conversation.</p>
+          <p>That sentence is doing a job for her. After a setback, people can go looking for a better strategy, or they can stop looking to protect how they feel about themselves. Calling Julian a physics person stops the search, because if it’s a trait, there’s nothing to ask him. In one study that recorded students’ brain activity, the ones who believed ability can grow paid closer attention to the right answers after their mistakes, and they fixed more of those errors on a surprise retest. A large study of ninth graders found that this kind of belief helps most when the people around you support it and there’s a better strategy to try.</p>
+          <p>On Thursday she catches Julian at the door after class, too quickly to back out, and asks what he did first. He says he drew the picture for every problem, with an arrow for every force, before any numbers. When she asks what he did when he got stuck, he says he wrote down what the problem gave him and what it wanted. After the quiz, he stopped rereading his notes and redid the homework on blank paper. That night Sky unfolds the test. Seven of her misses are force problems, and she didn’t draw anything for any of them.</p>
+          <p>So she tests one of his answers. This week’s problem set has twelve problems, and she starts every one with a sketch. She gets ten right, and on Friday’s quiz she gets four out of five. She tapes Julian’s three answers inside her binder.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" /><path d="M8 10h8" /><path d="M8 18h8" /><path d="M8 22v-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6" /><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A 58 folded in her backpack, and a trait story about Julian</span></li>
+><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" /><path d="M8 10h8" /><path d="M8 18h8" /><path d="M8 22v-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6" /><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She hides a 58 in her backpack and decides Julian is a physics person.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-message-circle-question"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Three questions for Julian, then a picture first on every problem</span></li>
+><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She asks Julian three questions and starts every problem with a sketch.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-trending-up"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,20 +177,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M16 7h6v6" /><path d="m22 7-8.5 8.5-5-5L2 17" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Ten of twelve on the problem set, four of five on Friday</span></li>
+><path d="M16 7h6v6" /><path d="m22 7-8.5 8.5-5-5L2 17" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She gets ten of twelve on the problem set and four of five on Friday.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
         <h3>Ask for the recipe</h3>
-        <p class="ns-demo-intro">Find someone who’s good at something you’d like to be better at: a sibling’s free throws, a friend’s drawings, a parent’s cooking. You need paper and about ten minutes of their time.</p>
+        <p class="ns-demo-intro">Find someone who’s good at something you’d like to get better at, like a sibling’s free throws, a friend’s drawings or a parent’s cooking. You’ll need paper and about ten minutes of their time.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Before you talk to them, write one sentence on why they’re good at it. Use the first explanation that comes to mind.</li>
-            <li>Ask them three things: what they did first, what they did when they got stuck, and what they changed from last time.</li>
-            <li>Write down every answer that’s something you could actually do, like “drew the picture first” or “practiced the hard part slowly.”</li>
-            <li>Count the doable steps in your first sentence, then the doable steps in their answers.</li>
+            <li>Before you talk to them, write one sentence about why they’re good at it, using the first explanation that comes to mind.</li>
+            <li>Ask them what they did first, what they did when they got stuck and what they changed from last time.</li>
+            <li>Write down every answer that’s something you could do yourself, like “drew the picture first” or “practiced the hard part slowly.”</li>
+            <li>Count the doable steps in your sentence, then the doable steps in their answers.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,14 +204,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> First explanations are often a trait, like “she’s just artistic,” and a trait gives you nothing to try. That’s the search shutting down before it starts. The three questions usually turn up two or three concrete moves, which is what a growth mindset needs to work with: a strategy you can test this week.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> First explanations are often a trait, like “she’s just artistic,” and a trait gives you nothing to try. That’s the search shutting down before it starts. The three questions usually turn up two or three moves you could make, and that’s what a growth mindset needs to work with, a strategy you can test this week.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>After the next low score</h3>
-          <p class="ns-plan-intro">It works for anything with a score: a quiz, a race time, a tryout ranking.</p>
+          <p class="ns-plan-intro">It works for anything with a score, like a quiz, a race time or a tryout ranking.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-scan-search"
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><circle cx="12" cy="12" r="3" /><path d="m16 16-1.9-1.9" /></svg></span><div><strong>Label every miss before you file it.</strong> Next to each wrong answer, write one word: didn’t know, careless, ran out of time or set it up wrong. The pattern tells you what to ask about.</div></li>
+><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><circle cx="12" cy="12" r="3" /><path d="m16 16-1.9-1.9" /></svg></span><div><strong>Label every miss before you file it.</strong> Next to each wrong answer, write a word or two, such as didn’t know, careless, ran out of time or set it up wrong. The pattern tells you what to ask about.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-users"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg></span><div><strong>Find one person who improved.</strong> Someone who scored higher, or who went up since last time. A classmate, a teammate or an older sibling who took the same class all count.</div></li>
+><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg></span><div><strong>Find one person who improved.</strong> Look for someone who scored higher or who went up since last time. A classmate, a teammate or an older sibling who took the same class all count.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-message-circle-question"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask the three questions.</strong> What did you do first, what did you do when you got stuck, and what did you change from last time? Write the answers down while they talk.</div></li>
+><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask the three questions.</strong> Ask what they did first, what they did when they got stuck and what they changed from last time, and write the answers down while they talk.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-flask-conical"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" /><path d="M6.453 15h11.094" /><path d="M8.5 2h7" /></svg></span><div><strong>Test one answer this week.</strong> Pick the answer that fits your pattern of misses and use it on one assignment from start to finish. Just one, so you can tell whether it worked.</div></li>
+><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" /><path d="M6.453 15h11.094" /><path d="M8.5 2h7" /></svg></span><div><strong>Test one answer this week.</strong> Pick the answer that fits your pattern of misses and use it on one assignment from start to finish. Stick to one, so you can tell whether it worked.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-chart-line"
   xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +272,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg></span><div><strong>Compare the new score with the old.</strong> That comparison is your evidence. It tells you whether to keep the strategy or test the next answer.</div></li>
+><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg></span><div><strong>Compare the new score with the old.</strong> That comparison is your evidence, and it tells you whether to keep the strategy or test the next answer.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Count the same kind of miss before and after: how many you had on the old test, and how many on the new assignment. If that kind of miss shows up less, keep the strategy; if not, test a different answer next week.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Count the same kind of miss before and after, on the old test and on the new assignment. If that kind of miss shows up less, keep the strategy, and if it doesn’t, test a different answer next week.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,11 +298,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Some people just say they studied. Ask for one detail instead, like what they did the night before or which problems they did first. A teacher can answer the three questions too.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Some people will only say they studied. Ask for one detail, like what they did the night before or which problems they did first. A teacher can answer the three questions too.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 23: After the next low score. Step 1: Label every miss before you file it. Step 2: Find one person who improved. Step 3: Ask: first? stuck? what changed?. Step 4: Test one answer on one assignment. Step 5: New score next to the old one. How to tell it is working: Count the same kind of miss before and after. Fewer means keep it; the same means try another." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 23: After the next low score. Step 1: Label every miss before you file it. Step 2: Find one person who improved. Step 3: Ask what they did first and when stuck. Step 4: Test one answer on one assignment. Step 5: Put the new score next to the old one. How to tell it is working: Count the same kind of miss before and after. If it drops, keep the strategy." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -330,9 +330,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Dweck, C. S. (2006). Mindset: The New Psychology of Success. Random House.</li>
-          <li>Mangels, J. A., Butterfield, B., Lamb, J., Good, C., & Dweck, C. S. (2006). "Why do beliefs about intelligence influence learning success? A social cognitive neuroscience model." Social Cognitive and Affective Neuroscience, 1(2): 75-86.</li>
-          <li>Yeager, D. S., Carroll, J. M., et al. (2022). "Teacher mindsets help explain where a growth-mindset intervention does and doesn't work." Psychological Science, 33(1): 18-32.</li>
+          <li>Dweck, C. S. (2006). <em>Mindset: The new psychology of success</em>. Random House.</li>
+          <li>Mangels, J. A., Butterfield, B., Lamb, J., Good, C., &amp; Dweck, C. S. (2006). Why do beliefs about intelligence influence learning success? A social cognitive neuroscience model. <em>Social Cognitive and Affective Neuroscience</em>, <em>1</em>(2), 75–86. <a href="https://doi.org/10.1093/scan/nsl013" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsl013</a></li>
+          <li>Yeager, D. S., Carroll, J. M., Buontempo, J., Cimpian, A., Woody, S., Crosnoe, R., Muller, C., Murray, J., Mhatre, P., Kersting, N., Hulleman, C., Kudym, M., Murphy, M., Duckworth, A. L., Walton, G. M., &amp; Dweck, C. S. (2022). Teacher mindsets help explain where a growth-mindset intervention does and doesn't work. <em>Psychological Science</em>, <em>33</em>(1), 18–32. <a href="https://doi.org/10.1177/09567976211028984" target="_blank" rel="noopener">https://doi.org/10.1177/09567976211028984</a></li>
       </ul>
     </div>
 

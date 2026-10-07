@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Moving your hands can lighten the load while you organize your words.</li>
-          <li>A gesture turns hidden structure into something your brain can see and track.</li>
-          <li>That frees working memory for the meaning instead of just the sentence.</li>
+          <li>A gesture can show how a problem is built, like which numbers belong together.</li>
+          <li>People recalled more of a separate list when they gestured while explaining math.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -133,12 +133,12 @@
       <article class="ns-story">
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
-          <h3>Why Mateo keeps writing 17</h3>
-          <p>Mateo writes 17 again. The problem says 8 + 4 + 5 = ___ + 5, and every time, he adds up everything before the equals sign. Harper tutors him at his kitchen table, fifteen dollars a session, her first real job, and his mom is at the counter pretending not to listen.</p>
-          <p>Harper knows the answer is 12. She has explained it three times, each version longer: the equals sign means both sides are worth the same, so this side has to match that side, and the 5 is on both sides, so you can… Mateo’s eyes are getting shiny, and somewhere in the third version Harper lost the thread too.</p>
-          <p>Holding the whole idea in her head while putting it into words is a heavy load. Moving her hands could lighten it, because a gesture turns hidden structure into something the brain can see and track: this side, that side, these two together. That frees working memory for the meaning instead of just the sentence.</p>
-          <p>That night she clears her desk and explains the problem to her empty room with her hands before writing a word. Two flat palms, level, for the two sides. A V of two fingers over the 8 and the 4, the pair that goes together. Both thumbs on the matching 5s. When the shape holds in the air, she writes it on an index card in the same order.</p>
-          <p>On Thursday she puts her palms out level and makes the V over the 8 and the 4. Mateo copies the V with his own fingers, says “twelve,” then does three of the next four alone, making the V over each one. Before Harper leaves, his mom asks if she has Saturdays free.</p>
+          <h3>Why Jace keeps writing 17</h3>
+          <p>Jace writes 17 again. The problem says 8 + 4 + 5 = ___ + 5, and every time, he adds up everything before the equals sign. Harper tutors him at his kitchen table, her first real job, and his mom is at the counter pretending not to listen.</p>
+          <p>Harper knows the answer is 12. She has explained it three times, and each version has been longer than the last, about how the equals sign means both sides are worth the same, so this side has to match that side, and the 5 is on both sides, so you can drop it. Jace’s eyes are getting shiny, and somewhere in the third version Harper lost the thread too.</p>
+          <p>Holding the whole idea in her head while putting it into words is a heavy load. Moving her hands could lighten it, because a gesture can show how a problem is built, like this side, that side and these two together. That seems to free up working memory, the brain’s small space for holding things in mind, so more of it is left for everything else she’s juggling.</p>
+          <p>That night she clears her desk and explains the problem to her empty room with her hands before writing a word. She holds two flat palms level for the two sides, makes a V with two fingers over the 8 and the 4, the pair that goes together, and puts both thumbs on the matching 5s. When the shape holds in the air, she writes it on an index card in the same order.</p>
+          <p>On Thursday she holds her palms out level and makes the V over the 8 and the 4. Jace copies the V with his own fingers and says “twelve,” and then he does three of the next four on his own, making the V over each one. Before Harper leaves, his mom asks if she has Saturdays free.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect width="16" height="20" x="4" y="2" rx="2" /><line x1="8" x2="16" y1="6" y2="6" /><line x1="16" x2="16" y1="14" y2="18" /><path d="M16 10h.01" /><path d="M12 10h.01" /><path d="M8 10h.01" /><path d="M12 14h.01" /><path d="M8 14h.01" /><path d="M12 18h.01" /><path d="M8 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Three explanations, each longer, and Mateo still writes 17</span></li>
+><rect width="16" height="20" x="4" y="2" rx="2" /><line x1="8" x2="16" y1="6" y2="6" /><line x1="16" x2="16" y1="14" y2="18" /><path d="M16 10h.01" /><path d="M12 10h.01" /><path d="M8 10h.01" /><path d="M12 14h.01" /><path d="M8 14h.01" /><path d="M12 18h.01" /><path d="M8 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She explains it three times, and Jace still writes 17.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hand"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Explains it to an empty room with her hands, then writes it</span></li>
+><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She explains it to an empty room with her hands, then writes it down.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-badge-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,20 +176,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Mateo makes the V himself and solves three of four</span></li>
+><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Jace makes the V himself and solves three of the next four.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Sit on your hands</h3>
-        <p class="ns-demo-intro">You need paper, a pen and something to cover the letters with, like your hand or a sticky note.</p>
+        <p class="ns-demo-intro">You’ll need paper, a pen and something to cover the letters with, like your hand or a sticky note.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Read the Round 1 letters for ten seconds, then cover them.</li>
+            <li>Read the round 1 letters for ten seconds, and then cover them.</li>
             <li>Sit on your hands and explain out loud how to tie a shoelace, start to finish, as if to a younger kid.</li>
             <li>Write down the letters you still remember.</li>
-            <li>Read the Round 2 letters, cover them, and explain how to wrap a present with your hands free, moving them as much as you like. Write the letters again.</li>
+            <li>Read the round 2 letters, cover them and explain how to wrap a present with your hands free, moving them as much as you like, and then write the letters again.</li>
             <li>Compare how many letters you kept each time, and how often you stopped to restart a sentence.</li>
           </ol>
           <div class="ns-demo-side">
@@ -211,14 +211,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Hands free, more letters tend to stick, and fewer sentences need a restart. Sitting on your hands leaves your brain holding the steps, the words and the letters all at once. Gesturing carries part of the structure out in the air, which frees working memory, as in The Science above. Try the two explanations in the other order another day and see if the difference holds.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> With your hands free, more letters tend to stick, and fewer sentences need a restart. Sitting on your hands leaves your brain holding the steps, the words and the letters all at once, while gesturing carries part of the structure out in the air, which frees up working memory. Try the two explanations in the other order another day and see whether the difference holds.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Explain it with your hands first</h3>
-          <p class="ns-plan-intro">Use it when you understand something but can’t explain it yet: a math step, a play, a plot, a process.</p>
+          <p class="ns-plan-intro">Use it when you understand something but can’t explain it yet, like a math step or a play.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hand"
@@ -243,7 +243,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg></span><div><strong>Explain it out loud, hands moving.</strong> Before writing anything, explain the idea to an empty room and let your hands show where things are, what comes first and what causes what.</div></li>
+><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg></span><div><strong>Explain it out loud with your hands moving.</strong> Before writing anything, explain the idea to an empty room, and let your hands show where things are, what comes first and what causes what.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shapes"
   xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +255,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z" /><rect x="3" y="14" width="7" height="7" rx="1" /><circle cx="17.5" cy="17.5" r="3.5" /></svg></span><div><strong>One gesture for each part.</strong> Give each part, step, cause or contrast its own gesture or its own spot in the air, and use the same one every time.</div></li>
+><path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z" /><rect x="3" y="14" width="7" height="7" rx="1" /><circle cx="17.5" cy="17.5" r="3.5" /></svg></span><div><strong>Give each part one gesture.</strong> Give each part, step, cause or contrast its own gesture or its own spot in the air, and use the same one every time.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-puzzle"
   xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +267,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z" /></svg></span><div><strong>Awkward? Let objects stand in.</strong> A pen can be one side and a cup the other. Point at them instead of the air.</div></li>
+><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z" /></svg></span><div><strong>Let objects stand in if it feels awkward.</strong> A pen can be one side and a cup the other, and you can point at them instead of the air.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pen-line"
   xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +293,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Pick one idea and explain it twice, once with your hands still and once hands first, recording both on your phone. If the hands-first version has fewer restarts and the written version comes faster, it’s working.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Pick one idea and explain it twice, once with your hands still and once hands first, and record both on your phone. If the hands-first version has fewer restarts and the written version comes faster, let your hands lead.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -305,11 +305,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Gesturing at an empty room can feel silly, especially if someone walks in. Keep the gestures small, on the table in front of you; they still count.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Gesturing at an empty room can feel silly, especially if someone walks in. Keep the gestures small, on the table in front of you, since they still count.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 156: Explain it with your hands first. Step 1: Clear the surface in front of you. Step 2: Explain it out loud, hands moving. Step 3: One gesture for each part. Step 4: Awkward? Let objects stand for parts. Step 5: Write it once the shape holds. How to tell it is working: Record two explanations, hands still and hands first. Count the restarts." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 156: Explain it with your hands first. Step 1: Clear the surface in front of you. Step 2: Explain it out loud, hands moving. Step 3: One gesture for each part. Step 4: Let objects stand for the parts. Step 5: Write it once the shape holds. How to tell it is working: Record two explanations, hands still and hands first, and count the restarts." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -337,8 +337,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Goldin-Meadow, S., Nusbaum, H., Kelly, S. D., Wagner, S. Explaining Math: Gesturing Lightens the Load. Psychological Science, 2001.</li>
-          <li>Goldin-Meadow, S., Cook, S. W., Mitchell, Z. A. Gesturing Gives Children New Ideas About Math. Psychological Science, 2009.</li>
+          <li>Goldin-Meadow, S., Cook, S. W., &amp; Mitchell, Z. A. (2009). Gesturing gives children new ideas about math. <em>Psychological Science</em>, <em>20</em>(3), 267–272. <a href="https://doi.org/10.1111/j.1467-9280.2009.02297.x" target="_blank" rel="noopener">https://doi.org/10.1111/j.1467-9280.2009.02297.x</a></li>
+          <li>Goldin-Meadow, S., Nusbaum, H., Kelly, S. D., &amp; Wagner, S. (2001). Explaining math: Gesturing lightens the load. <em>Psychological Science</em>, <em>12</em>(6), 516–522. <a href="https://doi.org/10.1111/1467-9280.00395" target="_blank" rel="noopener">https://doi.org/10.1111/1467-9280.00395</a></li>
+          <li>Huberman, A. (Host). (2022, August 29). Dr. Erich Jarvis: The neuroscience of speech, language &amp; music (No. 87) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-erich-jarvis-the-neuroscience-of-speech-language-and-music" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-erich-jarvis-the-neuroscience-of-speech-language-and-music</a></li>
       </ul>
     </div>
 

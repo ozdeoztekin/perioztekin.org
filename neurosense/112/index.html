@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>The auditory system keeps sampling the environment even while you work.</li>
-          <li>Studies show low intensity white noise can improve auditory working memory performance.</li>
-          <li>The useful pattern is steady, low level sound that masks sudden distractions without becoming a target of attention.</li>
+          <li>In one small brain-scan study of 20 young men, soft white noise mixed into spoken words helped them hold the words in mind, a working memory task, better than quiet did.</li>
+          <li>Steady, low level sound may help by masking sudden distractions without becoming a target of attention, while louder noise can hurt.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Every click in a silent house</h3>
-          <p>The summer drawing program at the art college downtown wants ten portfolio pieces and one essay, “Why do you make art?” in 500 words or fewer, due Friday. Hazel’s ten pieces are photographed and uploaded. After two hours at her desk, the essay has 140 words, and the first sentence has been rewritten seven times.</p>
-          <p>Everyone is at her brother’s swim meet, and the house is so quiet she can hear the kitchen clock. Silence was supposed to be the easy part. The fridge shudders off, the radiator ticks, the cat’s bell jingles down the hall, and each time she jumps and loses the sentence she was halfway through. A playlist was worse: by the second song she was mouthing the words.</p>
-          <p>Her auditory system keeps sampling the room while she writes. In a silent house a small sound has nothing to hide in, so each one gets checked. Holding a half-built sentence uses working memory, and each check can knock it loose. Steady, plain sound at a low level can mask sharp surprises without becoming something to listen to, and in some studies low-level white noise even improved working memory.</p>
-          <p>At four she picks one plain brown noise track, sets the laptop volume low, just loud enough to hear, and starts a 30-minute timer. No melody, no voices. She goes back to the third paragraph, the one about drawing her little brother asleep on the couch.</p>
-          <p>The radiator keeps ticking somewhere under the rush of the track, and when the fridge shudders off at 4:10, the sentence she’s in the middle of survives. At 4:30 the timer goes off. The essay has 420 words, and a first sentence she leaves alone.</p>
+          <p>The summer drawing program at the art college downtown wants ten portfolio pieces and one essay of 500 words or fewer, titled “Why do you make art?”, due on Friday. Hazel’s ten pieces are photographed and uploaded. After two hours at her desk, the essay has 140 words, and she has rewritten the first sentence seven times.</p>
+          <p>Everyone else is at her brother’s swim meet, and the house is so quiet she can hear the kitchen clock. Silence was supposed to be the easy part. But the fridge shudders off, the radiator ticks and the cat’s bell jingles down the hall, and each time she jumps and loses the sentence she was halfway through. A playlist was worse, because by the second song she was mouthing the words.</p>
+          <p>Her hearing keeps checking the room while she writes. In a silent house a small sound has nothing to hide in, so each one gets noticed. Holding a half-built sentence uses working memory, and each interruption can knock it loose. Steady, plain sound at a low volume can cover sharp surprises without becoming something to listen to, and in some studies low-level white noise even helped working memory.</p>
+          <p>At four she picks one plain brown noise track, sets the laptop volume low, just loud enough to hear, and starts a 30-minute timer. There’s no melody and no voices. She goes back to the third paragraph, the one about drawing her little brother asleep on the couch.</p>
+          <p>The radiator keeps ticking somewhere under the rush of the track, and when the fridge shudders off, the sentence she’s in the middle of survives. When the timer goes off at 4:30, the essay has 420 words and a first sentence she leaves alone.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Two hours, 140 words, and a jump at every small click</span></li>
+><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">After two hours she has 140 words and jumps at every small click.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-volume-1"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">One plain brown noise track, set low, and a 30-minute timer</span></li>
+><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She plays one plain brown noise track at a low volume and sets a timer.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-file-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,21 +176,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="m9 15 2 2 4-4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">420 words when the timer goes off, the first sentence left alone</span></li>
+><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="m9 15 2 2 4-4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">When the timer goes off, she has 420 words and leaves the first sentence alone.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>Count the surprises</h3>
-        <p class="ns-demo-intro">You need a fan or a plain noise track (white noise, brown noise or rain without thunder) and the counter here, or a pen and scrap paper. Keep the volume low the whole time.</p>
+        <p class="ns-demo-intro">You’ll need a fan or a plain noise track, like white noise, brown noise or rain without thunder, and the counter below or a pen and scrap paper. Keep the volume low the whole time.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Sit somewhere ordinary, like your room or the kitchen, and rest your eyes on one spot.</li>
-            <li>For one minute, tap the counter or make a mark every time a sound grabs your attention: a car, a door, a voice, the fridge. Write the number down.</li>
+            <li>For one minute, tap the counter or make a mark every time a sound grabs your attention, like a car, a door, a voice or the fridge, and write the number down.</li>
             <li>Turn on the steady sound at a low volume, just loud enough to hear, and reset the counter.</li>
             <li>Do another minute and count again.</li>
-            <li>If you caught yourself listening to the sound itself, it’s too loud or too interesting. Try a plainer one, or turn it down.</li>
+            <li>If you caught yourself listening to the sound itself, it’s too loud or too interesting, so try a plainer one or turn it down.</li>
           </ol>
           <div class="ns-demo-side">
             <div class="ns-widget" data-widget="tally" data-config="{&#34;title&#34;: &#34;Sounds that grab you&#34;, &#34;label&#34;: &#34;Tap each time a sound pulls your attention.&#34;, &#34;button&#34;: &#34;+1&#34;}"><p class="ns-material-note">The timer needs JavaScript. A phone stopwatch works just as well.</p></div>
@@ -207,14 +207,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> With the fan or noise track on, the count usually drops, even though the same cars and doors are still out there. Your ears were sampling the room the whole time; the steady sound just made the sudden ones stand out less. If your count went up instead, the sound was too loud or too interesting for you. That’s the dose problem: plain and low is the setting that tends to help.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> With the fan or noise track on, the count usually drops, even though the same cars and doors are still out there. Your ears were checking the room the whole time, and the steady sound made the sudden ones stand out less. If your count went up instead, the sound was too loud or too interesting for you. Plain and low is the setting that tends to help.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>One block with steady sound</h3>
-          <p class="ns-plan-intro">Best for work where you hold things in your head, like a sentence you’re building, a problem or a plan.</p>
+          <p class="ns-plan-intro">It works best for tasks where you hold things in your head, like a sentence you’re building, a problem or a plan.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-fan"
@@ -227,7 +227,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" /><path d="M12 12v.01" /></svg></span><div><strong>Pick a plain, steady sound.</strong> A fan, white noise or brown noise. No melody, no voices, nothing that changes. Choose it before you start, so the search doesn’t eat your block.</div></li>
+><path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" /><path d="M12 12v.01" /></svg></span><div><strong>Pick a plain, steady sound.</strong> Choose a fan, white noise or brown noise, with no melody, no voices and nothing that changes. Pick it before you start, so the search doesn’t eat your block.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-volume-1"
   xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +239,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /></svg></span><div><strong>Keep it low.</strong> Just loud enough to soften the sudden sounds around you. If you’d have to raise your voice to talk over it, it’s too loud.</div></li>
+><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /></svg></span><div><strong>Keep it low.</strong> Make it just loud enough to soften the sudden sounds around you. If you’d have to raise your voice to talk over it, it’s too loud.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +289,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Do one block in your usual quiet and one with steady sound, on the same kind of task at about the same time of day. Count something: words written, problems finished or times you lost your place. After a few sessions, notice which rooms and tasks it helps and which it doesn’t.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Do one block in your usual quiet and one with steady sound, on the same kind of task at about the same time of day. Count something, like words written, problems finished or times you lost your place, and after a few sessions, notice which rooms and tasks it helps.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -313,11 +313,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Keep the volume gentle, especially in earbuds. Loud sound over long stretches is hard on your hearing.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Keep the volume gentle, especially in earbuds, since loud sound over long stretches is hard on your hearing.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 112: One block with steady sound. Step 1: Plain, steady sound: fan or white noise. Step 2: Low, just enough to soften surprises. Step 3: One work block, about 30 minutes. Step 4: Listening to it? Turn it down. Step 5: Something different at bedtime. How to tell it is working: Count words written or lost places: one block in quiet, one with steady sound." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 112: One block with steady sound. Step 1: A plain, steady sound, like a fan. Step 2: Low, enough to soften surprises. Step 3: One work block, about 30 minutes. Step 4: If you’re listening to it, turn it down. Step 5: Something different at bedtime. How to tell it is working: Count words written or lost places in a quiet block and a steady-sound block." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -345,9 +345,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Low intensity white noise improves performance in auditory working memory task: An fMRI study. Heliyon.</li>
-          <li>White Noise Improves Learning by Modulating Activity in Dopaminergic Midbrain Regions and Right Superior Temporal Sulcus. Journal of Cognitive Neuroscience.</li>
-          <li>Huberman, A. How Hearing &amp; Balance Enhance Focus &amp; Learning. Huberman Lab Essentials.</li>
+          <li>Huberman, A. (Host). (2025, May 8). Essentials: How hearing &amp; balance enhance focus &amp; learning [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/essentials-how-hearing-balance-enhance-focus-learning" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/essentials-how-hearing-balance-enhance-focus-learning</a></li>
+          <li>Othman, E., Yusoff, A. N., Mohamad, M., Abdul Manan, H., Giampietro, V., Abd Hamid, A. I., Dzulkifli, M. A., Osman, S. S., &amp; Wan Burhanuddin, W. I. D. (2019). Low intensity white noise improves performance in auditory working memory task: An fMRI study. <em>Heliyon</em>, <em>5</em>(9), Article e02444. <a href="https://doi.org/10.1016/j.heliyon.2019.e02444" target="_blank" rel="noopener">https://doi.org/10.1016/j.heliyon.2019.e02444</a></li>
+          <li>Rausch, V. H., Bauch, E. M., &amp; Bunzeck, N. (2014). White noise improves learning by modulating activity in dopaminergic midbrain regions and right superior temporal sulcus. <em>Journal of Cognitive Neuroscience</em>, <em>26</em>(7), 1469–1480. <a href="https://doi.org/10.1162/jocn_a_00537" target="_blank" rel="noopener">https://doi.org/10.1162/jocn_a_00537</a></li>
       </ul>
     </div>
 

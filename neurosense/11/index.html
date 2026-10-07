@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -135,11 +135,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>One grain through a paper door</h3>
-          <p>Seventeen people have liked the comment under Naomi’s new video. She makes stop-motion science clips from paper cutouts, and part one of her neuron series shows a resting neuron as a little battery: the inside crowded with paper minus signs, the outside with plus signs.</p>
-          <p>The comment is polite, which makes it worse: “Love the paper ions, but almost nothing inside a resting neuron is unbalanced.” Naomi reads it on the bus, watches her own clip four times, and deletes three replies. Part two is due Friday.</p>
-          <p>The commenter is right. At rest, potassium crosses a neuron’s membrane more easily than any other ion does, through channels that stay open. Potassium leaks out, each ion carrying a plus charge, and that leaves the inside slightly negative, about minus 70 millivolts. Only about one ion in 100,000 has to cross, and the amounts inside and outside barely change. Minus 70 isn’t universal, either. Different neurons have different mixes of leak channels, so they rest anywhere from about minus 40 to minus 90, and where a neuron rests shapes how easily it fires.</p>
-          <p>Naomi starts over. She pours a whole bag of rice inside the paper ring that stands for the membrane, every grain an ion, and cuts a door in the ring marked K+. Over 40 frames, one grain slides out through the door while a caption fades in: “The real ratio is about one in 100,000. That’s the whole minus 70.” Her last shot puts three paper neurons side by side, labeled minus 40, minus 70 and minus 90.</p>
-          <p>The new version goes up Thursday night, 41 seconds long. By morning the commenter has replied, “That’s it exactly,” and Naomi pins the reply to the top.</p>
+          <p>Naomi makes stop-motion science videos out of paper cutouts, and part one of her neuron series is up. It shows a resting neuron as a little battery, with the inside crowded with paper minus signs and the outside covered in plus signs. Seventeen people have liked the top comment under it.</p>
+          <p>The comment is polite, which makes it worse. “Love the paper ions, but almost nothing inside a resting neuron is actually unbalanced.” She reads it on the bus, watches her own clip four times and deletes three replies before sending any. Part two is supposed to go up Friday.</p>
+          <p>The commenter is right, and the real story is stranger than her drawing. At rest, the membrane has channels that stay open for potassium, so potassium crosses it more easily than anything else. Potassium ions drift out, each carrying a positive charge, and that leaves the inside slightly negative, at about minus 70 millivolts. Only around one ion in 100,000 has to cross for that to happen, so the amounts inside and outside barely change. Minus 70 isn’t the same everywhere, either. Different neurons have different mixes of these leaky channels, so they rest anywhere from about minus 40 to minus 90, and where a neuron rests changes how easily it fires.</p>
+          <p>So she starts over. She pours a whole bag of rice inside the paper ring that stands for the membrane, every grain an ion, and cuts a little door in the ring marked K+. Over 40 frames, a single grain slides out through the door while a caption fades in that says, “The real ratio is about one in 100,000. That’s the whole minus 70.” In the last shot she lines up three paper neurons labeled minus 40, minus 70 and minus 90.</p>
+          <p>The new version goes up Thursday night. By morning the commenter has replied, “That’s it exactly,” and Naomi pins the reply to the top.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M14 14a2 2 0 0 0 2-2V8h-2" /><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /><path d="M8 14a2 2 0 0 0 2-2V8H8" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Seventeen likes on a correction she can’t answer yet</span></li>
+><path d="M14 14a2 2 0 0 0 2-2V8h-2" /><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /><path d="M8 14a2 2 0 0 0 2-2V8H8" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A polite comment points out what her neuron video got wrong.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-wheat"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 22 16 8" /><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z" /><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A bag of rice, and one grain out through a paper door</span></li>
+><path d="M2 22 16 8" /><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z" /><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She reshoots it with a bag of rice and one grain slipping out a paper door.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pin"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,20 +177,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 17v5" /><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">A 41-second reshoot, and a reply she pins to the top</span></li>
+><path d="M12 17v5" /><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The commenter writes back, and she pins the reply to the top.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>The balloon test</h3>
-        <p class="ns-demo-intro">A tiny imbalance of charge can do real work, and you can watch it happen. You need a balloon or a plastic comb, a tissue, and dry hair or a wool sweater.</p>
+        <p class="ns-demo-intro">You can watch a tiny imbalance of charge do real work. You’ll need a balloon or a plastic comb, a tissue, and dry hair or a wool sweater.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Tear the tissue into a small pile of bits about the size of rice grains, and spread them on a table.</li>
+            <li>Tear the tissue into a little pile of bits about the size of rice grains, and spread them on a table.</li>
             <li>Hold the balloon a finger’s width above the bits. Nothing happens.</li>
             <li>Rub the balloon on your hair or the sweater for about ten seconds.</li>
-            <li>Hold it above the bits again. Then look closely at the balloon: can you see anything that moved?</li>
+            <li>Hold it over the bits again, then look closely at the balloon. Can you see anything that changed?</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,14 +204,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The bits jump up and cling, even though nothing visible changed on the balloon. Rubbing moved a tiny amount of charge from one surface to the other, and that small imbalance was enough for a real pull. A resting neuron runs on the same idea: about one ion in 100,000 crosses the membrane, everything else stays where it was, and that sliver is the whole minus 70 millivolts.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The bits jump up and cling, even though the balloon looks exactly the same. Rubbing moved a tiny amount of charge from one surface to the other, and that small imbalance was enough to pull. A resting neuron runs on the same idea. About one ion in 100,000 crosses the membrane, everything else stays where it was, and that sliver is the whole minus 70 millivolts.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Make minus 70 stick</h3>
-          <p class="ns-plan-intro">About ten minutes today, two minutes tomorrow.</p>
+          <p class="ns-plan-intro">It takes about ten minutes today and two minutes tomorrow.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-wheat"
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 22 16 8" /><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z" /><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /></svg></span><div><strong>Keep the rice picture.</strong> A full bag of rice with a single grain outside it. Sketch it in your notes and write “one in 100,000” and “minus 70” next to it.</div></li>
+><path d="M2 22 16 8" /><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z" /><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /></svg></span><div><strong>Keep the rice picture.</strong> Picture a full bag of rice with one grain outside it. Sketch it in your notes and write “one in 100,000” and “minus 70” next to it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-door-open"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 21H2" /><path d="M10 3H7a2 2 0 00-2 2v16" /><path d="M14 12h.01" /><path d="M19 21V5a2 2 0 00-1.675-1.974l-6.163-1.013A1 1 0 0010 3v18a1 1 0 001.124.992z" /><path d="M22 21h-3" /></svg></span><div><strong>Name the open door.</strong> Write one sentence: at rest, potassium leaks out through channels that stay open, and each ion takes a plus charge with it, so the inside goes negative.</div></li>
+><path d="M10 21H2" /><path d="M10 3H7a2 2 0 00-2 2v16" /><path d="M14 12h.01" /><path d="M19 21V5a2 2 0 00-1.675-1.974l-6.163-1.013A1 1 0 0010 3v18a1 1 0 001.124.992z" /><path d="M22 21h-3" /></svg></span><div><strong>Name the open door.</strong> Write one sentence about it. At rest, potassium leaks out through channels that stay open, each ion takes a positive charge with it, and the inside goes negative.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-mic"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><div><strong>Record a 20-second version.</strong> Say it in three sentences: what leaks out, how little it takes, and what that does to the inside. Record it as a voice memo and listen once.</div></li>
+><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><div><strong>Record a 20-second version.</strong> Say it in three sentences, covering what leaks out, how little it takes and what that does to the inside. Record it as a voice memo and listen once.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sliders-horizontal"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 5H3" /><path d="M12 19H3" /><path d="M14 3v4" /><path d="M16 17v4" /><path d="M21 12h-9" /><path d="M21 19h-5" /><path d="M21 5h-7" /><path d="M8 10v4" /><path d="M8 12H3" /></svg></span><div><strong>Add the range.</strong> Write minus 40 and minus 90 on either side of minus 70. Different neurons have different mixes of leak channels, and where a neuron rests changes how easily it fires.</div></li>
+><path d="M10 5H3" /><path d="M12 19H3" /><path d="M14 3v4" /><path d="M16 17v4" /><path d="M21 12h-9" /><path d="M21 19h-5" /><path d="M21 5h-7" /><path d="M8 10v4" /><path d="M8 12H3" /></svg></span><div><strong>Add the range.</strong> Write minus 40 and minus 90 on either side of minus 70. Different neurons have different mixes of leaky channels, and where a neuron rests changes how easily it fires.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-calendar-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Tomorrow, with nothing in front of you, explain in about 30 seconds why the inside is negative, how few ions it takes, and why minus 70 isn’t the same for every neuron. Then play yesterday’s memo and listen for anything you dropped.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Tomorrow, with nothing in front of you, take about 30 seconds to explain why the inside is negative, how few ions it takes and why minus 70 isn’t the same for every neuron. Then play yesterday’s memo and listen for anything you dropped.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,11 +298,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> If one in 100,000 won’t stick, turn it into time: it’s one second out of about 28 hours.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> If one in 100,000 won’t stick, turn it into time. It’s about one second out of 28 hours.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 11: Make minus 70 stick. Step 1: One grain of rice outside the bag. Step 2: Potassium leaks out, the inside goes negative. Step 3: Record a 20-second voice memo. Step 4: Neurons rest from minus 40 to minus 90. Step 5: Say it again tomorrow, no notes. How to tell it is working: No notes: why the inside is negative and how few ions it takes, in about 30 seconds." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 11: Make minus 70 stick. Step 1: One grain of rice outside the bag. Step 2: Potassium leaks out, the inside goes negative. Step 3: Record a 20-second voice memo. Step 4: Neurons rest from minus 40 to minus 90. Step 5: Say it again tomorrow, no notes. How to tell it is working: With no notes, explain in 30 seconds why the inside is negative and how few ions it takes." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -330,9 +330,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Hodgkin, A. L., &amp; Katz, B. (1949). The effect of sodium ions on the electrical activity of the giant axon of the squid. Journal of Physiology, 108(1): 37-77.</li>
-          <li>Goldman, D. E. (1943). Potential, impedance, and rectification in membranes. Journal of General Physiology, 27(1): 37-60.</li>
-          <li>Kandel, E. R., Schwartz, J. H., Jessell, T. M., Siegelbaum, S. A., &amp; Hudspeth, A. J. (Eds.). (2013). Principles of Neural Science (5th ed.), Chapters 5-6. McGraw-Hill.</li>
+          <li>Goldman, D. E. (1943). Potential, impedance, and rectification in membranes. <em>Journal of General Physiology</em>, <em>27</em>(1), 37–60. <a href="https://doi.org/10.1085/jgp.27.1.37" target="_blank" rel="noopener">https://doi.org/10.1085/jgp.27.1.37</a></li>
+          <li>Hodgkin, A. L., &amp; Katz, B. (1949). The effect of sodium ions on the electrical activity of the giant axon of the squid. <em>The Journal of Physiology</em>, <em>108</em>(1), 37–77. <a href="https://doi.org/10.1113/jphysiol.1949.sp004310" target="_blank" rel="noopener">https://doi.org/10.1113/jphysiol.1949.sp004310</a></li>
+          <li>Kandel, E. R., Schwartz, J. H., Jessell, T. M., Siegelbaum, S. A., &amp; Hudspeth, A. J. (Eds.). (2013). <em>Principles of neural science</em> (5th ed.). McGraw-Hill.</li>
       </ul>
     </div>
 

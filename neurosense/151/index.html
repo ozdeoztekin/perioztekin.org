@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -120,7 +120,7 @@
           <ul class="ep-list">
           <li>Put your feet down, get bright light, and drink water before checking anything loaded.</li>
           <li>Do one easy movement, like opening the shade and standing tall for ten slow breaths.</li>
-          <li>Save the first serious decision until your body has had a few clean minutes awake.</li>
+          <li>Save the first serious decision until you have been awake for half an hour or so.</li>
           </ul>
         </div>
       </div>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The cube on the nightstand</h3>
-          <p>Beatriz does her first five timed solves of the day before her feet touch the floor. Her first speedcubing competition is in two weeks, the first round starts at 8:30 in the morning, and practicing the moment her alarm goes off seemed like the smart way to get ready.</p>
-          <p>It hasn’t gone well. At night she averages about 31 seconds. In bed at 6:15, her averages have been 44 and 47. This morning her fingers lose a sequence of turns she has done a thousand times, the timer stops at 52.8, and by 6:22 the registration page is open, her thumb over Cancel. It feels like a fact: she’s gotten worse, and everyone will see.</p>
-          <p>She’s testing a brain that isn’t fully on yet. After sleep, the brain doesn’t always come online at full speed. Alertness, memory access and quick judgment can lag while the waking system settles, which is how a move she knows cold goes missing, and why the verdict sounds true. The first minutes after the alarm are a risky time to judge her whole brain, and she has done it every morning.</p>
-          <p>She sets the phone face down without tapping anything. Feet on the floor. She pulls the blinds up, drinks the glass of water on her nightstand and stands tall by the window for ten slow breaths. Then she makes the bed, the easiest job in the room, and leaves the cube alone. The decision can wait until she has been up a while.</p>
-          <p>After breakfast, at the kitchen table, she does five solves: 33.4, 30.9, 32.2, 35.0, 31.7. She closes the registration page without canceling. For the next two weeks the timed solves come after breakfast, and the cube lives on the kitchen table.</p>
+          <p>Beatriz does her first five timed solves of the day before her feet touch the floor. Her first speedcubing competition is in two weeks, and the first round starts early in the morning, so practicing the moment her alarm goes off seemed like the smart way to get ready.</p>
+          <p>It hasn’t gone well. At night she averages about 31 seconds, but in bed right after the alarm her averages have been in the mid-40s. This morning her fingers lose a sequence of turns she has done a thousand times, and the timer stops at 52.8. A few minutes later the registration page is open with her thumb over the cancel button, because it feels like a fact that she has gotten worse and everyone will see.</p>
+          <p>She’s testing a brain that isn’t fully on yet. After sleep, the brain doesn’t always come online at full speed, and alertness, memory and quick judgment can lag while it finishes waking up. That’s how a move she knows cold goes missing, and it’s also why a verdict made right then deserves a second look. The first minutes after the alarm are a risky time to judge your whole brain, and she has been doing it every morning.</p>
+          <p>She sets the phone face down without tapping anything and puts her feet on the floor. She pulls the blinds up, drinks the glass of water on her nightstand and stands tall by the window for ten slow breaths. Then she makes the bed, the easiest job in the room, and leaves the cube alone, because the decision can wait until she has been up a while.</p>
+          <p>After breakfast, at the kitchen table, she does five solves, and all of them land between 30 and 35 seconds. She closes the registration page without canceling. For the next two weeks the timed solves come after breakfast, and the cube lives on the kitchen table.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Five timed solves in bed, a 52.8, and the cancel button open</span></li>
+><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She does timed solves in bed, gets a 52.8 and opens the cancel page.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sunrise"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Feet down, blinds up, water, ten slow breaths, decision on hold</span></li>
+><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She puts her feet down, opens the blinds, drinks water and waits.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +176,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Five solves after breakfast, back near her usual 31</span></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">After breakfast her five solves land near her usual 31 seconds.</span></li>
         </ol>
       </article>
 
@@ -186,8 +186,8 @@
         <p class="ns-demo-intro">This takes a day, but only a few minutes of it. Tonight, leave this page open on whatever screen is closest to your bed, with a pen and a sticky note beside it.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Tomorrow, as soon as you’re sitting up after the alarm, do one round of five taps before you open anything else. Write your middle time on the sticky note.</li>
-            <li>Then do the runway: feet on the floor, curtains open or the brightest light on, a glass of water, and ten slow breaths standing tall.</li>
+            <li>Tomorrow, as soon as you’re sitting up after the alarm, do one round of five taps before you open anything else, and write your middle time on the sticky note.</li>
+            <li>Then do the runway, which means feet on the floor, curtains open or the brightest light on, a glass of water and ten slow breaths standing tall.</li>
             <li>After breakfast, once you’re dressed and moving, do a second round and write that time down too.</li>
             <li>Do one last round in the afternoon, when you feel fully awake, and compare the three times.</li>
           </ol>
@@ -206,7 +206,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Of the three times, the first is usually the slowest, even though nothing about your reflexes changed overnight. That gap is the waking system still coming online, and until it settles, memory and quick judgment can run slow too. If a five-tap test can lag in the first minutes after the alarm, so can a harsh verdict about yourself.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Of the three times, the first is usually the slowest, even though nothing about your reflexes changed overnight. That gap is your brain still coming online, and until it settles, memory and quick judgment can run slow too. If a five-tap test can lag in the first minutes after the alarm, so can a harsh verdict about yourself.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -226,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><div><strong>Feet down, then light.</strong> When the alarm goes off, put both feet on the floor and get bright light: open the curtains, step to a window or turn on the brightest lamp. The phone stays face down.</div></li>
+><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><div><strong>Feet down, then light.</strong> When the alarm goes off, put both feet on the floor and get bright light, by opening the curtains, stepping to a window or turning on the brightest lamp. The phone stays face down.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-glass-water"
   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M5.116 4.104A1 1 0 0 1 6.11 3h11.78a1 1 0 0 1 .994 1.105L17.19 20.21A2 2 0 0 1 15.2 22H8.8a2 2 0 0 1-2-1.79z" /><path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0" /></svg></span><div><strong>Drink a glass of water.</strong> Fill it the night before and leave it where your hand lands first. Drink it before you check anything loaded, like messages, grades or comments.</div></li>
+><path d="M5.116 4.104A1 1 0 0 1 6.11 3h11.78a1 1 0 0 1 .994 1.105L17.19 20.21A2 2 0 0 1 15.2 22H8.8a2 2 0 0 1-2-1.79z" /><path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0" /></svg></span><div><strong>Drink a glass of water.</strong> Fill it the night before and leave it where your hand lands first, and drink it before you check anything loaded, like messages, grades or comments.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-person-standing"
   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="5" r="1" /><path d="m9 20 3-6 3 6" /><path d="m6 8 6 2 6-2" /><path d="M12 10v4" /></svg></span><div><strong>Stand tall for ten slow breaths.</strong> One easy movement is enough: open the shade and stand by it for ten slow breaths. There’s nothing to get right.</div></li>
+><circle cx="12" cy="5" r="1" /><path d="m9 20 3-6 3 6" /><path d="m6 8 6 2 6-2" /><path d="M12 10v4" /></svg></span><div><strong>Stand tall for ten slow breaths.</strong> One easy movement is enough, like opening the shade and standing by it for ten slow breaths, and there’s nothing to get right.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-bed"
   xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +262,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 4v16" /><path d="M2 8h18a2 2 0 0 1 2 2v10" /><path d="M2 17h20" /><path d="M6 8v9" /></svg></span><div><strong>Make the first job small.</strong> Make the bed, pack your bag, feed the dog. Pick something your waking brain can finish without arguing, and save anything emotional for later.</div></li>
+><path d="M2 4v16" /><path d="M2 8h18a2 2 0 0 1 2 2v10" /><path d="M2 17h20" /><path d="M6 8v9" /></svg></span><div><strong>Make the first job small.</strong> Make the bed, pack your bag or feed the dog. Pick something your waking brain can finish without arguing, and save anything emotional for later.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hourglass"
   xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M5 22h14" /><path d="M5 2h14" /><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></svg></span><div><strong>Hold big verdicts until later.</strong> No quitting, canceling, sending the hard reply or deciding you’re bad at something in the first minutes. If a harsh thought shows up, write it down and read it again after breakfast.</div></li>
+><path d="M5 22h14" /><path d="M5 2h14" /><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></svg></span><div><strong>Hold big verdicts until later.</strong> Don’t quit, cancel, send the hard reply or decide you’re bad at something in the first minutes. If a harsh thought shows up, write it down and read it again after breakfast.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -288,7 +288,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Each morning this week, write down any harsh thought or big decision from the first minutes after waking, then reread it after breakfast. Count how many still look true. If that number stays small and the runway comes before the phone on most mornings, it’s working.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Each morning this week, write down any harsh thought or big decision from the first minutes after waking, and reread it after breakfast. Count how many still look true. If that number stays small and the runway comes before the phone on most mornings, it’s working.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -312,11 +312,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Most people are groggy for a few minutes after waking. If you feel foggy for hours most mornings, or exhausted even after a full night in bed, tell a parent and talk to a doctor.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Most people feel groggy for a while after waking, often up to half an hour. If you feel foggy for hours most mornings, or exhausted even after a full night in bed, tell a parent and talk to a doctor.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 151: Give your morning a runway. Step 1: Feet down, bright light, phone face down. Step 2: Water before anything loaded. Step 3: Ten slow breaths, standing tall. Step 4: First job small and easy. Step 5: No big verdicts until after breakfast. How to tell it is working: Write down morning verdicts. After breakfast, count how many still look true." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 151: Give your morning a runway. Step 1: Feet down, bright light, phone face down. Step 2: Water before anything loaded. Step 3: Ten slow breaths, standing tall. Step 4: First job small and easy. Step 5: No big verdicts until after breakfast. How to tell it is working: Write down morning verdicts, and count how many still look true after breakfast." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -344,8 +344,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Wertz, A. T., Ronda, J. M., Czeisler, C. A., Wright, K. P. Effects of Sleep Inertia on Cognition. JAMA, 2006.</li>
-          <li>Huberman, A. Sleep Toolkit: Tools for Optimizing Sleep &amp; Sleep-Wake Timing. Huberman Lab Podcast, Ep. 84, August 8, 2022.</li>
+          <li>Hilditch, C. J., &amp; McHill, A. W. (2019). Sleep inertia: Current insights. <em>Nature and Science of Sleep</em>, <em>11</em>, 155–165. <a href="https://doi.org/10.2147/NSS.S188911" target="_blank" rel="noopener">https://doi.org/10.2147/NSS.S188911</a></li>
+          <li>Huberman, A. (Host). (2021, August 2). Dr. Matt Walker: The science &amp; practice of perfecting your sleep (No. 31) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-matthew-walker-the-science-and-practice-of-perfecting-your-sleep" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-matthew-walker-the-science-and-practice-of-perfecting-your-sleep</a></li>
+          <li>Huberman, A. (Host). (2022, August 8). Sleep toolkit: Tools for optimizing sleep &amp; sleep-wake timing (No. 84) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/sleep-toolkit-tools-for-optimizing-sleep-and-sleep-wake-timing" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/sleep-toolkit-tools-for-optimizing-sleep-and-sleep-wake-timing</a></li>
+          <li>Wertz, A. T., Ronda, J. M., Czeisler, C. A., &amp; Wright, K. P., Jr. (2006). Effects of sleep inertia on cognition. <em>JAMA</em>, <em>295</em>(2), 163–164. <a href="https://doi.org/10.1001/jama.295.2.163" target="_blank" rel="noopener">https://doi.org/10.1001/jama.295.2.163</a></li>
       </ul>
     </div>
 

@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,9 +111,9 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Porkka-Heiskanen et al. (1997), Science: adenosine builds up the longer you stay awake and creates the brain's sleep pressure.</li>
+          <li>Porkka-Heiskanen et al. (1997), Science: in cats, adenosine in a wake-promoting brain area rose the longer they stayed awake and fell during sleep, making it one likely signal of sleep pressure.</li>
           <li>Fredholm et al. (1999), Pharmacological Reviews: caffeine works by blocking adenosine receptors, so it masks tiredness rather than creating energy.</li>
-          <li>Drake et al. (2013), Journal of Clinical Sleep Medicine: caffeine taken even six hours before bed measurably disrupts sleep, which deepens the pressure underneath.</li>
+          <li>Drake et al. (2013), Journal of Clinical Sleep Medicine: in 12 healthy sleepers, a large 400 milligram dose of caffeine taken six hours before bed still cut measured sleep by more than an hour.</li>
           <li>Your brain is tracking time online, not just mood.</li>
         </ul>
         <div class="ep-protocol">
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>A Jakob who became a Jacob</h3>
-          <p>Last year’s yearbook spelled a senior’s name wrong under her photo, and her mom called the school twice. This year the names are Thea’s job. She’s the copy editor, and the senior section, 312 names on forty pages, goes to the printer Friday at five.</p>
-          <p>Her mornings start at 6:30 with a big glass of her dad’s cold brew, before she’s opened the blinds, and mornings go fine. The proofing happens after school, though, and by 3:30 the letters start to swim. On Monday the adviser found two misses on pages Thea had already checked: a McKenzie spelled Mackenzie, and a Jakob who had become a Jacob.</p>
-          <p>All day her brain builds up adenosine, a sleep-pressure signal that grows the longer she’s awake. Caffeine blocks adenosine’s receptors for a while, so she can’t feel the pressure, but it doesn’t remove any of it. When the block fades in the afternoon, what piled up underneath can land all at once. The crash is chemistry plus timing, not carelessness.</p>
-          <p>On Tuesday she changes the order. Blinds up as soon as she’s out of bed, a full glass of water, and the fifteen-minute walk to school instead of a ride. The cold brew waits: half her usual, in a thermos, after first period, and nothing after lunch. In the back of her style notebook she logs how much, what time, how she slept and when the crash came.</p>
-          <p>Thursday’s line reads: half, 9:00, seven and a half hours, small dip at 2:30. That afternoon she catches six misspellings in the last twelve pages, one of them her best friend’s middle name. At 4:40 on Friday the senior section goes to the printer, and the adviser’s spot check of forty names comes back clean.</p>
+          <p>Last year’s yearbook spelled a senior’s name wrong under her photo, and her mom called the school twice about it. This year the names are Thea’s job. She’s the copy editor, and the senior section, 312 names on forty pages, goes to the printer on Friday at five.</p>
+          <p>Her mornings start at 6:30 with a big glass of her dad’s cold brew, before she has even opened the blinds, and mornings go fine. The proofreading happens after school, though, and by 3:30 the letters start to swim. On Monday the adviser found two mistakes on pages Thea had already checked, a McKenzie spelled Mackenzie and a Jakob who had become a Jacob.</p>
+          <p>All day her brain builds up adenosine, a chemical that signals sleep pressure and grows the longer she’s awake. Caffeine blocks adenosine’s receptors for a while, so she feels less of the pressure, but it doesn’t take any of it away. As the caffeine wears off in the afternoon, what piled up underneath can catch up with her. A big dose of caffeine can also cut into sleep even when it’s taken six hours before bed.</p>
+          <p>On Tuesday she changes the order. She opens the blinds as soon as she’s out of bed, drinks a glass of water and walks the fifteen minutes to school instead of getting a ride. The cold brew waits until after first period, and she has half her usual amount in a thermos and nothing after lunch. In the back of her style notebook she writes down how much she had, what time, how she slept and when the crash came.</p>
+          <p>By Thursday her notes say she had half a glass at nine, slept seven and a half hours and felt only a small dip at 2:30. That afternoon she catches six misspellings in the last twelve pages. The senior section goes to the printer on Friday with twenty minutes to spare, and the adviser’s spot check of forty names comes back clean.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 2v2" /><path d="M14 2v2" /><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" /><path d="M6 2v2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Cold brew at 6:30, letters swimming by 3:30, two names missed</span></li>
+><path d="M10 2v2" /><path d="M14 2v2" /><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" /><path d="M6 2v2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">After cold brew at 6:30, the letters swim by 3:30, and she misses two names.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sun"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Light, water and a walk first, then half her usual, nothing after lunch</span></li>
+><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She gets light, water and a walk first, then half her usual, nothing after lunch.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-badge-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,20 +178,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Six misspellings caught, and forty names checked clean</span></li>
+><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She catches six misspellings, and the spot check comes back clean.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>Weight you can’t feel</h3>
-        <p class="ns-demo-intro">A model of a crash, with nothing to eat or drink. You need a table and three or four paperbacks or balled-up pairs of socks, nothing heavier.</p>
+        <p class="ns-demo-intro">This is a model of a crash, with nothing to eat or drink. You’ll need a table and three or four paperbacks or balled-up pairs of socks, nothing heavier.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Round 1: stand and hold one arm straight out in front of you, palm up. Every ten seconds, set one book on your palm, up to four. Notice each one land. That’s adenosine adding up, hour by hour.</li>
+            <li>For round one, stand and hold one arm straight out in front of you, palm up. Every ten seconds, set one book on your palm, up to four, and notice each one land. That’s adenosine adding up, hour by hour.</li>
             <li>Put them down and shake out your arm.</li>
-            <li>Round 2: sit at the table and rest your forearm on it, palm up, so the table holds your arm. Add the same books, one every ten seconds. The table is caffeine.</li>
-            <li>After the last book, lift your arm off the table and hold it out. Notice the first second.</li>
+            <li>For round two, sit at the table and rest your forearm on it, palm up, so the table holds your arm. Add the same books, one every ten seconds. The table is caffeine.</li>
+            <li>After the last book, lift your arm off the table and hold it out, and notice the first second.</li>
             <li>Compare the two rounds.</li>
           </ol>
         </div>
@@ -206,7 +206,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> In round 1 the weight arrived one book at a time. In round 2 you felt almost nothing until you lifted, and then all of it at once. That’s the crash: caffeine blocks the receptors adenosine uses, so the pressure is hidden while it keeps building, and when the block fades it lands together. The table never took a single book away.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> In round one the weight arrived one book at a time. In round two you felt almost nothing until you lifted, and then you felt all of it at once. That’s the crash. Caffeine blocks the receptors adenosine uses, so the pressure stays mostly hidden while it keeps building, and as the block fades, you feel what built up. The table never took a single book away.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -226,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><div><strong>Light, water and movement first.</strong> Open the blinds or step outside, drink a full glass of water, and move for a few minutes. The walk to the bus counts.</div></li>
+><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><div><strong>Light, water and movement first.</strong> Open the blinds or step outside, drink a full glass of water and move for a few minutes. The walk to the bus counts.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-clock"
   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><div><strong>Then delay the first dose.</strong> Let your own alertness get going before you borrow any. If you usually drink it the minute you’re up, push it past the light, water and movement.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><div><strong>Then delay the first dose.</strong> Let your own alertness get going before you borrow any. If you usually drink it the minute you’re up, push it back until after the light, water and movement.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-coffee"
   xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +262,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Cut it off early.</strong> Nothing in the afternoon or evening. If your sleep gets worse, move your one dose earlier still.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Cut it off early.</strong> Have nothing with caffeine in the afternoon or evening, and if your sleep gets worse, move your one dose even earlier.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-notebook-pen"
   xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Track it for a week.</strong> One line a day: dose, time, how you slept, and when the crash came, if it did.</div></li>
+><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Track it for a week.</strong> Write one line a day with the amount, the time, how you slept and when the crash came, if it did.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -288,7 +288,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Compare the crash column on the first days and the last days of the week: when it hits, and how hard on a 0 to 10 scale. If it’s smaller or later and your sleep column is no worse, the timing is working for you.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Compare the crash column on the first days and the last days of the week, both when it hits and how hard it hits from 0 to 10. If it’s smaller or later and your sleep column is no worse, the timing is working for you.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +300,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The afternoon is where the old pattern comes back: the slump hits and a second cup looks like the fix. That’s the rescue button. Step outside and drink water first, and write the slump in your log, because it’s the most useful line in it.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The afternoon is where the old pattern comes back, when the slump hits and a second cup looks like the fix. Step outside and drink water first, and write the slump in your log, because it’s the most useful line in it.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -316,7 +316,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 62: If you use caffeine, time it. Step 1: Light, water and movement first. Step 2: Then delay the first dose. Step 3: Smallest amount you can feel. Step 4: Nothing in the afternoon. Step 5: Log dose, time, sleep, crash. How to tell it is working: By the end of the week, is the crash smaller or later, with sleep no worse?" width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 62: If you use caffeine, time it. Step 1: Light, water and movement first. Step 2: Then delay the first dose. Step 3: The smallest amount you can feel. Step 4: Nothing in the afternoon. Step 5: Log amount, time, sleep and crash. How to tell it is working: By the end of the week, see if the crash is smaller or later, with sleep no worse." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -344,10 +344,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Porkka-Heiskanen T, et al. (1997). Adenosine: a mediator of the sleep-inducing effects of prolonged wakefulness. Science, 276(5316): 1265-1268.</li>
-          <li>Fredholm BB, et al. (1999). Actions of caffeine in the brain. Pharmacological Reviews, 51(1): 83-133.</li>
-          <li>Drake C, et al. (2013). Caffeine effects on sleep taken 0, 3, or 6 hours before bed. Journal of Clinical Sleep Medicine, 9(11): 1195-1200.</li>
-          <li>Landolt HP. (2008). Sleep homeostasis: a role for adenosine in humans? Biochemical Pharmacology, 75(11): 2070-2079.</li>
+          <li>Drake, C., Roehrs, T., Shambroom, J., &amp; Roth, T. (2013). Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. <em>Journal of Clinical Sleep Medicine</em>, <em>9</em>(11), 1195–1200. <a href="https://doi.org/10.5664/jcsm.3170" target="_blank" rel="noopener">https://doi.org/10.5664/jcsm.3170</a></li>
+          <li>Fredholm, B. B., Bättig, K., Holmén, J., Nehlig, A., &amp; Zvartau, E. E. (1999). Actions of caffeine in the brain with special reference to factors that contribute to its widespread use. <em>Pharmacological Reviews</em>, <em>51</em>(1), 83–133. <a href="https://doi.org/10.1016/S0031-6997(24)01396-6" target="_blank" rel="noopener">https://doi.org/10.1016/S0031-6997(24)01396-6</a></li>
+          <li>Landolt, H.-P. (2008). Sleep homeostasis: A role for adenosine in humans? <em>Biochemical Pharmacology</em>, <em>75</em>(11), 2070–2079. <a href="https://doi.org/10.1016/j.bcp.2008.02.024" target="_blank" rel="noopener">https://doi.org/10.1016/j.bcp.2008.02.024</a></li>
+          <li>Porkka-Heiskanen, T., Strecker, R. E., Thakkar, M., Bjørkum, A. A., Greene, R. W., &amp; McCarley, R. W. (1997). Adenosine: A mediator of the sleep-inducing effects of prolonged wakefulness. <em>Science</em>, <em>276</em>(5316), 1265–1268. <a href="https://doi.org/10.1126/science.276.5316.1265" target="_blank" rel="noopener">https://doi.org/10.1126/science.276.5316.1265</a></li>
       </ul>
     </div>
 

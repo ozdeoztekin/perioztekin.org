@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -137,11 +137,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The kick that kept coming back</h3>
-          <p>Over the winter, Wes’s taekwondo instructor rebuilt his side kick for breaking: knee high, hips turned over, heel driving through the board instead of at it. In class it works. When it counts, it disappears.</p>
-          <p>The moment a first attempt bounces off, the old kick comes back without asking: hips square, a flat foot, a careful push that thuds against the board and stops. At last month’s tryout for the demonstration team, it came back after every miss, and he didn’t make the team. He knows exactly what he’s supposed to do. His leg does the other thing.</p>
-          <p>Learning has an add button and a turn-down system. Long-term depression is the turn-down side. It weakens connections when a pattern should fade, in many circuits by leaving fewer signal-catching receptors, so the old connection gets quieter without being erased. That’s why it snaps back under pressure. The old path is still easy to run, and knowing better doesn’t weaken it. The trigger has to meet a different response while the old one is interrupted.</p>
-          <p>He names the exact trigger: the dull thud of a board that doesn’t break. At Thursday’s class he holds back on purpose against a plastic practice board, to make that thud happen. After each one he takes one clean second, feet set, one breath out. Then five seconds: one slow shadow kick of the new motion, knee high, hips over, before the real kick. Forty times.</p>
-          <p>At Saturday’s second tryout there are three boards. The old push sneaks back once, on the second board, and he feels it happen; that one takes three attempts. At the third, his first kick thuds off, and this time he takes the clean second, the breath and the slow shadow kick. The board splits in two.</p>
+          <p>Wes’s taekwondo instructor rebuilt his side kick for breaking boards over the winter. Now his knee comes up high, his hips turn over, and his heel drives through the board instead of at it. In class it works well, but under pressure the old kick keeps coming back.</p>
+          <p>The moment a first attempt bounces off, his hips go square and his foot goes flat, and he gives the board a careful push that thuds against it and stops. At last month’s tryout for the demonstration team, the old kick came back after every miss, and he didn’t make the team.</p>
+          <p>The brain can strengthen connections between neurons, and it can also weaken them. Weakening is called long-term depression, which has nothing to do with feeling depressed. In many circuits it works by taking away some of the receptors that catch the signal, so the same message gets a smaller response. The old connection gets quieter without being erased, which is why an old habit can snap back under pressure. In habit research, change tends to stick when the trigger is noticed, the old response is interrupted, and the new one is practiced in the same situation many times.</p>
+          <p>So Wes names his exact trigger, which is the dull thud of a board that doesn’t break. At Thursday’s class he holds back on purpose against a plastic practice board to make that thud happen. After each thud he takes one clean second to set his feet and breathe out. Then he does one slow shadow kick of the new motion, knee high and hips over, before he kicks for real. He does it forty times.</p>
+          <p>At Saturday’s tryout there are three boards. The old push sneaks back once, on the second board, and that board takes three attempts. On the third board his first kick thuds off, and this time he takes the clean second, the breath and the slow shadow kick. On the next try the board splits in two.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -155,7 +155,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A board that won’t break, then the old flat-footed push</span></li>
+><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">When a board doesn’t break, his old flat-footed push comes back.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-pause"
   xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">One clean second, a breath, then a slow shadow kick</span></li>
+><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">After each thud he takes one second, breathes and does a slow shadow kick.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
   xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +179,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">One slip on the second board, then the routine on the third</span></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The old kick slips in once, but on the third board the routine holds.</span></li>
         </ol>
       </article>
 
@@ -189,10 +189,10 @@
         <p class="ns-demo-intro">All you need is your arms, plus someone to say “go” at a random moment if anyone is around.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Cross your arms without thinking. Notice which forearm ends up on top.</li>
-            <li>Uncross them and cross them the other way. Notice how clumsy it feels.</li>
+            <li>Cross your arms without thinking, and notice which forearm ends up on top.</li>
+            <li>Uncross them and cross them the other way, and notice how clumsy it feels.</li>
             <li>Cross them the new way ten times, slowly, paying attention each time.</li>
-            <li>Drop your arms. Have someone say “go” at a random moment, or count to a random number in your head, and on “go” cross your arms as fast as you can. Which way did they go?</li>
+            <li>Drop your arms. Have someone say “go” at a random moment, or count to a random number in your head, and on “go” cross your arms as fast as you can. Notice which way they went.</li>
             <li>Try once more, but pause for one second before you cross, and choose the new way.</li>
           </ol>
         </div>
@@ -207,14 +207,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Even after ten slow tries, a lot of people’s arms go the old way when they rush. Ten tries are a start, and the old pattern hasn’t gone anywhere, so speed brings it back. The one-second pause in step 5 gives the new pattern room to run. The plan below uses the same pause, repeated in the same situation many times, so the old path can keep getting quieter.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Even after ten slow tries, a lot of people’s arms go the old way when they rush. Ten tries are a start, but the old pattern hasn’t gone anywhere, so speed brings it back. The one-second pause in the last step gives the new pattern room to run. The plan below uses the same pause, repeated in the same situation many times, so the old path can keep getting quieter.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Interrupt, then replace</h3>
-          <p class="ns-plan-intro">Pick one pattern you’d like to change: a habit, a skill error or a reaction.</p>
+          <p class="ns-plan-intro">Pick one pattern you’d like to change, whether it’s a habit, a mistake in a skill or a reaction.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
@@ -227,7 +227,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one pattern.</strong> One at a time: the rushed kick, the phone grab when you sit down, the automatic comeback. An ordinary one is fine.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one pattern.</strong> Work on one at a time, like the rushed kick, grabbing your phone when you sit down or the automatic comeback. An ordinary one is fine.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-crosshair"
   xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +239,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><line x1="22" x2="18" y1="12" y2="12" /><line x1="6" x2="2" y1="12" y2="12" /><line x1="12" x2="12" y1="6" y2="2" /><line x1="12" x2="12" y1="22" y2="18" /></svg></span><div><strong>Name the exact trigger.</strong> Something you could point to: sitting down at the desk, opening an app, missing a shot, a certain tone in someone’s voice.</div></li>
+><circle cx="12" cy="12" r="10" /><line x1="22" x2="18" y1="12" y2="12" /><line x1="6" x2="2" y1="12" y2="12" /><line x1="12" x2="12" y1="6" y2="2" /><line x1="12" x2="12" y1="22" y2="18" /></svg></span><div><strong>Name the exact trigger.</strong> Pick something you could point to, like sitting down at the desk, opening an app, missing a shot or a certain tone in someone’s voice.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-pause"
   xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +251,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><div><strong>Pause for one clean second.</strong> When the trigger hits, stop for one second. A breath, feet set, hands flat on the desk.</div></li>
+><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><div><strong>Pause for one clean second.</strong> When the trigger hits, stop for one second. Take a breath, set your feet or put your hands flat on the desk.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-refresh-cw"
   xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +263,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></svg></span><div><strong>Run the replacement for five seconds.</strong> Right away, while the trigger is fresh: the slow correct kick, hands on the desk instead of on the phone, one calm sentence instead of the comeback.</div></li>
+><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></svg></span><div><strong>Run the replacement for five seconds.</strong> Do it right away, while the trigger is fresh, like the slow correct kick, your hands on the desk instead of on the phone or one calm sentence instead of the comeback.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-repeat"
   xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +275,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Repeat it in the same place.</strong> Same situation, many times. If you can, make the trigger happen on purpose in practice, like holding back a kick so the board thuds, so you get more repetitions.</div></li>
+><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Repeat it in the same place.</strong> Practice in the same situation many times. If you can, make the trigger happen on purpose, like holding back a kick so the board thuds, so you get more repetitions.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -289,7 +289,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Count how often the old pattern shows up in a week: flat kicks per class, phone grabs per hour, comebacks per day. Expect it to fall slowly and to spike under pressure. A count that trends down over a few weeks means it’s working.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Count how often the old pattern shows up in a week, like flat kicks per class, phone grabs per hour or comebacks per day. Expect it to fall slowly and to spike under pressure, and if the count trends down over a few weeks, the old pattern is losing its grip.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -301,11 +301,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The old pattern will snap back on a stressful day, and it can feel like starting over, but it isn’t: the old path got quieter, and it can still be loud for a moment. Run the pause and the replacement on the very next trigger.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The old pattern will snap back on a stressful day, and it can feel like starting over, but it isn’t. The old path got quieter, and it can still be loud for a moment, so run the pause and the replacement on the very next trigger.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 48: Interrupt, then replace. Step 1: Pick one pattern to change. Step 2: Name the exact trigger. Step 3: Pause for one clean second. Step 4: Five seconds of the new response. Step 5: Repeat it in the same place. How to tell it is working: Count the old pattern each week. A slow drop, with spikes under pressure, is normal." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 48: Interrupt, then replace. Step 1: Pick one pattern to change. Step 2: Name the exact trigger. Step 3: Pause for one clean second. Step 4: Five seconds of the new response. Step 5: Repeat it in the same place. How to tell it is working: Count the old pattern each week, and expect a slow drop with spikes under pressure." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -333,9 +333,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Malenka, R. C., &amp; Bear, M. F. (2004). LTP and LTD: an embarrassment of riches. Neuron, 44(1): 5-21.</li>
-          <li>Collingridge, G. L., Peineau, S., Howland, J. G., &amp; Wang, Y. T. (2010). Long-term depression in the CNS. Nature Reviews Neuroscience, 11(7): 459-473.</li>
-          <li>Massey, P. V., &amp; Bashir, Z. I. (2007). Long-term depression: multiple forms and implications for brain function. Trends in Neurosciences, 30(4): 176-184.</li>
+          <li>Collingridge, G. L., Peineau, S., Howland, J. G., &amp; Wang, Y. T. (2010). Long-term depression in the CNS. <em>Nature Reviews Neuroscience</em>, <em>11</em>(7), 459–473. <a href="https://doi.org/10.1038/nrn2867" target="_blank" rel="noopener">https://doi.org/10.1038/nrn2867</a></li>
+          <li>Malenka, R. C., &amp; Bear, M. F. (2004). LTP and LTD: An embarrassment of riches. <em>Neuron</em>, <em>44</em>(1), 5–21. <a href="https://doi.org/10.1016/j.neuron.2004.09.012" target="_blank" rel="noopener">https://doi.org/10.1016/j.neuron.2004.09.012</a></li>
+          <li>Massey, P. V., &amp; Bashir, Z. I. (2007). Long-term depression: Multiple forms and implications for brain function. <em>Trends in Neurosciences</em>, <em>30</em>(4), 176–184. <a href="https://doi.org/10.1016/j.tins.2007.02.005" target="_blank" rel="noopener">https://doi.org/10.1016/j.tins.2007.02.005</a></li>
       </ul>
     </div>
 

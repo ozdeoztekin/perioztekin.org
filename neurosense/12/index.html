@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -135,11 +135,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Why the blower never stops</h3>
-          <p>Sebastian’s sister Ana is timing him at the kitchen table, and the first 40 seconds go fine: three sodium out, two potassium in, one ATP. Monday he interviews for a summer lab program where applicants teach one biology idea in two minutes. Then Ana asks why the pump has to keep going once the ions are moved, and twice all he can say is “It just runs.”</p>
-          <p>Saturday, at his party rental job, he watches a kid chasing a balloon kick the blower’s cord loose. The bounce castle is empty, everyone at the cake table, and within a minute its turrets fold over and the front wall sags to his knees.</p>
-          <p>The castle leaks air through its seams all day, so the blower can’t stop. A neuron leaks too: sodium trickles back in all the time, and the pump spends one ATP, the cell’s fuel, to push three sodium out and bring two potassium in. Without it, the leak would slowly wipe out the neuron’s resting voltage. Every signal leaves more to restore, and all that pumping makes it one of the brain’s biggest energy costs.</p>
-          <p>He plugs it back in. That night at the kitchen sink he pokes a pencil hole near the bottom of a paper cup, marks a line inside, and keeps the water at the line by pouring from a glass while he explains it to Ana. When he stops, the level drops. A second hole, for a burst of signals, makes him pour faster.</p>
-          <p>Monday he tells the castle story, draws the cup and finishes in a minute and 50 seconds. When the interviewer asks what a neuron spends so much of its energy on, Sebastian says, “Keeping the castle up.” She laughs and writes something down.</p>
+          <p>Sebastian’s sister Ada is timing him at the kitchen table, and the first 40 seconds go fine, three sodium out and two potassium in for every ATP. On Monday he interviews for a summer lab program, and every applicant has to teach one biology idea in two minutes. Then Ada asks why the pump has to keep going once the ions are where they belong, and twice all he can come up with is “It just runs.”</p>
+          <p>On Saturday, at his party rental job, he watches a kid chasing a balloon kick the blower’s cord loose. The bounce castle is empty because everyone is at the cake table, and within a minute its towers fold over and the front wall sags down to his knees.</p>
+          <p>The castle leaks air through its seams all day long, so the blower can never stop, and a neuron works the same way. Sodium keeps trickling back in, so the pump keeps spending ATP, the cell’s fuel, to push three sodium out and bring two potassium in. Without it, the leak would slowly erase the voltage the neuron needs in order to signal. Every signal adds more to clean up, and all that pumping makes it one of the brain’s biggest energy costs.</p>
+          <p>He plugs the castle back in. That night at the kitchen sink he pokes a pencil hole near the bottom of a paper cup, draws a line inside, and keeps the water at the line by pouring from a glass while he explains it all to Ada. When he stops pouring, the water drops. When he adds a second hole, for a burst of signals, he has to pour faster.</p>
+          <p>On Monday he tells the bounce castle story, draws the cup and finishes in a minute and 50 seconds. When the interviewer asks what a neuron spends so much of its energy on, Sebastian says, “Keeping the castle up.” She laughs and writes something down.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Three out, two in, and no answer to “why nonstop?”</span></li>
+><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">He knows the ratio but can’t explain why the pump never stops.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-castle"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 5V3" /><path d="M14 5V3" /><path d="M15 21v-3a3 3 0 0 0-6 0v3" /><path d="M18 3v8" /><path d="M18 5H6" /><path d="M22 11H2" /><path d="M22 9v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9" /><path d="M6 3v8" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A sagging bounce castle, then a leaky paper cup at the sink</span></li>
+><path d="M10 5V3" /><path d="M14 5V3" /><path d="M15 21v-3a3 3 0 0 0-6 0v3" /><path d="M18 3v8" /><path d="M18 5H6" /><path d="M22 11H2" /><path d="M22 9v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9" /><path d="M6 3v8" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A sagging bounce castle and a leaky paper cup give him the answer.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-badge-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,20 +177,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">A minute and 50 seconds, and the follow-up answered</span></li>
+><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">He teaches it in under two minutes and handles the follow-up.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>The leaky cup</h3>
-        <p class="ns-demo-intro">A model of a pump that can never stop. You need a paper cup, a pencil, a marker, a glass of water and a sink.</p>
+        <p class="ns-demo-intro">This is a model of a pump that can never stop. You’ll need a paper cup, a pencil, a marker, a glass of water and a sink.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Poke a small hole near the bottom of the cup with the pencil tip, and draw a line inside about two-thirds of the way up.</li>
             <li>Over the sink, fill the cup to the line and keep it there for 30 seconds by pouring slowly from the glass.</li>
             <li>Stop pouring and watch the level.</li>
-            <li>Poke a second hole, refill the cup to the line, and try to hold it there again.</li>
+            <li>Poke a second hole, fill the cup to the line again and try to hold it there.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,7 +204,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The cup can’t hold the line on its own: the moment you stop pouring, the level drops. In a neuron the leak runs the other way, with sodium trickling in, and the pump pushes it back out, three sodium out and two potassium in for every ATP, without stopping. The second hole is a burst of signals, since every one leaves more to restore. That endless pouring is one of the brain’s biggest energy costs.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The cup can’t hold the line on its own, and the moment you stop pouring, the level drops. In a neuron the leak runs the other way, with sodium trickling in, and the pump keeps pushing it back out, three sodium out and two potassium in for every ATP. The second hole is like a burst of signals, since each one leaves more to restore, and all that endless pouring is one of the brain’s biggest energy costs.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><div><strong>Count it on your hand.</strong> Three fingers out for sodium, two fingers in for potassium, and a fist for the one ATP it costs. Do it every time you say it.</div></li>
+><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><div><strong>Count it on your hand.</strong> Hold up three fingers for the sodium going out, two for the potassium coming in, and make a fist for the one ATP it costs. Do it every time you say it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pencil"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Draw the leak next to the pump.</strong> A line for the membrane, a small arrow of sodium leaking in, and the pump sending three sodium out and two potassium in.</div></li>
+><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Draw the leak next to the pump.</strong> Draw a line for the membrane, a small arrow of sodium leaking in, and the pump sending three sodium out and two potassium in.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-cup-soda"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8" /><path d="M5 8h14" /><path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" /><path d="m12 8 1-6h2" /></svg></span><div><strong>Run the cup for someone.</strong> Do the leaky cup for someone at home and tell them what each part stands for: the hole is the leak, your pouring is the pump.</div></li>
+><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8" /><path d="M5 8h14" /><path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" /><path d="m12 8 1-6h2" /></svg></span><div><strong>Show someone the cup.</strong> Do the leaky cup for someone at home and tell them what each part stands for. The hole is the leak, and your pouring is the pump.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-help"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Answer the nonstop question.</strong> In one sentence: the leak never stops, so the pump can’t either, and without it the resting voltage would slowly drain away.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Answer the nonstop question.</strong> Say it in one sentence. The leak never stops, so the pump can’t either, and without it the neuron’s resting voltage would slowly drain away.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> With no notes, in under two minutes, you can explain three out and two in, why the pump never stops, and why it is one of the brain’s biggest energy costs. If the person you showed the cup to can explain the leak back to you, that counts too.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> If you can explain three out and two in, why the pump never stops and why it costs so much energy, with no notes and in under two minutes, you’ve got it. If the person you showed the cup to can explain the leak back to you, that counts too.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,11 +298,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> If you mix up which ion goes which way, start from the leak: sodium is the one sneaking in, so sodium is the one the pump throws out.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> If you mix up which ion goes which way, start from the leak. Sodium is the one sneaking in, so sodium is the one the pump throws out.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 12: Teach the pump in two minutes. Step 1: Three out, two in, one ATP, on your hand. Step 2: Draw the leak next to the pump. Step 3: Run the leaky cup for someone. Step 4: The leak never stops, so the pump can’t. Step 5: Two minutes, no notes, tomorrow. How to tell it is working: No notes, under two minutes: the ratio, the leak, and why the pump never stops." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 12: Teach the pump in two minutes. Step 1: Three out, two in, one ATP, on your hand. Step 2: Draw the leak next to the pump. Step 3: Show someone the leaky cup. Step 4: The leak never stops, so the pump can’t. Step 5: Two minutes, no notes, tomorrow. How to tell it is working: With no notes and in under two minutes, explain the ratio, the leak and why it never stops." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -330,11 +330,11 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Skou, J. C. (1957). The influence of some cations on an adenosine triphosphatase from peripheral nerves. Biochimica et Biophysica Acta, 23: 394-401.</li>
-          <li>Attwell, D., &amp; Laughlin, S. B. (2001). An energy budget for signaling in the grey matter of the brain. Journal of Cerebral Blood Flow &amp; Metabolism, 21(10): 1133-1145.</li>
-          <li>Howarth, C., Gleeson, P., &amp; Attwell, D. (2012). Updated energy budgets for neural computation in the neocortex and cerebellum. Journal of Cerebral Blood Flow &amp; Metabolism, 32(7): 1222-1232.</li>
-          <li>Dworak, M., McCarley, R. W., Kim, T., Kalinchuk, A. V., &amp; Basheer, R. (2010). Sleep and brain energy levels: ATP changes during sleep. Journal of Neuroscience, 30(26): 9007-9016.</li>
-          <li>Mantantzis, K., Schlaghecken, F., Sünram-Lea, S. I., &amp; Maylor, E. A. (2019). Sugar rush or sugar crash? A meta-analysis of carbohydrate effects on mood. Neuroscience &amp; Biobehavioral Reviews, 101: 45-67.</li>
+          <li>Attwell, D., &amp; Laughlin, S. B. (2001). An energy budget for signaling in the grey matter of the brain. <em>Journal of Cerebral Blood Flow &amp; Metabolism</em>, <em>21</em>(10), 1133–1145. <a href="https://doi.org/10.1097/00004647-200110000-00001" target="_blank" rel="noopener">https://doi.org/10.1097/00004647-200110000-00001</a></li>
+          <li>Dworak, M., McCarley, R. W., Kim, T., Kalinchuk, A. V., &amp; Basheer, R. (2010). Sleep and brain energy levels: ATP changes during sleep. <em>Journal of Neuroscience</em>, <em>30</em>(26), 9007–9016. <a href="https://doi.org/10.1523/JNEUROSCI.1423-10.2010" target="_blank" rel="noopener">https://doi.org/10.1523/JNEUROSCI.1423-10.2010</a></li>
+          <li>Howarth, C., Gleeson, P., &amp; Attwell, D. (2012). Updated energy budgets for neural computation in the neocortex and cerebellum. <em>Journal of Cerebral Blood Flow &amp; Metabolism</em>, <em>32</em>(7), 1222–1232. <a href="https://doi.org/10.1038/jcbfm.2012.35" target="_blank" rel="noopener">https://doi.org/10.1038/jcbfm.2012.35</a></li>
+          <li>Mantantzis, K., Schlaghecken, F., Sünram-Lea, S. I., &amp; Maylor, E. A. (2019). Sugar rush or sugar crash? A meta-analysis of carbohydrate effects on mood. <em>Neuroscience &amp; Biobehavioral Reviews</em>, <em>101</em>, 45–67. <a href="https://doi.org/10.1016/j.neubiorev.2019.03.016" target="_blank" rel="noopener">https://doi.org/10.1016/j.neubiorev.2019.03.016</a></li>
+          <li>Skou, J. C. (1957). The influence of some cations on an adenosine triphosphatase from peripheral nerves. <em>Biochimica et Biophysica Acta</em>, <em>23</em>(2), 394–401. <a href="https://doi.org/10.1016/0006-3002(57)90343-8" target="_blank" rel="noopener">https://doi.org/10.1016/0006-3002(57)90343-8</a></li>
       </ul>
     </div>
 

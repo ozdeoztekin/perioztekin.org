@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Self compassion is not pretending the miss did not matter.</li>
-          <li>It creates enough safety to look directly at what happened.</li>
-          <li>When your whole self is not on trial, the useful feedback is easier to use.</li>
+          <li>It may make it feel safe enough to look directly at what happened.</li>
+          <li>In experiments, being kind to yourself after a failure raised motivation to improve.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Before they resurface the ice</h3>
-          <p>The double axel opens Marley’s free skate, and in the last run-through before tomorrow’s competition she comes down on her hip. She gets up and finishes the program, every jump after it a little small and careful, then skates straight off the ice.</p>
-          <p>In the locker room she gets one skate unlaced and stops. The same sentences keep looping: “You always fall when it counts. You’re a choker. Pull out before you embarrass yourself.” Her text to Corinne, her coach, asking to withdraw, is half typed.</p>
-          <p>That voice sounds like accountability, but it’s noisy feedback: it describes her and leaves out the jump. Being kind to herself wouldn’t mean deciding the fall didn’t matter. It would make it safe enough to look straight at what happened on that takeoff, and when her whole self isn’t on trial, the useful feedback is easier to use.</p>
-          <p>She deletes the text. Out loud, to the empty locker room, she says what happened: “Fell on the double axel. Came in fast and took off before I was on the edge.” Then she asks what Corinne would tell her to fix. One thing: wait on the edge. She writes WAIT on a strip of tape, sticks it on her water bottle, laces up and finds Corinne at the boards. “I rushed it. Can I try it again before they resurface?”</p>
-          <p>Corinne checks the clock: nine minutes. On the first try Marley waits on the edge and two-foots the landing. The second one lands clean, on one foot, and she holds the landing edge all the way to the boards. Corinne taps the tape on the bottle. “That one, tomorrow.”</p>
+          <p>The double axel opens Marley’s free skate, and in the last run-through before tomorrow’s competition she comes down on her hip. She gets up and finishes the program, with every jump after it a little small and careful, and then skates straight off the ice.</p>
+          <p>In the locker room she gets one skate unlaced and stops. The same sentences keep looping, that she always falls when it counts, that she’s a choker and that she should pull out before she embarrasses herself. Her text to Corinne, her coach, asking to withdraw, is half typed.</p>
+          <p>That voice sounds like holding herself accountable, but it’s noisy feedback, because it describes her and leaves out the jump. Being kind to herself wouldn’t mean deciding the fall didn’t matter. It could make it feel safe enough to look straight at what happened on that takeoff, and when her whole self isn’t on trial, the useful feedback can be easier to use.</p>
+          <p>She deletes the text. Out loud, to the empty locker room, she says what happened. “Fell on the double axel. Came in fast and took off before I was on the edge.” Then she asks herself what Corinne would tell her to fix, and the answer is to wait on the edge. She writes WAIT on a strip of tape, sticks it on her water bottle, laces up and finds Corinne at the boards. “I rushed it. Can I try it again before they resurface?”</p>
+          <p>Corinne checks the clock, and there are nine minutes left. On the first try Marley waits on the edge and lands on two feet. The second one lands clean, on one foot, and she holds the landing edge all the way to the boards. Corinne taps the tape on the bottle and says, “That one, tomorrow.”</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /><path d="m14.5 8.5-5 5" /><path d="m9.5 8.5 5 5" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Falls on her double axel, then half types a text to withdraw</span></li>
+><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /><path d="m14.5 8.5-5 5" /><path d="m9.5 8.5 5 5" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She falls on her double axel and half types a text to withdraw.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Says what happened, writes WAIT on tape, asks to try again</span></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She says what happened, writes WAIT on tape and asks to try again.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,20 +176,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Two-footed once, then a clean double axel before the ice is resurfaced</span></li>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She lands on two feet once, then lands a clean double axel.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Two notes</h3>
-        <p class="ns-demo-intro">Think of a recent attempt that went badly: a game, a test, a performance, something you said. You need paper and a pen.</p>
+        <p class="ns-demo-intro">Think of a recent attempt that went badly, like a game, a test, a performance or something you said. You’ll need paper and a pen.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Fold the page in half. On the left, write what you said to yourself afterward, word for word, even if it’s harsh.</li>
             <li>On the right, write what you’d text a friend who did exactly the same thing.</li>
             <li>Underline every part of each note that tells you what to do differently next time.</li>
-            <li>Count the underlines on each side, and notice which note you could actually use tomorrow.</li>
+            <li>Count the underlines on each side, and notice which note you could use tomorrow.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -203,14 +203,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The left side is often louder and has fewer underlines, because insults describe you and leave out the next move. The right side can be just as honest about the miss while being more specific about the fix. That’s The Science above: when your whole self isn’t on trial, the useful feedback is easier to see and to use.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The left side is often louder and has fewer underlines, because insults describe you and leave out the next move. The right side can be equally honest about the miss while being more specific about the fix. When your whole self isn’t on trial, the useful feedback can be easier to see and to use.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Own it, fix one thing, go again</h3>
-          <p class="ns-plan-intro">For the next time a game, a test, a performance or a conversation goes badly.</p>
+          <p class="ns-plan-intro">Go through it the next time a game, a test or a conversation goes badly.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-message-square"
@@ -223,7 +223,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /></svg></span><div><strong>Say what happened in plain words.</strong> Leave out the label: “fell on the axel, came in too fast,” not “a choker.” What happened, where and when.</div></li>
+><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /></svg></span><div><strong>Say what happened in plain words.</strong> Leave out the label, so it’s “fell on the axel, came in too fast,” not “a choker,” with what happened, where and when.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-help"
   xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask what would actually help.</strong> If your mind gets cruel, ask what instruction would help the next attempt, the kind a good coach would give. Write that down instead.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask what would help.</strong> If your mind gets cruel, ask what instruction would help the next attempt, the kind a good coach would give, and write that down instead.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
   xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Name one change.</strong> One thing for the next attempt: a cue word on a strip of tape, a slower first step, a check before you start.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Name one change.</strong> Pick one thing for the next attempt, like a cue word on a strip of tape, a slower first step or a check before you start.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-handshake"
   xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><div><strong>Tell whoever needs to know.</strong> If the miss affected someone, or someone can help you fix it, like a coach or a teammate, say it plainly: “I rushed it. Can I try it again?” One sentence is enough.</div></li>
+><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><div><strong>Tell whoever needs to know.</strong> If the miss affected someone, or someone can help you fix it, like a coach or a teammate, say it plainly, like “I rushed it. Can I try it again?” One sentence is enough.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-rotate-ccw"
   xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Kinder words can feel like letting yourself off the hook. Check whether the sentence still names exactly what went wrong. If it does, you’re still being accountable, just without the insult.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Kinder words can feel like letting yourself off the hook. Check whether the sentence still names exactly what went wrong, and if it does, you’re still being accountable, without the insult.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -313,7 +313,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 160: Own it, fix one thing, go again. Step 1: Say what happened, no labels. Step 2: Cruel voice? Ask what would help. Step 3: Name one change for next time. Step 4: Tell whoever needs to know. Step 5: Take the next attempt soon. How to tell it is working: Count misses that got one change and a next attempt within a day." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 160: Own it, fix one thing, go again. Step 1: Say what happened, no labels. Step 2: Cruel voice? Ask what would help. Step 3: Name one change for next time. Step 4: Tell whoever needs to know. Step 5: Take the next attempt soon. How to tell it is working: Count the misses that got one change and a next attempt within a day." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -341,8 +341,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Breines, J. G., Chen, S. Self-Compassion Increases Self-Improvement Motivation. Personality and Social Psychology Bulletin, 2012.</li>
-          <li>Huberman, A., with Conti, P. Tools to Bolster Your Mental Health &amp; Confidence. Huberman Lab Podcast, May 4, 2026.</li>
+          <li>Breines, J. G., &amp; Chen, S. (2012). Self-compassion increases self-improvement motivation. <em>Personality and Social Psychology Bulletin</em>, <em>38</em>(9), 1133–1143. <a href="https://doi.org/10.1177/0146167212445599" target="_blank" rel="noopener">https://doi.org/10.1177/0146167212445599</a></li>
+          <li>Huberman, A. (Host). (2025, January 13). Dr. Becky Kennedy: Overcoming guilt &amp; building tenacity in kids &amp; adults (No. 211) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-becky-kennedy-overcoming-guilt-building-tenacity-in-kids-adults" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-becky-kennedy-overcoming-guilt-building-tenacity-in-kids-adults</a></li>
+          <li>Huberman, A. (Host). (2026, May 4). Tools to bolster your mental health &amp; confidence | Dr. Paul Conti (No. 279) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/tools-to-bolster-your-mental-health-and-confidence-paul-conti" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/tools-to-bolster-your-mental-health-and-confidence-paul-conti</a></li>
+          <li>Neff, K. D., Hsieh, Y.-P., &amp; Dejitterat, K. (2005). Self-compassion, achievement goals, and coping with academic failure. <em>Self and Identity</em>, <em>4</em>(3), 263–287. <a href="https://doi.org/10.1080/13576500444000317" target="_blank" rel="noopener">https://doi.org/10.1080/13576500444000317</a></li>
       </ul>
     </div>
 

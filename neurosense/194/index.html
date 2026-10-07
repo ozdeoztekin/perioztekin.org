@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,7 +112,7 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Long stretches of demand drain attention and raise strain in the body.</li>
-          <li>Short, simple, bounded breaks can restore those resources.</li>
+          <li>Short breaks can ease tiredness a little, though they do less for hard mental work.</li>
           <li>A break full of novelty can create more hooks than actual relief.</li>
         </ul>
         <div class="ep-protocol">
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Thirty squares and one turned sideways</h3>
-          <p>Gwen holds the blanket up to the lamp, and one square in the second row is turned sideways, its stripes running the wrong way. “It’s fine,” she says, in the voice that means it isn’t.</p>
-          <p>She leaves for college on Saturday, and Mason volunteered to finish the blanket she’s taking: thirty granny squares, already made, to be joined into six rows of five by Friday night. By eight, two rows are done. Every break has gone to his phone on the stairs, clips and then a fight in the comments under one. Each time he came back he had to hunt for his place in the layout photo, and in row two he joined a square sideways.</p>
-          <p>Hours of counting stitches and gripping a hook drain attention and strain his hands and wrists. Short breaks can restore both when they’re simple and bounded. His weren’t. A feed runs on novelty, so each break handed him new hooks instead of relief, a clip to finish and an argument to check, none of it about row two.</p>
-          <p>Before his next break, he writes the exact next step on a sticky note: “Row 3, square 2: blue edge to blue edge, stripes up and down.” His phone goes under a towel in the laundry basket. For three minutes he stands at the hall window, rolls his wrists, stretches his fingers and back, and watches a neighbor drag trash cans to the curb. Then he comes back and does what the note says.</p>
-          <p>He does the same before every break. By 10:40 all six rows are joined and the border is on, and the sideways square, turned around, sits straight. Gwen packs the blanket on top of her suitcase with his last note still on it: “Border: one round, then done.”</p>
+          <p>Gwen holds the blanket up to the lamp, and one square in the second row is turned sideways, with its stripes running the wrong way. “It’s fine,” she says, but she keeps looking at it.</p>
+          <p>She leaves for college on Saturday, and Mason volunteered to finish the blanket she’s taking, thirty granny squares, already made, that have to be joined into six rows of five by Friday night. By eight o’clock, two rows are done. Every break has gone to his phone on the stairs, first clips and then a fight in the comments under one of them. Each time he came back he had to hunt for his place in the layout photo, and in row two he joined a square sideways.</p>
+          <p>Hours of counting stitches and gripping a hook drain attention and strain his hands and wrists. Short, restful breaks can ease that kind of tiredness a little, and his weren’t restful. A feed runs on new things, so each break handed him new hooks instead of rest, like a clip to finish and an argument to check, and nothing in them was about row two.</p>
+          <p>Before his next break, he writes the exact next step on a sticky note, “Row 3, square 2, blue edge to blue edge, stripes up and down.” His phone goes under a towel in the laundry basket. For three minutes he stands at the hall window, rolls his wrists, stretches his fingers and back and watches a neighbor drag trash cans to the curb. Then he comes back and does what the note says.</p>
+          <p>He does the same before every break. By bedtime all six rows are joined and the border is on, and the sideways square, turned around, sits straight. Gwen packs the blanket on top of her suitcase with his last note still stuck to it, “Border, one round, then done.”</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M17 13.44 4.442 17.082A2 2 0 0 0 4.982 21H19a2 2 0 0 0 .558-3.921l-1.115-.32A2 2 0 0 1 17 14.837V7.66" /><path d="m7 10.56 12.558-3.642A2 2 0 0 0 19.018 3H5a2 2 0 0 0-.558 3.921l1.115.32A2 2 0 0 1 7 9.163v7.178" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Two of six rows joined, and one square turned the wrong way</span></li>
+><path d="M17 13.44 4.442 17.082A2 2 0 0 0 4.982 21H19a2 2 0 0 0 .558-3.921l-1.115-.32A2 2 0 0 1 17 14.837V7.66" /><path d="m7 10.56 12.558-3.642A2 2 0 0 0 19.018 3H5a2 2 0 0 0-.558 3.921l1.115.32A2 2 0 0 1 7 9.163v7.178" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">He has two of six rows joined, with one square turned the wrong way.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pen-line"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13 21h8" /><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Next step on a sticky note, phone buried, three minutes at the window</span></li>
+><path d="M13 21h8" /><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He writes the next step on a sticky note, buries his phone and stands at the window.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-badge-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,21 +176,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">All six rows joined by 10:40, the sideways square turned straight</span></li>
+><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">All six rows are joined by bedtime, and the sideways square is straight.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; one evening</p>
         <h3>Two breaks, one count</h3>
-        <p class="ns-demo-intro">Try it during any work that takes focus tonight: homework, practice, a drawing, a build. You need a sticky note, a pen and the timer here.</p>
+        <p class="ns-demo-intro">Try it during any work that takes focus tonight, like homework, practice, a drawing or a build. You’ll need a sticky note, a pen and the timer below.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Work for 15 minutes. Before you stop, write the exact next step on the sticky note.</li>
+            <li>Work for 15 minutes, and before you stop, write the exact next step on the sticky note.</li>
             <li>Take a three-minute phone break, doing whatever you usually do.</li>
             <li>Sit back down and, before you start, write every new thing on your mind, like a reply to send or a video to finish. Count them, and notice how long it takes to get back into the work.</li>
-            <li>Work another 15 minutes and write the next step. This time take three minutes away from screens: stand, stretch, look out a window.</li>
-            <li>Sit back down, count the new things on your mind again, and start with the step on the note.</li>
+            <li>Work another 15 minutes and write the next step, and this time take three minutes away from screens, standing, stretching or looking out a window.</li>
+            <li>Sit back down, count the new things on your mind again and start with the step on the note.</li>
           </ol>
           <div class="ns-demo-side">
             <div class="ns-widget" data-widget="timer" data-config="{&#34;title&#34;: &#34;Three-minute break&#34;, &#34;seconds&#34;: 180, &#34;done&#34;: &#34;Break’s over. Start with the step on your note.&#34;}"><p class="ns-material-note">The timer needs JavaScript. A phone stopwatch works just as well.</p></div>
@@ -207,14 +207,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The phone break tends to send you back with a few new open loops and a slower restart, and the screen-free break with almost none. Both breaks were the same length. The difference is what they handed you: novelty gives your mind new hooks, and a simple, bounded break has an end.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The phone break tends to send you back with a few new open loops and a slower restart, and the break away from screens with almost none. Both breaks were the same length. The difference is what they handed you, since new things give your mind new hooks, and a simple break with a clear end is easy to come back from.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>A break you can come back from</h3>
-          <p class="ns-plan-intro">Good for anything that takes more than half an hour of focus.</p>
+          <p class="ns-plan-intro">It works for anything that takes more than half an hour of focus.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pen-line"
@@ -227,7 +227,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13 21h8" /><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /></svg></span><div><strong>Write the next step before you stand.</strong> Make it exact, like “problem 7, part b” or “row 3, square 2: blue edge to blue edge.” It’s the first thing you’ll do when you sit back down.</div></li>
+><path d="M13 21h8" /><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /></svg></span><div><strong>Write the next step before you stand.</strong> Make it exact, like “problem 7, part b” or “row 3, square 2, blue edge to blue edge,” since it’s the first thing you’ll do when you sit back down.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-person-standing"
   xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +239,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="5" r="1" /><path d="m9 20 3-6 3 6" /><path d="m6 8 6 2 6-2" /><path d="M12 10v4" /></svg></span><div><strong>Move for one to three minutes.</strong> Stand, stretch, breathe or look outside. Keep it simple, and boring enough to come back from.</div></li>
+><circle cx="12" cy="5" r="1" /><path d="m9 20 3-6 3 6" /><path d="m6 8 6 2 6-2" /><path d="M12 10v4" /></svg></span><div><strong>Move for one to three minutes.</strong> Stand, stretch, breathe or look outside, and keep it simple and boring enough to come back from.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-phone-off"
   xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +251,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10.1 13.9a14 14 0 0 0 3.732 2.668 1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 18 18 0 0 1-12.728-5.272" /><path d="M22 2 2 22" /><path d="M4.76 13.582A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 .244.473" /></svg></span><div><strong>Leave the phone out of it.</strong> No feeds, no arguments, nothing built to keep you scrolling. Save messages for the end of the work session.</div></li>
+><path d="M10.1 13.9a14 14 0 0 0 3.732 2.668 1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 18 18 0 0 1-12.728-5.272" /><path d="M22 2 2 22" /><path d="M4.76 13.582A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 .244.473" /></svg></span><div><strong>Leave the phone out of it.</strong> Skip feeds, arguments and anything built to keep you scrolling, and save messages for the end of the work session.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +263,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Put a timer on the break.</strong> Three minutes is plenty. When it rings, the break is over, even if it felt good.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Put a timer on the break.</strong> Three minutes is enough for a quick reset, and when it rings, the break is over, even if it felt good.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-step-forward"
   xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +289,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a few days, after each break, count the new things on your mind and how many minutes it takes to get back into the work. If the screen-free breaks bring you back faster with fewer loops, keep them.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a few days, after each break, count the new things on your mind and how many minutes it takes to get back into the work. If the breaks away from screens bring you back faster with fewer loops, keep them.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -301,11 +301,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> If your breaks keep stretching, make them shorter and take the screen out completely. One minute at a window that ends on time does more than ten minutes that don’t end.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> If your breaks keep stretching, make them shorter and take the screen out completely. One minute at a window that ends on time is easier to come back from than ten minutes that don’t end.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 194: A break you can come back from. Step 1: Write the exact next step first. Step 2: One to three minutes: stand, stretch, look. Step 3: No feeds, no arguments. Step 4: A timer on the break. Step 5: Start with the written step. How to tell it is working: After each break, count the new loops and time how long it takes to get back in." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 194: A break you can come back from. Step 1: Write the exact next step first. Step 2: Stand, stretch or look out for a few minutes. Step 3: No feeds, no arguments. Step 4: A timer on the break. Step 5: Start with the written step. How to tell it is working: After each break, count the new loops and time how long it takes to get back in." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -333,10 +333,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Kim, S., Park, Y., &amp; Niu, Q. Micro-Break Activities at Work to Recover From Daily Work Demands. Journal of Organizational Behavior, 2017.</li>
-          <li>Albulescu, P., Macsinga, I., Rusu, A., Sulea, C., Bodnaru, A., &amp; Tulbure, B. T. Give Me a Break! A Systematic Review and Meta-Analysis on the Efficacy of Micro-Breaks for Increasing Well-Being and Performance. PLoS ONE, 2022.</li>
-          <li>Huberman, A., with Cal Newport. How to Enhance Focus and Improve Productivity. Huberman Lab Podcast, March 11, 2024.</li>
-          <li>Huberman, A. Tools to Enhance Working Memory &amp; Attention. Huberman Lab Podcast, January 29, 2024.</li>
+          <li>Albulescu, P., Macsinga, I., Rusu, A., Sulea, C., Bodnaru, A., &amp; Tulbure, B. T. (2022). "Give me a break!" A systematic review and meta-analysis on the efficacy of micro-breaks for increasing well-being and performance. <em>PLOS ONE</em>, <em>17</em>(8), Article e0272460. <a href="https://doi.org/10.1371/journal.pone.0272460" target="_blank" rel="noopener">https://doi.org/10.1371/journal.pone.0272460</a></li>
+          <li>Huberman, A. (Host). (2024a, January 29). Tools to enhance working memory &amp; attention (No. 161) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/tools-to-enhance-working-memory-attention" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/tools-to-enhance-working-memory-attention</a></li>
+          <li>Huberman, A. (Host). (2024b, March 11). Dr. Cal Newport: How to enhance focus and improve productivity (No. 167) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-cal-newport-how-to-enhance-focus-and-improve-productivity" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-cal-newport-how-to-enhance-focus-and-improve-productivity</a></li>
+          <li>Kim, S., Park, Y., &amp; Niu, Q. (2017). Micro-break activities at work to recover from daily work demands. <em>Journal of Organizational Behavior</em>, <em>38</em>(1), 28–44. <a href="https://doi.org/10.1002/job.2109" target="_blank" rel="noopener">https://doi.org/10.1002/job.2109</a></li>
       </ul>
     </div>
 

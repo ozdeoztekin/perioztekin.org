@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Your nervous system discounts what feels distant, even when you know it matters.</li>
-          <li>Imagining a specific future scene can make a delayed reward feel more real.</li>
-          <li>That future picture recruits memory systems that help value travel across time.</li>
+          <li>Picturing a specific future scene can make a delayed reward feel more worth waiting for.</li>
+          <li>That future picture draws on memory areas that seem to help a later reward keep its value.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -133,12 +133,12 @@
       <article class="ns-story">
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
-          <h3>Morning Ethan and thirty-six boards</h3>
-          <p>Morning Ethan is supposed to cut all the boards at six tomorrow. Morning Ethan has never once gotten up at six.</p>
-          <p>Fifteen volunteers are coming to Brook Park at eight to build three benches along the trail, a project Ethan spent two months getting the parks department to approve. The lumber is stacked in his garage with the store’s orange price tags still stapled on, and every board still has to be cut to length. At 7:10 his phone buzzes. Andre: “Court lights are on. You coming?” Ethan has typed “yeah” before he’s thought about it.</p>
-          <p>The brain discounts what feels far away, even when it knows the thing matters. Tomorrow’s Ethan feels like somebody else, a guy who will handle it somehow, and the game is two blocks away with the lights on. Picturing a specific future scene can make a later payoff feel more real, because that picture recruits memory systems that help tomorrow’s payoff count tonight.</p>
-          <p>Before he hits send, he gives tomorrow a place. Eight o’clock at the pavilion by the trailhead. Fifteen people holding coffee and drills. The boards still full length in the truck bed, price tags flapping. His face going hot while Ms. Lindgren from the parks department checks her watch. He deletes “yeah,” types “can’t, cutting boards. Sunday?” and goes out to the garage, where his dad is already pulling on safety glasses.</p>
-          <p>By 9:40, thirty-six pieces are cut and stacked by length, each pile labeled in pencil. At eight the next morning the first volunteer picks up a seat board that’s already the right size. By noon three benches are bolted down along the trail, and Ms. Lindgren sits on the first one to test it.</p>
+          <h3>Tomorrow’s Ethan and thirty-six boards</h3>
+          <p>The plan says that tomorrow morning Ethan gets up at six and cuts all the boards. Ethan has never once gotten up at six.</p>
+          <p>Fifteen volunteers are coming to Brook Park at eight to build three benches along the trail, a project Ethan spent two months getting the parks department to approve. The lumber is stacked in his garage with the store’s orange price tags still stapled on, and every board still has to be cut to length. After dinner his phone buzzes with a text from Rhett, “Court lights are on. You coming?” Ethan has typed “yeah” before he’s thought about it.</p>
+          <p>The brain discounts what feels far away, even when it knows the thing matters. Tomorrow’s Ethan feels like somebody else, a guy who will figure it out, and the game is two blocks away with the lights on. Picturing a specific scene in the future can make a later payoff feel more worth waiting for, and building that picture draws on the same memory systems you use to remember, which may help tomorrow count tonight.</p>
+          <p>Before he hits send, he gives tomorrow a place. He pictures eight o’clock at the pavilion by the trailhead, with fifteen people holding coffee and drills and the boards still full length in the truck bed, price tags flapping. He pictures his face going hot while Ms. Lindgren from the parks department checks her watch. He deletes “yeah,” types “can’t, cutting boards. Sunday?” and goes out to the garage, where his dad is already pulling on safety glasses.</p>
+          <p>By bedtime, thirty-six pieces are cut and stacked by length, with each pile labeled in pencil. At eight the next morning the first volunteer picks up a seat board that’s already the right size. By noon three benches are bolted down along the trail, and Ms. Lindgren sits on the first one to test it.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /><circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Uncut lumber, volunteers at eight, and the court lights on</span></li>
+><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /><circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">The lumber is uncut, volunteers come at eight and the court lights are on.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-map-pin"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Pictures the pavilion at eight, deletes “yeah,” and starts cutting</span></li>
+><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He pictures the pavilion at eight, deletes “yeah” and starts cutting.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hammer"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +176,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" /><path d="m18 15 4-4" /><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Thirty-six pieces by 9:40, three benches bolted down by noon</span></li>
+><path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" /><path d="m18 15 4-4" /><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Thirty-six pieces are cut by bedtime, and three benches are bolted down by noon.</span></li>
         </ol>
       </article>
 
@@ -186,10 +186,10 @@
         <p class="ns-demo-intro">This works best tonight, for one moment tomorrow that a choice this evening will affect. You don’t need anything but your feet.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Pick one moment tomorrow that tonight’s choice will touch: walking out the door for school, the first minute of practice, the start of a shift, the first page of a test.</li>
-            <li>Go to the nearest real place where it happens, like your front door, your desk or the hook where your bag hangs.</li>
-            <li>Stand there for thirty seconds and run the moment: the time, how your body feels, one thing you can see.</li>
-            <li>Before you leave the spot, do one small thing for that moment: shoes by the door, charger in the bag, uniform on the chair.</li>
+            <li>Pick one moment tomorrow that tonight’s choice will touch, like walking out the door for school, the first minute of practice, the start of a shift or the first page of a test.</li>
+            <li>Go to the place where it happens, like your front door, your desk or the hook where your bag hangs.</li>
+            <li>Stand there for thirty seconds and run through the moment, including the time, how your body feels and one thing you can see.</li>
+            <li>Before you leave the spot, do one small thing for that moment, like putting your shoes by the door, the charger in your bag or your uniform on the chair.</li>
             <li>Tomorrow, when the moment comes, notice what tonight’s small thing changed.</li>
           </ol>
         </div>
@@ -204,14 +204,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Standing in the real spot usually makes tomorrow sharper than thinking about it from the couch: the light, the hook, the shoes that aren’t there yet. That’s The Science above at work, since a specific scene with a location can make a later payoff feel more real. The small thing you did before leaving is the next action serving that scene.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Standing in the actual spot usually makes tomorrow sharper than thinking about it from the couch, with the light, the hook and the shoes that aren’t there yet. A specific scene with a place in it can make a later payoff feel more worth waiting for. The small thing you did before leaving is your next action serving that scene.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Make tomorrow a real place</h3>
-          <p class="ns-plan-intro">Use it whenever you hear yourself handing the job to tomorrow.</p>
+          <p class="ns-plan-intro">It’s for the moment you hear yourself handing the job to tomorrow.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-repeat"
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Catch the old loop starting.</strong> “I’ll do it in the morning.” “Future me can handle it.” That thought is your cue.</div></li>
+><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Catch the old loop starting.</strong> Thoughts like “I’ll do it in the morning” or “future me can handle it” are your cue.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-map-pin"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></span><div><strong>Picture one moment tomorrow.</strong> A specific moment this choice will affect, with a place and a time: the pavilion at eight, the bus stop at 7:10, your locker before first period.</div></li>
+><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></span><div><strong>Picture one moment tomorrow.</strong> Choose a specific moment this choice will affect, with a place and a time, like the pavilion at eight, the bus stop in the morning or your locker before first period.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-eye"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Add a body feeling and one detail.</strong> How your stomach or face feels in that moment, and one thing you can see, like the price tags still on the boards.</div></li>
+><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Add a body feeling and one detail.</strong> Notice how your stomach or face feels in that moment and one thing you can see, like the price tags still on the boards.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Make your next action serve that scene.</strong> Do one thing for that moment before you answer the fun option: start the task, pack the bag, send the “can’t tonight.”</div></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Make your next action serve that scene.</strong> Do one thing for that moment before you answer the fun option, like starting the task, packing the bag or sending the “can’t tonight.”</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-clock"
   xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +272,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><div><strong>Too far off? Make it tomorrow morning.</strong> If the future still feels fake, shorten it to tonight or tomorrow morning. Closer scenes are easier to see.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><div><strong>Make it tomorrow morning if it feels too far off.</strong> If the future still feels fake, shorten it to tonight or tomorrow morning, since closer scenes are easier to see.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, keep two tallies: each time you catch the loop, and each time you do the useful thing first. If the second tally keeps up with the first, the scenes are doing their job.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, keep two tallies, one for each time you catch the loop and one for each time you do the useful thing first. If the second tally keeps up with the first, the scenes are doing their job.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +298,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Vague scenes don’t compete. “Tomorrow will be bad” is too blurry to win against a loud now. If a scene isn’t moving you, give it a location and one thing you can see, or move it closer in time.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Vague scenes don’t compete, and “tomorrow will be bad” is too blurry to win against a loud now. If a scene isn’t moving you, give it a place and one thing you can see, or move it closer in time.</p></div>
           </div>
         </div>
         <figure class="ns-card">
@@ -330,8 +330,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Peters, J., &amp; Buchel, C. Episodic Future Thinking Reduces Reward Delay Discounting Through an Enhancement of Prefrontal-Mediotemporal Interactions. Neuron, 2010.</li>
-          <li>Huberman, A., with Ari Wallach. Ari Wallach: Create Your Ideal Future Using Science-Based Protocols. Huberman Lab Podcast, October 14, 2024.</li>
+          <li>Benoit, R. G., Gilbert, S. J., &amp; Burgess, P. W. (2011). A neural mechanism mediating the impact of episodic prospection on farsighted decisions. <em>Journal of Neuroscience</em>, <em>31</em>(18), 6771–6779. <a href="https://doi.org/10.1523/JNEUROSCI.6559-10.2011" target="_blank" rel="noopener">https://doi.org/10.1523/JNEUROSCI.6559-10.2011</a></li>
+          <li>Daniel, T. O., Stanton, C. M., &amp; Epstein, L. H. (2013). The future is now: Reducing impulsivity and energy intake using episodic future thinking. <em>Psychological Science</em>, <em>24</em>(11), 2339–2342. <a href="https://doi.org/10.1177/0956797613488780" target="_blank" rel="noopener">https://doi.org/10.1177/0956797613488780</a></li>
+          <li>Huberman, A. (Host). (2024, October 14). Ari Wallach: Create your ideal future using science-based protocols [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/ari-wallach-create-your-ideal-future-using-science-based-protocols" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/ari-wallach-create-your-ideal-future-using-science-based-protocols</a></li>
+          <li>Peters, J., &amp; Büchel, C. (2010). Episodic future thinking reduces reward delay discounting through an enhancement of prefrontal-mediotemporal interactions. <em>Neuron</em>, <em>66</em>(1), 138–148. <a href="https://doi.org/10.1016/j.neuron.2010.03.026" target="_blank" rel="noopener">https://doi.org/10.1016/j.neuron.2010.03.026</a></li>
       </ul>
     </div>
 

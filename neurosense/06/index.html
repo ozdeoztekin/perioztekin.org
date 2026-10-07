@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -135,11 +135,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Five minutes by the shoe counter</h3>
-          <p>The pinsetter on lane 14 is sticking, and Daniel is the only one who has noticed. It’s Devin’s birthday, cosmic bowling at nine, and Daniel picked out the gift two weeks ago. He’s on the autism spectrum, and he catches a lot that other people tune out.</p>
-          <p>By 9:40 that’s the problem. The speaker above their lane is thumping, the black lights make everyone’s shoes glow, and three of Devin’s cousins are asking him questions at once. He stops answering. When Devin calls him up for his turn, he keeps staring at the ball return.</p>
-          <p>One idea about autism, the Intense World theory, is that the brain’s local circuits react more strongly, so the same input lands louder. Many people on the spectrum notice quieter sounds than others do, and the noise takes longer to fade into the background. When more comes in than the brain can process, disconnecting is how it protects itself. A shutdown is overload, not losing interest.</p>
-          <p>Daniel has a plan for this, and it starts with naming things. In his head: the speaker, the lights, the questions. The speaker is the loudest. He holds up five fingers to Devin, their signal, walks out to the bench by the shoe counter, puts on his noise-canceling headphones and closes his eyes. He doesn’t talk or try to figure anything out. Devin keeps the cousins at the lane and skips his turn.</p>
-          <p>About six minutes later Daniel walks back in with the headphones still on. He bowls the last three frames, picks up a spare in the ninth, and is there when the cake comes out, in time to hand Devin the gift.</p>
+          <p>Daniel is the only one who notices that the pinsetter on lane 14 keeps sticking. It’s Devin’s birthday, cosmic bowling at nine, and Daniel picked out his gift two weeks ago. He’s on the autism spectrum, and he catches a lot of things other people tune out.</p>
+          <p>An hour in, that has become the problem. The speaker above their lane is thumping, the black lights make everyone’s shoes glow, and three of Devin’s cousins are asking him questions at the same time. He stops answering. When Devin calls him up for his turn, he just keeps staring at the ball return.</p>
+          <p>One idea about autism, called the Intense World theory, is that local circuits in the brain react more strongly, so the same sights and sounds land harder. Many people on the spectrum notice quieter sounds than others do, and the noise takes longer to fade into the background. When more comes in than the brain can handle, shutting down is a way of protecting itself. It doesn’t mean Daniel has stopped caring about the party.</p>
+          <p>Daniel has a plan for moments like this, and it starts with naming what’s too loud. In his head he lists the speaker, the lights and the questions, and the speaker wins. He holds up five fingers to Devin, their signal, walks out to the bench by the shoe counter, puts on his noise-canceling headphones and closes his eyes. He doesn’t try to talk or figure anything out. Back at the lane, Devin keeps the cousins busy and skips Daniel’s turn.</p>
+          <p>About six minutes later, Daniel walks back in with his headphones still on. He bowls the last three frames, picks up a spare in the ninth, and he’s there when the cake comes out, in time to hand Devin the gift.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /><path d="M19.364 18.364a9 9 0 0 0 0-12.728" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Speaker, lights and questions pile up until he stops answering</span></li>
+><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /><path d="M19.364 18.364a9 9 0 0 0 0-12.728" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">The music, the lights and the questions pile up until he stops answering.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-headphones"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Names the three loudest, then five minutes with headphones on</span></li>
+><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He names the loudest thing and takes five minutes with his headphones on.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-cake"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,20 +177,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" /><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" /><path d="M2 21h20" /><path d="M7 8v3" /><path d="M12 8v3" /><path d="M17 8v3" /><path d="M7 4h.01" /><path d="M12 4h.01" /><path d="M17 4h.01" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Back for the last three frames, the cake and the gift</span></li>
+><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" /><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" /><path d="M2 21h20" /><path d="M7 8v3" /><path d="M12 8v3" /><path d="M17 8v3" /><path d="M7 4h.01" /><path d="M12 4h.01" /><path d="M17 4h.01" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">He comes back for the last three frames, the cake and the gift.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Turn one thing down</h3>
-        <p class="ns-demo-intro">This works anywhere: your room, a kitchen, a bus. You need a pen, paper and a timer, plus headphones or earplugs if you have them.</p>
+        <p class="ns-demo-intro">You can do this anywhere, in your room, a kitchen or on a bus. You’ll need a pen, paper and a timer, plus headphones or earplugs if you have them.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Sit still for one minute and write down everything you can hear, see and feel on your skin. Keep going after the obvious ones.</li>
-            <li>Circle the three loudest: one sound, one sight, and one thing on your mind, like a conversation or a worry.</li>
-            <li>Turn the strongest one down for two minutes: headphones or earplugs, eyes closed, a dimmer light or a quieter room.</li>
-            <li>Then check the other two. Are they easier to ignore than before?</li>
+            <li>Circle the three strongest things on your list. Try to pick one sound, one sight and one thing on your mind, like a conversation or a worry.</li>
+            <li>Turn the strongest one down for two minutes, with headphones or earplugs, closed eyes, a dimmer light or a quieter room.</li>
+            <li>Then check on the other two. Are they easier to ignore than before?</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,14 +204,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> One minute of sitting still can fill more lines than you expected, because the brain usually turns a lot of input down without being asked. Lowering the biggest source tends to make the rest easier to handle. For many people on the autism spectrum, that turning down happens more slowly, so a room adds up faster, which is why the plan starts with the loudest input: it’s the easiest one to change.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Sitting still for a minute can fill more lines than you’d expect, because your brain usually turns a lot of input down without being asked. Turning down the biggest one tends to make the rest easier to handle. For many people on the autism spectrum, that turning down happens more slowly, so a room adds up faster. That’s why the plan starts with the loudest input, which is also the easiest one to change.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>When the room gets too loud</h3>
-          <p class="ns-plan-intro">Steps 1 to 4 are for whoever is overloaded; step 5 is for friends.</p>
+          <p class="ns-plan-intro">Steps 1 to 4 are for whoever is overloaded, and step 5 is for friends.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-ear"
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></span><div><strong>Name the three loudest.</strong> One sound, one sight, one person or feeling. Naming them shows you which one to cut first.</div></li>
+><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></span><div><strong>Name the three loudest things.</strong> Pick one sound, one sight and one person or feeling. Naming them shows you which one to cut first.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-headphones"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg></span><div><strong>Turn the strongest one down.</strong> Noise-canceling headphones, a dim corner, eyes closed or a step outside, for five minutes.</div></li>
+><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg></span><div><strong>Turn the strongest one down.</strong> Use noise-canceling headphones, find a dim corner, close your eyes or step outside for five minutes.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-pause"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><div><strong>Skip talking and fixing.</strong> No explaining and no problem-solving while you’re out. Let it settle first.</div></li>
+><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><div><strong>Skip the talking and fixing.</strong> Don’t try to explain or solve anything while you’re out. Let things settle first.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-door-open"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 21H2" /><path d="M10 3H7a2 2 0 00-2 2v16" /><path d="M14 12h.01" /><path d="M19 21V5a2 2 0 00-1.675-1.974l-6.163-1.013A1 1 0 0010 3v18a1 1 0 001.124.992z" /><path d="M22 21h-3" /></svg></span><div><strong>Go back when you’re ready.</strong> You decide when, and it can take more than five minutes. Keeping the headphones on when you go back is fine.</div></li>
+><path d="M10 21H2" /><path d="M10 3H7a2 2 0 00-2 2v16" /><path d="M14 12h.01" /><path d="M19 21V5a2 2 0 00-1.675-1.974l-6.163-1.013A1 1 0 0010 3v18a1 1 0 001.124.992z" /><path d="M22 21h-3" /></svg></span><div><strong>Go back when you’re ready.</strong> You decide when, and it can take longer than five minutes. Keeping the headphones on when you go back is fine.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hand-heart"
   xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +272,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" /><path d="m14.45 13.39 5.05-4.694C20.196 8 21 6.85 21 5.75a2.75 2.75 0 0 0-4.797-1.837.276.276 0 0 1-.406 0A2.75 2.75 0 0 0 11 5.75c0 1.2.802 2.248 1.5 2.946L16 11.95" /><path d="m2 15 6 6" /><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a1 1 0 0 0-2.75-2.91" /></svg></span><div><strong>If you’re the friend, give space.</strong> A shutdown means too much is coming in. Keep others from crowding, hold the questions, and save their turn.</div></li>
+><path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" /><path d="m14.45 13.39 5.05-4.694C20.196 8 21 6.85 21 5.75a2.75 2.75 0 0 0-4.797-1.837.276.276 0 0 1-.406 0A2.75 2.75 0 0 0 11 5.75c0 1.2.802 2.248 1.5 2.946L16 11.95" /><path d="m2 15 6 6" /><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a1 1 0 0 0-2.75-2.91" /></svg></span><div><strong>If you’re the friend, give space.</strong> A shutdown means too much is coming in. Keep other people from crowding, hold your questions, and save their turn.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Each time you use it, notice how long it takes before you can rejoin, and whether the other two inputs feel easier once the loudest is down. Over a few weeks, see if you start catching it earlier, before talking gets hard.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Each time, notice how long it takes before you can rejoin, and whether the other two things feel easier once the loudest is turned down. Over a few weeks, see if you start catching it earlier, before talking gets hard.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +298,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Stepping away can feel rude in the moment, so set it up beforehand. Agree on a signal with one friend, like five fingers, so nobody has to explain anything when it happens.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Stepping away can feel rude in the moment, so set it up ahead of time. Agree on a signal with one friend, like five fingers, so nobody has to explain anything when it happens.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -314,7 +314,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 06: When the room gets too loud. Step 1: Name the three loudest inputs. Step 2: Turn the strongest down for five minutes. Step 3: No talking, no fixing. Step 4: Go back when you’re ready. Step 5: Friends: give space, save their turn. How to tell it is working: Notice how soon you can rejoin, and whether you catch it earlier over a few weeks." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 06: When the room gets too loud. Step 1: Name the three loudest things. Step 2: Turn the strongest one down. Step 3: No talking or fixing yet. Step 4: Go back when you’re ready. Step 5: Friends give space and save the turn. How to tell it is working: Notice how soon you can rejoin, and whether you catch it earlier over a few weeks." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -342,9 +342,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Markram, K., &amp; Markram, H. (2010). The intense world theory: a unifying theory of the neurobiology of autism. Frontiers in Human Neuroscience, 4: 224.</li>
-          <li>Casanova, M. F., Buxhoeveden, D. P., Switala, A. E., &amp; Roy, E. (2002). Minicolumnar pathology in autism. Neurology, 58(3): 428-432.</li>
-          <li>Robertson, C. E., &amp; Baron-Cohen, S. (2017). Sensory perception in autism. Nature Reviews Neuroscience, 18(11): 671-684.</li>
+          <li>Casanova, M. F., Buxhoeveden, D. P., Switala, A. E., &amp; Roy, E. (2002). Minicolumnar pathology in autism. <em>Neurology</em>, <em>58</em>(3), 428–432. <a href="https://doi.org/10.1212/WNL.58.3.428" target="_blank" rel="noopener">https://doi.org/10.1212/WNL.58.3.428</a></li>
+          <li>Markram, K., &amp; Markram, H. (2010). The intense world theory: A unifying theory of the neurobiology of autism. <em>Frontiers in Human Neuroscience</em>, <em>4</em>, Article 224. <a href="https://doi.org/10.3389/fnhum.2010.00224" target="_blank" rel="noopener">https://doi.org/10.3389/fnhum.2010.00224</a></li>
+          <li>Robertson, C. E., &amp; Baron-Cohen, S. (2017). Sensory perception in autism. <em>Nature Reviews Neuroscience</em>, <em>18</em>(11), 671–684. <a href="https://doi.org/10.1038/nrn.2017.112" target="_blank" rel="noopener">https://doi.org/10.1038/nrn.2017.112</a></li>
       </ul>
     </div>
 

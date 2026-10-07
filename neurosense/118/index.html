@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Alcohol changes inhibition first, so risky ideas seem smoother while it is active.</li>
-          <li>It fragments sleep and degrades recovery even when you fall asleep fast and feel rested.</li>
-          <li>The next day, stress chemistry can rebound, making ordinary problems feel sharper than they should.</li>
+          <li>It fragments sleep and makes it less restorative, even when you fall asleep fast and don't notice waking up.</li>
+          <li>Huberman links next-day anxiety to stress hormones running high, which can make ordinary problems feel sharper.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The third cup at the bonfire</h3>
-          <p>The third time Brandon hands him a cup, the pong table starts chanting Will’s name. Lucy is at the other end, laughing, and for a second the cup feels like the price of standing there with everyone.</p>
-          <p>That second is what the drink is selling. Alcohol works on inhibition first, so risky ideas start to seem smoother, and it pairs itself with exactly this: friends, music, someone he likes looking his way. Enough pairings and the brain starts expecting the drink whenever that feeling matters. The cost comes later, in sleep that breaks apart even after falling asleep fast, and a next day when stress can rebound and small problems feel sharper than they should.</p>
-          <p>Will made his plan at 7:30, in his brother’s car, while it was still quiet. Marco would come at 11:30, or any time Will texted “pickup,” no questions. Gus agreed they’d leave together. Will brought his own lime seltzer. And he kept tomorrow in it: the lifeguard stand at the city pool at 9:00.</p>
-          <p>Now he holds up the can. “Got the stand at nine.” He sets the cup down, walks over to the speaker and puts on the song Lucy asked for an hour ago, and she comes over to sing the chorus at him. At 11:10 Gus finds Tyrese on the curb, unsteady, talking about walking home along Route 9. Will texts Marco “pickup plus one.” Nobody gives Tyrese a speech.</p>
-          <p>Will is asleep by 12:20 and sleeps straight through to his alarm. At 8:50 he’s on the stand with a banana and his whistle, and there’s a text from Tyrese: “thanks for last night. sorry.” Will writes back, “all good. drink some water.”</p>
+          <p>Brandon’s bonfire is the last big party before school starts, and Will has been there about an hour when Brandon hands him a cup for the third time. The guys at the pong table start chanting his name. Kiara is at the other end of the table, laughing, and for a second the cup feels like the price of standing there with everyone.</p>
+          <p>He has already said no twice, and each time got harder, because he explained more and gave people more to argue with. He’s also on the lifeguard stand at the city pool at nine tomorrow morning, which right now feels very far away.</p>
+          <p>Alcohol lowers inhibition first, which is the brain’s ability to hold back, so risky ideas can seem smooth while it’s in your system. It also breaks sleep into pieces, even on nights when you fall asleep fast, so the body gets less recovery out of the same hours. The next day, stress chemistry can swing back up, and ordinary problems can feel sharper than they should.</p>
+          <p>So he goes with the plan he made in his brother’s car on the way over, while it was still quiet. Teo would come back at eleven thirty, or any time Will texted “pickup,” with no questions, and Joel agreed they’d leave together. Will brought his own lime seltzer, and now he holds up the can and says, “Got the stand at nine.” Then he puts on the song Kiara asked for an hour ago. Later, Joel finds Tyrese sitting on the curb, unsteady and talking about walking home along the highway. Will texts Teo “pickup plus one,” and nobody gives Tyrese a speech.</p>
+          <p>Will is asleep a little after midnight and sleeps straight through to his alarm. He’s on the stand early with a banana and his whistle, and there’s a text from Tyrese that says, “thanks for last night. sorry.” Will writes back, “all good. drink some water.”</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Third cup in his hand, the pong table chanting his name</span></li>
+><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Brandon hands him a third cup while the pong table chants his name.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-car"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A plan made in the car: ride, honest friend, seltzer, the 9:00 stand</span></li>
+><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He holds up his seltzer, says his line and texts his brother for a ride.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sunrise"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,20 +176,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Tyrese home safe, Will asleep by 12:20 and on the stand at 8:50</span></li>
+><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Tyrese gets home safe, and Will is on the stand early the next morning.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Say it before it’s loud</h3>
-        <p class="ns-demo-intro">Works alone or with a friend. You need paper, a pen and a cup of water as a prop.</p>
+        <p class="ns-demo-intro">You can do this alone or with a friend. You’ll need paper, a pen and a cup of water to use as a prop.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Write your plan for the next party or loud night: your ride and the text that brings them, your honest friend, what you’ll have in your hand, and what’s happening the next morning.</li>
-            <li>Write one short, true line for when someone offers, like “Good for now,” “Early shift tomorrow” or just “No thanks.”</li>
-            <li>Say it out loud twice. With a friend, have them hold out the cup of water and push a little, and answer with your line.</li>
-            <li>Swap roles once, then notice how your line changed from the first try to the last.</li>
+            <li>Write down your plan for the next party or loud night, including your ride, the word you’ll text to get picked up, the friend you’ll leave with, what you’ll have in your hand and what you have going on the next morning.</li>
+            <li>Write one short, true line for when someone offers you a drink, like “I’m good for now,” “Early shift tomorrow” or plain “No thanks.”</li>
+            <li>Say it out loud twice. If a friend is with you, have them hold out the cup of water and push a little, and answer with your line.</li>
+            <li>Switch roles once, and then think about how your line changed from the first try to the last.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -203,14 +203,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Expect a stiff first try, with a long explanation attached. By the third it’s shorter and calmer. That’s the reason to choose the plan before the room gets loud: you decide while you’re calm and still thinking about tomorrow, so in the moment you only have to say it. It’s also worth noticing how much of a good night’s confidence comes from the setting, the people and the music, with nothing in the cup at all.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The first try usually comes out stiff, with a long explanation attached, and by the third it’s shorter and calmer. That’s the point of choosing the plan before the room gets loud. You decide while you’re calm and still thinking about tomorrow, so in the moment all you have to do is say it. It’s also worth noticing how much of a good night’s confidence comes from the people, the setting and the music, with nothing in the cup at all.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Plan it while it’s quiet</h3>
-          <p class="ns-plan-intro">For any party, wedding or night out where drinks will be around.</p>
+          <p class="ns-plan-intro">Plan it before any party, wedding or night out where there will be drinks around.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-car"
@@ -223,7 +223,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg></span><div><strong>Set your ride before you go.</strong> Who’s taking you home, what time, and one word you can text that means “come get me,” no questions asked.</div></li>
+><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg></span><div><strong>Set your ride before you go.</strong> Know who’s taking you home and when, and agree on one word you can text that means “come get me,” with no questions asked.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-handshake"
   xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><div><strong>Pick one honest friend.</strong> Agree to arrive and leave together, and to say something if either of you is about to make a bad call.</div></li>
+><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><div><strong>Pick one honest friend.</strong> Agree to arrive and leave together, and to speak up if either of you is about to make a bad call.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-cup-soda"
   xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8" /><path d="M5 8h14" /><path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" /><path d="m12 8 1-6h2" /></svg></span><div><strong>Bring your drink and your line.</strong> Have your own can or bottle in your hand, and one short, true sentence ready for offers.</div></li>
+><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8" /><path d="M5 8h14" /><path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" /><path d="m12 8 1-6h2" /></svg></span><div><strong>Bring your own drink and your line.</strong> Keep your own can or bottle in your hand, and have one short, true sentence ready for when people offer.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><div><strong>Help someone home, skip the lecture.</strong> If a friend can’t get home safely, call your ride or an adult and stay with them. The talk can wait for another day.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><div><strong>Help someone home, and skip the lecture.</strong> If a friend can’t get home safely, call your ride or an adult and stay with them. The talk can wait for another day.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sunrise"
   xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><div><strong>Check the morning, not the first hour.</strong> The next day, write down how you slept, how your mood feels and whether you left when you planned.</div></li>
+><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><div><strong>Check the morning, not the first hour.</strong> The next day, write down how you slept, how your mood is and whether you left when you planned.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -285,7 +285,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After a few weekends, read your morning notes side by side. If the plan held, you left when you meant to, and the mornings feel steady, it’s working.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After a few weekends, read your morning notes side by side. If you left when you meant to and the mornings feel steady, the plan is working.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The hardest moment is usually the third offer, when saying no again feels louder than saying yes. Skip the explanation: say your line, hold up your drink and move to another part of the room.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The third offer is usually the hardest, because saying no again feels louder than saying yes. Skip the explanation, say your line, hold up your drink and go talk to someone in another part of the room.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -309,11 +309,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> If drinking, yours or a friend’s, worries you, talk with a parent, a doctor or another adult you trust. If someone can’t be woken up or is struggling to breathe, call emergency services right away.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> If drinking, yours or a friend’s, worries you, talk with a parent, a doctor or another adult you trust. If someone can’t be woken up or is having trouble breathing, call emergency services right away.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 118: Plan it while it’s quiet. Step 1: Ride and a pickup word, set before. Step 2: One honest friend, in and out together. Step 3: Your own drink and one short line. Step 4: Help a friend home, no lecture. Step 5: Next day: note your sleep and mood. How to tell it is working: Note your sleep and morning mood, and whether you left when you planned." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 118: Plan it while it’s quiet. Step 1: Set the ride and a pickup word first. Step 2: One honest friend, in and out together. Step 3: Your own drink and one short line. Step 4: Help a friend home with no lecture. Step 5: Next day, note your sleep and mood. How to tell it is working: Note your sleep and morning mood, and whether you left when you planned." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -341,8 +341,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Huberman, A. What Alcohol Does to Your Body, Brain &amp; Health. Huberman Lab Podcast, Ep. 86, August 25, 2022.</li>
-          <li>Huberman, A., with Dr. Bonnie Halpern-Felsher. Vaping, Alcohol Use &amp; Other Risky Youth Behaviors. Huberman Lab Podcast, April 24, 2024.</li>
+          <li>Huberman, A. (Host). (2022, August 22). What alcohol does to your body, brain &amp; health (No. 86) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/what-alcohol-does-to-your-body-brain-health" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/what-alcohol-does-to-your-body-brain-health</a></li>
+          <li>Huberman, A. (Host). (2024, April 22). Dr. Bonnie Halpern-Felsher: Vaping, alcohol use &amp; other risky youth behaviors (No. 173) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-bonnie-halpern-felsher-vaping-alcohol-use-other-risky-youth-behaviors" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-bonnie-halpern-felsher-vaping-alcohol-use-other-risky-youth-behaviors</a></li>
       </ul>
     </div>
 

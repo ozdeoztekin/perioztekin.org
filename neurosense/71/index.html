@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Nakamura and Csikszentmihalyi (2002), Handbook of Positive Psychology: flow depends on a match between challenge, skill, feedback, and attention.</li>
-          <li>Dietrich (2004), Consciousness and Cognition: during flow, self-monitoring gets quieter, so mistakes feel less personal.</li>
-          <li>Engeser and Rheinberg (2008), Motivation and Emotion: the useful zone is just above comfortable, where the task is hard enough to matter.</li>
+          <li>Dietrich (2004), Consciousness and Cognition: a theory that during flow, the brain's self-judging quiets down for a while, which could make mistakes feel less personal.</li>
+          <li>Engeser and Rheinberg (2008), Motivation and Emotion: across three studies, matching challenge to skill only partly predicted flow, depending on the person and how much the task mattered.</li>
           <li>Flow arrives from task conditions, not from yelling at your brain.</li>
         </ul>
         <div class="ep-protocol">
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Ten in a row over the first gap</h3>
-          <p>Clara’s robot runs, jumps and drops straight into the gap, the way it has most of the afternoon. This is her first online game jam, entries close Sunday at six, and every level she has sketched starts with that jump.</p>
-          <p>She has tried two ways. Copying half of a two-hour tutorial line by line worked, and felt like typing out someone else’s homework. Then she tried the whole boss fight at once and sat with her stomach in a knot, deleting more than she wrote. The jam chat keeps pinging with other people’s finished levels.</p>
-          <p>The locked-in focus she’s after, where time goes strange, is called flow, and it usually comes from the task, not from yelling at herself. Challenge has to match skill. The tutorial was too easy and slid into boredom; the boss fight was too hard and slid into threat. The useful zone sits just above comfortable, where a clear goal gives attention one lane and quick feedback keeps the brain adjusting. In flow, the voice that grades every try gets quieter, so a miss feels less personal.</p>
-          <p>She shrinks the job to fit a sticky note: clear the three-tile gap ten times in a row. She closes the tutorial, mutes the chat, sets a 20-minute timer and presses play after every change. Higher jump, still short. Faster fall, closer. When ten in a row works, she adds a moving platform, and when that knots her stomach, she makes it slide only side to side.</p>
-          <p>When the timer rings, she thinks it’s broken. The platform works on the sixth try. She records a twelve-second clip of the robot clearing both, posts it in the chat she muted, and starts twenty more minutes on the enemy.</p>
+          <p>Clara’s robot runs, jumps and drops straight into the gap, the way it has most of the afternoon. This is her first online game jam, entries close on Sunday at six, and every level she has sketched starts with that jump.</p>
+          <p>She has tried two ways. Copying half of a two-hour tutorial line by line worked, but it felt like typing out someone else’s homework. Then she tried building the whole boss fight at once and sat with her stomach in a knot, deleting more than she wrote. Meanwhile the jam chat keeps pinging with other people’s finished levels.</p>
+          <p>The locked-in focus she’s after, where time goes strange, is called flow, and it usually comes from how the task is set up rather than from pushing harder. The challenge has to match the skill. The tutorial was too easy and slid into boredom, and the boss fight was too hard and slid into dread. The useful zone is a little above comfortable, with a clear goal and quick feedback on every try. In flow, the part of the mind that judges every attempt tends to get quieter, so a miss feels less personal.</p>
+          <p>So she shrinks the job until it fits on a sticky note, clearing the three-tile gap ten times in a row. She closes the tutorial, mutes the chat, sets a twenty-minute timer and presses play after every change. A higher jump still comes up short, and a faster fall gets closer. When ten in a row works, she adds a moving platform, and when that knots her stomach again, she makes it slide only from side to side.</p>
+          <p>When the timer rings, she thinks it must be broken. The platform works on the sixth try. She records a twelve-second clip of the robot clearing both, posts it in the chat she muted and starts twenty more minutes on the enemy.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="6" x2="10" y1="11" y2="11" /><line x1="8" x2="8" y1="9" y2="13" /><line x1="15" x2="15.01" y1="12" y2="12" /><line x1="18" x2="18.01" y1="10" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A copied tutorial, then the whole boss fight, the robot still falling</span></li>
+><line x1="6" x2="10" y1="11" y2="11" /><line x1="8" x2="8" y1="9" y2="13" /><line x1="15" x2="15.01" y1="12" y2="12" /><line x1="18" x2="18.01" y1="10" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A copied tutorial bores her, and the whole boss fight ties her stomach in knots.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sticky-note"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21 9a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 15 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z" /><path d="M15 3v5a1 1 0 0 0 1 1h5" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">One sticky-note goal, chat muted, 20 minutes, play after every change</span></li>
+><path d="M21 9a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 15 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z" /><path d="M15 3v5a1 1 0 0 0 1 1h5" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She writes one goal on a sticky note, mutes the chat and sets twenty minutes.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,20 +178,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Ten in a row, a surprise at the timer, the clip posted</span></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The timer surprises her, and she posts a clip of the robot clearing the gap.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>The basket test</h3>
-        <p class="ns-demo-intro">You need a wastebasket or a laundry basket and ten balls of scrap paper, crumpled tight.</p>
+        <p class="ns-demo-intro">You’ll need a wastebasket or a laundry basket and ten balls of scrap paper, crumpled tight.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Stand one big step from the basket and toss all ten. Count how many go in.</li>
-            <li>Move as far away as the room allows and toss ten more. Count again.</li>
-            <li>Now find the spot where about half go in: step closer if almost everything misses, back if almost everything goes in.</li>
-            <li>Toss from there for two minutes. Every time you make three in a row, take one step back.</li>
+            <li>Stand one big step from the basket, toss all ten and count how many go in.</li>
+            <li>Move as far away as the room allows, toss ten more and count again.</li>
+            <li>Now find the spot where about half go in, stepping closer if almost everything misses and back if almost everything goes in.</li>
+            <li>Toss from there for two minutes, and every time you make three in a row, take one step back.</li>
             <li>When you stop, think about which round went by fastest and which misses bothered you least.</li>
           </ol>
         </div>
@@ -206,7 +206,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Within a few tosses, the close round gets boring for most people, and the far one turns into flailing. At the halfway spot attention tends to settle in, the two minutes go quickly, and a miss reads as information about your aim. That’s the match from The Science above: a challenge just above your skill, with feedback on every throw. The step back after three in a row is what keeps it there.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> For most people the close round gets boring within a few tosses, and the far one turns into flailing. At the halfway spot attention tends to settle in, the two minutes go quickly, and a miss feels like information about your aim. Flow tends to show up at that match, a challenge just above your skill with feedback on every throw, and stepping back after three in a row keeps you there.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -226,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one task you can count.</strong> Not “work on my game.” Something with a number or a clear finish: clear the gap ten times in a row, land five of ten, play the passage clean three times.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one task you can count.</strong> Instead of “work on my game,” pick something with a number or a clear finish, like clearing the gap ten times in a row, landing five of ten or playing the passage cleanly three times.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-bell-off"
   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" /><path d="m2 2 20 20" /><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" /></svg></span><div><strong>Remove one obvious interruption.</strong> Usually that’s the phone or a chat. Mute it or put it out of reach before you start, not after the first buzz.</div></li>
+><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" /><path d="m2 2 20 20" /><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" /></svg></span><div><strong>Remove one obvious interruption.</strong> It’s usually the phone or a chat. Mute it or put it out of reach before you start, not after the first buzz.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Set ten to twenty minutes.</strong> One task, nothing else open, no switching. When the timer rings, stop and look at where you got to.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Set ten to twenty minutes.</strong> Work on one task with nothing else open and no switching. When the timer rings, stop and look at where you got to.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-trending-up"
   xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +262,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M16 7h6v6" /><path d="m22 7-8.5 8.5-5-5L2 17" /></svg></span><div><strong>Keep it just above comfortable.</strong> If you could do it half asleep, add one notch of difficulty. If your stomach tightens or you start dreading each try, make the task smaller.</div></li>
+><path d="M16 7h6v6" /><path d="m22 7-8.5 8.5-5-5L2 17" /></svg></span><div><strong>Keep it a little above comfortable.</strong> If you could do it half asleep, make it one notch harder. If your stomach tightens or you start dreading each try, make the task smaller.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-refresh-cw"
   xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></svg></span><div><strong>Check feedback as you go.</strong> Try, look, adjust: press play, watch the landing, listen back. Before the timer ends, make one change based on what you saw.</div></li>
+><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></svg></span><div><strong>Check feedback as you go.</strong> Try, look and adjust, whether that means pressing play, watching the landing or listening back. Before the timer ends, make one change based on what you saw.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -288,7 +288,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Keep a short log for each block: the task, your number at the start and at the end, and whether the time felt short or long. If the blocks that flew by are also the ones where the number went up, you’re finding the zone.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Keep a short log for each block with the task, your number at the start and at the end, and whether the time felt short or long. If the blocks that flew by are also the ones where the number went up, you’re finding the zone.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -304,7 +304,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 71: Invite flow, don’t force it. Step 1: One task you can count. Step 2: Mute one interruption first. Step 3: Ten to twenty minutes, one task. Step 4: Just above comfortable; shrink it if tense. Step 5: Try, look, adjust before it ends. How to tell it is working: Log your number at the start and end of each block, and whether the time flew." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 71: Invite flow, don’t force it. Step 1: One task you can count. Step 2: Mute one interruption first. Step 3: Ten to twenty minutes, one task. Step 4: A notch above comfortable, not tense. Step 5: Try, look and adjust before it ends. How to tell it is working: Log your number at the start and end of each block, and whether the time flew." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -332,10 +332,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Nakamura J, Csikszentmihalyi M. (2002). The concept of flow. Handbook of Positive Psychology, 89-105.</li>
-          <li>Dietrich A. (2004). Neurocognitive mechanisms underlying the experience of flow. Consciousness and Cognition, 13(4): 746-761.</li>
-          <li>Klasen M, et al. (2012). Neural contributions to flow experience during video game playing. Social Cognitive and Affective Neuroscience, 7(4): 485-495.</li>
-          <li>Engeser S, Rheinberg F. (2008). Flow, performance and moderators of challenge-skill balance. Motivation and Emotion, 32: 158-172.</li>
+          <li>Dietrich, A. (2004). Neurocognitive mechanisms underlying the experience of flow. <em>Consciousness and Cognition</em>, <em>13</em>(4), 746–761. <a href="https://doi.org/10.1016/j.concog.2004.07.002" target="_blank" rel="noopener">https://doi.org/10.1016/j.concog.2004.07.002</a></li>
+          <li>Engeser, S., &amp; Rheinberg, F. (2008). Flow, performance and moderators of challenge-skill balance. <em>Motivation and Emotion</em>, <em>32</em>(3), 158–172. <a href="https://doi.org/10.1007/s11031-008-9102-4" target="_blank" rel="noopener">https://doi.org/10.1007/s11031-008-9102-4</a></li>
+          <li>Klasen, M., Weber, R., Kircher, T. T. J., Mathiak, K. A., &amp; Mathiak, K. (2012). Neural contributions to flow experience during video game playing. <em>Social Cognitive and Affective Neuroscience</em>, <em>7</em>(4), 485–495. <a href="https://doi.org/10.1093/scan/nsr021" target="_blank" rel="noopener">https://doi.org/10.1093/scan/nsr021</a></li>
+          <li>Nakamura, J., &amp; Csikszentmihalyi, M. (2002). The concept of flow. In C. R. Snyder &amp; S. J. Lopez (Eds.), <em>Handbook of positive psychology</em> (pp. 89–105). Oxford University Press.</li>
       </ul>
     </div>
 

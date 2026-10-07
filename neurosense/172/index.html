@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,9 +111,9 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>The nervous system hears tone, timing, and attention before it hears your best point.</li>
+          <li>The nervous system often reacts to tone, timing, and attention before it hears your best point.</li>
           <li>When someone feels listened to, defensiveness can drop enough for clearer thinking.</li>
-          <li>Lower threat lets information move, even while you keep your position.</li>
+          <li>Lower threat can help the other person see both sides, even while you keep your position.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Paige’s name in purple marker</h3>
-          <p>Keira’s schedule is taped to the bathroom mirror in green marker: Keira 6:45 to 7:00, Paige 7:00 to 7:15. At 6:58 the shower is still running.</p>
-          <p>Paige and her mom moved in with Keira and her dad in August, and the upstairs bathroom has been a war ever since. When Paige finally opens the door, she says, “It’s not like any of this is mine anyway.” Keira starts in with her case: the schedule, the two times Paige agreed to it, the fact that it was her bathroom first. They’re both shaking, and the bus comes at 7:10. Keira stops. “Can we finish this at eight tonight?” Paige shrugs, which counts as yes.</p>
-          <p>In a fight like this, the brain can start treating winning as safety. But Paige’s nervous system takes in tone, timing and attention before it gets to anyone’s best point, and that morning all three said attack. When someone feels listened to, defensiveness can drop enough for clearer thinking, and that can happen while Keira keeps her position.</p>
-          <p>At eight Keira knocks on Paige’s door with three fingers pressed against her leg, one for each move. One thing she understood: “You feel like you’re living in somebody else’s house.” One clean question: “What would make it feel more like yours?” Then the repair she wants: “I don’t want to fight every morning. I still need 6:45.”</p>
-          <p>Paige is quiet. Then she says everything she owns in that bathroom lives in a bag on the floor. That night they clear a cabinet shelf for her, and she moves her shower to the evening. The next morning the door is open at 6:45, and the schedule has a new line in Paige’s purple marker: Paige, 9:30 at night.</p>
+          <p>Keira’s bathroom schedule is taped to the mirror in green marker, with fifteen minutes for Keira and then fifteen for Paige. Keira’s turn is almost over, and the shower is still running with Paige in it.</p>
+          <p>Paige and her mom moved in with Keira and her dad in August, and the upstairs bathroom has been a war ever since. When Paige finally opens the door, she says, “It’s not like any of this is mine anyway.” Keira starts in with her case, the schedule, the two times Paige agreed to it and the fact that it was her bathroom first. They’re both shaking, and the bus comes in ten minutes, so Keira stops and asks, “Can we finish this at eight tonight?” Paige shrugs, which counts as a yes.</p>
+          <p>In a fight like this, the brain can start treating winning as safety. But Paige’s nervous system was probably reacting to tone, timing and attention before it got to anyone’s best point, and that morning all three said attack. When someone feels listened to, defensiveness can drop enough for clearer thinking, and that can happen while Keira keeps her position.</p>
+          <p>At eight Keira knocks on Paige’s door with three fingers pressed against her leg, one for each move. First she names one thing she understood, “You feel like you’re living in somebody else’s house.” Then she asks one honest question, “What would make it feel more like yours?” Then she says the repair she wants, “I don’t want to fight every morning, and I still need my fifteen minutes.”</p>
+          <p>Paige is quiet for a while. Then she says everything she owns in that bathroom lives in a bag on the floor. That night they clear a cabinet shelf for her, and she moves her shower to the evening. The next morning the door is open when Keira’s turn starts, and the schedule has a new line in Paige’s purple marker, “Paige, 9:30 at night.”</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">The shower running at 6:58, a taped schedule, both of them shaking</span></li>
+><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Paige is still in the shower during Keira’s turn, and they’re both shaking.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hand"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A break until eight, then three moves on three fingers</span></li>
+><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">They take a break until eight, and Keira comes back with three moves.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-handshake"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,21 +176,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">A shelf cleared, showers moved, the door open at 6:45</span></li>
+><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">They clear a shelf, Paige moves her shower and the door is open on time.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Two kinds of listening</h3>
-        <p class="ns-demo-intro">You need one other person and a small annoyance to talk about: a chore, a rule, a game that went badly. Keep it small.</p>
+        <p class="ns-demo-intro">You’ll need one other person and a small annoyance to talk about, like a chore, a rule or a game that went badly. Keep it small.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Talk for 30 seconds about your annoyance. Your partner listens badly on purpose: glancing at a phone, jumping in with their own point, saying “yeah, but.”</li>
-            <li>Talk about the same thing for another 30 seconds. This time they listen well: eyes on you, no interrupting, then one thing they understood and one real question.</li>
+            <li>Talk for 30 seconds about your annoyance while your partner listens badly on purpose, glancing at a phone, jumping in with their own point and saying “yeah, but.”</li>
+            <li>Talk about the same thing for another 30 seconds. This time they listen well, with their eyes on you and no interrupting, and then they say one thing they understood and ask one real question.</li>
             <li>Notice your voice and your shoulders each time, and whether you said anything the second time that you hadn’t planned to say.</li>
-            <li>Swap, so they get both versions from you.</li>
-            <li>Then each of you say which version made you want to defend yourself, and which one helped you think.</li>
+            <li>Switch, so they get both versions from you.</li>
+            <li>Then each of you say which version made you want to defend yourself and which one helped you think.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,14 +204,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Your bad listener probably got the faster, more dug-in version of you. With the good one you may have slowed down and said something you hadn’t planned, possibly even a point against your own side. That’s The Science above from the inside: feeling listened to can lower defensiveness enough for clearer thinking, without anyone giving up their position.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Your bad listener probably got the faster, more dug-in version of you. With the good one you may have slowed down and said something you hadn’t planned, maybe even a point against your own side. You felt it from the inside. Being listened to can lower defensiveness enough for clearer thinking, without anyone giving up their position.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Repair first, then make your point</h3>
-          <p class="ns-plan-intro">For arguments with people you want to keep.</p>
+          <p class="ns-plan-intro">Use it for arguments with people you want to keep.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-pause"
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><div><strong>Notice when you start trying to win.</strong> A list of points ready, your voice speeding up, proof on your phone. That’s your cue to pause the argument instead of playing your best card.</div></li>
+><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><div><strong>Notice when you start trying to win.</strong> If you have a list of points ready, your voice is speeding up or you’re pulling up proof on your phone, that’s your cue to pause the argument instead of playing your best card.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-ear"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></span><div><strong>Name one thing you understood.</strong> One sentence about their side, specific and slow, like “You feel like a guest here.” Saying it doesn’t mean you agree with all of it.</div></li>
+><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></span><div><strong>Name one thing you understood.</strong> Say one sentence about their side, specific and slow, like “You feel like a guest here.” Saying it doesn’t mean you agree with all of it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-help"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask one clean question.</strong> A real question with no point hidden inside, like “What would make this feel fairer?” Skip anything that starts with “Why would you.”</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask one honest question.</strong> Ask a real question with no point hidden inside, like “What would make this feel fairer?” and skip anything that starts with “Why would you.”</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-handshake"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><div><strong>Say the repair you want, then your point.</strong> Say what you want for the two of you first. Then say your position once, calmly. You can hold a boundary and still lower the heat.</div></li>
+><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><div><strong>Say the repair you want, then your point.</strong> Say what you want for the two of you first, and then say your position once, calmly. You can hold a boundary and still lower the heat.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +272,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Too hot? Set a time to come back.</strong> If you’re both shaking or shouting, pick a time, like ten minutes from now or eight tonight, and come back with one question ready.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Set a time to come back if it’s too hot.</strong> If you’re both shaking or shouting, pick a time, like ten minutes from now or eight tonight, and come back with one question ready.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -298,7 +298,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> In the heat of it you’ll probably forget all of this. Practice the three middle moves on your fingers (understood, question, repair) so your hand can remind you when your head can’t.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> In the heat of it you’ll probably forget all of this. Practice the three middle moves on your fingers, understood, question and repair, so your hand can remind you when your head can’t.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -314,7 +314,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 172: Repair first, then your point. Step 1: Notice when you start trying to win. Step 2: Name one thing you understood. Step 3: Ask one clean question. Step 4: Say the repair you want, then your point. Step 5: Too hot? Set a time to come back. How to tell it is working: Count the arguments that end with a plan instead of a winner." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 172: Repair first, then your point. Step 1: Notice when you start trying to win. Step 2: Name one thing you understood. Step 3: Ask one honest question. Step 4: Say the repair you want, then your point. Step 5: Too hot? Set a time to come back. How to tell it is working: Count the arguments that end with a plan instead of a winner." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -342,8 +342,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Itzchakov, G., Kluger, A. N., &amp; Castro, D. R. I Am Aware of My Inconsistencies but Can Tolerate Them: The Effect of High Quality Listening on Speakers&#x27; Attitude Ambivalence. Personality and Social Psychology Bulletin, 2017.</li>
-          <li>Huberman, A., with Chris Voss. Chris Voss: How to Succeed at Hard Conversations. Huberman Lab Podcast, October 2, 2023.</li>
+          <li>Huberman, A. (Host). (2023, October 2). Chris Voss: How to succeed at hard conversations (No. 144) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/chris-voss-how-to-succeed-at-hard-conversations" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/chris-voss-how-to-succeed-at-hard-conversations</a></li>
+          <li>Huberman, A. (Host). (2024, October 28). Bill Eddy: How to deal with high conflict people [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/bill-eddy-how-to-deal-with-high-conflict-people" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/bill-eddy-how-to-deal-with-high-conflict-people</a></li>
+          <li>Itzchakov, G., Kluger, A. N., &amp; Castro, D. R. (2017). I am aware of my inconsistencies but can tolerate them: The effect of high quality listening on speakers' attitude ambivalence. <em>Personality and Social Psychology Bulletin</em>, <em>43</em>(1), 105–120. <a href="https://doi.org/10.1177/0146167216675339" target="_blank" rel="noopener">https://doi.org/10.1177/0146167216675339</a></li>
+          <li>Weger, H., Jr., Castle Bell, G., Minei, E. M., &amp; Robinson, M. C. (2014). The relative effectiveness of active listening in initial interactions. <em>International Journal of Listening</em>, <em>28</em>(1), 13–31. <a href="https://doi.org/10.1080/10904018.2013.813234" target="_blank" rel="noopener">https://doi.org/10.1080/10904018.2013.813234</a></li>
       </ul>
     </div>
 

@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,7 +112,7 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Huttenlocher (1979), Brain Research: synapse counts peak then prune across development, so the brain refines rather than just grows.</li>
-          <li>Petanjek et al. (2011), PNAS: prefrontal synaptic spines keep being remodeled into the twenties, a long window of plasticity.</li>
+          <li>Petanjek et al. (2011), Proceedings of the National Academy of Sciences: prefrontal synaptic spines, where nerve cells connect, keep being reshaped into the twenties.</li>
           <li>Diekelmann and Born (2010), Nature Reviews Neuroscience: sleep helps decide which connections stay, so practice plus sleep shapes the edit.</li>
           <li>Connections you use get kept; ones you ignore fade back.</li>
         </ul>
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Back foot on the tape</h3>
-          <p>Joaquin’s family moved to the coast in June, and by July he’s figured out how people make friends here: the 6:30 surf at the jetty. Diego from his street has invited him twice. Both times he spent an hour in the whitewater, falling off a borrowed board before he got to his feet.</p>
-          <p>At home he’s been practicing the way he does most things: an hour of surf clips in bed, then three sloppy pop-ups on the rug before checking his messages. His thumb has that routine down. His feet still land in the wrong place.</p>
-          <p>His brain is still editing itself. It built more connections than it keeps, and the front of it goes on remodeling into the twenties. Connections that get used stay; the ones he ignores fade back. That pruning is refinement, not loss, but it runs on whatever he repeats, and so far that’s scrolling clips. Sleep is part of the edit, helping decide which new connections stay.</p>
-          <p>For the next twelve days he gives his brain one reliable input: ten minutes on the rug after dinner, phone in the kitchen, one specific step at a time. First, lying on a strip of masking tape, hands under his chest, he lands his back foot on it in one count. He stops after a clean one, even when he’d rather keep going. Once that’s easy, the next step: front foot between his hands, eyes up.</p>
-          <p>On the thirteenth morning at the jetty he falls three times. On the fourth wave he pops up, back foot on a line he can’t see, and rides the whitewater almost to the sand. Diego whoops from past the break, and on Saturday Diego is the one who texts first: “6:30?”</p>
+          <p>Joaquin’s family moved to the coast in June, and by July he has figured out how people make friends there, which is the 6:30 surf at the jetty. Beto from his street has invited him twice. Both times he spent an hour in the whitewater, falling off a borrowed board before he could get to his feet.</p>
+          <p>At home he has been practicing the way he does most things, with an hour of surf clips in bed and then three sloppy pop-ups on the rug before checking his messages. His thumbs have the scrolling down perfectly, but his feet still land in the wrong place.</p>
+          <p>A teenage brain is still editing itself. Early in life it builds more connections than it keeps, and the front of the brain goes on remodeling into the twenties. Connections that get used tend to stay, and the ones that don’t get used fade. That pruning is a way of refining, not losing, but it works on whatever gets repeated, and so far what he has repeated most is scrolling. Sleep is part of the editing too, helping decide which new connections stay.</p>
+          <p>For the next twelve days he practices one thing at a time. Every evening after dinner he spends ten minutes on the rug with his phone in the kitchen. First he lies on a strip of masking tape and lands his back foot on the tape in one count, and he stops after a clean one, even when he’d rather keep going. Once that’s easy, he adds the next step, bringing his front foot between his hands with his eyes up.</p>
+          <p>On the thirteenth morning at the jetty he falls three times. On the fourth wave he pops up with his back foot on a line he can’t see and rides the whitewater almost to the sand. Beto whoops from out past the break, and on Saturday Beto is the one who texts first, “6:30?”</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 12q2.5 2 5 0t5 0 5 0 5 0" /><path d="M2 19q2.5 2 5 0t5 0 5 0 5 0" /><path d="M2 5q2.5 2 5 0t5 0 5 0 5 0" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">An hour of surf clips in bed, and his feet still land wrong</span></li>
+><path d="M2 12q2.5 2 5 0t5 0 5 0 5 0" /><path d="M2 19q2.5 2 5 0t5 0 5 0 5 0" /><path d="M2 5q2.5 2 5 0t5 0 5 0 5 0" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">After an hour of surf clips in bed, his feet still land in the wrong place.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Ten minutes on the rug, phone in the kitchen, one step</span></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He spends ten minutes on the rug each night, one step at a time.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sunrise"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,14 +178,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Up on the fourth wave, and Diego texts first</span></li>
+><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">He pops up on the fourth wave, and Beto texts him first.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Paths in the salt</h3>
-        <p class="ns-demo-intro">A hands-on model of pruning, best done over a sink or outside. You need a baking sheet or tray and enough salt, sugar or flour to cover it thinly.</p>
+        <p class="ns-demo-intro">This is a hands-on model of pruning, best done over a sink or outside. You’ll need a baking sheet or tray and enough salt, sugar or flour to cover it thinly.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Spread a thin, even layer across the tray. With one finger, draw five lines from one end to the other, each by a different route. Those are new connections.</li>
@@ -206,13 +206,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The two traced paths usually survive the shaking, and the others fade back into the layer. That’s the idea of pruning: connections that get used are kept and the rest fade, which leaves the tray easier to read, not emptier. Both traced paths stayed, including the one you’d rather not have, because use is the rule, not good intentions. In a real brain, sleep is part of what decides which new connections stay.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The two traced paths usually survive the shaking, and the others fade back into the layer. That’s the idea behind pruning, where connections that get used are kept and the rest fade, which leaves the tray easier to read rather than emptier. Both traced paths stayed, including the one you’d rather not have, because use is the rule, not good intentions. In a real brain, sleep is part of what decides which new connections stay.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Ten minutes, one skill, every day</h3>
+          <p class="ns-plan-intro">Pick a skill you want, and give it a little time every day.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
@@ -225,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one skill that matters to you.</strong> Something you’ll use: a pop-up, a serve, a chord change, a language you want to speak with someone.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one skill that matters to you.</strong> Choose something you’ll use, like a pop-up, a serve, a chord change or a language you want to speak with someone.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-phone-off"
   xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10.1 13.9a14 14 0 0 0 3.732 2.668 1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 18 18 0 0 1-12.728-5.272" /><path d="M22 2 2 22" /><path d="M4.76 13.582A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 .244.473" /></svg></span><div><strong>Put the phone out of reach.</strong> In another room, not face down beside you. Ten minutes is short enough that nothing will be missed.</div></li>
+><path d="M10.1 13.9a14 14 0 0 0 3.732 2.668 1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2 18 18 0 0 1-12.728-5.272" /><path d="M22 2 2 22" /><path d="M4.76 13.582A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 .244.473" /></svg></span><div><strong>Put the phone out of reach.</strong> Put it in another room, not face down beside you. Ten minutes is short enough that you won’t miss anything.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-flag"
   xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +250,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" /></svg></span><div><strong>Make the first step specific.</strong> Not “practice surfing” but “back foot on the tape, one count.” Write it down.</div></li>
+><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" /></svg></span><div><strong>Make the first step specific.</strong> Instead of “practice surfing,” try “back foot on the tape in one count,” and write it down.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -261,7 +262,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Ten focused minutes.</strong> Set a timer and stay on that one step until it rings.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Spend ten focused minutes.</strong> Set a timer and stay on that one step until it rings.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Repeat tomorrow, after sleep.</strong> Same time if you can. The night in between is part of the practice.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Repeat tomorrow, after sleep.</strong> Practice at the same time if you can, since the night in between is part of the practice.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -299,7 +300,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Pick one thing to count, like clean tries in a row or how long the skill takes, and count it on day one and day seven. If the number moves and starting feels like less effort, the pathway is getting the evidence it needs.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Pick one thing to count, like clean tries in a row or how long the skill takes, and count it on day one and day seven. If the number moves and starting feels like less effort, the practice is sticking.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -311,11 +312,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Ten minutes can feel too small to matter, so you’ll be tempted to skip a day and make it up with an hour later. Keep it daily. The repeat and the sleep in between are what do the work.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Ten minutes can feel too small to matter, so you’ll be tempted to skip a day and make up for it with an hour later. Keep it daily, since the repetition and the sleep in between are what do the work.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 69: Ten minutes, one skill. Step 1: Pick one skill that matters. Step 2: Phone in another room. Step 3: One specific first step. Step 4: Ten minutes, stop while it’s doable. Step 5: Repeat tomorrow, after sleep. How to tell it is working: Count one thing on day one and day seven: clean tries, or how long it takes." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 69: Ten minutes, one skill. Step 1: Pick one skill that matters. Step 2: Phone in another room. Step 3: One specific first step. Step 4: Ten minutes, stop while it’s doable. Step 5: Repeat tomorrow, after sleep. How to tell it is working: Count one thing on day one and day seven, like clean tries or how long it takes." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -343,10 +344,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Huttenlocher PR. (1979). Synaptic density in human frontal cortex. Brain Research, 163(2): 195-205.</li>
-          <li>Petanjek Z, et al. (2011). Extraordinary neoteny of synaptic spines in the human prefrontal cortex. PNAS, 108(32): 13281-13286.</li>
-          <li>Casey BJ, Jones RM, Hare TA. (2008). The adolescent brain. Annals of the New York Academy of Sciences, 1124: 111-126.</li>
-          <li>Diekelmann S, Born J. (2010). The memory function of sleep. Nature Reviews Neuroscience, 11: 114-126.</li>
+          <li>Casey, B. J., Jones, R. M., &amp; Hare, T. A. (2008). The adolescent brain. <em>Annals of the New York Academy of Sciences</em>, <em>1124</em>(1), 111–126. <a href="https://doi.org/10.1196/annals.1440.010" target="_blank" rel="noopener">https://doi.org/10.1196/annals.1440.010</a></li>
+          <li>Diekelmann, S., &amp; Born, J. (2010). The memory function of sleep. <em>Nature Reviews Neuroscience</em>, <em>11</em>(2), 114–126. <a href="https://doi.org/10.1038/nrn2762" target="_blank" rel="noopener">https://doi.org/10.1038/nrn2762</a></li>
+          <li>Huttenlocher, P. R. (1979). Synaptic density in human frontal cortex: Developmental changes and effects of aging. <em>Brain Research</em>, <em>163</em>(2), 195–205. <a href="https://doi.org/10.1016/0006-8993(79)90349-4" target="_blank" rel="noopener">https://doi.org/10.1016/0006-8993(79)90349-4</a></li>
+          <li>Petanjek, Z., Judaš, M., Šimić, G., Rašin, M. R., Uylings, H. B. M., Rakic, P., &amp; Kostović, I. (2011). Extraordinary neoteny of synaptic spines in the human prefrontal cortex. <em>Proceedings of the National Academy of Sciences</em>, <em>108</em>(32), 13281–13286. <a href="https://doi.org/10.1073/pnas.1105108108" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.1105108108</a></li>
       </ul>
     </div>
 

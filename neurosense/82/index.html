@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,7 +111,7 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Crick and Koch (2005), Philosophical Transactions of the Royal Society B: the claustrum connects to almost every cortical region and may help bind experience together.</li>
+          <li>Crick and Koch (2005), Philosophical Transactions of the Royal Society B: the claustrum connects to almost every region of the cortex, the brain's outer layer, and they proposed that it may help bind experience together.</li>
           <li>It is not a magic consciousness switch; it is a reminder that experience has to be stitched into one moment.</li>
           <li>Sight, sound, touch, and attention compete for that moment, so too many inputs make it feel scattered.</li>
           <li>When your mind feels pulled five ways, the issue may be coordination, not effort.</li>
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The vent hum in round five</h3>
-          <p>Two boards over, a little kid is kicking the table leg, and Talia feels each thump through her own table. Round five is the last of the state scholastic chess tournament, and a win means the top-three trophy she’s chased for two years.</p>
-          <p>Her position is good if she can see far enough into it. Clocks slap all over the hotel ballroom, pairings crackle over the microphone, her opponent sniffs every few seconds, and her eyes keep sliding to the trophy table. Four times she has started the same calculation and lost it around the third move. Her clock is down to 6:40.</p>
-          <p>Every moment has to be stitched together from sight, sound, touch and attention, all competing for the same now. Scientists have wondered whether the claustrum, a thin sheet of neurons wired to almost every part of the cortex, helps with that stitching, and it’s still an open question. Either way, more inputs make a moment feel scattered. Talia’s problem may be coordination, not effort.</p>
-          <p>She stops calculating. Overhead, the air vents have hummed one steady note all day, and she picks that sound. For a still point she picks a chip in the table’s edge, just past her scoresheet. She holds both for thirty seconds and adds nothing. Twice her mind jumps to the thumping, and twice she comes back to the hum and the chip.</p>
-          <p>When she looks back at the board, the line goes all the way through: her rook takes on f7, and if his king takes back, her knight lands on e5 with check, attacking his queen too. She plays it with 5:52 left. Eight moves later her opponent stops both clocks and holds out his hand.</p>
+          <p>Two boards over, a little kid is kicking the table leg, and Talia can feel each thump through her own table. Round five is the last one of the state scholastic chess tournament, and a win means the top-three trophy she has been chasing for two years.</p>
+          <p>Her position is good if she can see far enough into it. Clocks slap all over the hotel ballroom, pairings crackle over the microphone, her opponent sniffs every few seconds, and her eyes keep sliding to the trophy table. Four times she has started the same calculation and lost it around the third move, and her clock is down to under seven minutes.</p>
+          <p>Every moment has to be put together from sight, sound, touch and attention, and they all compete for the same moment. Scientists have wondered whether the claustrum, a thin sheet of neurons deep in the brain that connects to almost every part of the outer layer, helps tie all of that together, and it’s still an open question. Either way, the more streams there are, the more scattered a moment feels, so Talia’s problem may be coordination rather than effort.</p>
+          <p>So she stops calculating. Overhead, the air vents have hummed on one steady note all day, and she picks that sound. For something still to look at, she picks a chip in the edge of the table just past her scoresheet. She holds both for thirty seconds and adds nothing. Twice her mind jumps to the thumping, and twice she comes back to the hum and the chip.</p>
+          <p>When she looks back at the board, the line goes all the way through. Her rook takes on f7, and if his king takes it back, her knight lands on e5 with check and attacks his queen too. She plays it with almost six minutes left, and eight moves later her opponent stops both clocks and holds out his hand.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">The same calculation started four times, under seven minutes left</span></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">With the clock running down, she starts the same calculation four times.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-air-vent"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M18 17.5a2.5 2.5 0 1 1-4 2.03V12" /><path d="M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /><path d="M6 8h12" /><path d="M6.6 15.572A2 2 0 1 0 10 17v-5" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">One steady vent hum, one chip in the table, thirty seconds</span></li>
+><path d="M18 17.5a2.5 2.5 0 1 1-4 2.03V12" /><path d="M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /><path d="M6 8h12" /><path d="M6.6 15.572A2 2 0 1 0 10 17v-5" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She listens to the vent hum and looks at a chip in the table for thirty seconds.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-chess-knight"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,19 +178,19 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M5 20a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z" /><path d="M16.5 18c1-2 2.5-5 2.5-9a7 7 0 0 0-7-7H6.635a1 1 0 0 0-.768 1.64L7 5l-2.32 5.802a2 2 0 0 0 .95 2.526l2.87 1.456" /><path d="m15 5 1.425-1.425" /><path d="m17 8 1.53-1.53" /><path d="M9.713 12.185 7 18" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The knight check lands, and her opponent stops the clocks</span></li>
+><path d="M5 20a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z" /><path d="M16.5 18c1-2 2.5-5 2.5-9a7 7 0 0 0-7-7H6.635a1 1 0 0 0-.768 1.64L7 5l-2.32 5.802a2 2 0 0 0 .95 2.526l2.87 1.456" /><path d="m15 5 1.425-1.425" /><path d="m17 8 1.53-1.53" /><path d="M9.713 12.185 7 18" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Her knight check lands, and her opponent stops the clocks.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>Crowded round, anchored round</h3>
-        <p class="ns-demo-intro">Do this somewhere with a few things going on, like a kitchen, a bus or a living room with the TV on low. You need a timer that beeps, a pencil and some paper.</p>
+        <p class="ns-demo-intro">Do this somewhere with a few things going on, like a kitchen, a bus or a living room with the TV on low. You’ll need a timer that beeps, a pencil and some paper.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Set a thirty-second timer and keep your eyes on one still point, like a doorknob, while everything else keeps going: the TV, the talking, your phone face up. Make a tally mark each time your mind leaves the point.</li>
-            <li>Now turn off what you can: the TV, the music, the phone screen. Pick one steady sound that’s left, like a fan, the fridge or traffic.</li>
-            <li>Thirty seconds again, with the same still point plus the steady sound and no other task. Each time you drift, make a tally mark and come back to the two anchors.</li>
+            <li>Set a thirty-second timer and keep your eyes on one still point, like a doorknob, while everything else keeps going, including the TV, the talking and your phone face up. Make a tally mark each time your mind leaves the point.</li>
+            <li>Now turn off what you can, like the TV, the music and the phone screen, and pick one steady sound that’s left, like a fan, the fridge or traffic.</li>
+            <li>Do thirty seconds again with the same still point plus the steady sound and nothing else. Each time you drift, make a tally mark and come back to the two anchors.</li>
             <li>Compare the two tallies, and how crowded each round felt.</li>
           </ol>
         </div>
@@ -205,14 +205,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The crowded round often collects more tally marks, and the anchored one feels roomier even when the counts are close. Every tally mark is also a return, and returning without forcing it is the actual practice. Fewer streams means less competition for the same moment, which is the idea in The Science above.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The crowded round often collects more tally marks, and the anchored one feels roomier even when the counts are close. Every tally mark is also a return, and coming back without forcing it is what you’re practicing. Fewer streams mean less competition for the same moment.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Two anchors when it gets crowded</h3>
-          <p class="ns-plan-intro">Use it when a busy room is splitting your attention right before something that needs one clear moment.</p>
+          <p class="ns-plan-intro">It’s for a busy room that’s splitting your attention right before something that needs one clear moment.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-ear"
@@ -225,7 +225,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></span><div><strong>Notice the split.</strong> Rereading the same line or hearing everything at once. That’s the cue to stop pushing for a moment.</div></li>
+><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" /><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" /></svg></span><div><strong>Notice the split.</strong> If you’re rereading the same line or hearing everything at once, that’s the cue to stop pushing for a moment.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-audio-lines"
   xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +237,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 10v3" /><path d="M6 6v11" /><path d="M10 3v18" /><path d="M14 8v7" /><path d="M18 5v13" /><path d="M22 10v3" /></svg></span><div><strong>Pick one steady sound.</strong> Something that doesn’t change, like a fan or rain. Skip music with words and the conversation next to you.</div></li>
+><path d="M2 10v3" /><path d="M6 6v11" /><path d="M10 3v18" /><path d="M14 8v7" /><path d="M18 5v13" /><path d="M22 10v3" /></svg></span><div><strong>Pick one steady sound.</strong> Choose something that doesn’t change, like a fan or rain, and skip music with words and the conversation next to you.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-eye"
   xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +249,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Pick one still point.</strong> A spot that won’t move, like a scuff on the floor or a light switch. Not a screen.</div></li>
+><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Pick one still point.</strong> Choose a spot that won’t move, like a scuff on the floor or a light switch, and not a screen.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -261,7 +261,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Hold both for thirty seconds.</strong> No planning, no checking, nothing added. You don’t need to count exactly; about half a minute is enough.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Hold both for thirty seconds.</strong> Don’t plan, check or add anything. You don’t need to count exactly, since about half a minute is enough.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-rotate-ccw"
   xmlns="http://www.w3.org/2000/svg"
@@ -273,7 +273,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></span><div><strong>Come back when you drift.</strong> You probably will, more than once. Return to the sound and the point without scolding yourself, then go back to the task.</div></li>
+><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></span><div><strong>Come back when you drift.</strong> You probably will drift, more than once. Return to the sound and the point without scolding yourself, then go back to the task.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -287,7 +287,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> In the few minutes before the anchors and the few minutes after, count how many times you restart the same line, problem or sentence. If the after count tends to be lower, keep using it.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> In the few minutes before the anchors and the few minutes after, count how many times you restart the same line, problem or sentence. If the count after tends to be lower, keep using it.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -299,11 +299,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> When a clock is running, thirty seconds feels too expensive. It usually costs less than the minutes lost starting the same thought over.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> When a clock is running, thirty seconds feels too expensive, but it usually costs less than the minutes you lose starting the same thought over.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 82: Two anchors, thirty seconds. Step 1: Notice the split. Step 2: Pick one steady sound. Step 3: Pick one still point. Step 4: Hold both for thirty seconds. Step 5: Drift? Come back to the anchors. How to tell it is working: Count your restarts before and after the anchors. Fewer after? Keep it." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 82: Two anchors, thirty seconds. Step 1: Notice the split. Step 2: Pick one steady sound. Step 3: Pick one still point. Step 4: Hold both for thirty seconds. Step 5: If you drift, come back to the anchors. How to tell it is working: Count your restarts before and after the anchors, and keep it if they drop." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -331,7 +331,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Crick FC, Koch C. What is the function of the claustrum? Philosophical Transactions of the Royal Society B. 2005;360(1458):1271-1279.</li>
+          <li>Crick, F. C., &amp; Koch, C. (2005). What is the function of the claustrum? <em>Philosophical Transactions of the Royal Society B: Biological Sciences</em>, <em>360</em>(1458), 1271–1279. <a href="https://doi.org/10.1098/rstb.2005.1661" target="_blank" rel="noopener">https://doi.org/10.1098/rstb.2005.1661</a></li>
+          <li>Goll, Y., Atlan, G., &amp; Citri, A. (2015). Attention: The claustrum. <em>Trends in Neurosciences</em>, <em>38</em>(8), 486–495. <a href="https://doi.org/10.1016/j.tins.2015.05.006" target="_blank" rel="noopener">https://doi.org/10.1016/j.tins.2015.05.006</a></li>
       </ul>
     </div>
 

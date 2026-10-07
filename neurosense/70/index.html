@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Hickok and Poeppel (2007), Nature Reviews Neuroscience: speech runs on distributed networks for sound, meaning, and articulation, not two isolated spots.</li>
-          <li>Catani et al. (2005), Annals of Neurology: white-matter pathways link the classic Broca and Wernicke regions so sound and meaning coordinate.</li>
-          <li>MacLeod et al. (2010), Journal of Experimental Psychology: reading aloud, the production effect, makes material more memorable than reading silently.</li>
+          <li>Catani et al. (2005), Annals of Neurology: scans of eleven healthy men traced two white-matter routes, bundles of nerve fibers, linking the classic Broca and Wernicke language areas.</li>
+          <li>MacLeod et al. (2010), Journal of Experimental Psychology: Learning, Memory, and Cognition: words said aloud were remembered better than words read silently in the same list, a pattern called the production effect.</li>
           <li>Speaking recruits breath, voice, hearing, and language at once.</li>
         </ul>
         <div class="ep-protocol">
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The hand that mocked them</h3>
-          <p>Emre can recite all fourteen lines of “Ozymandias,” and three of them still mean nothing to him. The school’s poetry recitation contest is Thursday, the top two go to regionals, and the judges score whether you understand what you’re saying as well as whether you remember it.</p>
-          <p>The trouble is lines six to eight: “Tell that its sculptor well those passions read / Which yet survive, stamped on these lifeless things, / The hand that mocked them, and the heart that fed.” He has read them silently four times, and each time his eyes slide past, so he delivers them in a flat, careful voice, like a list.</p>
-          <p>Read silently, lines like these slip past. Saying them out loud brings in breath, voice, hearing and language networks at once, linked by pathways that help sound and meaning work together. Spoken rhythm makes structure easier to track, and when understanding breaks, the voice usually catches right there.</p>
-          <p>That night he takes just those three lines to his room, reads them once silently, then out loud at half speed. His voice catches twice, on “well those passions read” and on “the hand that mocked them,” and he circles both. Reading again, he breathes before each circled phrase and gives each hard word its own beat. The sculptor read the king’s face well. “Mocked” is an old use: copied. In the margin he writes one sentence: the sculptor copied the king’s cruelty so well that it outlasted them both.</p>
-          <p>On Thursday he slows down on line six without meaning to, and he says “the hand that mocked them” as if it belongs to someone. When the score sheets come back, one judge has written beside the score for understanding: “Line 8, yes.”</p>
+          <p>Emre can recite all fourteen lines of “Ozymandias,” and three of them still mean nothing to him. The school poetry recitation contest is on Thursday, the top two go to regionals, and the judges score whether you understand what you’re saying as well as whether you remember it.</p>
+          <p>The trouble is lines six to eight, “Tell that its sculptor well those passions read / Which yet survive, stamped on these lifeless things, / The hand that mocked them, and the heart that fed.” He has read them silently four times, and each time his eyes slide right past, so he says them in a flat, careful voice, like a list.</p>
+          <p>Reading silently makes it easy to slide past lines like these. Speaking uses breath, voice, hearing and language networks at the same time, linked by pathways in the brain that help sound and meaning work together. In studies, people remembered words and passages better when they read them out loud, though it didn’t help them understand the passages any better. Reading aloud also slows you down, and when understanding breaks down, the voice often catches right at that spot.</p>
+          <p>That night he takes those three lines to his room. He reads them once silently, then out loud at half speed, and his voice catches twice, on “well those passions read” and on “the hand that mocked them.” He circles both and works them out. The sculptor read the king’s passions well, and “mocked” has an old meaning, copied. In the margin he writes one sentence, that the sculptor copied the king’s cruelty so well it outlasted them both.</p>
+          <p>On Thursday he slows down on line six without meaning to, and he says “the hand that mocked them” as if it belongs to someone. When the score sheets come back, one judge has written “Line 8, yes” beside his score for understanding.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Fourteen lines memorized, and three of them still mean nothing</span></li>
+><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">He has all fourteen lines memorized, but three of them still mean nothing to him.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-mic"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Three lines out loud at half speed, two catches circled</span></li>
+><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He reads the three lines out loud at half speed and circles where his voice catches.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-badge-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,18 +178,18 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">“Line 8, yes,” written on the judge’s score sheet</span></li>
+><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">One judge writes “Line 8, yes” on his score sheet.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Catch the stumble</h3>
-        <p class="ns-demo-intro">Four sentences that are correct English and easy to misread. Read them right here; a pencil and paper help.</p>
+        <p class="ns-demo-intro">These four sentences are correct English and easy to misread. Read them right here, and a pencil and paper will help.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Read sentence 1 silently, once, at your normal speed. Does it make sense?</li>
-            <li>Now read it out loud at half speed. Notice the exact word where your voice slows, stalls or wants to go back.</li>
+            <li>Read sentence 1 silently, once, at your normal speed, and notice whether it makes sense.</li>
+            <li>Now read it out loud at half speed, and notice the exact word where your voice slows, stalls or wants to go back.</li>
             <li>Start again just before that word and look for a second way to read the whole sentence.</li>
             <li>Do the same with sentences 2, 3 and 4.</li>
             <li>For each one, say what it means in one plain sentence of your own.</li>
@@ -215,14 +215,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Voices tend to catch in the same spots: at the end of the first sentence, then on “fell,” “pleased” and “grows.” Each catch is where the structure you were predicting stopped fitting, and reading slowly out loud makes that spot hard to skate past. The meanings: old people crew the boat; the horse that someone raced past the barn fell; while the band played, the song pleased the crowd; the cotton that clothing is made of grows in Mississippi.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Voices tend to catch in the same places, at the end of the first sentence, and then on “fell,” “pleased” and “grows.” Each catch is where the structure you were predicting stopped fitting, and reading slowly out loud makes that spot hard to skate past. Here are the meanings. Old people crew the boat. The horse that someone raced past the barn fell. While the band played, the song pleased the crowd. The cotton that clothing is made of grows in Mississippi.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>One paragraph, out loud</h3>
-          <p class="ns-plan-intro">For anything you need to understand, not just get through: a poem, a rule, a set of lab steps, a hard page in a novel.</p>
+          <p class="ns-plan-intro">It’s for anything you need to understand rather than only get through, like a poem, a rule, a set of lab steps or a hard page in a novel.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-book-open"
@@ -235,7 +235,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><div><strong>Pick one paragraph and read it silently.</strong> The one you’ve reread without it clicking. Once through, at normal speed.</div></li>
+><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><div><strong>Pick one paragraph and read it silently.</strong> Choose the one you’ve reread without it clicking, and read it once at normal speed.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-mic"
   xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><div><strong>Read it out loud at half speed.</strong> Slower than feels natural, every word, even the small ones.</div></li>
+><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><div><strong>Read it out loud at half speed.</strong> Go slower than feels natural and say every word, even the small ones.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pencil"
   xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Mark where your voice hesitates.</strong> Circle the word or phrase. That spot is the clue to what you don’t understand yet.</div></li>
+><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Mark where your voice hesitates.</strong> Circle the word or phrase, because that spot is the clue to what you don’t understand yet.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-wind"
   xmlns="http://www.w3.org/2000/svg"
@@ -283,7 +283,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /></svg></span><div><strong>Sum it up in one sentence.</strong> In your own words, out loud first, then on paper. What you say tends to stick better than what you only read.</div></li>
+><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /></svg></span><div><strong>Sum it up in one sentence.</strong> Say it in your own words, out loud first and then on paper, since what you say tends to stick better than what you only read.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -309,11 +309,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Reading out loud can feel silly with people around. Whisper it, or take the page somewhere you won’t be overheard. A whisper still counts.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Reading out loud can feel silly with people around. Whisper it, or take the page somewhere you won’t be overheard, since a whisper still counts.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 70: Say it out loud to get it. Step 1: One paragraph, read silently once. Step 2: Out loud at half speed. Step 3: Circle where your voice catches. Step 4: Breathe, let each hard word land. Step 5: Sum it up in one sentence. How to tell it is working: Next day, from memory: your sentence, plus each circled phrase explained." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 70: Say it out loud to get it. Step 1: Read one paragraph silently once. Step 2: Then out loud at half speed. Step 3: Circle where your voice catches. Step 4: Breathe and let each hard word land. Step 5: Sum it up in one sentence. How to tell it is working: The next day, from memory, say your sentence and explain each circled phrase." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -341,10 +341,11 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Hickok G, Poeppel D. (2007). The cortical organization of speech processing. Nature Reviews Neuroscience, 8: 393-402.</li>
-          <li>Catani M, Jones DK, ffytche DH. (2005). Perisylvian language networks of the human brain. Annals of Neurology, 57(1): 8-16.</li>
-          <li>Friederici AD. (2012). The cortical language circuit. Trends in Cognitive Sciences, 16(5): 262-268.</li>
-          <li>MacLeod CM, et al. (2010). The production effect. Journal of Experimental Psychology: Learning, Memory, and Cognition, 36(3): 671-685.</li>
+          <li>Catani, M., Jones, D. K., &amp; ffytche, D. H. (2005). Perisylvian language networks of the human brain. <em>Annals of Neurology</em>, <em>57</em>(1), 8–16. <a href="https://doi.org/10.1002/ana.20319" target="_blank" rel="noopener">https://doi.org/10.1002/ana.20319</a></li>
+          <li>Friederici, A. D. (2012). The cortical language circuit: From auditory perception to sentence comprehension. <em>Trends in Cognitive Sciences</em>, <em>16</em>(5), 262–268. <a href="https://doi.org/10.1016/j.tics.2012.04.001" target="_blank" rel="noopener">https://doi.org/10.1016/j.tics.2012.04.001</a></li>
+          <li>Hickok, G., &amp; Poeppel, D. (2007). The cortical organization of speech processing. <em>Nature Reviews Neuroscience</em>, <em>8</em>(5), 393–402. <a href="https://doi.org/10.1038/nrn2113" target="_blank" rel="noopener">https://doi.org/10.1038/nrn2113</a></li>
+          <li>MacLeod, C. M., Gopie, N., Hourihan, K. L., Neary, K. R., &amp; Ozubko, J. D. (2010). The production effect: Delineation of a phenomenon. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>36</em>(3), 671–685. <a href="https://doi.org/10.1037/a0018785" target="_blank" rel="noopener">https://doi.org/10.1037/a0018785</a></li>
+          <li>Roberts, B. R. T., Hu, Z. S., Curtis, E., Bodner, G. E., McLean, D., &amp; MacLeod, C. M. (2024). Reading text aloud benefits memory but not comprehension. <em>Memory &amp; Cognition</em>, <em>52</em>(1), 57–72. <a href="https://doi.org/10.3758/s13421-023-01442-2" target="_blank" rel="noopener">https://doi.org/10.3758/s13421-023-01442-2</a></li>
       </ul>
     </div>
 

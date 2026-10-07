@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -135,11 +135,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Sixty-four minutes of raw audio</h3>
-          <p>Every Friday at seven in the morning, a new episode of Enzo and Callum’s podcast is supposed to go up: twenty-five minutes on the strange history of their town, for about forty listeners, two of them grandmothers. Enzo does the editing. The last two Fridays, nothing went up.</p>
-          <p>He gets home from school at 3:40 feeling switched off, opens the raw file, sixty-four minutes of the two of them talking over each other, and stares at the sound wave. Then the group chat, then a video, and at six he closes the laptop. The file has been open since Tuesday.</p>
-          <p>Cold water on the skin sets off a fast alarm. The breath jumps first. The body releases norepinephrine, which sharpens attention, and in studies of people sitting in cold water, dopamine, which is tied to drive, went up too. None of that makes anyone superhuman. It’s the body telling the brain to wake up and handle the moment, and a slow exhale helps keep the jolt from turning into panic.</p>
-          <p>On Thursday he showers as soon as he gets home instead of at night. For the last forty-five seconds he turns the water cold. His breath catches hard, so he slows his exhale on purpose, drops his shoulders and counts to forty-five. Then he dries off, leaves his phone in the kitchen, and is at the laptop at 4:05.</p>
-          <p>By 5:50 the hour of talk is down to twenty-seven tight minutes, with the part about the flood moved to the end. It goes up on Friday at 7:02, and Callum’s grandmother leaves the first comment.</p>
+          <p>Every Friday at seven in the morning, a new episode of Enzo and Callum’s podcast is supposed to go up. Each one is about twenty-five minutes on the strange history of their town, and it has around forty listeners, two of them grandmothers. Enzo does the editing, and for the last two Fridays nothing has gone up.</p>
+          <p>He gets home from school feeling switched off, opens the raw file, sixty-four minutes of the two of them talking over each other, and stares at the sound wave. Then he checks the group chat, watches a video and closes the laptop at six. The file has been open since Tuesday.</p>
+          <p>Cold water on the skin sets off a fast alarm in the body. Your breath jumps first, and the body releases norepinephrine, a chemical messenger that sharpens attention. In a study where people sat in cold water for an hour, dopamine, which is tied to drive, went up too, although an hour in cold water is very different from a short cold finish to a shower. It doesn’t make anyone superhuman. It’s the body telling the brain to wake up and deal with what’s in front of it, and breathing out slowly helps keep the jolt from turning into panic. The evidence that it helps focus is still thin, so it’s worth testing on yourself.</p>
+          <p>On Thursday he showers as soon as he gets home instead of at night, and for the last forty-five seconds he turns the water cold. His breath catches hard, so he slows his exhale on purpose, drops his shoulders and counts to forty-five. Then he dries off, leaves his phone in the kitchen and sits down at the laptop.</p>
+          <p>By dinner the hour of talk is down to twenty-seven tight minutes, with the part about the flood moved to the end. It goes up on Friday morning, and Callum’s grandmother leaves the first comment.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 10v3" /><path d="M6 6v11" /><path d="M10 3v18" /><path d="M14 8v7" /><path d="M18 5v13" /><path d="M22 10v3" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">An hour of raw audio, open since Tuesday, nothing posted</span></li>
+><path d="M2 10v3" /><path d="M6 6v11" /><path d="M10 3v18" /><path d="M14 8v7" /><path d="M18 5v13" /><path d="M22 10v3" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">The raw audio has been open since Tuesday, and nothing has gone up.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shower-head"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m4 4 2.5 2.5" /><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" /><path d="M15 5 5 15" /><path d="M14 17v.01" /><path d="M10 16v.01" /><path d="M13 13v.01" /><path d="M16 10v.01" /><path d="M11 20v.01" /><path d="M17 14v.01" /><path d="M20 11v.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A shower after school, the last forty-five seconds cold</span></li>
+><path d="m4 4 2.5 2.5" /><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" /><path d="M15 5 5 15" /><path d="M14 17v.01" /><path d="M10 16v.01" /><path d="M13 13v.01" /><path d="M16 10v.01" /><path d="M11 20v.01" /><path d="M17 14v.01" /><path d="M20 11v.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He showers after school and turns the water cold for the last forty-five seconds.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-mic"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,20 +177,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">At the laptop by 4:05, the episode up Friday at 7:02</span></li>
+><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">By dinner the episode is cut, and it goes up on Friday.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>The first ten seconds</h3>
-        <p class="ns-demo-intro">You need a sink, cool water from the tap and a towel. Nothing colder than the tap.</p>
+        <p class="ns-demo-intro">You’ll need a sink, cool water from the tap and a towel. Don’t use anything colder than the tap.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Cup cool tap water in your hands and splash your face twice, or press a cool, wet washcloth to it for a few seconds.</li>
-            <li>Notice the first moment: does your breath catch or come in as a quick gasp? Do your shoulders rise?</li>
+            <li>Notice the first moment, whether your breath catches or comes in as a quick gasp and whether your shoulders rise.</li>
             <li>Now slow your exhale on purpose and let your shoulders drop. Count your breaths until your breathing feels normal again.</li>
-            <li>Dry off, wait a minute, and do it once more. Count again.</li>
+            <li>Dry off, wait a minute and do it once more, counting again.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,7 +204,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Cool water on your face usually brings a small jolt the first time: a catch in the breath, a lift in the shoulders, a wider-awake feeling. That’s a small dose of the cold shock response, the same alarm a cool finish to a shower sets off more strongly. The second round often settles in fewer breaths, since you know what’s coming and the slow exhale has had one practice run.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Cool water on your face usually brings a small jolt the first time, like a catch in the breath, a lift in the shoulders or a wider-awake feeling. That’s a small dose of the cold shock response, the same alarm a cool finish to a shower sets off more strongly. The second round often settles in fewer breaths, because you know what’s coming and the slow exhale has had one practice run.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m4 4 2.5 2.5" /><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" /><path d="M15 5 5 15" /><path d="M14 17v.01" /><path d="M10 16v.01" /><path d="M13 13v.01" /><path d="M16 10v.01" /><path d="M11 20v.01" /><path d="M17 14v.01" /><path d="M20 11v.01" /></svg></span><div><strong>Finish an ordinary shower cool.</strong> Wash as usual, then turn the water cool for the last thirty to sixty seconds. Uncomfortable is the target, never numb, and longer isn’t better.</div></li>
+><path d="m4 4 2.5 2.5" /><path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" /><path d="M15 5 5 15" /><path d="M14 17v.01" /><path d="M10 16v.01" /><path d="M13 13v.01" /><path d="M16 10v.01" /><path d="M11 20v.01" /><path d="M17 14v.01" /><path d="M20 11v.01" /></svg></span><div><strong>Finish an ordinary shower cool.</strong> Wash as usual, then turn the water cool for the last thirty to sixty seconds. Aim for uncomfortable but never numb, and remember that longer isn’t better.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-wind"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12.8 19.6A2 2 0 1 0 14 16H2" /><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" /><path d="M9.8 4.4A2 2 0 1 1 11 8H2" /></svg></span><div><strong>Slow the exhale when your breath jumps.</strong> The catch in your breath comes first. Breathe out slowly, drop your shoulders, and stay until your breathing slows down.</div></li>
+><path d="M12.8 19.6A2 2 0 1 0 14 16H2" /><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" /><path d="M9.8 4.4A2 2 0 1 1 11 8H2" /></svg></span><div><strong>Slow the exhale when your breath jumps.</strong> The catch in your breath comes first. Breathe out slowly, drop your shoulders and stay until your breathing slows down.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sunrise"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><div><strong>Morning or early afternoon only.</strong> Keep it at least four hours before bed, since the alertness can push your bedtime later.</div></li>
+><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><div><strong>Keep it to the morning or early afternoon.</strong> Do it at least four hours before bed, since the alertness can push your bedtime later.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-notebook-pen"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Track what happens after.</strong> Note your focus, your mood and whether you started the thing you’d been putting off. Compare days with the cool finish and days without.</div></li>
+><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Track what happens after.</strong> Write down your focus, your mood and whether you started the thing you’d been putting off, and compare days with the cool finish to days without.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -274,7 +274,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, write down how many seconds you did, how alert you feel thirty minutes later from 0 to 10, and whether you started what you’d been avoiding. Compare the days with the cool finish against the days without.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, write down how many seconds you did, how alert you feel thirty minutes later from 0 to 10, and whether you started what you’d been avoiding. Then compare the days with the cool finish to the days without.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Your breath gets fast and you want out right away. Slow the exhale and drop your shoulders first, and if you feel dizzy or panicky, turn the water warm and stop for the day.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> If your breath gets fast and you want out right away, slow the exhale and drop your shoulders first. If you feel dizzy or panicky, turn the water warm and stop for the day.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,11 +298,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Skip this if you have a heart, blood pressure or circulation condition, or any other medical concern, and ask a parent or doctor first if you’re not sure. Never ice baths, cold plunges or open water.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Skip this if you have a heart, blood pressure or circulation condition, or any other medical concern, and ask a parent or doctor first if you’re not sure. Stay away from ice baths, cold plunges and open water.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 29: The cool finish. Step 1: Last 30 to 60 seconds cool, never numb. Step 2: Slow exhale, shoulders down. Step 3: Morning or early afternoon only. Step 4: Note focus, mood and what you started. How to tell it is working: Rate alertness 30 minutes later. Compare cool-finish days with ordinary ones." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 29: The cool finish. Step 1: Last 30 to 60 seconds cool, never numb. Step 2: Slow exhale, shoulders down. Step 3: Morning or early afternoon only. Step 4: Note focus, mood and what you started. How to tell it is working: Rate your alertness 30 minutes later on cool-finish days and ordinary days." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -330,9 +330,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Šrámek, P., Šimečková, M., Janský, L., et al. (2000). "Human physiological responses to immersion into water of different temperatures." European Journal of Applied Physiology, 81(5): 436-442.</li>
-          <li>Tipton, M. J., Collier, N., Massey, H., Corbett, J., & Harper, M. (2017). "Cold water immersion: kill or cure?" Experimental Physiology, 102(11): 1335-1355.</li>
-          <li>Buijze, G. A., Sierevelt, I. N., et al. (2016). "The Effect of Cold Showering on Health and Work: A Randomized Controlled Trial." PLOS ONE, 11(9): e0161749.</li>
+          <li>Buijze, G. A., Sierevelt, I. N., van der Heijden, B. C. J. M., Dijkgraaf, M. G., &amp; Frings-Dresen, M. H. W. (2016). The effect of cold showering on health and work: A randomized controlled trial. <em>PLOS ONE</em>, <em>11</em>(9), Article e0161749. <a href="https://doi.org/10.1371/journal.pone.0161749" target="_blank" rel="noopener">https://doi.org/10.1371/journal.pone.0161749</a></li>
+          <li>Šrámek, P., Šimečková, M., Janský, L., Šavlíková, J., &amp; Vybíral, S. (2000). Human physiological responses to immersion into water of different temperatures. <em>European Journal of Applied Physiology</em>, <em>81</em>(5), 436–442. <a href="https://doi.org/10.1007/s004210050065" target="_blank" rel="noopener">https://doi.org/10.1007/s004210050065</a></li>
+          <li>Tipton, M. J., Collier, N., Massey, H., Corbett, J., &amp; Harper, M. (2017). Cold water immersion: Kill or cure? <em>Experimental Physiology</em>, <em>102</em>(11), 1335–1355. <a href="https://doi.org/10.1113/EP086283" target="_blank" rel="noopener">https://doi.org/10.1113/EP086283</a></li>
       </ul>
     </div>
 

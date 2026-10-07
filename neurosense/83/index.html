@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,9 +111,9 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Matthews et al. / Tye (2016), Cell: specific dorsal raphe neurons encode the experience of social isolation and drive social seeking.</li>
-          <li>So loneliness can register like a need state, heavy and urgent at once.</li>
-          <li>The trap is that the longer you avoid contact, the more the brain scans for threat instead of welcome.</li>
+          <li>Matthews et al. (2016), Cell: in mice, a day alone made dopamine neurons in the dorsal raphe, a brainstem area, more responsive to company, and turning them on made mice seek others.</li>
+          <li>In people, loneliness may work in a similar way, like a need that feels heavy and urgent at once.</li>
+          <li>The trap is that loneliness tends to come with watching for threat more than welcome, which can make the first move feel harder.</li>
           <li>Reaching out feeling hard does not mean you are broken.</li>
         </ul>
         <div class="ep-protocol">
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The bottom row of the bleachers</h3>
-          <p>The gym doors have narrow windows, and twice this week Valeria has stood at them watching practice, then walked to the bus instead of going in. She broke her ankle in the second game of the season. Most of the girls in there have played with her since fifth grade.</p>
+          <p>The gym doors have narrow windows, and twice this week Valeria has stood at them watching practice and then walked to the bus instead of going in. She broke her ankle in the second game of the season, and most of the girls in there have played with her since fifth grade.</p>
           <p>At first everyone signed her cast. Then the season kept going without her, with bus rides she wasn’t on and jokes she didn’t get. Sitting on the bench in a cast felt worse than staying home, so she stopped going to games, and in December she muted the team chat.</p>
-          <p>After enough time apart, missing people can start to feel like a real need, heavy and urgent at once. And the longer she stays away, the more her brain may scan for rejection before it notices welcome, so the first move looks bigger every day she waits. That doesn’t mean she’s broken. It means the first move has to be smaller than the resistance.</p>
-          <p>On Wednesday she goes in, but not over to the team. She sits on the bottom row of the bleachers with her boot up and her chemistry homework open, close enough to hear the drills, with nothing she has to say. At the water break, Bree jogs over. “Where have you been?” Valeria almost says “Just busy.” Instead she says, “It’s been lonely, sitting out.”</p>
-          <p>Bree sits down next to her for the rest of the break and tells her the new freshman keeps dribbling off her own foot. Before practice ends, Coach asks if Valeria will keep the shot chart on Friday. On Friday she’s at the end of the bench with the clipboard on her knee, and the team chat is unmuted.</p>
+          <p>In mice, a specific group of neurons becomes active after time alone and pushes the animal to seek out others, a little like hunger pushes it to find food. That may be part of why loneliness can feel heavy and urgent at the same time. The longer she stays away, the more her brain may scan for rejection before it notices welcome, so the first step looks bigger every day she waits. That doesn’t mean she’s broken. It means the first step has to be smaller than the resistance.</p>
+          <p>On Wednesday she goes in, but not over to the team. She sits on the bottom row of the bleachers with her boot up and her chemistry homework open, close enough to hear the drills, with nothing she has to say. At the water break, Bree jogs over and asks where she has been. Valeria almost says she’s been busy. Instead she says, “It’s been lonely, sitting out.”</p>
+          <p>Bree sits down next to her for the rest of the break and tells her the new freshman keeps dribbling off her own foot. Before practice ends, the coach asks if Valeria will keep the shot chart on Friday. On Friday she’s at the end of the bench with the clipboard on her knee, and the team chat is unmuted.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" /><path d="M2 21h20" /><path d="M9 12h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Twice at the gym door windows, then the bus instead</span></li>
+><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" /><path d="M2 21h20" /><path d="M9 12h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Twice she watches practice through the door window and then takes the bus.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-message-circle"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">The bottom row of the bleachers, then one honest sentence</span></li>
+><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She sits on the bottom row of the bleachers and says one honest sentence.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-clipboard-list"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,19 +178,19 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The shot chart at Friday’s game, and the team chat back on</span></li>
+><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">On Friday she keeps the shot chart, and the team chat is back on.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
         <h3>Count the welcomes</h3>
-        <p class="ns-demo-intro">Do this today somewhere people you know will be, like the kitchen when your family’s around or the stands at a practice. You need a scrap of paper and the counter here, and nothing asks you to start a conversation.</p>
+        <p class="ns-demo-intro">Do this today somewhere people you know will be, like the kitchen when your family’s around or the stands at a practice. You’ll need a scrap of paper and the counter below, and nothing here asks you to start a conversation.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Before you go, write down your guess: how many small welcomes will you get in ten minutes, and will the room feel cold, neutral or friendly?</li>
-            <li>Sit near the people for ten minutes. You don’t have to talk, and if someone talks to you, just answer.</li>
-            <li>Tap the counter each time you notice a small welcome: a nod, a smile, someone moving a bag, a question, a “hey.”</li>
+            <li>Before you go, write down your guess of how many small welcomes you’ll get in ten minutes, and whether the room will feel cold, neutral or friendly.</li>
+            <li>Sit near the people for ten minutes. You don’t have to talk, and if someone talks to you, you only have to answer.</li>
+            <li>Tap the counter each time you notice a small welcome, like a nod, a smile, someone moving a bag, a question or a “hey.”</li>
             <li>Afterward, compare the count and the feel of the room with your guess.</li>
           </ol>
           <div class="ns-demo-side">
@@ -208,7 +208,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The guess you wrote down often runs colder than what happens, especially after a stretch of keeping to yourself. That gap is the scan from The Science above: after time alone, the brain may check for rejection before it notices welcome. Sitting near people is contact without the pressure to perform, and it gives that scan something real to measure.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The guess you wrote down often runs colder than what happens, especially after a stretch of keeping to yourself. After time alone, the brain may scan for rejection before it notices welcome. Sitting near people is contact without the pressure to perform, and it gives that scan something real to measure.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -228,7 +228,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3" /><path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z" /><path d="M4 18v2" /><path d="M20 18v2" /><path d="M12 4v9" /></svg></span><div><strong>Sit near people first.</strong> Go where your people are without having to talk: the stands at practice, a table near your old group, the couch while your family watches something. Ten minutes counts.</div></li>
+><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3" /><path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z" /><path d="M4 18v2" /><path d="M20 18v2" /><path d="M12 4v9" /></svg></span><div><strong>Sit near people first.</strong> Go where your people are without having to talk, like the stands at practice, a table near your old group or the couch while your family watches something. Ten minutes counts.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-message-circle"
   xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +240,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg></span><div><strong>Send one simple message.</strong> A question that’s easy to answer, about something real: “Is the pasta dinner still Thursday?” No explaining where you’ve been.</div></li>
+><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg></span><div><strong>Send one simple message.</strong> Ask an easy question about something real, like “Is the pasta dinner still Thursday?” You don’t need to explain where you’ve been.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
   xmlns="http://www.w3.org/2000/svg"
@@ -252,7 +252,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Take a short walk with someone safe.</strong> To the bus or around the block. Side by side is often easier than face to face.</div></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><div><strong>Take a short walk with someone safe.</strong> Walk to the bus or around the block, since side by side is often easier than face to face.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-message-square"
   xmlns="http://www.w3.org/2000/svg"
@@ -290,7 +290,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Each day, mark whether you made a reach and rate how hard it felt, 0 to 10. After a week, see whether the same kind of reach takes less effort than it did at the start.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Each day, mark whether you made a reach and rate how hard it felt from 0 to 10. After a week, see whether the same kind of reach takes less effort than it did at the start.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -318,7 +318,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 83: One small reach at a time. Step 1: Sit near people before you talk. Step 2: One simple message, no explaining. Step 3: A short walk with someone safe. Step 4: One honest sentence instead of “fine”. Step 5: One small reach a day. How to tell it is working: Rate each reach 0 to 10. After a week, see if the same reach feels lighter." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 83: One small reach at a time. Step 1: Sit near people before you talk. Step 2: One simple message, no explaining. Step 3: A short walk with someone safe. Step 4: One honest sentence instead of “fine”. Step 5: One small reach a day. How to tell it is working: Rate each reach from 0 to 10, and see if the same reach feels lighter after a week." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -346,7 +346,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Matthews GA, et al. (Tye KM). Dorsal raphe dopamine neurons represent the experience of social isolation. Cell. 2016;164(4):617-631.</li>
+          <li>Cacioppo, J. T., &amp; Hawkley, L. C. (2009). Perceived social isolation and cognition. <em>Trends in Cognitive Sciences</em>, <em>13</em>(10), 447–454. <a href="https://doi.org/10.1016/j.tics.2009.06.005" target="_blank" rel="noopener">https://doi.org/10.1016/j.tics.2009.06.005</a></li>
+          <li>Matthews, G. A., Nieh, E. H., Vander Weele, C. M., Halbert, S. A., Pradhan, R. V., Yosafat, A. S., Glober, G. F., Izadmehr, E. M., Thomas, R. E., Lacy, G. D., Wildes, C. P., Ungless, M. A., &amp; Tye, K. M. (2016). Dorsal raphe dopamine neurons represent the experience of social isolation. <em>Cell</em>, <em>164</em>(4), 617–631. <a href="https://doi.org/10.1016/j.cell.2015.12.040" target="_blank" rel="noopener">https://doi.org/10.1016/j.cell.2015.12.040</a></li>
       </ul>
     </div>
 

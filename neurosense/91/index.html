@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,8 +111,8 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Saxe and Kanwisher (2003), NeuroImage: the temporoparietal junction is a specialized hub for theory of mind, tracking that others know and want different things.</li>
-          <li>When that hub goes quiet, the brain treats your own view as the entire truth.</li>
+          <li>Saxe and Kanwisher (2003), NeuroImage: in brain scans, the temporoparietal junction responded most when adults read about what a character believed or wanted.</li>
+          <li>Seeing their side takes effort; skip it, and your own view can feel like the entire truth.</li>
           <li>So the fight stops being about the problem and starts being about who is right.</li>
           <li>Feeling stuck and sure is a skill gone quiet, not stubbornness.</li>
         </ul>
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Two tickets and a seventieth birthday</h3>
-          <p>The two tickets have been in Lucas’s phone since June, ninety dollars of summer-job money for Saturday night. It’s the band he and Andre have played on every bus ride since eighth grade. He texted Andre “got us tickets,” nothing else.</p>
-          <p>At lunch Thursday, Andre says he can’t go: his grandma’s 70th birthday dinner moved to Saturday. Lucas hears bailing; Andre hears Lucas making a scene about a family party. They leave lunch in opposite directions, and that night Lucas types “forget it, I’ll take someone who actually shows up,” his thumb over send.</p>
-          <p>Near the back of the brain, the temporoparietal junction tracks the fact that other people know and want different things. That takes effort. When it goes quiet, your own view feels like the entire truth, and the fight stops being about Saturday and turns into who’s right.</p>
-          <p>He deletes the text and asks himself one real question: what does this look like from Andre’s side? Then he calls and says it in three parts. “What I know is you can’t come, and I paid for both tickets. What I’m assuming is you think that’s no big deal. What you might be seeing is me making a scene about your grandma.” Andre goes quiet. “Wait. You paid? I thought your cousin got them free.”</p>
-          <p>In May he’d said his cousin at the venue might get extras. They fell through, and he never mentioned it. One sentence in his story changes: “he’s bailing on me” becomes “he thought it cost me nothing.” Andre finds a buyer at face value within the hour, and on Saturday, between songs, Lucas gets a video of Andre’s grandma blowing out candles: “tell them to play the slow one.”</p>
+          <p>The two tickets have been in Lucas’s phone since June, ninety dollars of summer-job money for Saturday night. It’s the band he and Reuben have played on every bus ride since eighth grade, and when he bought them he texted Reuben “got us tickets” and nothing else.</p>
+          <p>At lunch on Thursday, Reuben says he can’t go, because his grandma’s seventieth birthday dinner moved to Saturday. Lucas hears him bailing, and Reuben hears Lucas making a scene about a family party. They leave lunch in opposite directions, and that night Lucas types “forget it, I’ll take someone who actually shows up” with his thumb over send.</p>
+          <p>Near the back of the brain, an area called the temporoparietal junction keeps track of the fact that other people know and want different things than you do. That takes effort. Without that effort, your own view can feel like the whole truth, and a fight stops being about Saturday and turns into a contest over who’s right.</p>
+          <p>He deletes the text and asks himself one real question, which is what this looks like from Reuben’s side. Then he calls and says it in three parts. “What I know is you can’t come, and I paid for both tickets. What I’m assuming is you think that’s no big deal. What you might be seeing is me making a scene about your grandma.” Reuben goes quiet. “Wait, you paid? I thought your cousin got them free.”</p>
+          <p>Back in May, Lucas had said his cousin at the venue might get extras, and when that fell through he never mentioned it. One sentence in his story changes, from “he’s bailing on me” to “he thought it cost me nothing.” Reuben finds a buyer at face value within the hour, and on Saturday, between songs, Lucas gets a video of Reuben’s grandma blowing out her candles, with the message “tell them to play the slow one.”</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A cafeteria fight, then “forget it” typed with his thumb over send</span></li>
+><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">After a fight at lunch, he types “forget it” with his thumb over send.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-phone-call"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13 2a9 9 0 0 1 9 9" /><path d="M13 6a5 5 0 0 1 5 5" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">One question to himself, then three parts out loud on a call</span></li>
+><path d="M13 2a9 9 0 0 1 9 9" /><path d="M13 6a5 5 0 0 1 5 5" /><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He asks himself one real question, then says it in three parts on a call.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-ticket"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,20 +178,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M13 5v2" /><path d="M13 17v2" /><path d="M13 11v2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Andre thought the tickets were free, then finds a buyer within the hour</span></li>
+><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M13 5v2" /><path d="M13 17v2" /><path d="M13 11v2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Reuben thought the tickets were free, and he finds a buyer within the hour.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>The forehead E</h3>
-        <p class="ns-demo-intro">You need a finger, a pen and a scrap of paper. Do step 1 before you read the rest.</p>
+        <p class="ns-demo-intro">You’ll need a finger, a pen and a scrap of paper. Do the first step before you read the rest.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>With one finger, quickly trace a capital E on your forehead. Don’t plan it.</li>
-            <li>Now work out which way it faced. Would it read correctly to you, from the inside, or to someone standing in front of you?</li>
-            <li>Think of a disagreement that’s still bugging you. Write the one sentence you’d use to tell the story, like “She ignored what I said.”</li>
-            <li>Under it, write three short lines: what I know (only what I saw or heard), what I’m assuming, and what they might be seeing.</li>
+            <li>With one finger, quickly trace a capital E on your forehead without planning it.</li>
+            <li>Now work out which way it faced, and whether it would read correctly to you from the inside or to someone standing in front of you.</li>
+            <li>Think of a disagreement that’s still bugging you, and write the one sentence you’d use to tell the story, like “She ignored what I said.”</li>
+            <li>Under it, write three short lines, one for what you know from what you saw or heard, one for what you’re assuming and one for what they might be seeing.</li>
             <li>Read your first sentence again, and rewrite any part of it that no longer fits.</li>
           </ol>
         </div>
@@ -206,14 +206,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> If your E reads right to you, it’s backward for everyone facing you, and if it reads right to them, you had to flip it in your head first. Either way, seeing it from the other side took a separate step that you had to choose. The three lines are that same step, slowed down. If even one word of your first sentence changed, you put their map next to yours.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> If your E reads correctly to you, it’s backward for everyone facing you, and if it reads correctly to them, you had to flip it in your head first. Either way, seeing it from the other side took a separate step that you had to choose. The three lines are that same step, slowed down, and if even one word of your first sentence changed, you put their view next to yours.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Check the other map first</h3>
-          <p class="ns-plan-intro">Use it the next time you feel completely sure the other person is wrong.</p>
+          <p class="ns-plan-intro">Save it for the next time you feel completely sure the other person is wrong.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-pause"
@@ -226,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><div><strong>Catch the sure feeling.</strong> When your next line is already loaded and you’re certain they’re being impossible on purpose, treat that certainty as the signal. Stop before you send it or say it.</div></li>
+><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg></span><div><strong>Catch the sure feeling.</strong> When your next line is already loaded and you’re certain they’re being impossible on purpose, treat that certainty as the signal and stop before you send it or say it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-circle-help"
   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask one real question.</strong> What does this look like from their side? Ask it as a question you don’t know the answer to, not as a setup for your next point.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask one real question.</strong> Ask yourself what this looks like from their side, as a question you don’t know the answer to, not as a setup for your next point.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-list-checks"
   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></svg></span><div><strong>Say it in three parts.</strong> What I know (only what you saw or heard), what I’m assuming, and what you might be seeing. Say it out loud, so they can fix the part you got wrong.</div></li>
+><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></svg></span><div><strong>Say it in three parts.</strong> Say what you know from what you saw or heard, what you’re assuming and what they might be seeing. Say it out loud, so they can fix the part you got wrong.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-map"
   xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +288,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For the next three disagreements, write your one-line version of the story before the check and again after it. If the after line keeps coming out different, and the two of you get back to the actual problem sooner, it’s working.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For the next three disagreements, write your one-line version of the story before the check and again after it. If the line after keeps coming out different, and the two of you get back to the problem itself sooner, the check is worth keeping.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -300,11 +300,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> In the moment, the three parts can sound like a script, and the other person may roll their eyes. Keep the words plain and short. If you’re too angry to mean the question, say you need ten minutes, and come back to it.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> In the moment, the three parts can sound like a script, and the other person may roll their eyes. Keep the words plain and short, and if you’re too angry to mean the question, say you need ten minutes and come back to it.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 91: Check the other map first. Step 1: Catch the sure feeling, and stop. Step 2: Ask: how does it look from their side?. Step 3: I know, I’m assuming, you might see. Step 4: Their map next to yours, no need to agree. Step 5: Did one sentence in your story change?. How to tell it is working: Write your one-line story before and after the check. Did a sentence change?" width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 91: Check the other map first. Step 1: Catch the sure feeling and stop. Step 2: Ask how it looks from their side. Step 3: What I know, assume, and you might see. Step 4: Their map next to yours, no need to agree. Step 5: Did one sentence in your story change?. How to tell it is working: Write your one-line story before and after the check, and see if a sentence changed." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -332,7 +332,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Saxe R, Kanwisher N. People thinking about thinking people: the role of the temporo-parietal junction in theory of mind. NeuroImage. 2003;19(4):1835-1842.</li>
+          <li>Saxe, R., &amp; Kanwisher, N. (2003). People thinking about thinking people: The role of the temporo-parietal junction in "theory of mind." <em>NeuroImage</em>, <em>19</em>(4), 1835–1842. <a href="https://doi.org/10.1016/S1053-8119(03)00230-1" target="_blank" rel="noopener">https://doi.org/10.1016/S1053-8119(03)00230-1</a></li>
+          <li>Young, L., &amp; Saxe, R. (2009). An fMRI investigation of spontaneous mental state inference for moral judgment. <em>Journal of Cognitive Neuroscience</em>, <em>21</em>(7), 1396–1405. <a href="https://doi.org/10.1162/jocn.2009.21137" target="_blank" rel="noopener">https://doi.org/10.1162/jocn.2009.21137</a></li>
       </ul>
     </div>
 

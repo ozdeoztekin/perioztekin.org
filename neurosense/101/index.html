@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,14 +111,14 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Zeitzer et al. (2000, J Physiol): the human circadian clock is exquisitely sensitive to light, and evening light both suppresses melatonin and shifts the clock later.</li>
-          <li>Czeisler et al. (1989, Science): properly timed bright light can produce strong resetting of the human circadian pacemaker.</li>
+          <li>Zeitzer et al. (2000), Journal of Physiology: in 23 young adults in a lab, late-evening light lowered melatonin and shifted the body clock later, and room light had about half the effect of very bright light.</li>
+          <li>Czeisler et al. (1989), Science: in lab trials, five hours of bright light a day for three days, given at the right time, strongly reset the human body clock.</li>
           <li>Special retinal cells (melanopsin-containing) feed light information to the brain's master clock, the suprachiasmatic nucleus, which sets the timing of sleep.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
           <ul class="ep-list">
-          <li>Get outdoor-level light within an hour of waking, ideally 5 to 10 minutes or more.</li>
+          <li>Get outdoor-level light within an hour of waking, ideally 5 to 10 minutes or more, as a rough guide.</li>
           <li>Cut bright and blue-heavy light in the last hour before bed.</li>
           <li>Hold a consistent wake time seven days a week.</li>
           <li>Shift your schedule in small steps, not all at once.</li>
@@ -135,11 +135,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Still on California time</h3>
-          <p>At 10:30 at night in New Jersey, it’s 7:30 in San Jose, and the group call is just getting loud. Nikhil’s family moved east in August. His old friends still call every night, and he talks to them from bed until about midnight, overhead light on, laptop at full brightness.</p>
-          <p>Then he lies in the dark, eyes closed, wide awake until 1:30. His 6:30 alarm feels like 3:30, and he goes from a dark room straight to his mom’s car. Marcus next door walks to school at 7:10 and has asked Nikhil twice to come along. Both times Nikhil was still in bed.</p>
-          <p>When the family moved, the kitchen clock jumped three hours ahead. The clock in Nikhil’s brain didn’t. It’s set by light, not willpower: special cells in the eyes tell it whether it’s day or night, and they care most about bright light. Morning light pulls it earlier. Bright light late at night holds back melatonin, the body’s sleep signal, and drags it later. A dim morning and a bright midnight have kept him on California time.</p>
-          <p>He picks one wake time, 6:30, and keeps it on Saturdays. He eats breakfast on the front steps, ten minutes outside before anything else, even on gray days. The call moves to 8:30, which is 5:30 for his friends. In the last hour he trades the overhead light for the desk lamp and dims the laptop as far as it goes. Every few nights, bedtime moves fifteen minutes earlier.</p>
-          <p>By the end of the second week he’s yawning at 10:15 without trying and asleep before 11 most nights. On Thursday, when Marcus comes down his driveway at 7:10, Nikhil is already on the steps with his backpack and half a bagel.</p>
+          <p>At 10:30 at night in New Jersey, it’s 7:30 in San Jose, and the group call is starting to get loud. Nikhil’s family moved east in August. His old friends still call every night, and he talks to them from bed until about midnight, with the overhead light on and his laptop at full brightness.</p>
+          <p>Then he lies in the dark with his eyes closed, wide awake until after one. His alarm feels like the middle of the night, and he goes straight from a dark room to his mom’s car. Rafi next door walks to school early and has asked Nikhil twice to come along, and both times Nikhil was still in bed.</p>
+          <p>When the family moved, the kitchen clock jumped three hours ahead, but the clock in Nikhil’s brain didn’t. That clock is set by light, not willpower. Special cells in the eyes tell it whether it’s day or night, and they respond most to bright light. Morning light pulls the clock earlier, and bright light late at night holds back melatonin, the body’s sleep signal, and drags the clock later. A dim morning and a bright midnight have kept him on California time.</p>
+          <p>So he picks one wake time and keeps it on Saturdays too. He eats breakfast on the front steps, ten minutes outside before anything else, even on gray days. The call moves two hours earlier, which is late afternoon for his friends. In the last hour before bed he trades the overhead light for the desk lamp and dims the laptop as far as it goes, and every few nights he moves his bedtime fifteen minutes earlier.</p>
+          <p>By the end of the second week he’s yawning by ten without trying and asleep soon after most nights. On Thursday, when Rafi comes down his driveway, Nikhil is already on the steps with his backpack and half a bagel.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Three weeks after the move, still awake at 1:30 every night</span></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Three weeks after the move, he’s still awake at 1:30 every night.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sunrise"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Breakfast on the steps, the call earlier, a desk lamp at night</span></li>
+><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He eats breakfast outside, moves the call earlier and uses a desk lamp at night.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-footprints"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,21 +177,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Yawning by 10:15, and on the steps when Marcus walks by</span></li>
+><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" /><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" /><path d="M16 17h4" /><path d="M4 13h4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">By week two he’s sleepy by ten and waiting on the steps when Rafi walks by.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; one day</p>
         <h3>The light log</h3>
-        <p class="ns-demo-intro">For one ordinary day, keep track of the light your eyes get. You need a pen and a scrap of paper, or a note on your phone.</p>
+        <p class="ns-demo-intro">For one ordinary day, keep track of the light your eyes get. You’ll need a pen and a scrap of paper or a note on your phone.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Within an hour of waking, write down where you are and what’s lighting it: a dark room, ceiling lights, a window, or outside.</li>
-            <li>Sometime that morning, step outside or open a window for a minute, without looking at the sun. Notice how hard you squint, and how dim the room looks for a few seconds when you come back in.</li>
-            <li>Add a line at lunch, after school and at dinner. A word or two is enough.</li>
-            <li>In the last hour before bed, list every light on you: ceiling lights, lamps and screens, and how bright each one is set.</li>
-            <li>Circle your first hour and your last hour. Which one got more light?</li>
+            <li>Within an hour of waking, write down where you are and what’s lighting it, whether that’s a dark room, ceiling lights, a window or the outdoors.</li>
+            <li>Sometime that morning, step outside or open a window for a minute without looking at the sun. Notice how hard you squint, and how dim the room looks for a few seconds when you come back in.</li>
+            <li>Add a line at lunch, after school and at dinner, and a word or two is enough.</li>
+            <li>In the last hour before bed, list every light on you, including ceiling lights, lamps and screens, and how bright each one is set.</li>
+            <li>Circle your first hour and your last hour, and notice which one got more light.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -205,7 +205,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Put the two circled hours side by side, and the first is often one of the dimmest parts of the day while the last is one of the brightest, which is the reverse of what the clock needs. The squint when you step outside shows what the protocol means by outdoor-level light, and the cells that set your clock care most about bright light. Morning light pulls the clock earlier and late bright light drags it later, so your log shows which way your clock is being pushed.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Side by side, the first hour is often one of the dimmest parts of the day, and the last is lit by lamps and screens at an hour when even room light pushes the clock later, the reverse of what the clock needs. The squint when you step outside shows what outdoor light really means, and the cells that set your clock respond most to bright light. Morning light pulls the clock earlier and late bright light drags it later, so your log shows which way your clock is being pushed.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -225,7 +225,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><div><strong>Get outside within an hour of waking.</strong> Five to ten minutes or more: breakfast on the steps, part of the walk to school, a few minutes in the yard. Gray days count. On dark mornings, turn on the brightest lights you have.</div></li>
+><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><div><strong>Get outside within an hour of waking.</strong> Spend five to ten minutes or more outside, like eating breakfast on the steps, walking part of the way to school or standing in the yard. Gray days count, and on dark mornings, turn on the brightest lights you have.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-alarm-clock"
   xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +237,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></svg></span><div><strong>Keep one wake time, all week.</strong> Pick a time you can keep every day, weekends included. A steady wake time is what stops the clock from drifting.</div></li>
+><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></svg></span><div><strong>Keep one wake time, all week.</strong> Pick a time you can keep every day, weekends included, since a steady wake time is what stops the clock from drifting.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-lamp"
   xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +249,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 12v6" /><path d="M4.077 10.615A1 1 0 0 0 5 12h14a1 1 0 0 0 .923-1.385l-3.077-7.384A2 2 0 0 0 15 2H9a2 2 0 0 0-1.846 1.23Z" /><path d="M8 20a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z" /></svg></span><div><strong>Dim the last hour.</strong> Overhead lights off, a lamp on low, screens turned down as far as they go. Move bright, late things, like video calls or games, earlier in the evening.</div></li>
+><path d="M12 12v6" /><path d="M4.077 10.615A1 1 0 0 0 5 12h14a1 1 0 0 0 .923-1.385l-3.077-7.384A2 2 0 0 0 15 2H9a2 2 0 0 0-1.846 1.23Z" /><path d="M8 20a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z" /></svg></span><div><strong>Dim the last hour.</strong> Turn off the overhead lights, keep a lamp on low and turn your screens down as far as they go. Move bright, late things like video calls or games earlier in the evening.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-moon"
   xmlns="http://www.w3.org/2000/svg"
@@ -261,7 +261,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Move bedtime 15 minutes at a time.</strong> Go to bed fifteen minutes earlier and keep it for a few nights until it sticks. Then move it again.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Move bedtime 15 minutes at a time.</strong> Go to bed fifteen minutes earlier and keep it for a few nights until it sticks, then move it again.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -275,7 +275,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Each night, jot down roughly when you start yawning and when you fall asleep. Over about two weeks, if the yawning starts earlier on its own and the alarm stops feeling like the middle of the night, it’s working.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Each night, write down roughly when you start yawning and when you fall asleep. If over about two weeks the yawning starts earlier on its own and the alarm stops feeling like the middle of the night, your clock is shifting.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -287,7 +287,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Saturday is the hard one. Sleeping in feels like a reward, but the clock drifts back later when you do. Get up at your usual time, get outside first, and keep the rest of the day easy.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Saturday is the hard one, because sleeping in feels like a reward, but the clock drifts back later when you do. Get up at your usual time, get outside first and keep the rest of the day easy.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -299,11 +299,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> If you still lie awake for a long time most nights after a few weeks, or feel exhausted even after full nights, talk to a parent and a doctor. Ongoing trouble sleeping deserves a real evaluation.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> If you still lie awake for a long time most nights after a few weeks, or feel exhausted even after full nights, talk to a parent and a doctor, since ongoing trouble sleeping deserves a real checkup.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 101: Set your clock with light. Step 1: Outside within an hour of waking. Step 2: One wake time, weekends included. Step 3: Lights and screens low in the last hour. Step 4: Bedtime 15 minutes earlier at a time. How to tell it is working: Note when you start yawning. Over two weeks, see if it comes earlier on its own." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 101: Set your clock with light. Step 1: Outside within an hour of waking. Step 2: One wake time, weekends included. Step 3: Lights and screens low in the last hour. Step 4: Bedtime 15 minutes earlier at a time. How to tell it is working: Note when you start yawning, and see if it comes earlier over two weeks." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -331,8 +331,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Zeitzer JM, Dijk DJ, Kronauer RE, Brown EN, Czeisler CA. (2000). Sensitivity of the human circadian pacemaker to nocturnal light: melatonin phase resetting and suppression. Journal of Physiology, 526(3), 695-702.</li>
-          <li>Czeisler CA, Kronauer RE, Allan JS, et al. (1989). Bright light induction of strong (type 0) resetting of the human circadian pacemaker. Science, 244(4910), 1328-1333.</li>
+          <li>Czeisler, C. A., Kronauer, R. E., Allan, J. S., Duffy, J. F., Jewett, M. E., Brown, E. N., &amp; Ronda, J. M. (1989). Bright light induction of strong (type 0) resetting of the human circadian pacemaker. <em>Science</em>, <em>244</em>(4910), 1328–1333. <a href="https://doi.org/10.1126/science.2734611" target="_blank" rel="noopener">https://doi.org/10.1126/science.2734611</a></li>
+          <li>Zeitzer, J. M., Dijk, D.-J., Kronauer, R. E., Brown, E. N., &amp; Czeisler, C. A. (2000). Sensitivity of the human circadian pacemaker to nocturnal light: Melatonin phase resetting and suppression. <em>The Journal of Physiology</em>, <em>526</em>(3), 695–702. <a href="https://doi.org/10.1111/j.1469-7793.2000.00695.x" target="_blank" rel="noopener">https://doi.org/10.1111/j.1469-7793.2000.00695.x</a></li>
       </ul>
     </div>
 

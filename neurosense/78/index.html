@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,7 +111,7 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Scientific Reports (2023): primate superior colliculus neurons detect visual objects extremely fast, supporting reflexive orienting before cortical vision finishes.</li>
+          <li>Bogadhi and Hafed (2023), Scientific Reports: in two monkeys, cells in the superior colliculus, a midbrain area that helps steer the eyes, picked out real objects within a tenth of a second, sooner than parts of the cortex.</li>
           <li>The superior colliculus is especially sensitive to motion and location, so movement gets priority.</li>
           <li>That fast pathway is useful for something flying toward you, and annoying when a screen keeps flashing nearby.</li>
           <li>Motion beside your page stealing your eyes is not random.</li>
@@ -135,12 +135,12 @@
       <article class="ns-story">
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
-          <h3>Nadia’s card in one pass</h3>
-          <p>Every time a message comes in, the phone propped against Rosa’s desk lamp flashes white. She paints birthday cards for friends, and this one is due at two: Nadia’s sixteenth, with Nadia and her dog in watercolor on the front. All that’s left is the lettering across the top, Happy 16th Nadia, in one brush-pen line.</p>
-          <p>Her desk faces the window and the open door. Her brother thumps past, a car pulls up outside, the phone flashes, and every time her eyes jump, the pen jumps with them. She practices on scrap paper first. Third try: the N wobbles into a hook, and at 1:05 she still hasn’t dared to touch the card.</p>
-          <p>Deep in the brain, a fast system called the superior colliculus helps steer the eyes and head, and it’s tuned to motion and to where it happens. It can swing her gaze toward a flash before slower vision has worked out what it is. Movement gets priority because moving things might need action. That’s handy in dodgeball and useless over a brush pen.</p>
-          <p>She stops trying harder and changes what her eyes can see. The phone goes in the desk drawer, out of view. She drags her chair around to the other side of the desk, so the window and the door are behind her. Then she presses one light pencil dot where the H should start and looks only at that dot for a few seconds before she touches the pen down.</p>
-          <p>The whole line goes on in one pass, in about a minute. The 6 comes out a little fat, and she leaves it. The card is in its envelope by 1:40, and at the party Nadia’s mom takes a picture of it before Nadia opens it.</p>
+          <h3>Imogen’s card in one pass</h3>
+          <p>Every time a message comes in, the phone propped against Rosa’s desk lamp flashes white. She paints birthday cards for her friends, and this one is due at two. It’s for Imogen’s sixteenth, with Imogen and her dog in watercolor on the front, and all that’s left is the lettering across the top, Happy 16th Imogen, in one line of brush pen.</p>
+          <p>Her desk faces the window and the open door. Her brother thumps past, a car pulls up outside, the phone flashes, and every time her eyes jump, the pen jumps with them. She practices on scrap paper first, and on the third try the N wobbles into a hook. At 1:05 she still hasn’t dared to touch the card.</p>
+          <p>Deep in the brain, a fast system called the superior colliculus helps steer the eyes and head, and it’s tuned to movement and to where it happens. It can swing her gaze toward a flash before the slower parts of vision have worked out what it is. Movement gets priority because moving things might need a reaction, which is handy in dodgeball and useless over a brush pen.</p>
+          <p>So she stops trying harder and changes what her eyes can see. The phone goes in the desk drawer, out of sight. She drags her chair around to the other side of the desk so the window and the door are behind her. Then she makes one light pencil dot where the H should start and looks only at that dot for a few seconds before she touches the pen down.</p>
+          <p>The whole line goes on in one pass, in about a minute. The 6 comes out a little fat, and she leaves it. The card is in its envelope by 1:40, and at the party Imogen’s mom takes a picture of it before Imogen even opens it.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A flashing phone, a door, a window, and three wobbly tries</span></li>
+><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A flashing phone, an open door and a window ruin three practice tries.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Phone in a drawer, back to the door, one pencil dot</span></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She puts the phone in a drawer, turns her back to the door and makes one pencil dot.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-pen-tool"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,21 +178,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z" /><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18" /><path d="m2.3 2.3 7.286 7.286" /><circle cx="11" cy="11" r="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The whole line in one pass, in its envelope by 1:40</span></li>
+><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z" /><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18" /><path d="m2.3 2.3 7.286 7.286" /><circle cx="11" cy="11" r="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The whole line goes on in one pass, and the card is ready by 1:40.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>The wiggle test</h3>
-        <p class="ns-demo-intro">You need a friend, a pen and a spot on the wall to stare at.</p>
+        <p class="ns-demo-intro">You’ll need a friend, a pen and a spot on the wall to stare at.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Sit facing the wall and keep your eyes on the spot the whole time.</li>
             <li>Your friend stands behind you and slowly brings the pen forward beside your head, at arm’s length and eye height, holding it still. Say “now” the moment you notice it, and your friend notes where it is.</li>
             <li>Repeat on the same side, but this time your friend wiggles the pen as it comes forward.</li>
             <li>Try both on the other side, then swap places.</li>
-            <li>Keep the pen beside the head, at arm’s length. Never bring it toward anyone’s face.</li>
+            <li>Keep the pen beside the head at arm’s length, and never bring it toward anyone’s face.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -206,7 +206,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> “Now” comes sooner for most people when the pen wiggles, while it’s still farther back, and so does a strong tug to look at it. That’s the fast system from The Science above: it’s tuned to motion and to where it happens, and it pulls your eyes before you decide anything. Fast is useful for spotting a ball. It isn’t the same as correct, and a blinking screen sets off the same pull.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> For most people “now” comes sooner when the pen wiggles, while it’s still farther back, along with a strong tug to look at it. Your superior colliculus is behind that pull. It’s tuned to movement and to where it happens, and it moves your eyes before you decide anything. Fast is useful for spotting a ball, but fast can also be wrong, and a blinking screen sets off the same pull.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -226,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 17v4" /><path d="M17 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 1.184-1.826" /><path d="m2 2 20 20" /><path d="M8 21h8" /><path d="M8.656 3H20a2 2 0 0 1 2 2v10a2 2 0 0 1-.293 1.042" /></svg></span><div><strong>Move blinking screens out of view.</strong> Not face down at the edge of your vision, but out of sight: behind you, in a bag, turned to the wall. Notification lights count.</div></li>
+><path d="M12 17v4" /><path d="M17 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 1.184-1.826" /><path d="m2 2 20 20" /><path d="M8 21h8" /><path d="M8.656 3H20a2 2 0 0 1 2 2v10a2 2 0 0 1-.293 1.042" /></svg></span><div><strong>Move blinking screens out of view.</strong> Put them out of sight, behind you, in a bag or turned to the wall, instead of face down at the edge of your vision. Notification lights count.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-armchair"
   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3" /><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z" /><path d="M5 18v2" /><path d="M19 18v2" /></svg></span><div><strong>Face away from doors and windows.</strong> Turn your chair or move your work so hallways, doors, windows and TVs are behind you, when you can.</div></li>
+><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3" /><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z" /><path d="M5 18v2" /><path d="M19 18v2" /></svg></span><div><strong>Face away from doors and windows.</strong> When you can, turn your chair or move your work so hallways, doors, windows and TVs are behind you.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Give your eyes one boring target.</strong> Before you start, rest your eyes on one spot for a few seconds: the first word, the first note, a dot where the line begins.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Give your eyes one boring target.</strong> Before you start, rest your eyes on one spot for a few seconds, like the first word, the first note or a dot where the line begins.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-eye"
   xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +262,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Bring your eyes back, no lecture.</strong> A flick toward motion is the reflex doing its job. Put your eyes back on the target and keep going.</div></li>
+><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Bring your eyes back without a lecture.</strong> A flick toward movement is the reflex doing its job, so put your eyes back on the target and keep going.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-volleyball"
   xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11 7a16 16 20 0 1 10.98 4.362" /><path d="M12 12a13 13 0 0 1-8.66 5" /><path d="M16.83 13.634a16 16 0 0 1-9.267 7.328" /><path d="M20.66 17A13 13 0 0 0 12 12a13 13 0 0 1 0-10" /><path d="M8.17 15.366a16 16 0 0 1-1.713-11.69" /><circle cx="12" cy="12" r="10" /></svg></span><div><strong>Train fast eyes somewhere else.</strong> If you want quicker reactions, use safe drills like ball tosses or catching with a friend. Keep them separate from focus work.</div></li>
+><path d="M11 7a16 16 20 0 1 10.98 4.362" /><path d="M12 12a13 13 0 0 1-8.66 5" /><path d="M16.83 13.634a16 16 0 0 1-9.267 7.328" /><path d="M20.66 17A13 13 0 0 0 12 12a13 13 0 0 1 0-10" /><path d="M8.17 15.366a16 16 0 0 1-1.713-11.69" /><circle cx="12" cy="12" r="10" /></svg></span><div><strong>Train fast eyes somewhere else.</strong> If you want quicker reactions, use safe drills like ball tosses or catching with a friend, and keep them separate from focus work.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -300,11 +300,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Your eyes will still jump at sudden movement, and that’s normal. Fast noticing isn’t the same as deciding to look, so don’t follow up by checking what it was. Eyes back on the target first.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Your eyes will still jump at sudden movement, and that’s normal. Noticing something fast doesn’t mean you have to look, so don’t follow up by checking what it was, and put your eyes back on the target first.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 78: Control the motion field. Step 1: Blinking screens out of view. Step 2: Back to doors, windows and TVs. Step 3: One boring target before you start. Step 4: Eyes jump? Bring them back. Step 5: Train fast eyes with catch drills. How to tell it is working: Count how often your eyes leave the work: screen in view versus cleared." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 78: Control the motion field. Step 1: Blinking screens out of view. Step 2: Back to doors, windows and TVs. Step 3: One boring target before you start. Step 4: If your eyes jump, bring them back. Step 5: Train fast eyes with catch drills. How to tell it is working: Count how often your eyes leave the work with the screen in view and with it gone." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -332,7 +332,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Express detection of visual objects by primate superior colliculus neurons. Scientific Reports. 2023. Article s41598-023-48979-5.</li>
+          <li>Bogadhi, A. R., &amp; Hafed, Z. M. (2023). Express detection of visual objects by primate superior colliculus neurons. <em>Scientific Reports</em>, <em>13</em>, Article 21730. <a href="https://doi.org/10.1038/s41598-023-48979-5" target="_blank" rel="noopener">https://doi.org/10.1038/s41598-023-48979-5</a></li>
+          <li>Krauzlis, R. J., Lovejoy, L. P., &amp; Zénon, A. (2013). Superior colliculus and visual spatial attention. <em>Annual Review of Neuroscience</em>, <em>36</em>, 165–182. <a href="https://doi.org/10.1146/annurev-neuro-062012-170249" target="_blank" rel="noopener">https://doi.org/10.1146/annurev-neuro-062012-170249</a></li>
       </ul>
     </div>
 

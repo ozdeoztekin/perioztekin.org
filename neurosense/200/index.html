@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,7 +112,7 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Your state sets the starting line, so sleep and recovery change how well the brain encodes and how strongly it reacts.</li>
-          <li>Attention is limited and selective, so switching costs and leftover focus decide what actually gets practiced.</li>
+          <li>Attention is limited and selective, and after you switch tasks, part of your focus can linger on the old one and make practice less sharp.</li>
           <li>The brain learns by prediction and repetition, so outcomes that differ from what you expected update what fires next time.</li>
         </ul>
         <div class="ep-protocol">
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Circling the block on Fourth Street</h3>
-          <p>Kai has driven the four miles between home and school more than 200 times since he got his license in March. He doesn’t have to think about a single turn.</p>
-          <p>Fridays are different. He drives Marco and Ellis to the movies downtown, where every spot is a parallel spot, and he circles until he finds one he can pull straight into. Last Friday that took eleven minutes, Ellis timed it, and they missed the start of the movie. His dad’s new rule: no car downtown until Kai can park on the street.</p>
-          <p>That night Kai writes down what his week of driving practiced: eleven trips on one route, zero parallel parks, three laps around the block. His brain has been getting better at exactly what his days repeat, circling included. Experience changes connections, so repetition is never neutral. The brain also learns by prediction: when what happens differs from what it expected, that gap updates the next try. Kai hasn’t been predicting anything, or checking.</p>
-          <p>The one input he changes is what he practices. On Sunday morning, after a full night’s sleep, his dad sets two recycling bins a car and a half apart in the empty middle school lot and chalks a line for the curb. Radio off. Before each try Kai predicts out loud (“about a foot from the line”), parks, then gets out and checks with a tape measure. His first five are all wide at the back, so he starts turning a little sooner.</p>
-          <p>Around the twentieth try, his predictions and the tape measure start to agree. On Friday he backs into a spot on Fourth Street on the second try, eight inches from the curb, and Ellis puts his phone away without starting the timer.</p>
+          <p>Kai has driven the four miles between home and school more than 200 times since he got his license in March, and he doesn’t have to think about a single turn.</p>
+          <p>Fridays are different. He drives Bram and Ike to the movies downtown, where every spot is a parallel spot, and he circles until he finds one he can pull straight into. Last Friday that took eleven minutes, Ike timed it, and they missed the start of the movie. His dad’s new rule is no car downtown until Kai can park on the street.</p>
+          <p>That night Kai writes down what his week of driving practiced, which was eleven trips on one route, zero parallel parks and three laps around the block. His brain has been getting better at exactly what his days repeat, circling included, because experience changes the connections in the brain, so repetition is never neutral. Sleep sets the starting line, and attention shapes what really gets practiced. The brain also learns by prediction, so when what happens differs from what it expected, that gap shapes the next try, and Kai hasn’t been predicting anything or checking.</p>
+          <p>The one thing he changes is what he practices. On Sunday morning, after a full night’s sleep, his dad sets two recycling bins a car and a half apart in the empty middle school lot and chalks a line for the curb, and the radio stays off. Before each try Kai predicts out loud, like “about a foot from the line,” and then he parks, gets out and checks with a tape measure. His first five are all wide at the back, so he starts turning a little sooner.</p>
+          <p>Around the twentieth try, his predictions and the tape measure start to agree. On Friday he backs into a spot on Fourth Street on the second try, eight inches from the curb, and Ike puts his phone away without starting the timer.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Over 200 drives on one route, and zero parallel parks</span></li>
+><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">He has made more than 200 drives on one route and zero parallel parks.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-ruler"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A rested Sunday, radio off: predict, park, measure, adjust</span></li>
+><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">On a rested Sunday with the radio off, he predicts, parks, measures and adjusts.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-square-parking"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,21 +176,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M9 17V7h4a3 3 0 0 1 0 6H9" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Parked on Fourth Street in two tries, eight inches from the curb</span></li>
+><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M9 17V7h4a3 3 0 0 1 0 6H9" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">He parks on Fourth Street in two tries, eight inches from the curb.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
         <h3>Audit one ordinary day</h3>
-        <p class="ns-demo-intro">Use yesterday, or the most recent ordinary day you remember well. You need paper and a pen.</p>
+        <p class="ns-demo-intro">Use yesterday, or the most recent ordinary day you remember well. You’ll need paper and a pen.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Split the day into five or six blocks, from waking up to falling asleep: the morning, getting there, the middle of the day, after school or work, the evening.</li>
-            <li>Next to each block, write what you repeated there, like an app you always open, a seat, a route, a reaction, or a song you always start from the top.</li>
+            <li>Split the day into five or six blocks, from waking up to falling asleep, like the morning, getting there, the middle of the day, after school or work and the evening.</li>
+            <li>Next to each block, write what you repeated there, like an app you always open, a seat, a route, a reaction or a song you always start from the top.</li>
             <li>Circle two repeats you chose on purpose and one you never meant to practice.</li>
             <li>For that last one, answer the four questions in the box.</li>
-            <li>Pick one input you could change tomorrow: the time you do it, one distraction, or a prediction you’ll check.</li>
+            <li>Pick one thing you could change tomorrow, like the time you do it, one distraction or a prediction you’ll check.</li>
           </ol>
           <div class="ns-demo-side">
             <div class="ns-material">
@@ -212,7 +212,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Even an ordinary day holds a surprising number of repeats, and at least one of them is often practice for something you’d rather not get better at. The Science above explains why that matters: whatever gets repeated, in whatever state and with whatever attention, is what the brain gets better at. The four questions turn one repeat into something you can test tomorrow.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Even an ordinary day holds a surprising number of repeats, and at least one of them is often practice for something you’d rather not get better at. That matters because whatever gets repeated, in whatever state and with whatever attention, is what the brain gets better at. The four questions turn one repeat into something you can test tomorrow.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -232,7 +232,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 10v4" /><path d="M14 10v4" /><path d="M22 14v-4" /><path d="M6 10v4" /><rect x="2" y="6" width="16" height="12" rx="2" /></svg></span><div><strong>Choose a rested moment.</strong> Practice when you’ve slept and eaten, early in the day if you can. The same effort teaches more.</div></li>
+><path d="M10 10v4" /><path d="M14 10v4" /><path d="M22 14v-4" /><path d="M6 10v4" /><rect x="2" y="6" width="16" height="12" rx="2" /></svg></span><div><strong>Choose a rested moment.</strong> Practice when you’ve slept and eaten, at a time of day when you feel alert, since the same effort tends to teach more.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-bell-off"
   xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +244,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" /><path d="m2 2 20 20" /><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" /></svg></span><div><strong>Clear one distraction.</strong> Put the phone in another room, or turn the radio off. One is enough to start.</div></li>
+><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" /><path d="m2 2 20 20" /><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" /></svg></span><div><strong>Clear one distraction.</strong> Put the phone in another room or turn the radio off, since one is enough to start.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-crosshair"
   xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +256,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><line x1="22" x2="18" y1="12" y2="12" /><line x1="6" x2="2" y1="12" y2="12" /><line x1="12" x2="12" y1="6" y2="2" /><line x1="12" x2="12" y1="22" y2="18" /></svg></span><div><strong>Predict before you try.</strong> Say or write what you expect: “seven out of ten,” “about a foot from the line,” “all the words.”</div></li>
+><circle cx="12" cy="12" r="10" /><line x1="22" x2="18" y1="12" y2="12" /><line x1="6" x2="2" y1="12" y2="12" /><line x1="12" x2="12" y1="6" y2="2" /><line x1="12" x2="12" y1="22" y2="18" /></svg></span><div><strong>Predict before you try.</strong> Say or write what you expect, like “seven out of ten,” “about a foot from the line” or “all the words.”</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-ruler"
   xmlns="http://www.w3.org/2000/svg"
@@ -268,7 +268,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg></span><div><strong>Check what actually happened.</strong> Count or measure the result, or record it and watch it back. The gap between your guess and what happened is the useful part.</div></li>
+><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg></span><div><strong>Check what happened.</strong> Count or measure the result, or record it and watch it back, since the gap between your guess and what happened is the useful part.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-refresh-cw"
   xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +280,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></svg></span><div><strong>Let the gap shape the next try.</strong> Change one thing based on the gap, then predict again before the next attempt.</div></li>
+><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></svg></span><div><strong>Let the gap shape the next try.</strong> Change one thing based on the gap, and then predict again before the next attempt.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -294,7 +294,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Keep two columns for each session: what you predicted and what happened. Over a week, if the gap shrinks and the real numbers climb, your repetitions are teaching you something.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Keep two columns for each session, one for what you predicted and one for what happened. Over a week, if the gap shrinks and your results climb, your repetitions are teaching you something.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -306,11 +306,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> A big gap can feel like failing. It’s information for the next attempt, not a verdict on you. If a whole session goes badly, check your state first, since tired, distracted practice teaches less.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> A big gap can feel like failing, but it’s information for the next attempt, not a verdict on you. If a whole session goes badly, check your state first, since tired, distracted practice teaches less.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 200: Make the next repetition count. Step 1: A rested moment for what matters. Step 2: Clear one distraction. Step 3: Predict before you try. Step 4: Check what really happened. Step 5: Let the gap shape the next try. How to tell it is working: Write predicted and actual for every session. Watch the gap shrink over a week." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 200: Make the next repetition count. Step 1: A rested moment for what matters. Step 2: Clear one distraction. Step 3: Predict before you try. Step 4: Check what really happened. Step 5: Let the gap shape the next try. How to tell it is working: Write what you predicted and what happened each session, and watch the gap shrink." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -338,10 +338,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Schultz, W., Dayan, P., &amp; Montague, P. R. A Neural Substrate of Prediction and Reward. Science, 1997.</li>
-          <li>Roediger, H. L., &amp; Karpicke, J. D. Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. Psychological Science, 2006.</li>
-          <li>Huberman, A. How Your Brain Works &amp; Changes. Huberman Lab Podcast, Ep. 1, January 4, 2021.</li>
-          <li>Huberman, A. Using Failures, Movement &amp; Balance to Learn Faster. Huberman Lab Podcast, Ep. 7, February 15, 2021.</li>
+          <li>Huberman, A. (Host). (2021a, January 4). How your brain works &amp; changes (No. 1) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/how-your-nervous-system-works-and-changes" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/how-your-nervous-system-works-and-changes</a></li>
+          <li>Huberman, A. (Host). (2021b, February 15). Using failures, movement &amp; balance to learn faster (No. 7) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/using-failures-movement-and-balance-to-learn-faster" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/using-failures-movement-and-balance-to-learn-faster</a></li>
+          <li>Roediger, H. L., III, &amp; Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. <em>Psychological Science</em>, <em>17</em>(3), 249–255. <a href="https://doi.org/10.1111/j.1467-9280.2006.01693.x" target="_blank" rel="noopener">https://doi.org/10.1111/j.1467-9280.2006.01693.x</a></li>
+          <li>Schultz, W., Dayan, P., &amp; Montague, P. R. (1997). A neural substrate of prediction and reward. <em>Science</em>, <em>275</em>(5306), 1593–1599. <a href="https://doi.org/10.1126/science.275.5306.1593" target="_blank" rel="noopener">https://doi.org/10.1126/science.275.5306.1593</a></li>
       </ul>
     </div>
 

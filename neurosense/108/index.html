@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,7 +111,7 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Gilhus &amp; Verschuuren (2015, Lancet Neurol): neuromuscular disease produces true weakness, a measurable loss of force, distinct from the subjective sense of fatigue.</li>
+          <li>Gilhus and Verschuuren (2015), The Lancet Neurology: in myasthenia gravis, the immune system attacks the junction where nerves pass signals to muscles, so the muscles lose force, a real weakness that doctors can measure.</li>
           <li>In myasthenia gravis the weakness is characteristically fatigable and fluctuating, and frequently begins with eye muscles.</li>
           <li>Distinguishing objective weakness from generalized tiredness is a key first step clinicians use to point toward the right diagnosis.</li>
         </ul>
@@ -135,10 +135,10 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>What the first ten strokes said</h3>
-          <p>The lineup for the spring boats goes up after Saturday’s test: 2,000 meters on the rowing machine, as fast as you can go. On Thursday’s warm-up, Amira’s legs feel like sandbags.</p>
-          <p>It’s finals week, and she’s been sleeping about six hours a night. She tells Coach Ortiz she’s weak this week and asks to test later, half afraid that something is actually wrong with her. Coach Ortiz doesn’t argue. She just asks, “Weak, or tired? Show me.”</p>
-          <p>Those sound like the same complaint, but they aren’t. Tired is a feeling, heavy and drained, and rest usually fixes it. True weakness is a measurable loss of force: the muscle can’t produce its normal output. In neuromuscular disease, weakness often has a pattern: it gets worse the more the muscle works, it can start in the eyes, and it comes and goes. Telling the two apart is the first step doctors take too.</p>
-          <p>Amira rows ten firm strokes and reads the monitor. Her usual numbers, stroke after stroke, nothing fading. The heaviness was there from the first stroke and didn’t change. No drooping eyelids, no double vision, nothing that comes and goes. The heaviness showed up with finals week and has stayed the same since. Coach Ortiz moves her test to Monday. Amira takes Friday off, eats a real dinner, and sleeps a full night on Friday and again on Saturday.</p>
+          <p>The lineup for the spring boats goes up after Saturday’s test, 2,000 meters on the rowing machine as fast as you can go. During Thursday’s warm-up, Amira’s legs feel like sandbags.</p>
+          <p>It’s finals week, and she has been sleeping about six hours a night. She tells Coach Ortiz she’s weak this week and asks to test later, half afraid that something is really wrong with her. Coach Ortiz doesn’t argue. She asks, “Weak, or tired? Show me.”</p>
+          <p>Those sound like the same complaint, but they aren’t. Tired is a feeling, heavy and drained, and rest usually fixes it. True weakness is a measurable loss of force, where the muscle can’t produce its normal output. In some diseases that affect nerves and muscles, like one called myasthenia gravis, weakness has a pattern, getting worse the more the muscle works, often starting in the eyes and coming and going. Telling the two apart is the first step doctors take too.</p>
+          <p>Amira rows ten firm strokes and reads the monitor, and her numbers are her usual ones, stroke after stroke, with nothing fading. The heaviness was there from the first stroke and didn’t change, and she has no drooping eyelids, no double vision and nothing that comes and goes. It showed up with finals week and has stayed the same since. Coach Ortiz moves her test to Monday. Amira takes Friday off, eats a real dinner and sleeps a full night on Friday and again on Saturday.</p>
           <p>On Monday the sandbags are gone. She rows the 2,000 meters two seconds off her best, and her name goes up in the second boat.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M22 14v-4" /><path d="M6 14v-4" /><rect x="2" y="6" width="16" height="12" rx="2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Sure she’s weak, asking to skip the test that sets the boats</span></li>
+><path d="M22 14v-4" /><path d="M6 14v-4" /><rect x="2" y="6" width="16" height="12" rx="2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Sure she’s weak, she asks to skip the test that sets the boats.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-chart-line"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Ten firm strokes at her usual numbers, then two full nights’ sleep</span></li>
+><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She rows ten firm strokes at her usual numbers, then sleeps two full nights.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-badge-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,23 +177,23 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Two seconds off her best on Monday, and a seat in the second boat</span></li>
+><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">On Monday she’s two seconds off her best and earns a seat in the second boat.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>Heavy or weak?</h3>
-        <p class="ns-demo-intro">A gentle way to feel the difference between the feeling of tired and the force a muscle makes, using a rolled-up sock or a soft ball. It isn’t a test for anything.</p>
+        <p class="ns-demo-intro">This is a gentle way to feel the difference between the feeling of being tired and the force a muscle makes, using a rolled-up sock or a soft ball. It isn’t a test for anything.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Hold the sock in your writing hand and squeeze it firmly but comfortably, about like a handshake, then let go. Do 30 of those at a steady pace.</li>
+            <li>Hold the sock in your writing hand and squeeze it firmly but comfortably, about like a handshake, then let go. Do that 30 times at a steady pace.</li>
             <li>Rate how heavy or tired your hand feels, from 0 to 10.</li>
-            <li>Squeeze once more and check the force: is the grip as firm as your first one, and do your fingers still close all the way?</li>
-            <li>Rest your hand on your lap for one minute. Rate the feeling again, and do one last squeeze.</li>
+            <li>Squeeze once more and check the force, whether the grip is as firm as your first one and your fingers still close all the way.</li>
+            <li>Rest your hand on your lap for one minute, rate the feeling again and do one last squeeze.</li>
           </ol>
           <div class="ns-demo-side">
-            <div class="ns-widget" data-widget="rating" data-config="{&#34;title&#34;: &#34;How heavy does your hand feel?&#34;, &#34;before&#34;: &#34;Right after thirty squeezes&#34;, &#34;after&#34;: &#34;After one minute of rest&#34;, &#34;low&#34;: &#34;0 = not heavy at all&#34;, &#34;high&#34;: &#34;10 = very heavy&#34;, &#34;down&#34;: &#34;The heavy feeling dropped by {d} after one minute of rest.&#34;, &#34;up&#34;: &#34;It went up by {d}. Rest a little longer, and skip another round if anything hurts.&#34;, &#34;same&#34;: &#34;No change this time. Compare the squeezes instead: were they just as firm?&#34;}"><p class="ns-material-note">The timer needs JavaScript. A phone stopwatch works just as well.</p></div>
+            <div class="ns-widget" data-widget="rating" data-config="{&#34;title&#34;: &#34;How heavy does your hand feel?&#34;, &#34;before&#34;: &#34;Right after thirty squeezes&#34;, &#34;after&#34;: &#34;After one minute of rest&#34;, &#34;low&#34;: &#34;0 = not heavy at all&#34;, &#34;high&#34;: &#34;10 = very heavy&#34;, &#34;down&#34;: &#34;The heavy feeling dropped by {d} after one minute of rest.&#34;, &#34;up&#34;: &#34;It went up by {d}. Rest a little longer, and skip another round if anything hurts.&#34;, &#34;same&#34;: &#34;No change this time. Compare the squeezes instead, and notice whether they were just as firm.&#34;}"><p class="ns-material-note">The timer needs JavaScript. A phone stopwatch works just as well.</p></div>
           </div>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -207,7 +207,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Most hands feel a little warm and heavy after thirty squeezes, while the squeeze itself stays as firm as the first, and a minute of rest clears most of the feeling. That’s ordinary tiredness: a feeling that builds and lifts with rest, while the muscle still makes its normal force. True weakness is different: the force itself drops, and in neuromuscular conditions it can drop after only a few easy movements and keep coming back. If anything here hurts or feels unusual, stop.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Most hands feel a little warm and heavy after thirty squeezes, while the squeeze itself stays as firm as the first, and a minute of rest clears most of the feeling. That’s ordinary tiredness, a feeling that builds and lifts with rest while the muscle still makes its normal force. True weakness is different, because the force itself drops, and in some nerve and muscle conditions it can drop after only a few easy movements and keep coming back. If anything here hurts or feels unusual, stop.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -227,7 +227,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Name it precisely.</strong> Is it a heavy, drained feeling, or is a muscle actually failing at something it normally does?</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Name it precisely.</strong> Ask yourself whether it’s a heavy, drained feeling or a muscle actually failing at something it normally does.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-moon"
   xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +239,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>See if rest brings it back.</strong> Give it a night or two of real sleep and an easier day. Rest and sleep usually restore ordinary tiredness.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>See if rest brings it back.</strong> Give it a night or two of real sleep and an easier day, since rest and sleep usually restore ordinary tiredness.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-chart-line"
   xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +251,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg></span><div><strong>Compare with a normal day.</strong> Use something you already know your numbers for: a usual pace, the stairs you climb every day, the weight of your backpack. Check it; don’t max it out.</div></li>
+><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg></span><div><strong>Compare with a normal day.</strong> Use something you already know your numbers for, like a usual pace, the stairs you climb every day or the weight of your backpack. Check it without maxing it out.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-eye"
   xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +263,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Flag the odd patterns.</strong> Weakness that gets worse with use, comes and goes, or starts with drooping eyelids or double vision.</div></li>
+><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Flag the odd patterns.</strong> Watch for weakness that gets worse with use, comes and goes, or starts with drooping eyelids or double vision.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-stethoscope"
   xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +275,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11 2v2" /><path d="M5 2v2" /><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" /><path d="M8 15a6 6 0 0 0 12 0v-3" /><circle cx="20" cy="10" r="2" /></svg></span><div><strong>Bring real weakness to a doctor.</strong> If force is actually missing, or one of those patterns shows up, tell a parent and get it checked. Don’t train through it.</div></li>
+><path d="M11 2v2" /><path d="M5 2v2" /><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" /><path d="M8 15a6 6 0 0 0 12 0v-3" /><circle cx="20" cy="10" r="2" /></svg></span><div><strong>Bring real weakness to a doctor.</strong> If force is really missing, or one of those patterns shows up, tell a parent and get it checked instead of training through it.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -289,7 +289,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Next time, write down what you couldn’t do, then check again after a night or two of real sleep. If it came back, that points to ordinary tiredness. If it didn’t, or it followed one of the patterns above, that’s your reason to get it checked.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Next time, write down what you couldn’t do, then check again after a night or two of real sleep. If it came back, that points to ordinary tiredness, and if it didn’t, or it followed one of the patterns above, that’s your reason to get it checked.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -313,11 +313,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Persistent or fluctuating true weakness, a drooping eyelid or double vision is a reason to see a doctor soon, with a parent or another trusted adult. These checks help you notice; only a doctor can say what’s going on.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Persistent or fluctuating true weakness, a drooping eyelid or double vision is a reason to see a doctor soon, with a parent or another trusted adult. These checks help you notice, but only a doctor can say what’s going on.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 108: Tired or weak? Check first. Step 1: Drained feeling, or missing force?. Step 2: Did a night or two of sleep fix it?. Step 3: Compare with a normal day. Step 4: Flag: worse with use, eyes, comes and goes. Step 5: Missing force: see a doctor. How to tell it is working: Note what you couldn’t do, then check again after a night or two of sleep." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 108: Tired or weak? Check first. Step 1: A drained feeling, or missing force?. Step 2: Did a night or two of sleep fix it?. Step 3: Compare with a normal day. Step 4: Flag weakness that grows or comes and goes. Step 5: Missing force means see a doctor. How to tell it is working: Note what you couldn’t do, then check again after a night or two of sleep." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -345,8 +345,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Gilhus NE, Verschuuren JJ. (2015). Myasthenia gravis: subgroup classification and therapeutic strategies. The Lancet Neurology, 14(10), 1023-1036.</li>
-          <li>Gilhus NE. (2016). Myasthenia Gravis. New England Journal of Medicine, 375(26), 2570-2581.</li>
+          <li>Gilhus, N. E. (2016). Myasthenia gravis. <em>New England Journal of Medicine</em>, <em>375</em>(26), 2570–2581. <a href="https://doi.org/10.1056/NEJMra1602678" target="_blank" rel="noopener">https://doi.org/10.1056/NEJMra1602678</a></li>
+          <li>Gilhus, N. E., &amp; Verschuuren, J. J. (2015). Myasthenia gravis: Subgroup classification and therapeutic strategies. <em>The Lancet Neurology</em>, <em>14</em>(10), 1023–1036. <a href="https://doi.org/10.1016/S1474-4422(15)00145-3" target="_blank" rel="noopener">https://doi.org/10.1016/S1474-4422(15)00145-3</a></li>
       </ul>
     </div>
 

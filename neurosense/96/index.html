@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,17 +111,17 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Kilgard and Merzenich (1998), Science: acetylcholine release from the nucleus basalis gates cortical map plasticity, marking attended inputs as important.</li>
-          <li>When you focus hard, that chemical works like a highlighter on the exact neurons you are using.</li>
-          <li>Those highlighted connections are the ones sleep locks in later that night.</li>
-          <li>Reading three times without it sticking is a tagging problem, not a bad memory.</li>
+          <li>Kilgard and Merzenich (1998), Science: in adult rats, stimulating the nucleus basalis, a main source of the brain chemical acetylcholine, each time a tone played gave that tone much more room in the hearing cortex, but not after the acetylcholine cells were destroyed.</li>
+          <li>Researchers think acetylcholine may work a bit like a highlighter when people focus, marking the connections in use as worth changing.</li>
+          <li>Sleep that night then helps strengthen many of the memories formed during the day.</li>
+          <li>Reading three times without it sticking is often a focus problem, not a bad memory.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
           <ul class="ep-list">
           <li>Narrow your world to one thing before you start.</li>
           <li>Clear the desk, kill notifications, and stare at the task for sixty seconds.</li>
-          <li>Give your brain a single target so the highlighter knows where to land.</li>
+          <li>Give your brain a single target, since memory follows where your attention goes.</li>
           <li>Notice the signal, name the mechanism, and change one input before autopilot.</li>
           </ul>
         </div>
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Twenty-four terms by Saturday</h3>
-          <p>“By Saturday, no sheet,” Master Okafor says, “or you test again next month.” He hands Chiara a laminated page with the 24 Korean terms for her green-belt test: each stance, block and kick, with a drawing beside it. It’s her second month at this taekwondo school, and in class he has started calling techniques only by name. She’s always half a beat behind.</p>
-          <p>Thursday night she reads the sheet three times on the couch, with a show on and the group chat going. Friday morning she covers it with her hand and tests herself. Five of 24, and she isn’t sure about two of those.</p>
-          <p>Reading something isn’t the same as the brain marking it. When attention locks onto one thing, the brain releases a chemical called acetylcholine that works like a highlighter on the exact connections in use, flagging them as worth keeping. Sleep that night tends to strengthen what got marked. Thursday’s reading was split three ways, so not much of it got marked.</p>
-          <p>Friday after dinner she gives the highlighter one target: the twelve kicks, nothing else. She clears her desk down to the sheet and a pencil, and her phone goes in a kitchen drawer. Before she starts, she looks at the page for sixty seconds, which feels long. Then she goes kick by kick: the name, the drawing, which part of the foot strikes. She’s in bed at her usual time.</p>
-          <p>On Saturday Master Okafor calls the kicks in random order, fast. At “dollyo chagi” her roundhouse kick is already in the air. She gets all twelve without glancing at anyone else, and never thinks about the sheet folded in her bag.</p>
+          <p>“By Saturday, no sheet,” Master Han says, “or you test again next month.” He hands Chiara a laminated page with the 24 Korean terms for her green-belt test, every stance, block and kick, each with a drawing beside it. It’s her second month at this taekwondo school, and in class he has started calling techniques only by their names. She’s always half a beat behind.</p>
+          <p>On Thursday night she reads the sheet three times on the couch, with a show on and the group chat going. On Friday morning she covers it with her hand and tests herself, and she gets five of the 24, two of them guesses.</p>
+          <p>Reading something doesn’t mean the brain has marked it. When attention locks onto one thing, the brain releases a chemical called acetylcholine, and studies in animals suggest it works like a highlighter on the connections being used, flagging them as worth keeping. Sleep that night tends to strengthen what got marked. Thursday’s reading was split three ways, so not much of it got marked.</p>
+          <p>On Friday after dinner she gives the highlighter one target, the twelve kicks and nothing else. She clears her desk down to the sheet and a pencil and puts her phone in a kitchen drawer. Before she starts, she looks at the page for sixty seconds, which feels long. Then she goes kick by kick, with the name, the drawing and which part of the foot strikes, and she’s in bed at her usual time.</p>
+          <p>On Saturday Master Han calls the kicks in random order, fast. At “dollyo chagi” her roundhouse kick is already in the air. She gets all twelve without glancing at anyone else, and the sheet stays folded in her bag.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m17 2-5 5-5-5" /><rect width="20" height="15" x="2" y="7" rx="2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Read three times with a show on, and 5 of 24 by morning</span></li>
+><path d="m17 2-5 5-5-5" /><rect width="20" height="15" x="2" y="7" rx="2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She reads the sheet three times with a show on and knows five terms by morning.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Twelve kicks, a clear desk, the phone in a drawer, sixty seconds first</span></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She clears her desk, puts her phone away and looks at the page for a minute first.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-medal"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,18 +178,18 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" /><path d="M11 12 5.12 2.2" /><path d="m13 12 5.88-9.8" /><path d="M8 7h8" /><circle cx="12" cy="17" r="5" /><path d="M12 18v-2h-.5" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">All twelve kicks on call at the test, sheet still folded</span></li>
+><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" /><path d="M11 12 5.12 2.2" /><path d="m13 12 5.88-9.8" /><path d="M8 7h8" /><circle cx="12" cy="17" r="5" /><path d="M12 18v-2h-.5" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">At the test she gets all twelve kicks on call.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>The coin test</h3>
-        <p class="ns-demo-intro">You need a coin (or the icon of an app you open every day), a pen and two scraps of paper.</p>
+        <p class="ns-demo-intro">You’ll need a coin or the icon of an app you open every day, a pen and two scraps of paper.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Without looking, draw the front of the coin with every detail you can remember: which way the face points, the words, where the date goes.</li>
-            <li>Now look only at the real coin for sixty seconds. Tilt it in the light, take in every detail, then put it out of sight.</li>
+            <li>Without looking, draw the front of the coin with every detail you can remember, like which way the face points, the words and where the date goes.</li>
+            <li>Now look only at the real coin for sixty seconds. Tilt it in the light and take in every detail, then put it out of sight.</li>
             <li>Draw it again on the second scrap.</li>
             <li>Compare both drawings with the coin.</li>
             <li>Tomorrow morning, before you look at it, draw it once more.</li>
@@ -206,14 +206,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Most first drawings are thin, even for a coin you’ve handled hundreds of times, because handling it never asked for your attention. One focused minute usually adds a lot, and that’s the highlighter at work: what you aim your attention at gets marked. Tomorrow’s drawing shows how much of the mark held overnight.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Most first drawings are thin, even for a coin you’ve handled hundreds of times, because handling it never asked for your attention. One focused minute usually adds a lot, since what you aim your attention at tends to be what gets stored. Tomorrow’s drawing shows how much of the mark held overnight.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Give the highlighter one target</h3>
-          <p class="ns-plan-intro">For anything you need to know by tomorrow.</p>
+          <p class="ns-plan-intro">Use it for anything you need to know by tomorrow.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
@@ -226,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one target.</strong> One page, one scene, one set of twelve. Break a big job into pieces and give each session a single piece.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one target.</strong> Choose one page, one scene or one set of twelve. Break a big job into pieces and give each session a single piece.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-brush-cleaning"
   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m16 22-1-4" /><path d="M19 14a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v1a1 1 0 0 0 1 1" /><path d="M19 14H5l-1.973 6.767A1 1 0 0 0 4 22h16a1 1 0 0 0 .973-1.233z" /><path d="m8 22 1-4" /></svg></span><div><strong>Clear the desk.</strong> Only the thing you’re learning and a pencil. Everything else goes somewhere you can’t see it.</div></li>
+><path d="m16 22-1-4" /><path d="M19 14a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v1a1 1 0 0 0 1 1" /><path d="M19 14H5l-1.973 6.767A1 1 0 0 0 4 22h16a1 1 0 0 0 .973-1.233z" /><path d="m8 22 1-4" /></svg></span><div><strong>Clear the desk.</strong> Keep only the thing you’re learning and a pencil, and put everything else somewhere you can’t see it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-bell-off"
   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" /><path d="m2 2 20 20" /><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" /></svg></span><div><strong>Turn notifications off.</strong> Phone off or in another room, and every tab closed except the one you need.</div></li>
+><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" /><path d="m2 2 20 20" /><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" /></svg></span><div><strong>Turn notifications off.</strong> Turn the phone off or put it in another room, and close every tab except the one you need.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-eye"
   xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +262,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Look at it for sixty seconds.</strong> Before you start, look only at the page for one full minute. It will feel long. Let your attention settle on that one target.</div></li>
+><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Look at it for sixty seconds.</strong> Before you start, look only at the page for one full minute. It will feel long, so let your attention settle on that one target.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-moon"
   xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Sleep on it, then test.</strong> Do the session on a day you’ll get a normal night’s sleep. The next morning, test yourself before you look at anything.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Sleep on it, then test.</strong> Do the session on a day you’ll get a normal night’s sleep, and the next morning, test yourself before you look at anything.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -288,7 +288,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> The next morning, before opening anything, test yourself: name them, say them or solve one. Compare with a morning after a session on similar material done with a show on or your phone nearby.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> The next morning, before opening anything, test yourself by naming it, saying it or solving one. Compare that with a morning after a session on similar material done with a show on or your phone nearby.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -300,11 +300,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Sixty seconds of looking can feel silly, and you’ll want to skip it. Keep the minute and shorten the session instead: twenty minutes on one target still counts.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Sixty seconds of looking can feel silly, and you’ll want to skip it. Keep the minute and shorten the session instead, since twenty minutes on one target still counts.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 96: Give the highlighter one target. Step 1: One target: a page, a scene, a set. Step 2: Clear the desk. Step 3: Notifications off, phone away. Step 4: Sixty seconds on the page first. Step 5: Sleep, then test yourself. How to tell it is working: Next morning, before you look: can you name it, say it or solve it?" width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 96: Give the highlighter one target. Step 1: One target, like a page or a set. Step 2: Clear the desk. Step 3: Notifications off, phone away. Step 4: Sixty seconds on the page first. Step 5: Sleep, then test yourself. How to tell it is working: The next morning, before you look, see if you can name it, say it or solve it." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -332,7 +332,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Kilgard MP, Merzenich MM. Cortical map reorganization enabled by nucleus basalis activity. Science. 1998;279(5357):1714-1718.</li>
+          <li>Froemke, R. C., Merzenich, M. M., &amp; Schreiner, C. E. (2007). A synaptic memory trace for cortical receptive field plasticity. <em>Nature</em>, <em>450</em>(7168), 425–429. <a href="https://doi.org/10.1038/nature06289" target="_blank" rel="noopener">https://doi.org/10.1038/nature06289</a></li>
+          <li>Kilgard, M. P., &amp; Merzenich, M. M. (1998). Cortical map reorganization enabled by nucleus basalis activity. <em>Science</em>, <em>279</em>(5357), 1714–1718. <a href="https://doi.org/10.1126/science.279.5357.1714" target="_blank" rel="noopener">https://doi.org/10.1126/science.279.5357.1714</a></li>
       </ul>
     </div>
 

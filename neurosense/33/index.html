@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>The joke he kept deleting</h3>
-          <p>In one group chat, Liam is the funny one. It’s the five guys from his street, friends since second grade. In the other, he types a joke, deletes it, types it again and sends a thumbs-up instead.</p>
-          <p>The second chat is Jaylen’s group. Liam started sitting with them in September, after his best friend switched schools. They’re louder and quicker, and always ranking something: shoes, haircuts, who got invited where. At night he watches the chat to see who reacted to what, and on Tuesday his phone counted 58 pickups after dinner.</p>
-          <p>Around any group, the brain keeps asking a quiet question: am I safe, useful and respected here? Serotonin is one system involved. In monkey groups, raising serotonin activity helped males rise in rank when the top spot was open, though it isn’t a happiness button. People who feel valued in a group tend to act calmer and more flexibly. A chat that ranks everything is a scoreboard that never stops refreshing, and it can keep people chasing approval.</p>
-          <p>Desmond from next door knocks on Friday in a borrowed jacket, a tie hanging loose, half an hour before his first middle school dance. He has been fighting a how-to video since five. Liam learned the knot for his uncle’s wedding. At the hall mirror he stands behind Desmond and walks him through it twice, then makes him do it alone. The third knot is crooked. The fourth is right.</p>
-          <p>Desmond leaves at a jog. Liam doesn’t open Jaylen’s chat again until after nine, and when he does, it’s rating everyone’s shoes. He types “Desmond’s tie 10/10, coach also 10,” sends it on the first try, and puts the phone down without checking who reacted.</p>
+          <p>In one group chat, Liam is the funny one. That one is the five guys from his street, friends since second grade. In the other one, he types a joke, deletes it, types it again and then sends a thumbs-up instead.</p>
+          <p>The second chat is Jaylen’s group. Liam started sitting with them in September, after his best friend switched schools. They’re louder and quicker, and they’re always ranking something, whether it’s shoes, haircuts or who got invited where. At night he watches the chat to see who reacted to what, and on Tuesday his phone counted 58 pickups after dinner.</p>
+          <p>In any group, the brain seems to keep checking how safe, useful and respected you are there. Serotonin, one of the brain’s chemical messengers, is one of the systems involved. In groups of monkeys whose top male had been removed, males given drugs that raised serotonin activity rose to the top. The links are real but complicated, and serotonin isn’t a happiness button. One idea that hasn’t been tested directly is that a chat or a feed that ranks everything keeps that check running all the time. In one study, college students who cut social media to about 30 minutes a day for three weeks felt less lonely.</p>
+          <p>On Friday, Desmond from next door knocks in a borrowed jacket with a tie hanging loose, half an hour before his first middle school dance. He has been fighting a how-to video since five. Liam learned the knot for his uncle’s wedding, so he stands behind Desmond at the hall mirror, walks him through it twice and then makes him do it alone. The third knot comes out crooked, and the fourth is right.</p>
+          <p>Desmond leaves at a jog. Liam doesn’t open Jaylen’s chat again until after nine, and when he does, they’re rating everyone’s shoes. He types “Desmond’s tie 10/10, coach also 10,” sends it on the first try and puts the phone down without checking who reacted.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /><path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Deleted jokes, thumbs-ups and 58 pickups after dinner</span></li>
+><path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" /><path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">In the new group chat he deletes his jokes and sends thumbs-ups.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shirt"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">At the hall mirror, teaching Desmond to tie his own tie</span></li>
+><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He teaches Desmond from next door to tie his own tie.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-send"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Three hours without the chat, then a joke on the first try</span></li>
+><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Later he sends a joke on the first try and doesn’t check the reactions.</span></li>
         </ol>
       </article>
 
@@ -188,10 +188,10 @@
         <p class="ns-demo-intro">Grab a pen and paper. Nobody else needs to see this, so be honest with yourself.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Write down three or four groups you spend time with in a normal week: a team, a family table, a group chat, a feed, a job, a club.</li>
-            <li>Next to each, give a number from 0 to 10 for how often you check where you stand there: who reacted, who got picked, who’s ahead.</li>
-            <li>Give each a second number from 0 to 10 for how useful you are there. Do people come to you for anything?</li>
-            <li>Circle the group where you feel most like yourself, and star the one you check the most. Then look at each pair of numbers side by side.</li>
+            <li>Write down three or four groups you spend time with in a normal week, like a team, a family dinner table, a group chat, a feed, a job or a club.</li>
+            <li>Next to each one, write a number from 0 to 10 for how often you check where you stand there, meaning who reacted, who got picked and who’s ahead.</li>
+            <li>Give each group a second number from 0 to 10 for how useful you are there, or how often people come to you for something.</li>
+            <li>Circle the group where you feel most like yourself and star the one you check the most. Then look at each pair of numbers side by side.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -205,14 +205,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Your starred group, the one you check most, often has the lowest usefulness number, and the groups where you’re useful tend to feel steadier. That’s the quiet question from the story, am I safe, useful and respected here, showing up in your own numbers. The usefulness number is the one you can change this week, which is where the plan below starts.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The group you check the most often has the lowest usefulness number, and the groups where you’re useful tend to feel steadier. That’s the same check from the story, how safe, useful and respected you feel, showing up in your own numbers. The usefulness number is the one you can change this week, which is where the plan below starts.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>One real favor a week</h3>
-          <p class="ns-plan-intro">Once this week, in person if you can.</p>
+          <p class="ns-plan-intro">Do it once this week, in person if you can.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
@@ -225,7 +225,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one specific, hard thing.</strong> Something one person is stuck on that you can actually help with: a skill you can teach, a small problem you can solve, part of a team task you can carry.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one specific, hard thing.</strong> Find something one person is stuck on that you can help with, like a skill you can teach, a small problem you can solve or part of a team task you can carry.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-users"
   xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +237,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg></span><div><strong>Do it face-to-face.</strong> In person beats a message. Show them instead of doing it for them, and hand it over for the second try.</div></li>
+><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg></span><div><strong>Do it face-to-face.</strong> In person beats a message. Show them how instead of doing it for them, and hand it over for the second try.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-handshake"
   xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +249,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><div><strong>Keep it off your feed.</strong> Skip posting about it. The point is the help, and the person who got it.</div></li>
+><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg></span><div><strong>Keep it off your feed.</strong> Skip posting about it. What matters is the help and the person who got it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-notebook-pen"
   xmlns="http://www.w3.org/2000/svg"
@@ -261,7 +261,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Notice the signal afterward.</strong> That evening, write one line: your mood, roughly how often you checked a chat or a feed, and whether you said what you meant somewhere.</div></li>
+><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Notice the signal afterward.</strong> That evening, write one line about your mood, roughly how often you checked a chat or a feed, and whether you said what you meant somewhere.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -273,7 +273,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Put a limit on the scoreboard.</strong> If a feed or chat keeps you checking rank, give it a 30-minute daily limit in your phone settings.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Put a limit on the scoreboard.</strong> If a feed or a chat keeps you checking your rank, give it a 30-minute daily limit in your phone settings.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -287,7 +287,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After two or three weeks, put your favor-day lines next to ordinary days. Fewer checks, a steadier mood, or saying things on the first try more often are signs it’s working for you.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After two or three weeks, put your favor-day lines next to ordinary days. Fewer checks, a steadier mood, or saying things on the first try more often are all good signs.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -299,11 +299,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The hardest part is finding the favor. If nothing comes up, ask one person what they’re stuck on this week; younger siblings, neighbors and teammates usually have an answer.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The hardest part is finding the favor. If nothing comes up, ask one person what they’re stuck on this week. Younger siblings, neighbors and teammates usually have an answer.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 33: One real favor a week. Step 1: Pick one specific, hard thing. Step 2: Help face-to-face, then hand it over. Step 3: Keep it off your feed. Step 4: Note mood and checks that evening. Step 5: 30-minute daily cap on rank feeds. How to tell it is working: Favor days versus ordinary days: fewer checks, a steadier mood?" width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 33: One real favor a week. Step 1: Pick one specific, hard thing. Step 2: Help face-to-face, then hand it over. Step 3: Keep it off your feed. Step 4: Note your mood and checks that evening. Step 5: 30-minute daily limit on rank feeds. How to tell it is working: Compare favor days with ordinary days, looking for fewer checks and a steadier mood." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -331,10 +331,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Raleigh, M. J., McGuire, M. T., Brammer, G. L., Pollack, D. B., &amp; Yuwiler, A. (1991). &quot;Serotonergic mechanisms promote dominance acquisition in adult male vervet monkeys.&quot; Brain Research, 559(2): 181-190.</li>
-          <li>Edwards, D. H., &amp; Kravitz, E. A. (1997). &quot;Serotonin, social status and aggression.&quot; Current Opinion in Neurobiology, 7(6): 812-819.</li>
-          <li>Wood, R. M., Rilling, J. K., Sanfey, A. G., Bhagwagar, Z., &amp; Rogers, R. D. (2006). &quot;Effects of tryptophan depletion on the performance of an iterated Prisoner&#x27;s Dilemma game in healthy adults.&quot; Neuropsychopharmacology, 31(5): 1075-1084.</li>
-          <li>Hunt, M. G., Marx, R., Lipson, C., &amp; Young, J. (2018). No more FOMO: limiting social media decreases loneliness and depression. Journal of Social and Clinical Psychology, 37(10): 751-768.</li>
+          <li>Edwards, D. H., &amp; Kravitz, E. A. (1997). Serotonin, social status and aggression. <em>Current Opinion in Neurobiology</em>, <em>7</em>(6), 812–819. <a href="https://doi.org/10.1016/S0959-4388(97)80140-7" target="_blank" rel="noopener">https://doi.org/10.1016/S0959-4388(97)80140-7</a></li>
+          <li>Hunt, M. G., Marx, R., Lipson, C., &amp; Young, J. (2018). No more FOMO: Limiting social media decreases loneliness and depression. <em>Journal of Social and Clinical Psychology</em>, <em>37</em>(10), 751–768. <a href="https://doi.org/10.1521/jscp.2018.37.10.751" target="_blank" rel="noopener">https://doi.org/10.1521/jscp.2018.37.10.751</a></li>
+          <li>Raleigh, M. J., McGuire, M. T., Brammer, G. L., Pollack, D. B., &amp; Yuwiler, A. (1991). Serotonergic mechanisms promote dominance acquisition in adult male vervet monkeys. <em>Brain Research</em>, <em>559</em>(2), 181–190. <a href="https://doi.org/10.1016/0006-8993(91)90001-C" target="_blank" rel="noopener">https://doi.org/10.1016/0006-8993(91)90001-C</a></li>
+          <li>Wood, R. M., Rilling, J. K., Sanfey, A. G., Bhagwagar, Z., &amp; Rogers, R. D. (2006). Effects of tryptophan depletion on the performance of an iterated Prisoner's Dilemma game in healthy adults. <em>Neuropsychopharmacology</em>, <em>31</em>(5), 1075–1084. <a href="https://doi.org/10.1038/sj.npp.1300932" target="_blank" rel="noopener">https://doi.org/10.1038/sj.npp.1300932</a></li>
       </ul>
     </div>
 

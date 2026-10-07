@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -118,7 +118,7 @@
         <div class="ep-protocol">
           <h3>The Protocol</h3>
           <ul class="ep-list">
-          <li>Put the boost earlier, smaller, or behind food and water.</li>
+          <li>Have caffeine earlier, or less of it, or after food and water.</li>
           <li>Run it like an experiment: note the hour, the dose, and how you sleep that night.</li>
           <li>If a late can keeps pushing bedtime later, move it earlier tomorrow.</li>
           </ul>
@@ -133,12 +133,12 @@
       <article class="ns-story">
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
-          <h3>The can at her 7:30 break</h3>
-          <p>The staff fridge at the pizza place where Emma works keeps energy drinks on the top shelf, half price for employees. She closes on Fridays, and three Fridays in a row she has grabbed one at her 7:30 break, with two and a half hours of the Friday rush still to go.</p>
-          <p>The rush goes fine. Bedtime doesn’t. She’s home by 10:30 and in bed by 11, and at 1:40 she’s still scrolling, not worried about anything, just switched on. On Saturday she opens at 11, hands a customer change for a twenty when he gave her a ten, and at her 2:00 break she’s back at the fridge for a second can.</p>
-          <p>Caffeine blocks the signals that report how much sleep pressure Emma has built up since she woke, so at 9:30 she feels fine and at midnight she still feels fine. The pressure hasn’t gone anywhere. She just can’t feel it. That’s tired turning into wired without ever becoming recovered, and the Saturday can covers for what Friday night didn’t repair.</p>
-          <p>She decides to treat it like an experiment. In a note on her phone she logs the hour, the size of the can, the reason (“tired, rush coming”), when her lights went out, and how she felt at her Saturday opening. One weekend of notes is hard to argue with. The next Friday, at her 7:30 break, she eats the staff slice and drinks a whole bottle of water before she goes near the fridge, then leaves the can on the shelf.</p>
-          <p>By 9:00 she’s tired, the plain kind, and she closes anyway. Her note for that night says lights out at 11:05, asleep by about 11:20. On Saturday at 2:00 she walks past the fridge with her water bottle.</p>
+          <h3>The can on her evening break</h3>
+          <p>The staff fridge at the pizza place where Emma works keeps energy drinks on the top shelf, half price for employees. She closes on Fridays, and three weeks in a row she has grabbed one on her evening break, with more than two hours of the Friday rush still to go.</p>
+          <p>The rush goes fine, but bedtime doesn’t. She’s home before eleven and in bed soon after, and at almost two in the morning she’s still scrolling, not worried about anything, only switched on. On Saturday she opens at eleven, gives a customer change for a twenty when he handed her a ten, and on her afternoon break she’s back at the fridge for a second can.</p>
+          <p>Caffeine blocks the signals that tell you how much sleep pressure you’ve built up since you woke, so late in the shift Emma feels fine, and at midnight she still feels fine. The pressure hasn’t gone anywhere, and she can’t feel it. That’s tired turning into wired without ever getting recovered, and the Saturday can is covering for what Friday night didn’t repair. The same can gives some people clean focus and others the jitters, so her own nights are the best guide.</p>
+          <p>So she treats it like an experiment. In a note on her phone she logs the time, the size of the can, the reason, like “tired, rush coming,” when her lights went out and how she felt when she opened on Saturday. One weekend of notes is hard to argue with. The next Friday, on her evening break, she eats the staff slice and drinks a whole bottle of water before she goes near the fridge, and then she leaves the can on the shelf.</p>
+          <p>By nine she’s tired, the plain kind, and she closes anyway. Her note for that night says lights out a little after eleven and asleep about fifteen minutes later. On Saturday afternoon she walks past the fridge with her water bottle.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8" /><path d="M5 8h14" /><path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" /><path d="m12 8 1-6h2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A 7:30 can at work, then awake until 1:40</span></li>
+><path d="m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8" /><path d="M5 8h14" /><path d="M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" /><path d="m12 8 1-6h2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She drinks a can on her evening break and is awake until almost two.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sandwich"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777" /><path d="M21 15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-5.25" /><path d="M3 15a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h9" /><path d="m6.67 15 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" /><rect width="20" height="4" x="2" y="11" rx="1" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Food and water at the break, the can left on the shelf</span></li>
+><path d="m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777" /><path d="M21 15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-5.25" /><path d="M3 15a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h9" /><path d="m6.67 15 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" /><rect width="20" height="4" x="2" y="11" rx="1" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She eats and drinks water on her break and leaves the can on the shelf.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-moon"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,21 +176,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Asleep by 11:20, and no second can on Saturday</span></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She’s asleep soon after eleven and skips the second can on Saturday.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Sleep pressure in a glass</h3>
-        <p class="ns-demo-intro">It’s only a model, and there’s nothing to drink. You need a clear glass, a tablespoon, some water, and a sock or a paper towel.</p>
+        <p class="ns-demo-intro">This is only a model, and there’s nothing to drink. You’ll need a clear glass, a tablespoon, some water and a sock or a paper towel.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Each spoonful of water is one hour awake. Start at 7 in the morning and add one for every hour until 7 at night. That’s twelve spoonfuls, and you can watch the level climb.</li>
-            <li>Pull the sock over the glass. That’s a can at 7 at night. Nothing comes out of the glass; you just can’t see the level anymore.</li>
-            <li>Keep going with the sock on: one spoonful each for 8, 9, 10 and 11 at night. From the outside, nothing seems to change.</li>
-            <li>Before you take the sock off, put a finger on the outside where you think the water is. Then take it off and look.</li>
-            <li>Last, pour the glass out. In this model, that’s sleep, and it’s the only step that brings the level down.</li>
+            <li>Each spoonful of water stands for one hour awake. Start at 7 in the morning and add one for every hour until 7 at night, which is twelve spoonfuls, and watch the level climb.</li>
+            <li>Pull the sock over the glass, which stands for a can at 7 at night. Nothing comes out of the glass, and you can’t see the level anymore.</li>
+            <li>Keep going with the sock on, adding one spoonful each for 8, 9, 10 and 11 at night. From the outside, nothing seems to change.</li>
+            <li>Before you take the sock off, put a finger on the outside where you think the water is, and then take it off and look.</li>
+            <li>Last, pour the glass out. In this model that’s sleep, and it’s the only step that brings the level down.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,14 +204,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> With the sock on, the glass looks like it’s resting, yet the water is higher than when you covered it. That’s what The Science above means by tired turning into wired: caffeine blocks the signals that report sleep pressure, and the pressure keeps building underneath. The model leaves out one big thing. The same can lands as focus in one person and as jitters in another, which is why the plan below runs on your own notes.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> With the sock on, the glass looks like it’s resting, but the water is higher than when you covered it. This is how tired turns into wired. Caffeine blocks the signals that report sleep pressure, while the pressure keeps building underneath. The model leaves out one big thing. The same can gives one person focus and another the jitters, so the plan below runs on your own notes.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Run it like an experiment</h3>
-          <p class="ns-plan-intro">This is for anyone who already reaches for energy drinks or coffee; if you don’t, there’s nothing here to start.</p>
+          <p class="ns-plan-intro">This is for anyone who already reaches for energy drinks or coffee. If you don’t, there’s nothing here to start.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-notebook-pen"
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Log it before you change anything.</strong> For a week, write down the hour, the amount from the label, the reason, when your lights went out and how you felt the next morning. For now you’re only collecting data.</div></li>
+><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Log it before you change anything.</strong> For a week, write down the time, the amount from the label, the reason, when your lights went out and how you felt the next morning. For now you’re only collecting information.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sandwich"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777" /><path d="M21 15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-5.25" /><path d="M3 15a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h9" /><path d="m6.67 15 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" /><rect width="20" height="4" x="2" y="11" rx="1" /></svg></span><div><strong>Food and water go first.</strong> Before any can, eat something real and drink a full glass of water. Then decide whether you still want it.</div></li>
+><path d="m2.37 11.223 8.372-6.777a2 2 0 0 1 2.516 0l8.371 6.777" /><path d="M21 15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-5.25" /><path d="M3 15a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h9" /><path d="m6.67 15 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" /><rect width="20" height="4" x="2" y="11" rx="1" /></svg></span><div><strong>Have food and water first.</strong> Before any can, eat something real and drink a full glass of water, and then decide whether you still want it.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-clock"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><div><strong>Earlier, smaller, or skip it.</strong> If you still want it, have it earlier in the day, or have less of it. Smaller can mean half a can, and leaving it on the shelf is always an option.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></span><div><strong>Go earlier, smaller or skip it.</strong> If you still want it, have it earlier in the day or have less of it, like half a can. Leaving it on the shelf is always an option.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-moon"
   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Move a late one earlier.</strong> If your notes show a late can pushing your bedtime later, move it earlier the next day and watch what your lights-out time does.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Move a late one earlier.</strong> If your notes show a late can pushing your bedtime later, move it earlier the next day and watch what happens to your lights-out time.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sunrise"
   xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +272,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><div><strong>Check the morning, too.</strong> After a few days with the change, notice your mood and focus the next morning, and how practice, work or class goes.</div></li>
+><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><div><strong>Check the morning too.</strong> After a few days with the change, notice your mood and focus the next morning, and how practice, work or class goes.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Put your notes side by side: the nights after a late can and the nights without one. If lights-out comes earlier and your mornings feel steadier after the change, it’s working for you.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Put your notes side by side, the nights after a late can and the nights without one. If lights-out comes earlier and your mornings feel steadier after the change, the earlier cutoff suits you.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +298,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The first night without the late can, you’ll probably feel tired by mid-evening. That’s the sleep pressure the can used to cover. Eat, drink some water, and if you can, go to bed a little early that night.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The first night without the late can, you’ll probably feel tired by the middle of the evening, which is the sleep pressure the can used to cover. Eat, drink some water and go to bed a little early that night if you can.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -314,7 +314,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 141: Your caffeine experiment. Step 1: Log the hour, the amount and your sleep. Step 2: Food and water before any can. Step 3: Earlier, smaller, or skip it. Step 4: Late can pushing bedtime? Move it earlier. Step 5: Check your morning mood and focus. How to tell it is working: Compare lights-out after a late can with nights without one." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 141: Your caffeine experiment. Step 1: Log the time, the amount and your sleep. Step 2: Food and water before any can. Step 3: Earlier, smaller or skip it. Step 4: Move a late can earlier. Step 5: Check your morning mood and focus. How to tell it is working: Compare lights-out after a late can with the nights without one." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -342,10 +342,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Fredholm BB, Battig K, Holmen J, Nehlig A, Zvartau EE. Actions of caffeine in the brain with special reference to factors that contribute to its widespread use. Pharmacological Reviews, 1999.</li>
-          <li>Landolt HP, Werth E, Borbely AA, Dijk DJ. Caffeine intake (200 mg) in the morning affects human sleep and EEG power spectra at night. Brain Research, 1995.</li>
-          <li>Huberman, A. Using Caffeine to Optimize Mental &amp; Physical Performance. Huberman Lab Podcast, Ep. 101, December 5, 2022.</li>
-          <li>Huberman, A. AMA #8: Balancing Caffeine, Decision Fatigue &amp; Social Isolation. Huberman Lab Podcast, June 23, 2023.</li>
+          <li>Fredholm, B. B., Bättig, K., Holmén, J., Nehlig, A., &amp; Zvartau, E. E. (1999). Actions of caffeine in the brain with special reference to factors that contribute to its widespread use. <em>Pharmacological Reviews</em>, <em>51</em>(1), 83–133. <a href="https://doi.org/10.1016/S0031-6997(24)01396-6" target="_blank" rel="noopener">https://doi.org/10.1016/S0031-6997(24)01396-6</a></li>
+          <li>Huberman, A. (Host). (2022, December 5). Using caffeine to optimize mental &amp; physical performance [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/using-caffeine-to-optimize-mental-and-physical-performance" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/using-caffeine-to-optimize-mental-and-physical-performance</a></li>
+          <li>Huberman, A. (Host). (2023, June 23). AMA #8: Balancing caffeine, decision fatigue &amp; social isolation [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/ama-8-balancing-caffeine-decision-fatigue-social-isolation" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/ama-8-balancing-caffeine-decision-fatigue-social-isolation</a></li>
+          <li>Landolt, H.-P., Werth, E., Borbély, A. A., &amp; Dijk, D.-J. (1995). Caffeine intake (200 mg) in the morning affects human sleep and EEG power spectra at night. <em>Brain Research</em>, <em>675</em>(1–2), 67–74. <a href="https://doi.org/10.1016/0006-8993(95)00040-W" target="_blank" rel="noopener">https://doi.org/10.1016/0006-8993(95)00040-W</a></li>
       </ul>
     </div>
 

@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Procedural learning means doing the move, not only reading the perfect explanation.</li>
-          <li>If a tool gives the answer too early, your brain may skip the hard wiring.</li>
-          <li>The struggle is the signal that tells circuits to update.</li>
+          <li>If a tool gives the answer too early, you may skip the practice that builds the skill.</li>
+          <li>Mistakes can help, because the brain learns from the gap between what it expected and what happened.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Nine errors and a stranded fox</h3>
-          <p>The fox is stuck on the second cloud again. Miles is building a platform game for his sister Hiba’s ninth birthday on Saturday: a fox jumping from cloud to cloud, HIBA on the title screen. Most of the code came from an AI chat, and until tonight it worked.</p>
-          <p>Then he asked for a double jump. The new code threw an error, he pasted the error back in, and that fix broke something else. By 10:15 he has pasted nine errors in a row. The fox gets one double jump per game, and Miles can’t find the line in his own game that should reset it on landing.</p>
-          <p>The chat had been doing the moves for him. Code is learned by doing: trying something, watching it fail, working out why. When a tool hands over the answer that early, the brain may skip the hard wiring, and the struggle Miles kept skipping is part of what tells it to update. The game moved forward all week while his skill stayed flat.</p>
-          <p>He opens a fresh chat and types, “Don’t write any code. My double jump only works once per game. Ask me one question.” It asks what happens to the jumps when the fox lands. He finds the landing check, writes his own reset on the back of a worksheet and types it in. Now the fox can jump forever. He asks, “What part failed? Just point.” The reset runs in midair too, it says. He fixes that himself.</p>
-          <p>At 11:05 the fox double jumps across every cloud. On Friday he adds a spring cloud on his own, with one hint, and at the party, when Hiba asks how the spring works, he shows her the line.</p>
+          <p>The fox is stuck on the second cloud again. Miles is building a platform game for his sister Hiba’s ninth birthday on Saturday, with a fox jumping from cloud to cloud and her name on the title screen. Most of the code came from an AI chat, and until tonight it worked.</p>
+          <p>Then he asked it for a double jump. The new code threw an error, so he pasted the error back into the chat, and that fix broke something else. By a quarter past ten he has pasted nine errors in a row. The fox gets one double jump per game, and Miles can’t find the line in his own game that should reset it when the fox lands.</p>
+          <p>The chat had been doing the moves for him. Coding is learned by doing it, which means trying something, watching it fail and working out why. When a tool hands over the answer that early, the practice that builds the skill may get skipped, and working through the errors Miles kept handing off is part of how the brain learns. His game moved forward all week while his skill stayed flat.</p>
+          <p>He opens a new chat and types, “Don’t write any code. My double jump only works once per game. Ask me one question.” It asks what happens to the jumps when the fox lands. He finds the landing check, writes his own reset on the back of a worksheet and types it in, and now the fox can jump forever. He asks the chat to point to the part that failed without fixing it, and it tells him the reset also runs in midair. He fixes that himself.</p>
+          <p>Before eleven the fox double jumps across every cloud. On Friday he adds a spring cloud on his own with one hint, and at the party, when Hiba asks how the spring works, he shows her the line.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 20v-9" /><path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z" /><path d="M14.12 3.88 16 2" /><path d="M21 21a4 4 0 0 0-3.81-4" /><path d="M21 5a4 4 0 0 1-3.55 3.97" /><path d="M22 13h-4" /><path d="M3 21a4 4 0 0 1 3.81-4" /><path d="M3 5a4 4 0 0 0 3.55 3.97" /><path d="M6 13H2" /><path d="m8 2 1.88 1.88" /><path d="M9 7.13V6a3 3 0 1 1 6 0v1.13" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Nine pasted errors, and the fox stuck after one double jump</span></li>
+><path d="M12 20v-9" /><path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z" /><path d="M14.12 3.88 16 2" /><path d="M21 21a4 4 0 0 0-3.81-4" /><path d="M21 5a4 4 0 0 1-3.55 3.97" /><path d="M22 13h-4" /><path d="M3 21a4 4 0 0 1 3.81-4" /><path d="M3 5a4 4 0 0 0 3.55 3.97" /><path d="M6 13H2" /><path d="m8 2 1.88 1.88" /><path d="M9 7.13V6a3 3 0 1 1 6 0v1.13" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">He pastes nine errors in a row, and the fox is stuck after one double jump.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-message-circle-question"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">One question from the chat, then his own fix on paper</span></li>
+><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He asks the chat for one question and writes his own fix on paper.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-gamepad-2"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,20 +176,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="6" x2="10" y1="11" y2="11" /><line x1="8" x2="8" y1="9" y2="13" /><line x1="15" x2="15.01" y1="12" y2="12" /><line x1="18" x2="18.01" y1="10" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The double jump works, and the spring cloud is all his</span></li>
+><line x1="6" x2="10" y1="11" y2="11" /><line x1="8" x2="8" y1="9" y2="13" /><line x1="15" x2="15.01" y1="12" y2="12" /><line x1="18" x2="18.01" y1="10" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">The double jump works, and he builds the spring cloud himself.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
         <h3>Crack it with one hint</h3>
-        <p class="ns-demo-intro">You need a pencil and paper, plus your hand or a sticky note to cover the hints. The timer is for your real attempt.</p>
+        <p class="ns-demo-intro">You’ll need a pencil and paper, plus your hand or a sticky note to cover the hints. The timer is for your real attempt.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Cover both hints. Start the two-minute timer and try to decode Message 1 on paper.</li>
-            <li>If you’re stuck when it rings, uncover Hint 1 only, and try again.</li>
-            <li>Still stuck after a few more minutes? Uncover Hint 2, then finish it yourself. You’ll know it’s right when it turns into real words.</li>
-            <li>Now try Message 2. It was made the same way with a different shift, and it has no hints. Short words are a good place to start.</li>
+            <li>Cover both hints, start the two-minute timer and try to decode Message 1 on paper.</li>
+            <li>If you’re stuck when it rings, uncover Hint 1 only and try again.</li>
+            <li>If you’re still stuck after a few more minutes, uncover Hint 2 and then finish it yourself. You’ll know it’s right when it turns into real words.</li>
+            <li>Now try Message 2. It was made the same way with a different shift, and it has no hints, so short words are a good place to start.</li>
           </ol>
           <div class="ns-demo-side">
             <div class="ns-material">
@@ -198,9 +198,9 @@
               <div class="ns-material-row"><span class="ns-material-lbl">Hint 2</span><span class="ns-material-txt is-long">S is three places after P. Count back three for every letter, and if you pass A, keep counting back from Z.</span></div>
               <div class="ns-material-row"><span class="ns-material-lbl">Message 2</span><span class="ns-material-txt">GWNSL YMJ GFQQ</span></div>
               <div class="ns-material-row"><span class="ns-material-lbl">Alphabet</span><span class="ns-material-txt is-long">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span></div>
-              <p class="ns-material-note">There are no answers here on purpose. Real words are the check.</p>
+              <p class="ns-material-note">There are no answers here on purpose, since real words are the check.</p>
             </div>
-            <div class="ns-widget" data-widget="timer" data-config="{&#34;title&#34;: &#34;Your real attempt&#34;, &#34;seconds&#34;: 120, &#34;done&#34;: &#34;Two minutes. Stuck? Uncover Hint 1 only.&#34;}"><p class="ns-material-note">The timer needs JavaScript. A phone stopwatch works just as well.</p></div>
+            <div class="ns-widget" data-widget="timer" data-config="{&#34;title&#34;: &#34;Your real attempt&#34;, &#34;seconds&#34;: 120, &#34;done&#34;: &#34;Time’s up. If you’re stuck, uncover Hint 1 only.&#34;}"><p class="ns-material-note">The timer needs JavaScript. A phone stopwatch works just as well.</p></div>
           </div>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -214,7 +214,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> If you cracked Message 1 with a hint or two, Message 2 probably went faster, even though nobody told you its shift. You built a method, and the method came with you. Being handed the answer to Message 1 would have given you one sentence and nothing for the second. That’s procedural learning: the skill is in doing the move. And the pull to uncover Hint 2 before you’d really tried is the same pull as opening a chat before you start.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> If you cracked Message 1 with a hint or two, Message 2 probably went faster, even though nobody told you its shift. You built a method, and the method came with you. If someone had handed you the answer to Message 1, you’d have one sentence and nothing for the second. That’s procedural learning, where the skill is in doing the move. And the pull to uncover Hint 2 before you’d really tried is the same pull as opening a chat before you start.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -234,7 +234,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Make a real attempt first.</strong> Write your own try before you ask anything: the setup of the problem, a rough function, a messy paragraph. Even a wrong attempt gives the feedback something to improve.</div></li>
+><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span><div><strong>Make a real attempt first.</strong> Write your own try before you ask anything, like the setup of the problem, a rough function or a messy paragraph. Even a wrong attempt gives the feedback something to improve.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-message-circle-question"
   xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +246,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask for one hint, not the answer.</strong> Try: “Don’t give me the answer. Ask me one question that points at what I’m missing.” For writing, ask for feedback on the structure before you ask for any rewrite.</div></li>
+><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Ask for one hint, not the answer.</strong> Try asking, “Don’t give me the answer. Ask me one question that points at what I’m missing.” For writing, ask for feedback on the structure before you ask for any rewrite.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-repeat"
   xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg></span><div><strong>Ask what failed, then fix it.</strong> Paste your attempt and ask which part went wrong, without a corrected version. The fixing is your repetition.</div></li>
+><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg></span><div><strong>Ask what failed, then fix it.</strong> Paste your attempt and ask which part went wrong, without a corrected version, because doing the fixing is your repetition.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-eye-off"
   xmlns="http://www.w3.org/2000/svg"
@@ -296,7 +296,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> The next day, try one problem like the ones you worked on, with no chat open. If you can do it, or get further than before, the practice stuck. If your work keeps getting better but a twin problem still stumps you, the tool has been doing the repetitions.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> The next day, try one problem like the ones you worked on, with no chat open. If you can do it, or you get further than before, the practice stuck. If your work keeps getting better but a problem like it still stumps you, the tool has been doing the repetitions.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -312,7 +312,7 @@
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 132: Hints first, answers last. Step 1: Make a real attempt first. Step 2: Ask for one hint, not the answer. Step 3: Go back to your own work. Step 4: Ask what failed, then fix it yourself. Step 5: Read a solution? Redo it from blank. How to tell it is working: Next day, no chat open: try a twin problem and see how far you get." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 132: Hints first, answers last. Step 1: Make a real attempt first. Step 2: Ask for one hint, not the answer. Step 3: Go back to your own work. Step 4: Ask what failed, then fix it yourself. Step 5: Read a solution, then redo it from blank. How to tell it is working: The next day, with no chat open, try a problem like it and see how far you get." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -340,10 +340,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>A Framework for Mesencephalic Dopamine Systems Based on Predictive Hebbian Learning. The Journal of Neuroscience.</li>
-          <li>The Critical Role of Sleep Spindles in Hippocampal-Dependent Memory: A Pharmacology Study. The Journal of Neuroscience.</li>
-          <li>Huberman, A., with Dr. Terry Sejnowski. How to Improve at Learning Using Neuroscience &amp; AI. Huberman Lab Podcast, November 19, 2024.</li>
-          <li>Huberman, A., with Dr. Tommy Wood. Accelerate Learning &amp; Increase Cognitive Capacity. Huberman Lab Podcast, July 20, 2026.</li>
+          <li>Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakçı, Ö., &amp; Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. <em>Proceedings of the National Academy of Sciences</em>, <em>122</em>(26), Article e2422633122. <a href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noopener">https://doi.org/10.1073/pnas.2422633122</a></li>
+          <li>Huberman, A. (Host). (2024, November 18). Dr. Terry Sejnowski: How to improve at learning using neuroscience &amp; AI [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-terry-sejnowski-how-to-improve-at-learning-using-neuroscience-ai" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-terry-sejnowski-how-to-improve-at-learning-using-neuroscience-ai</a></li>
+          <li>Huberman, A. (Host). (2026, July 20). Accelerate learning &amp; increase cognitive capacity | Dr. Tommy Wood [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/accelerate-learning-and-increase-cognitive-capacity-tommy-wood" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/accelerate-learning-and-increase-cognitive-capacity-tommy-wood</a></li>
+          <li>Montague, P. R., Dayan, P., &amp; Sejnowski, T. J. (1996). A framework for mesencephalic dopamine systems based on predictive Hebbian learning. <em>The Journal of Neuroscience</em>, <em>16</em>(5), 1936–1947. <a href="https://doi.org/10.1523/JNEUROSCI.16-05-01936.1996" target="_blank" rel="noopener">https://doi.org/10.1523/JNEUROSCI.16-05-01936.1996</a></li>
       </ul>
     </div>
 

@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -135,11 +135,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Two playlists and a no-skip rule</h3>
-          <p>Three nights in a row, the first half hour of Gianna’s studying has gone to the music. She sits down with her precalculus review, and by the time a song feels right, problem one is still blank. The final is Friday.</p>
-          <p>Her study mix is two hundred songs on shuffle: a hype song, then a slow one, then something she has to skip. Every change pulls her hand to the phone, and every skip turns into a search for something better. On Monday she finished seven problems.</p>
-          <p>Sound with a steady pulse can become a timing signal for the nervous system. Groups of neurons start lining up their timing with the beat, which is called neural entrainment. It isn’t remote control, but rhythm gives movement a pattern to follow, and a playlist you only use for work can become a cue to start. Her shuffle changes the pattern every three minutes and hands her a reason to touch the phone each time.</p>
-          <p>She builds two playlists and stops editing them. One is for getting going, steady, wordless and not too loud; the other is for afterward, slow and simple. On Wednesday she starts the first on her laptop eight minutes before she means to begin, quietly, with one rule: no skipping. While it plays she clears the desk and lays out the practice test. When the word problems arrive and she catches herself listening instead of working, she turns it down almost to nothing.</p>
-          <p>She writes the first line of problem one three minutes after sitting down. Before the hour-long playlist loops, she has finished the whole trig section, nineteen problems. Then she puts on the slow one, stretches on the floor for a song and a half, and packs her bag.</p>
+          <p>Three nights in a row, the first half hour of Gianna’s studying has gone to the music. She sits down with her precalculus review, and by the time a song feels right, problem one is still blank. The final is on Friday.</p>
+          <p>Her study mix is two hundred songs on shuffle, so a hype song comes on, then a slow one, then something she has to skip. Every change pulls her hand to the phone, and every skip turns into a search for something better. On Monday she finished seven problems.</p>
+          <p>Sound with a steady beat can become a timing signal for the nervous system. Movements like walking tend to lock onto a steady beat, and brain waves can fall into step with it too, which is called neural entrainment. It isn’t remote control, but rhythm gives the body a pattern to follow. In one study, though, students did worse on a reading test while hearing songs with lyrics, whether they liked the songs or not. Her shuffle changes the pattern every three minutes, half the songs have lyrics, and each one gives her a reason to touch the phone.</p>
+          <p>So she builds two playlists and stops editing them. One is for getting going, steady, wordless and not too loud, and the other is for afterward, slow and simple. On Wednesday she starts the first one on her laptop eight minutes before she means to begin, with the volume low and a rule against skipping. While it plays, she clears the desk and lays out the practice test. When she reaches the word problems and catches herself listening instead of working, she turns it down almost to nothing.</p>
+          <p>She writes the first line of problem one three minutes after sitting down. Before the hour-long playlist starts over, she has finished all nineteen problems in the trig section. Then she puts on the slow playlist, stretches on the floor for a song and a half and packs her bag.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M21 4v16" /><path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Half an hour of skipping and searching before problem one</span></li>
+><path d="M21 4v16" /><path d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She spends half an hour skipping songs before she starts problem one.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-music"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">A steady, wordless playlist started eight minutes early, no skipping</span></li>
+><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She starts a steady, wordless playlist eight minutes early and never skips.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-list-checks"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,20 +177,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Nineteen problems before the playlist loops, then the slow one</span></li>
+><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She finishes nineteen problems before the playlist starts over.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Sort to the beat</h3>
-        <p class="ns-demo-intro">You need a deck of cards, the stopwatch here, and two wordless tracks you can play quietly: one fast and steady, one slow.</p>
+        <p class="ns-demo-intro">You’ll need a deck of cards, the stopwatch below and two wordless tracks you can play quietly, one fast and steady and one slow.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Shuffle the deck and sort it into a red pile and a black pile in silence. Time it.</li>
+            <li>Shuffle the deck and sort it into a red pile and a black pile in silence, timing yourself.</li>
             <li>Shuffle again. Start the fast, steady track at low volume, let it play for half a minute, then sort and time it.</li>
             <li>Shuffle once more and do the same with the slow track.</li>
-            <li>Watch your hands as well as the clock. Do they start moving with the beat?</li>
+            <li>Watch your hands as well as the clock, and notice whether they start moving with the beat.</li>
           </ol>
           <div class="ns-demo-side">
             <div class="ns-widget" data-widget="rounds" data-config="{&#34;title&#34;: &#34;Stopwatch&#34;, &#34;rounds&#34;: [&#34;In silence&#34;, &#34;Fast, steady track&#34;, &#34;Slow track&#34;], &#34;result&#34;: {&#34;base&#34;: [1], &#34;compare&#34;: 2, &#34;positive&#34;: &#34;The slow track took {d} seconds longer than the fast one for the same deck.&#34;, &#34;negative&#34;: &#34;About the same this time. Notice whether your hands still found the beat.&#34;}}"><p class="ns-material-note">The timer needs JavaScript. A phone stopwatch works just as well.</p></div>
@@ -207,7 +207,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> With music on, your hands may fall into the beat without you deciding to, quicker with the fast track and slower with the slow one, though not everyone’s time changes. That’s entrainment in miniature: rhythm giving movement a pattern to follow. It’s also why a steady track can make starting easier, and why one that keeps changing can make a task feel messy.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> With music on, your hands may fall into the beat without you deciding to, faster with the fast track and slower with the slow one, though not everyone’s time changes. That’s entrainment in a small way, with rhythm giving movement a pattern to follow. It’s also why a steady track can make starting easier and one that keeps changing can make a task feel messy.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -227,7 +227,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg></span><div><strong>Make a playlist for getting going.</strong> Steady, wordless and not too loud, long enough for a whole session. It’s for the first minutes of focus, a workout or a cleaning sprint.</div></li>
+><path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg></span><div><strong>Make a playlist for getting going.</strong> Make it steady, wordless and not too loud, and long enough for a whole session. It’s for the first minutes of focus, a workout or a cleaning sprint.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-moon"
   xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +239,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Make one for winding down.</strong> Slow, simple and predictable, for stretching, recovering or getting ready for sleep.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Make one for winding down.</strong> Make this one slow, simple and predictable, for stretching, recovering or getting ready for sleep.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +251,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Start it 5 to 10 minutes early.</strong> Put it on while you set up: clear the desk, fill your water, open the work. Over time, the playlist becomes a cue that it’s time to work.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Start it five to ten minutes early.</strong> Put it on while you set up, clearing the desk, filling your water and opening the work. Over time, the playlist becomes a cue that it’s time to work.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-volume-1"
   xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +263,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /></svg></span><div><strong>Keep it low for hard thinking.</strong> Quieter for problems, reading or writing; louder is fine for physical or repetitive work. Once it starts, no skipping.</div></li>
+><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" /><path d="M16 9a5 5 0 0 1 0 6" /></svg></span><div><strong>Keep it low for hard thinking.</strong> Play it quieter for problems, reading or writing, and louder for physical or repetitive work. Once it starts, don’t skip.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-volume-x"
   xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +289,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, write down when you sat down, when you started and how much you finished. Compare nights with the getting-going playlist against nights with your usual music or none; a shorter gap between sitting down and starting is the main thing to look for.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, write down when you sat down, when you started and how much you finished. Compare nights with the getting-going playlist to nights with your usual music or none, and look mostly at the gap between sitting down and starting.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -301,11 +301,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Building the perfect playlist can turn into the new way to put off starting. Give it one sitting, twenty minutes at most, then stop editing it for the week.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Building the perfect playlist can turn into a new way to put off starting. Give it one sitting of twenty minutes at most, then stop editing it for the week.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 34: Start the beat before the task. Step 1: Build a steady, wordless playlist. Step 2: Build a slow one for winding down. Step 3: Start it 5 to 10 minutes early. Step 4: Low for hard thinking, no skipping. Step 5: Stealing focus? Simpler or silent. How to tell it is working: Note the gap between sitting down and starting, with and without the playlist." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 34: Start the beat before the task. Step 1: Build a steady, wordless playlist. Step 2: Build a slow one for winding down. Step 3: Start it 5 to 10 minutes early. Step 4: Keep it low for hard thinking, no skips. Step 5: If it steals focus, go simpler or silent. How to tell it is working: Note the gap between sitting down and starting, with and without the playlist." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -333,10 +333,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Thaut, M. H., McIntosh, G. C., &amp; Hoemberg, V. (2015). &quot;Neurobiological foundations of neurologic music therapy: rhythmic entrainment and the motor system.&quot; Frontiers in Psychology, 5: 1185.</li>
-          <li>Will, U., &amp; Berg, E. (2007). &quot;Brainwave synchronization and entrainment to periodic acoustic stimuli.&quot; Neuroscience Letters, 424(1): 55-60.</li>
-          <li>Tierney, A., &amp; Kraus, N. (2013). &quot;The ability to tap to a beat relates to cognitive, linguistic, and perceptual skills.&quot; Brain and Language, 124(3): 225-231.</li>
-          <li>Perham, N., &amp; Currie, H. (2014). Does listening to preferred music improve reading comprehension performance? Applied Cognitive Psychology, 28(2): 279-284.</li>
+          <li>Perham, N., &amp; Currie, H. (2014). Does listening to preferred music improve reading comprehension performance? <em>Applied Cognitive Psychology</em>, <em>28</em>(2), 279–284. <a href="https://doi.org/10.1002/acp.2994" target="_blank" rel="noopener">https://doi.org/10.1002/acp.2994</a></li>
+          <li>Thaut, M. H., McIntosh, G. C., &amp; Hoemberg, V. (2015). Neurobiological foundations of neurologic music therapy: Rhythmic entrainment and the motor system. <em>Frontiers in Psychology</em>, <em>5</em>, Article 1185. <a href="https://doi.org/10.3389/fpsyg.2014.01185" target="_blank" rel="noopener">https://doi.org/10.3389/fpsyg.2014.01185</a></li>
+          <li>Tierney, A. T., &amp; Kraus, N. (2013). The ability to tap to a beat relates to cognitive, linguistic, and perceptual skills. <em>Brain and Language</em>, <em>124</em>(3), 225–231. <a href="https://doi.org/10.1016/j.bandl.2012.12.014" target="_blank" rel="noopener">https://doi.org/10.1016/j.bandl.2012.12.014</a></li>
+          <li>Will, U., &amp; Berg, E. (2007). Brain wave synchronization and entrainment to periodic acoustic stimuli. <em>Neuroscience Letters</em>, <em>424</em>(1), 55–60. <a href="https://doi.org/10.1016/j.neulet.2007.07.036" target="_blank" rel="noopener">https://doi.org/10.1016/j.neulet.2007.07.036</a></li>
       </ul>
     </div>
 

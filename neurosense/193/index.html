@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -112,8 +112,8 @@
         <h2>The Science</h2>
         <ul class="ep-list">
           <li>Your nervous system tracks timing, light, and rhythm, not just total hours.</li>
-          <li>Irregular sleep can push the circadian clock into a delayed, unstable pattern.</li>
-          <li>Consistency gives hormones, alertness, and sleep pressure a clearer prediction.</li>
+          <li>In college students, irregular sleep went with a body clock about two and a half hours later.</li>
+          <li>Consistency lets your body clock get hormones and alertness ready in advance.</li>
         </ul>
         <div class="ep-protocol">
           <h3>The Protocol</h3>
@@ -134,11 +134,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Mondays and the pink late pass</h3>
-          <p>“You promised,” Jojo says at the front desk, holding a pink late pass, and then he starts to cry. He likes to get there early enough to claim the good four-square court. Getting him through the gate before the 7:45 bell is Aaliyah’s job on school days, since their mom leaves for work at six, and this is the third Monday in a row it has gone wrong.</p>
-          <p>Tuesday through Friday she manages. On weekends she sleeps until noon to catch up, close to ten hours, and feels great. Then she lies awake on Sunday until after one, and on Monday the 6:40 alarm feels like the middle of the night. Last week she slept through two of them.</p>
-          <p>Ten hours sounds like plenty, but her nervous system keeps track of more than hours: timing, light and rhythm too, and her timing jumps by hours every weekend. Irregular sleep can push the circadian clock into a later, unstable pattern, so on Sunday night her body isn’t ready to sleep, and on Monday morning she’s awake on paper but mistimed inside. Consistency gives hormones, alertness and sleep pressure a clearer prediction.</p>
-          <p>Her anchor becomes 6:40 on school days and no later than 7:30 on weekends. On Saturday at 7:30 she carries two bowls of cereal out to the front steps, and Jojo eats his in the daylight while he explains his four-square strategy. Lights-out moves fifteen minutes earlier every few nights, small enough steps that she can actually fall asleep.</p>
-          <p>The first Saturday is rough. By the second Sunday she’s asleep by 10:50. On Monday she wakes on the first alarm, and at 7:38 Jojo is through the gate and running for the four-square court.</p>
+          <p>“You promised,” Jojo says at the front desk, holding a pink late pass, and then he starts to cry. He likes to get there early enough to claim the good four-square court. Getting him through the gate before the morning bell is Aaliyah’s job on school days, since their mom leaves for work at six, and this is the third Monday in a row it has gone wrong.</p>
+          <p>Tuesday through Friday she manages. On weekends she sleeps until noon to catch up, close to ten hours, and feels great. Then she lies awake on Sunday until after one, and on Monday the alarm feels like the middle of the night, and last week she slept through it twice.</p>
+          <p>Ten hours sounds like plenty, but the nervous system keeps track of more than hours. It tracks timing, light and rhythm too, and her timing jumps by hours every weekend. Irregular sleep, and the light patterns that come with it, can push the body clock later, so on Sunday night her body isn’t ready to sleep, and on Monday morning she’s awake on paper but out of sync inside. With a steady schedule, the body clock can get hormones and alertness ready for what’s coming.</p>
+          <p>Her anchor becomes 6:40 on school days and no later than 7:30 on weekends. That Saturday morning she carries two bowls of cereal out to the front steps, and Jojo eats his in the daylight while he explains his four-square strategy. Her lights-out time moves fifteen minutes earlier every few nights, in steps small enough that she can still fall asleep.</p>
+          <p>The first Saturday is rough, but by the second Sunday she’s asleep before eleven. On Monday she wakes up on the first alarm, and a few minutes before the bell, Jojo is through the gate and running for the four-square court.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -152,7 +152,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /><path d="m14 13-4 4" /><path d="m10 13 4 4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Noon on weekends, awake past one on Sunday, late on Monday</span></li>
+><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /><path d="m14 13-4 4" /><path d="m10 13 4 4" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She sleeps until noon on weekends and is late again on Monday.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sunrise"
   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">One wake-time anchor, cereal in the daylight, bedtime eased earlier</span></li>
+><path d="M12 2v8" /><path d="m4.93 10.93 1.41 1.41" /><path d="M2 18h2" /><path d="M20 18h2" /><path d="m19.07 10.93-1.41 1.41" /><path d="M22 22H2" /><path d="m8 6 4-4 4 4" /><path d="M16 18a4 4 0 0 0-8 0" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She keeps one wake time, eats cereal in the daylight and eases bedtime earlier.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-school"
   xmlns="http://www.w3.org/2000/svg"
@@ -176,20 +176,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M14 21v-3a2 2 0 0 0-4 0v3" /><path d="M18 4.933V21" /><path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6" /><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11" /><path d="M6 4.933V21" /><circle cx="12" cy="9" r="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Up on the first alarm, Jojo through the gate at 7:38</span></li>
+><path d="M14 21v-3a2 2 0 0 0-4 0v3" /><path d="M18 4.933V21" /><path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6" /><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11" /><path d="M6 4.933V21" /><circle cx="12" cy="9" r="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She wakes up on the first alarm, and Jojo makes it through the gate early.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>The steady beat</h3>
-        <p class="ns-demo-intro">You need one other person and a pencil. It’s a model of prediction rather than of sleep, and it shows what a body can do with a rhythm it can predict.</p>
+        <p class="ns-demo-intro">You’ll need one other person and a pencil. It’s a model of prediction rather than of sleep, and it shows what a body can do with a rhythm it can predict.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Your partner taps the pencil on a table at a steady beat, about one tap a second, for 15 taps. Try to clap at the exact moment of each tap.</li>
-            <li>Then they tap at random: two quick ones, a long gap, a slow one, another gap. Clap exactly with each tap again.</li>
+            <li>Your partner taps the pencil on a table at a steady beat, about one tap a second, for 15 taps, and you try to clap at the exact moment of each tap.</li>
+            <li>Then they tap at random, with two quick ones, a long gap, a slow one and another gap, and you try to clap exactly with each tap again.</li>
             <li>Switch places and do both rounds again.</li>
-            <li>Compare: in which round did your claps land on the taps, and in which were you a little behind?</li>
+            <li>Compare which round had your claps landing on the taps and which had you a little behind.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -203,7 +203,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Within a few taps of the steady round, most people clap right on the beat, because they’re clapping to a prediction. In the random round they can only react, so they’re always a little late. Your body uses timing in a similar way: when your wake time and morning light arrive at about the same time every day, hormones, alertness and sleep pressure can get ready ahead of time. When the timing jumps around, the body keeps catching up.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Within a few taps of the steady round, most people clap right on the beat, because they’re clapping to a prediction. In the random round they can only react, so they’re always a little late. Your body uses timing in a similar way, since when your wake time and morning light arrive at about the same time every day, your body clock can get hormones and alertness ready ahead of time. When the timing jumps around, the body keeps catching up.</p></div>
       </div>
 
       <div class="ns-plan">
@@ -223,7 +223,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></svg></span><div><strong>Pick one wake time and keep it.</strong> Choose a time you can hit every day, including Saturday and Sunday. If weekends have to be a little later, keep the gap small.</div></li>
+><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2 2" /><path d="M5 3 2 6" /><path d="m22 6-3-3" /><path d="M6.38 18.7 4 21" /><path d="M17.64 18.67 20 21" /></svg></span><div><strong>Pick one wake time and keep it.</strong> Choose a time you can hit every day, including Saturday and Sunday, and if weekends have to be a little later, keep the gap small.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-sun"
   xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><div><strong>Get light soon after you wake.</strong> Open the blinds, eat breakfast by the brightest window, or step outside for a few minutes. Light near the anchor tells your clock the day has started.</div></li>
+><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span><div><strong>Get light soon after you wake.</strong> Open the blinds, eat breakfast by the brightest window or step outside for a few minutes, since light near the anchor tells your clock the day has started.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-moon"
   xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Move bedtime in small steps.</strong> If you can’t fall asleep early, set lights-out about 15 minutes earlier every few nights. Small shifts give your clock time to follow without a jolt.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Move bedtime in small steps.</strong> If you can’t fall asleep early, set lights-out about 15 minutes earlier every few nights, which gives your clock time to follow without a jolt.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-lamp"
   xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Write down the times.</strong> Each morning, note when you woke up, roughly when you fell asleep, and how foggy the first hour felt from 0 to 10.</div></li>
+><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /></svg></span><div><strong>Write down the times.</strong> Each morning, note when you woke up, roughly when you fell asleep and how foggy the first hour felt from 0 to 10.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -285,7 +285,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After two weeks, compare your earliest and latest wake times: the spread should be shrinking. Look at your fog numbers for Mondays, and check whether Sunday nights got easier.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After two weeks, compare your earliest and latest wake times, since the spread should be shrinking. Look at your fog numbers for Mondays, and check whether Sunday nights got easier.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Weekend mornings are where this breaks. When the alarm goes off on Saturday, get up and get light first, then take the morning slowly, because a long sleep-in is what makes Sunday night hard.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Weekend mornings are where this breaks down. When the alarm goes off on Saturday, get up and get light first, and then take the morning slowly, because a long sleep-in is what makes Sunday night hard.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -309,7 +309,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> A steady wake time helps ordinary sleep. If you lie awake most nights, snore loudly, or feel exhausted even when your sleep is regular, talk to a parent and a doctor.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> A steady wake time helps ordinary sleep. If you lie awake most nights, snore loudly or feel exhausted even when your sleep is regular, talk to a parent and a doctor.</p></div>
           </div>
         </div>
         <figure class="ns-card">
@@ -341,10 +341,10 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Phillips, A. J. K., Clerx, W. M., O&#x27;Brien, C. S., Sano, A., Barger, L. K., Picard, R. W., et al. Irregular Sleep/Wake Patterns Are Associated With Poorer Academic Performance and Delayed Circadian and Sleep/Wake Timing. Scientific Reports, 2017.</li>
-          <li>Windred, D. P., Burns, A. C., Lane, J. M., Saxena, R., Rutter, M. K., Cain, S. W., &amp; Phillips, A. J. K. Sleep Regularity Is a Stronger Predictor of Mortality Risk Than Sleep Duration: A Prospective Cohort Study. Sleep, 2024.</li>
-          <li>Huberman, A., with Samer Hattar. Essentials: Timing Light for Better Sleep, Energy &amp; Mood. Huberman Lab Podcast, August 21, 2025.</li>
-          <li>Huberman, A. Sleep Toolkit: Tools for Optimizing Sleep &amp; Sleep-Wake Timing. Huberman Lab Podcast, Ep. 84, August 8, 2022.</li>
+          <li>Huberman, A. (Host). (2022, August 8). Sleep toolkit: Tools for optimizing sleep &amp; sleep-wake timing (No. 84) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/sleep-toolkit-tools-for-optimizing-sleep-and-sleep-wake-timing" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/sleep-toolkit-tools-for-optimizing-sleep-and-sleep-wake-timing</a></li>
+          <li>Huberman, A. (Host). (2025, August 21). Essentials: Timing light for better sleep, energy &amp; mood | Dr. Samer Hattar [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/essentials-timing-light-for-better-sleep-energy-and-mood-dr-samer-hattar" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/essentials-timing-light-for-better-sleep-energy-and-mood-dr-samer-hattar</a></li>
+          <li>Phillips, A. J. K., Clerx, W. M., O'Brien, C. S., Sano, A., Barger, L. K., Picard, R. W., Lockley, S. W., Klerman, E. B., &amp; Czeisler, C. A. (2017). Irregular sleep/wake patterns are associated with poorer academic performance and delayed circadian and sleep/wake timing. <em>Scientific Reports</em>, <em>7</em>(1), Article 3216. <a href="https://doi.org/10.1038/s41598-017-03171-4" target="_blank" rel="noopener">https://doi.org/10.1038/s41598-017-03171-4</a></li>
+          <li>Windred, D. P., Burns, A. C., Lane, J. M., Saxena, R., Rutter, M. K., Cain, S. W., &amp; Phillips, A. J. K. (2024). Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study. <em>Sleep</em>, <em>47</em>(1), Article zsad253. <a href="https://doi.org/10.1093/sleep/zsad253" target="_blank" rel="noopener">https://doi.org/10.1093/sleep/zsad253</a></li>
       </ul>
     </div>
 

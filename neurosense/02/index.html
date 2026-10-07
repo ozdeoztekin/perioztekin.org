@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -134,12 +134,12 @@
       <article class="ns-story">
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
-          <h3>Bars 41 to 48 by Thursday</h3>
-          <p>Odette plays piano in a trio, and in the new piece the piano races alone through bars 41 to 48. On Thursday the trio reads it together for the first time, and if she fakes the run, everyone will hear.</p>
-          <p>Monday she got home at four and opened the feed for one video. At 5:05 she was still on her bed, swiping, with her music still in her backpack. When she finally sat down at the piano, scales felt unbearable, the run fell apart at 72 on the metronome, and after three tries she picked the phone back up. Twelve minutes of practice, total.</p>
-          <p>The feed is built for the part of the brain that runs on surprise. Dopamine neurons fire hardest for a reward they couldn’t predict, and any swipe might be great or might be nothing. That system is about wanting, and wanting is separate from enjoying: Odette would rate most of those videos a three, and she still couldn’t stop. After an hour of surprise every few seconds, slow, predictable scales feel flat by comparison.</p>
-          <p>Wednesday, on the bus home, she switches her phone to grayscale, an hour before she plans to practice. At home she sets a 15-minute timer before opening the app, and when it rings she stops mid-video and leaves the phone charging in the kitchen. Then ten minutes folding her brother’s laundry, which is as boring as it sounds. He owes her now.</p>
-          <p>At 4:30 she sits at the piano and sets the metronome to 60. By 5:15 she has practiced for 45 minutes, wandered to the kitchen once, looked at a gray screen and come back. The run is clean at 80. On Thursday the trio gets through bars 41 to 48 without stopping.</p>
+          <h3>The run in bars 41 to 48</h3>
+          <p>In the new piece Odette’s trio is learning, the violin and cello hold long notes while the piano races alone through bars 41 to 48. They’re reading it together for the first time on Thursday, and if she fakes that run, everyone will hear it.</p>
+          <p>On Monday she got home at four and opened her feed for one video. At five she was still lying on her bed, swiping, with her music still in her backpack. When she finally sat down at the piano, her scales felt unbearable and the run fell apart at 72 on the metronome. After three tries she picked up the phone again. She practiced for twelve minutes that whole afternoon.</p>
+          <p>Feeds are built around a part of the brain that runs on surprise. Dopamine cells fire hardest for a reward you didn’t see coming, and every swipe might bring something great or nothing at all. That system drives wanting more than enjoying. Odette would rate most of those videos a three, and she still couldn’t stop. After an hour of surprises every few seconds, slow and predictable scales felt flat.</p>
+          <p>On Wednesday she switches her phone to grayscale on the bus, an hour before she plans to practice. At home she sets a 15-minute timer before she opens the app, and when it rings she stops in the middle of a video and leaves the phone charging in the kitchen. Then she folds her brother’s laundry for ten minutes and makes sure he knows he owes her.</p>
+          <p>When she sits down at the piano at 4:30, she starts the metronome at 60. Forty-five minutes later she has wandered into the kitchen once, looked at a gray screen and come right back. The run is clean at 80, and on Thursday the trio gets through bars 41 to 48 without stopping.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -153,7 +153,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">An hour of swiping, then twelve minutes of practice</span></li>
+><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">An hour on her feed leaves her with twelve minutes of practice.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-contrast"
   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +165,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Grayscale, a 15-minute feed timer, ten minutes of laundry</span></li>
+><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She goes gray, puts the feed on a timer and folds laundry before she plays.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-piano"
   xmlns="http://www.w3.org/2000/svg"
@@ -177,20 +177,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 13v4" /><path d="M14 13v4" /><path d="M18 13v4" /><path d="M2 13h20" /><path d="M22 11.5A3.5 3.5 0 0018.5 8a3.52 3.52 0 01-3.173-2A7 7 0 002 9v10a2 2 0 002 2h16a2 2 0 002-2z" /><path d="M6 13v4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">45 minutes of practice, and the run clean at 80</span></li>
+><path d="M10 13v4" /><path d="M14 13v4" /><path d="M18 13v4" /><path d="M2 13h20" /><path d="M22 11.5A3.5 3.5 0 0018.5 8a3.52 3.52 0 01-3.173-2A7 7 0 002 9v10a2 2 0 002 2h16a2 2 0 002-2z" /><path d="M6 13v4" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She practices for 45 minutes, and the run comes out clean at 80.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
         <h3>Score your feed</h3>
-        <p class="ns-demo-intro">You need your phone, a pen and a scrap of paper. Set a three-minute timer on your phone’s clock before you open anything.</p>
+        <p class="ns-demo-intro">You’ll need your phone, a pen and a scrap of paper. Before you open anything, set a three-minute timer on your phone’s clock.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Open the feed you use most and start the timer.</li>
-            <li>For every video, jot down a score from 0 to 10 for how much you actually enjoyed it. Keep it quick.</li>
-            <li>When the timer rings, stop, even mid-video, and notice how much you want to see one more.</li>
-            <li>Count your scores of 7 or higher. Then compare that number with how hard it was to stop.</li>
+            <li>For every video, jot down a quick score from 0 to 10 for how much you actually enjoyed it.</li>
+            <li>When the timer rings, stop, even in the middle of a video, and notice how much you want to see one more.</li>
+            <li>Count how many scores were 7 or higher, and compare that with how hard it was to stop.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -204,14 +204,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Twos and threes tend to pile up in a long row, with one or two good ones, and there’s a real tug at the end anyway. That gap is the wanting-versus-liking split from The Science above: the pull comes from the chance that the next video is great. It’s also why a timer works better than waiting for a good place to stop. There isn’t one.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Most people end up with a long row of twos and threes and maybe one or two good ones, and they still feel a real tug when the timer rings. Wanting the next video and enjoying the last one are two separate things, and your scores show the gap between them. The pull comes from the chance that the next video will be great, which is also why a timer works better than waiting for a good place to stop. There never is one.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Get from the feed to the work</h3>
-          <p class="ns-plan-intro">Try it on a day you have something hard to start.</p>
+          <p class="ns-plan-intro">Try it on a day when you have something hard to start.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-contrast"
@@ -224,7 +224,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></svg></span><div><strong>Go gray an hour before.</strong> Switch your phone to grayscale about an hour before you plan to start. On most phones it’s under Accessibility in Settings, or search “grayscale.”</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></svg></span><div><strong>Go gray an hour before.</strong> Switch your phone to grayscale about an hour before you plan to start. On most phones it’s under Accessibility in Settings, or you can search for “grayscale.”</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Give the feed a timer.</strong> Decide how long first, 15 minutes at most, and set the timer before you open the app. When it rings, stop mid-video.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Give the feed a timer.</strong> Decide how long you’ll scroll first, 15 minutes at most, and set the timer before you open the app. When it rings, stop, even in the middle of a video.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-door-closed"
   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +248,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" /><path d="M2 21h20" /><path d="M9 12h.01" /></svg></span><div><strong>Keep the feeds closed until you’re done.</strong> Short-video apps stay shut for the rest of the hour and through the work. Charging the phone in another room makes that a lot easier.</div></li>
+><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" /><path d="M2 21h20" /><path d="M9 12h.01" /></svg></span><div><strong>Keep the feeds closed until you’re done.</strong> Leave short-video apps shut for the rest of the hour and while you work. Charging the phone in another room makes that much easier.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shirt"
   xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Time how long it takes from sitting down to actually starting, and count how many times you pick up your phone in the first half hour. Do it once on a normal day and once with the timer and the boring ten minutes, then compare.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Time how long it takes you to actually start after you sit down, and count how often you pick up your phone in the first half hour. Do it once on a normal day and once with the timer and the boring ten minutes, then compare.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -286,7 +286,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The timer always seems to ring right before a good one. Stop anyway: the next video will always look promising, which is exactly why the timer has to decide.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> The timer always seems to ring right before a good one. Stop anyway. The next video will always look promising, and that’s exactly why the timer has to decide.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -298,11 +298,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> If you can’t get yourself to start things even on quiet, low-phone days, or the feed is eating into your sleep, bring it up with a parent and with your doctor.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> If you can’t get yourself to start things even on quiet days with your phone put away, or the feed is eating into your sleep, bring it up with a parent and with your doctor.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 02: From the feed to the work. Step 1: Grayscale an hour before you start. Step 2: A 15-minute timer for the feed. Step 3: Feeds shut, phone in another room. Step 4: Ten boring minutes, then begin. How to tell it is working: Time from sitting down to starting, and count pickups: a normal day versus a timer day." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 02: From the feed to the work. Step 1: Grayscale an hour before you start. Step 2: A 15-minute timer for the feed. Step 3: Feeds shut, phone in another room. Step 4: Ten boring minutes, then begin. How to tell it is working: Time how long it takes to start, and count pickups, on a normal day and a timer day." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -330,9 +330,9 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Schultz, W., Dayan, P., &amp; Montague, P. R. (1997). A neural substrate of prediction and reward. Science, 275(5306): 1593-1599.</li>
-          <li>Berridge, K. C., &amp; Robinson, T. E. (1998). What is the role of dopamine in reward: hedonic impact, reward learning, or incentive salience? Brain Research Reviews, 28(3): 309-369.</li>
-          <li>Volkow, N. D., Wang, G. J., Newcorn, J. H., et al. (2011). Motivation deficit in ADHD is associated with dysfunction of the dopamine reward pathway. Molecular Psychiatry, 16(11): 1147-1154.</li>
+          <li>Berridge, K. C., &amp; Robinson, T. E. (1998). What is the role of dopamine in reward: Hedonic impact, reward learning, or incentive salience? <em>Brain Research Reviews</em>, <em>28</em>(3), 309–369. <a href="https://doi.org/10.1016/S0165-0173(98)00019-8" target="_blank" rel="noopener">https://doi.org/10.1016/S0165-0173(98)00019-8</a></li>
+          <li>Schultz, W., Dayan, P., &amp; Montague, P. R. (1997). A neural substrate of prediction and reward. <em>Science</em>, <em>275</em>(5306), 1593–1599. <a href="https://doi.org/10.1126/science.275.5306.1593" target="_blank" rel="noopener">https://doi.org/10.1126/science.275.5306.1593</a></li>
+          <li>Volkow, N. D., Wang, G.-J., Newcorn, J. H., Kollins, S. H., Wigal, T. L., Telang, F., Fowler, J. S., Goldstein, R. Z., Klein, N., Logan, J., Wong, C., &amp; Swanson, J. M. (2011). Motivation deficit in ADHD is associated with dysfunction of the dopamine reward pathway. <em>Molecular Psychiatry</em>, <em>16</em>(11), 1147–1154. <a href="https://doi.org/10.1038/mp.2010.97" target="_blank" rel="noopener">https://doi.org/10.1038/mp.2010.97</a></li>
       </ul>
     </div>
 

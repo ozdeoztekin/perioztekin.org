@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 2rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: normal; text-transform: none; color: var(--text); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; }
+  .ep-sources li { font-size: 1rem; line-height: 1.7; color: var(--text); margin-bottom: .65rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Forty-three drops in the driveway</h3>
-          <p>The ball bounces off Quinn’s knee and rolls under her mom’s car, the third one this minute. On Saturday she has a busking spot at the farmers market, next to the bread stand, and the trick she wants in the middle of her act is one throw under her leg without breaking the three-ball pattern.</p>
-          <p>She can keep the plain pattern going for a minute straight. But every practice this week has gone the same way: two tries at the under-the-leg throw, two drops, then back to the plain pattern, because it never falls apart.</p>
-          <p>A move gets wired in through connections between brain cells. When the cells on both sides of a connection fire together again and again, the connection gets stronger and stays that way. That’s long-term potentiation, so the new throw only strengthens when she throws it, dropped or not. Making an error and then getting it right can help learning stick, and sleep after practice helps a new skill settle in.</p>
-          <p>On Wednesday after school she sets a timer for fifteen minutes and makes one rule: every fourth throw goes under the leg. She drops, chases, starts again. Around minute nine, with a ball in the hedge for the fifth time, the plain pattern looks very good. She fishes the ball out and throws the next one under. When the timer rings she stops, and that night she’s asleep by ten.</p>
-          <p>Wednesday’s count is forty-three drops. On Thursday before school she tries ten under-the-leg throws, and six come back clean. On Saturday, by the bread stand, she lands three in a row, and a little kid in a stroller claps and shouts for another one.</p>
+          <p>The ball bounces off Quinn’s knee and rolls under her mom’s car, the third one in a minute. On Saturday she has a busking spot at the farmers market next to the bread stand, and the trick she wants in the middle of her act is a single throw under her leg without breaking the three-ball pattern.</p>
+          <p>She can keep the plain pattern going for a full minute. But every practice this week has gone the same way. She tries the under-the-leg throw twice, drops it twice and goes back to the plain pattern, because that one never falls apart.</p>
+          <p>A move like that gets built out of connections between brain cells. When the cells on both sides of a connection are active together again and again, the connection gets stronger and stays stronger, which is called long-term potentiation. So the connections behind the new throw only get worked when she throws it, whether she drops it or not. Studies of learning also suggest that making a mistake and then getting it right can help something stick, and sleep after practice helps a new skill settle in.</p>
+          <p>On Wednesday after school she sets a timer for fifteen minutes and makes one rule, which is that every fourth throw goes under the leg. She drops, chases the ball and starts again, over and over. Around minute nine, with a ball in the hedge for the fifth time, the plain pattern starts to look very good, but she fishes the ball out and throws the next one under anyway. When the timer rings she stops, and that night she’s asleep by ten.</p>
+          <p>She dropped the ball 43 times on Wednesday. On Thursday before school she tries ten under-the-leg throws, and six come back clean. On Saturday, next to the bread stand, she lands three in a row, and a little kid in a stroller claps and yells for another one.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Two tries at the new throw, two drops, back to the safe pattern</span></li>
+><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She tries the new throw twice, drops it twice and goes back to the safe pattern.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Fifteen minutes, every fourth throw under the leg, asleep by ten</span></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">For fifteen minutes, every fourth throw goes under her leg, and she’s asleep by ten.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-star"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,21 +178,21 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Six of ten on Thursday, three in a row on Saturday</span></li>
+><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She lands six of ten on Thursday and three in a row on Saturday.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
         <h3>The elbow coin catch</h3>
-        <p class="ns-demo-intro">A small move with plenty of misses built in. You need ten coins of the same size and a rug or carpet, so dropped coins don’t roll far.</p>
+        <p class="ns-demo-intro">This is a small move with plenty of misses built in. You’ll need ten coins of the same size and a rug or carpet, so dropped coins don’t roll far.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
             <li>Bend one arm so your hand is beside your ear and your forearm lies flat, palm up, like a shelf. Set one coin on the flat part near your elbow.</li>
-            <li>Swing your hand forward and down fast and try to catch the coin in that same hand. Add a coin each time you catch the whole stack, until you miss twice in a row, and that number is your edge.</li>
+            <li>Swing your hand forward and down fast and try to catch the coin in that same hand. Add a coin each time you catch the whole stack, until you miss twice in a row. That number is your edge.</li>
             <li>Do ten tries at your edge and count the catches.</li>
             <li>Practice at your edge for five minutes, expecting to miss most of the time. When you’ve missed several in a row, take the next try anyway.</li>
-            <li>Do ten more tries and count again. If you can, do ten more tomorrow before any practice.</li>
+            <li>Do ten more tries and count again. If you can, do ten more tomorrow before you practice.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -206,14 +206,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The second count is usually higher, even though the five minutes in between were mostly misses. That’s the circuit for the move firing again and again, and every miss shows you what to change. If you test again tomorrow, the number often holds or climbs, since sleep after practice helps a new skill settle in.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> The second count is usually higher, even though the five minutes in between were mostly misses. The connections behind the move got used again and again, and each miss showed you something to change. If you test again tomorrow, the number often holds or climbs, since sleep after practice helps a new skill settle in.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Fifteen minutes at the edge</h3>
-          <p class="ns-plan-intro">Use it on the move you keep backing away from because it goes wrong.</p>
+          <p class="ns-plan-intro">Start with the move you keep backing away from because it goes wrong.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-target"
@@ -226,7 +226,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one move.</strong> One thing: an under-the-leg throw, a chord change, one type of problem, the four bars of a song that keep falling apart. Everything else waits for another session.</div></li>
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><div><strong>Pick one move.</strong> Choose one thing, like an under-the-leg throw, a chord change, one type of problem or the four bars of a song that keep falling apart. Everything else can wait for another session.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-timer"
   xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Set a timer for 15 minutes.</strong> Ten works on a busy day. When it rings, stop, even mid-streak.</div></li>
+><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></svg></span><div><strong>Set a timer for 15 minutes.</strong> Ten minutes works on a busy day. When it rings, stop, even in the middle of a good streak.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-repeat"
   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Work on the version you still miss.</strong> Do the move the way it has to work when it counts, at full speed, and expect to miss a lot of early tries. Take the next one right when the safe version starts looking good. If you stop missing, make it a little harder.</div></li>
+><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Work on the version you still miss.</strong> Do the move the way it has to work when it counts, at full speed, and expect to miss a lot of the early tries. Take the next one right when the safe version starts looking good, and if you stop missing, make it a little harder.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-moon"
   xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +262,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Sleep that night.</strong> Go to bed on time and sleep a full night. Sleep after practice helps a new skill settle in.</div></li>
+><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><div><strong>Sleep that night.</strong> Go to bed on time and get a full night, since sleep after practice helps a new skill settle in.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-calendar-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /><path d="m9 15 2 2 4-4" /></svg></span><div><strong>Test it before you warm up.</strong> Next session, do ten tries cold and count the clean ones. That number says more than how the end of yesterday felt.</div></li>
+><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /><path d="m9 15 2 2 4-4" /></svg></span><div><strong>Test it before you warm up.</strong> Next session, do ten tries cold and count the clean ones. That number tells you more than how the end of yesterday felt.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -288,7 +288,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Write down the clean tries out of ten when each session starts. Over a week, if that number climbs even after blocks that felt like nothing but misses, the misses are doing their job.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Write down your clean tries out of ten at the start of each session. If that number climbs over a week, even after sessions that felt like nothing but misses, the misses are doing their job.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +300,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> After three or four misses in a row, the safe version starts to look very reasonable. Shrink the move instead of switching: practice one piece of it, like the under-the-leg throw with a single ball or just the first two bars, then put it back together.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> After three or four misses in a row, the safe version starts to look very reasonable. Instead of switching, shrink the move and practice one piece of it, like the under-the-leg throw with a single ball or only the first two bars, then put it back together.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -312,11 +312,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Missing is the point here, but pain is not. Stop for anything that hurts, and practice moves that involve falls, water or heights only where a coach or another adult normally supervises them.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> Missing is the point here, but pain isn’t. Stop for anything that hurts, and practice moves that involve falls, water or heights only where a coach or another adult normally supervises them.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 21: Fifteen minutes at the edge. Step 1: One move, nothing else. Step 2: 15 minutes on the timer. Step 3: Do the version you still miss. Step 4: Sleep that night, a full one. Step 5: Ten tries before warm-up: count clean. How to tell it is working: Count clean tries out of ten when each session starts, and watch it over a week." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 21: Fifteen minutes at the edge. Step 1: One move, nothing else. Step 2: Fifteen minutes on the timer. Step 3: Do the version you still miss. Step 4: Sleep a full night afterward. Step 5: Count clean tries out of ten before warm-up. How to tell it is working: Count clean tries out of ten at the start of each session and watch it over a week." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -337,12 +337,12 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Bliss, T. V. P., &amp; Lømo, T. (1973). Long-lasting potentiation of synaptic transmission in the dentate area of the anaesthetized rabbit following stimulation of the perforant path. Journal of Physiology, 232(2): 331-356.</li>
-          <li>Hebb, D. O. (1949). The Organization of Behavior. Wiley.</li>
-          <li>Yu, A. J., &amp; Dayan, P. (2005). Uncertainty, neuromodulation, and attention. Neuron, 46(4): 681-692.</li>
-          <li>Harvard MCB80.2x, Lesson on LTP. Cox, D.</li>
-          <li>Walker, M. P., Brakefield, T., Morgan, A., Hobson, J. A., &amp; Stickgold, R. (2002). Practice with sleep makes perfect: sleep-dependent motor skill learning. Neuron, 35(1): 205-211.</li>
-          <li>Metcalfe, J. (2017). Learning from errors. Annual Review of Psychology, 68: 465-489.</li>
+          <li>Bliss, T. V. P., &amp; Lømo, T. (1973). Long-lasting potentiation of synaptic transmission in the dentate area of the anaesthetized rabbit following stimulation of the perforant path. <em>The Journal of Physiology</em>, <em>232</em>(2), 331–356. <a href="https://doi.org/10.1113/jphysiol.1973.sp010273" target="_blank" rel="noopener">https://doi.org/10.1113/jphysiol.1973.sp010273</a></li>
+          <li>Cox, D. (n.d.). <em>Fundamentals of neuroscience, part 2: Neurons and networks</em> [MOOC]. HarvardX; edX. <a href="https://www.edx.org/learn/neuroscience/harvard-university-fundamentals-of-neuroscience-part-2-neurons-and-networks" target="_blank" rel="noopener">https://www.edx.org/learn/neuroscience/harvard-university-fundamentals-of-neuroscience-part-2-neurons-and-networks</a></li>
+          <li>Hebb, D. O. (1949). <em>The organization of behavior: A neuropsychological theory</em>. Wiley.</li>
+          <li>Metcalfe, J. (2017). Learning from errors. <em>Annual Review of Psychology</em>, <em>68</em>, 465–489. <a href="https://doi.org/10.1146/annurev-psych-010416-044022" target="_blank" rel="noopener">https://doi.org/10.1146/annurev-psych-010416-044022</a></li>
+          <li>Walker, M. P., Brakefield, T., Morgan, A., Hobson, J. A., &amp; Stickgold, R. (2002). Practice with sleep makes perfect: Sleep-dependent motor skill learning. <em>Neuron</em>, <em>35</em>(1), 205–211. <a href="https://doi.org/10.1016/S0896-6273(02)00746-8" target="_blank" rel="noopener">https://doi.org/10.1016/S0896-6273(02)00746-8</a></li>
+          <li>Yu, A. J., &amp; Dayan, P. (2005). Uncertainty, neuromodulation, and attention. <em>Neuron</em>, <em>46</em>(4), 681–692. <a href="https://doi.org/10.1016/j.neuron.2005.04.026" target="_blank" rel="noopener">https://doi.org/10.1016/j.neuron.2005.04.026</a></li>
       </ul>
     </div>
 

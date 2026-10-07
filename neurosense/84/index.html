@@ -54,7 +54,7 @@
   .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
   .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .ep-sources ul { margin: 0; padding-left: 1.4rem; }
-  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
   .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
   .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
   @media (max-width: 860px) {
@@ -111,8 +111,8 @@
       <div class="ep-content">
         <h2>The Science</h2>
         <ul class="ep-list">
-          <li>Banissy and Ward (2007), Nature Neuroscience: in mirror-touch synesthesia, seeing touch creates a felt echo, linked to higher empathy.</li>
-          <li>It shows self and other signals can overlap more than we notice, via the mirror system.</li>
+          <li>Banissy and Ward (2007), Nature Neuroscience: in mirror-touch synesthesia, seeing touch creates a felt echo, linked in a small study to stronger emotional empathy.</li>
+          <li>It shows self and other signals can overlap more than we notice, though how this happens is still debated.</li>
           <li>Empathy helps you read another's state, but too much blending makes your body feel responsible for every signal.</li>
           <li>Another person's feeling can seem to land in your body.</li>
         </ul>
@@ -136,11 +136,11 @@
         <div class="ns-story-text">
           <p class="ns-kicker">Example</p>
           <h3>Holding the back of the seat</h3>
-          <p>Nora is running bent over, one hand on the back of a purple bike seat, when Lucy yells “Let go.” It’s learn-to-ride Saturday at the recreation center, and Nora is a volunteer who holds the seat until a kid is ready. Lucy is six, and sure she’s ready.</p>
-          <p>Lucy makes it about ten feet, wobbles, and goes down hard on her palms and one knee. Nora’s own palms sting and her stomach drops, as if she’d hit the asphalt herself. She freezes, hands over her mouth, while Lucy wails, two kids stop pedaling to stare, and the coordinator is at the far end of the lot.</p>
-          <p>In a rare condition called mirror-touch synesthesia, seeing someone touched creates a felt touch on the watcher’s own body, and it’s linked with higher empathy. Nora doesn’t have it, but it shows that signals about yourself and about someone else can overlap more than anyone notices. That overlap helps her read Lucy. Too much of it, and her body acts responsible for every signal while the person who’s hurt waits.</p>
-          <p>She asks herself where this started: in her own body, or in what she saw? What she saw. She puts a hand on her own forearm and feels what belongs to her: a warm palm, her sleeve, two knees that are fine. Then she decides what help is useful. She kneels, rinses Lucy’s palms with cool water from her bottle and puts on two bandages from the kit.</p>
-          <p>“Curb or try again?” Lucy picks the curb for two minutes, then climbs back on. By noon she rides the whole length of the lot with Nora jogging beside her, hands off the seat. At pickup she holds up both bandages for her mom.</p>
+          <p>Nora is running bent over, one hand on the back of a purple bike seat, when Lucy yells “Let go.” It’s learn-to-ride Saturday at the recreation center, and Nora is a volunteer whose job is to hold the seat until a kid is ready. Lucy is six, and sure she’s ready.</p>
+          <p>Lucy makes it about ten feet, wobbles and goes down hard on her palms and one knee. Nora’s own palms sting and her stomach drops, as if she had hit the asphalt herself. She freezes with her hands over her mouth while Lucy wails, two kids stop pedaling to stare, and the coordinator is at the far end of the lot.</p>
+          <p>In a rare condition called mirror-touch synesthesia, seeing someone being touched creates a felt touch on the watcher’s own body, and in small studies, people who have it report feeling other people’s emotions more strongly. Nora doesn’t have it, but it shows that the brain’s signals about yourself and about someone else can overlap more than anyone notices. That overlap helps her understand what Lucy is feeling. Too much of it, though, and her body reacts as if it were hurt while the person who’s really hurt waits.</p>
+          <p>She asks herself where the feeling started, in her own body or in what she saw, and the answer is what she saw. She puts a hand on her own forearm and feels what belongs to her, a warm palm, her sleeve and two knees that are fine. Then she decides what help would be useful. She kneels, rinses Lucy’s palms with water from her bottle and puts on two bandages from the kit.</p>
+          <p>She asks Lucy whether she wants to sit on the curb or try again. Lucy picks the curb for two minutes, then climbs back on. By noon she rides the whole length of the lot with Nora jogging beside her, hands off the seat, and at pickup she holds up both bandages for her mom.</p>
         </div>
         <ol class="ns-strip" aria-label="The example at a glance">
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -154,7 +154,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="18.5" cy="17.5" r="3.5" /><circle cx="5.5" cy="17.5" r="3.5" /><circle cx="15" cy="5" r="1" /><path d="M12 17.5V14l-3-3 4-3 2 3h2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Lucy falls, Nora’s own palms sting, and she freezes</span></li>
+><circle cx="18.5" cy="17.5" r="3.5" /><circle cx="5.5" cy="17.5" r="3.5" /><circle cx="15" cy="5" r="1" /><path d="M12 17.5V14l-3-3 4-3 2 3h2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">When Lucy falls, Nora’s own palms sting and she freezes.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hand"
   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">Names the source, a hand on her own arm, then kneels to help</span></li>
+><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She asks where the feeling started, touches her own arm and kneels to help.</span></li>
           <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-bandage"
   xmlns="http://www.w3.org/2000/svg"
@@ -178,20 +178,20 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M10 10.01h.01" /><path d="M10 14.01h.01" /><path d="M14 10.01h.01" /><path d="M14 14.01h.01" /><path d="M18 6v12" /><path d="M6 6v12" /><rect x="2" y="6" width="20" height="12" rx="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Two bandages, two minutes on the curb, then the whole lot alone</span></li>
+><path d="M10 10.01h.01" /><path d="M10 14.01h.01" /><path d="M14 10.01h.01" /><path d="M14 14.01h.01" /><path d="M18 6v12" /><path d="M6 6v12" /><rect x="2" y="6" width="20" height="12" rx="2" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">After two bandages and two minutes on the curb, Lucy rides the whole lot alone.</span></li>
         </ol>
       </article>
 
       <div class="ns-demo">
         <p class="ns-kicker">Try it yourself &middot; 2 minutes</p>
         <h3>Seen or felt?</h3>
-        <p class="ns-demo-intro">You need a friend or someone at home, and a soft paintbrush or just a fingertip. Nothing in this should hurt.</p>
+        <p class="ns-demo-intro">You’ll need a friend or someone at home, and a soft paintbrush or a fingertip. Nothing in this should hurt.</p>
         <div class="ns-demo-grid">
           <ol class="ns-steps">
-            <li>Sit facing each other while your partner slowly brushes the back of their own hand. Notice whether anything registers on your own hand: a tingle, a pull or nothing at all.</li>
-            <li>Now they tap the back of their hand lightly with a fingertip, a little quicker. Notice whether you react anywhere, like your hand, your face or your stomach.</li>
-            <li>Put one hand on your own forearm. Notice the warmth, the pressure and the fabric of your sleeve.</li>
-            <li>Compare what you saw with what was really touching you. Then swap roles.</li>
+            <li>Sit facing each other while your partner slowly brushes the back of their own hand. Notice whether anything registers on your own hand, like a tingle, a pull or nothing at all.</li>
+            <li>Now they tap the back of their hand lightly with a fingertip, a little faster, and you notice whether you react anywhere, like your hand, your face or your stomach.</li>
+            <li>Put one hand on your own forearm and notice the warmth, the pressure and the fabric of your sleeve.</li>
+            <li>Compare what you saw with what was really touching you, and then swap roles.</li>
           </ol>
         </div>
         <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -205,14 +205,14 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Most people feel little or nothing on their own skin from watching, though a quick tap can bring a small flinch. People with mirror-touch synesthesia, who are rare, feel the watched touch on their own hand. For everyone, the hand on your own arm is clearly yours, and that’s the anchor the protocol uses: once you know which signal belongs to you, it’s easier to choose how to help.</p></div>
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> Most people feel little or nothing on their own skin from watching, though a quick tap can bring a small flinch. People with mirror-touch synesthesia, who are rare, feel the watched touch on their own hand. For everyone, the hand on your own arm is clearly yours, and that’s the anchor the plan uses. Once you know which signal belongs to you, it’s easier to choose how to help.</p></div>
       </div>
 
       <div class="ns-plan">
         <div class="ns-plan-main">
           <p class="ns-kicker">Step by step</p>
           <h3>Care clearly, then help</h3>
-          <p class="ns-plan-intro">For the moments when someone else’s pain lands in your own body.</p>
+          <p class="ns-plan-intro">It’s for the moments when someone else’s pain lands in your own body.</p>
           <ol class="ns-plan-steps">
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-heart-pulse"
@@ -237,7 +237,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Name the source.</strong> Ask yourself whether this started in your own body or in what you saw. The answer is usually quick, and saying it separates their signal from yours.</div></li>
+><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg></span><div><strong>Name the source.</strong> Ask yourself whether this started in your own body or in what you saw. The answer usually comes quickly, and saying it separates their signal from yours.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-hand"
   xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +249,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><div><strong>Put a hand on your own arm.</strong> Or on your chest. Feel the warmth and the pressure for a breath or two. That contact belongs to you.</div></li>
+><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><div><strong>Put a hand on your own arm.</strong> Put it on your arm or your chest, and feel the warmth and the pressure for a breath or two. That contact belongs to you.</div></li>
             <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-handshake"
   xmlns="http://www.w3.org/2000/svg"
@@ -273,7 +273,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M12.8 19.6A2 2 0 1 0 14 16H2" /><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" /><path d="M9.8 4.4A2 2 0 1 1 11 8H2" /></svg></span><div><strong>Set down what isn’t yours.</strong> Afterward, check what you’re still carrying. Shake out your hands, or tell someone what happened.</div></li>
+><path d="M12.8 19.6A2 2 0 1 0 14 16H2" /><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" /><path d="M9.8 4.4A2 2 0 1 1 11 8H2" /></svg></span><div><strong>Set down what isn’t yours.</strong> Afterward, check what you’re still carrying, and shake out your hands or tell someone what happened.</div></li>
           </ol>
           <div class="ns-callouts">
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
@@ -287,7 +287,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After the next few moments like this, note how long it took you to act and whether you did something useful or froze. Over a couple of weeks, see whether the gap between the echo and the help gets shorter.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> After the next few moments like this, write down how long it took you to act and whether you did something useful or froze. Over a couple of weeks, see whether the gap between the echo and the help gets shorter.</p></div>
             <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-life-buoy"
   xmlns="http://www.w3.org/2000/svg"
@@ -299,7 +299,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Naming the source can feel cold, as if you’re pulling away from the person. It works the other way: it’s how you get steady enough to stay with them. Say it in your head, not out loud.</p></div>
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Naming the source can feel cold, as if you’re pulling away from the person, but it works the other way. It’s how you get steady enough to stay with them, and you can say it in your head instead of out loud.</p></div>
             <div class="ns-callout ns-limit"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
   class="lucide lucide-shield-check"
   xmlns="http://www.w3.org/2000/svg"
@@ -311,11 +311,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> If other people’s pain often stays with you for hours, talk it over with a counselor or a parent, and if watching someone get touched regularly feels like touch on your own skin, mention it to a doctor.</p></div>
+><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg></span><p><strong>Good to know.</strong> If other people’s pain often stays with you for hours, talk it over with a counselor or a parent. If watching someone get touched regularly feels like touch on your own skin, mention it to a doctor.</p></div>
           </div>
         </div>
         <figure class="ns-card">
-          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 84: Care clearly, then help. Step 1: Catch the echo in your body. Step 2: Did it start in you, or in what you saw?. Step 3: One hand on your own arm or chest. Step 4: Decide what help is useful. Step 5: Set down what isn’t yours. How to tell it is working: Notice how fast you go from the echo to useful help. Shorter gap? It’s working." width="1080" height="1350" loading="lazy"></a>
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 84: Care clearly, then help. Step 1: Catch the echo in your body. Step 2: Did it start in you or in what you saw?. Step 3: One hand on your own arm or chest. Step 4: Decide what help is useful. Step 5: Set down what isn’t yours. How to tell it is working: Notice how fast you get from the echo to useful help, and whether it gets faster." width="1080" height="1350" loading="lazy"></a>
           <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
         </figure>
       </div>
@@ -343,7 +343,8 @@
     <div class="ep-sources">
       <h3>Sources</h3>
       <ul>
-          <li>Banissy MJ, Ward J. Mirror-touch synesthesia is linked with a special propensity for empathy. Nature Neuroscience. 2007;10(7):815-816.</li>
+          <li>Banissy, M. J., &amp; Ward, J. (2007). Mirror-touch synesthesia is linked with empathy. <em>Nature Neuroscience</em>, <em>10</em>(7), 815–816. <a href="https://doi.org/10.1038/nn1926" target="_blank" rel="noopener">https://doi.org/10.1038/nn1926</a></li>
+          <li>Ward, J., &amp; Banissy, M. J. (2015). Explaining mirror-touch synesthesia. <em>Cognitive Neuroscience</em>, <em>6</em>(2–3), 118–133. <a href="https://doi.org/10.1080/17588928.2015.1042444" target="_blank" rel="noopener">https://doi.org/10.1080/17588928.2015.1042444</a></li>
       </ul>
     </div>
 
