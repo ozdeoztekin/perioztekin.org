@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Certain Is “Almost Certain”? &middot; NeuroSense Episode 247 &middot; Peri Oztekin</title>
+  <meta name="description" content="NeuroSense Episode 247: How Certain Is “Almost Certain”? You can feel 98 percent sure and still miss several of the answers your ranges were meant to catch.">
+  <link rel="canonical" href="https://perioztekin.org/neurosense/247/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/peri.css">
+  <link rel="stylesheet" href="/css/ns-tryit.css">
+  <meta property="og:title" content="How Certain Is “Almost Certain”? &middot; NeuroSense">
+  <meta property="og:description" content="Overconfidence &amp; Confidence Calibration">
+  <meta property="og:image" content="https://perioztekin.org/neurosense/247/thumb.png">
+  <meta property="og:url" content="https://perioztekin.org/neurosense/247/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+<style>
+  .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
+  .ep-tag {
+    display: inline-block; background: var(--accent-bg, rgba(126,232,222,.18));
+    color: #64748b;
+    font-size: .8rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; padding: .35rem .9rem; border-radius: 20px;
+    margin-bottom: 1.25rem;
+  }
+  .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
+  .ep-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .ep-video-wrap {
+    width: 100%; aspect-ratio: 9/16;
+    border-radius: var(--radius); overflow: hidden;
+    box-shadow: var(--shadow-lg); background: #000;
+  }
+  .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .ep-content h2 { margin-top: 0; }
+  .ep-list { padding-left: 1.4rem; }
+  .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
+  .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #64748b; margin-top: 1.5rem; }
+  .ep-protocol h3 { margin-top: 0; color: #64748b; }
+  .ep-section { margin: 3rem 0; }
+  .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
+  .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
+  .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
+  .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
+  .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
+  .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
+  .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .ep-sources ul { margin: 0; padding-left: 1.4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
+  .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
+  .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
+  @media (max-width: 860px) {
+    .ep-grid { grid-template-columns: 1fr; }
+    .ep-video-wrap { max-width: 360px; margin: 0 auto; }
+  }
+</style>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
+</head>
+<body>
+<header>
+<nav class="topnav" id="topnav">
+  <div class="brand-stack">
+    <a class="brand" href="/">Peri Oztekin</a>
+    <div class="brand-choice-line mind" aria-label="rotating brand line">
+      <span class="brand-brain" aria-hidden="true">
+        <svg id="brand-brain-image" class="brand-brain-image" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"></svg>
+      </span>
+      <span class="brand-choice-prefix">Your&nbsp;</span>
+      <span id="brand-choice-word" data-words="Mind,Thoughts,Feelings,Actions,Behavior">Mind</span>
+      <span class="brand-choice-suffix">&nbsp;Your Power</span>
+    </div>
+  </div>
+  <div class="nav-links" id="nav-links">
+    <a href="/">Home</a>
+    <a href="/academics/">Academics</a>
+    <a href="/projects/">Projects</a>
+    <a href="/research/">Research</a>
+    <a href="/neurosense/" class="active">NeuroSense</a>
+    <a href="/neurodivergent/">Neurodivergent</a>
+    <a href="/wellbeing/">Wellbeing</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact" class="nav-cta">Contact</a>
+  </div>
+  <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">&#9776;</button>
+</nav>
+</header>
+<main class="peri-page-shell">
+  <div class="container" style="padding-top: 2.5rem;">
+    <a href="/neurosense/" class="ep-nav-back">&larr; All episodes</a>
+    <span class="ep-tag" style="background: #64748b28; color: #64748b;">Episode 247 &middot; How the Brain Works</span>
+    <h1>How Certain Is “Almost Certain”?</h1>
+    <p class="ep-meta">Overconfidence &amp; Confidence Calibration</p>
+    <p class="ep-hook">You can feel 98 percent sure and still miss several of the answers your ranges were meant to catch.</p>
+
+    <div class="ep-grid">
+      <div class="ep-video-wrap">
+        <iframe src="https://www.youtube.com/embed/4ytRJ8xxvnA"
+                title="How Certain Is “Almost Certain”?"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+      <div class="ep-content">
+        <h2>The Science</h2>
+        <ul class="ep-list">
+          <li>Overconfidence is certainty running ahead of accuracy, and it is a normal part of how most people decide.</li>
+          <li>If each range truly deserves 98 percent confidence, you would expect around nine or ten hits out of ten, though a set of ten can vary by chance.</li>
+          <li>One miss proves little, since it could be bad luck, but repeated misses across a set can signal that your ranges are too narrow.</li>
+        </ul>
+        <div class="ep-protocol">
+          <h3>The Protocol</h3>
+          <ul class="ep-list">
+          <li>Pick ten things you only half know, like the height of the Leaning Tower of Pisa or the year of the first Nobel Peace Prize.</li>
+          <li>For each, write a low and a high bound you are 98 percent sure surround the true value, then count the hits.</li>
+          <li>If fewer than nine catch the answer, take it as a warning to reconsider how narrow your next ranges should be.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ns-tryit:start (generated by build_tryit.py; edit content/247.json, not this block) -->
+    <section class="ns-tryit" id="try-it" style="--t: #64748b; --t-soft: #64748b12; --t-line: #64748b40;">
+      <h2>See it in real life</h2>
+
+      <article class="ns-story">
+        <div class="ns-story-text">
+          <p class="ns-kicker">Example</p>
+          <h3>Four of ten in the estimation round</h3>
+          <p>The last round of the library’s monthly teen trivia night is the estimation round, and it belongs to Clio. For each of ten questions nobody could know exactly, her team writes a low number and a high number, and a range scores a point if the true answer lands inside it, within the round’s limit on how wide a range can be.</p>
+          <p>Last month she filled in every range in a few minutes, sure of all of them. Four caught the answer, the team lost by two points, and on the walk home her teammate Femi asked how she could be that sure about the weight of a blue whale.</p>
+          <p>Feeling sure doesn’t make a range right, because certainty can run ahead of accuracy. That gap is called overconfidence, and it’s a normal part of how most people decide. If each range deserved the 98 percent certainty she felt, nine or ten of them should have caught the answer, though a set that small can vary by chance. A single miss proves little, but misses that keep repeating can mean the ranges are too narrow.</p>
+          <p>That Sunday she tests the feeling. At the kitchen table she writes ranges for ten things she only half knows, like the height of the Leaning Tower of Pisa and the year of the first Nobel Peace Prize, each wide enough that she feels 98 percent sure. When she looks them up, five catch the answer. That’s a warning, though not a verdict, so Femi writes her a new set, and she gets six. Twice in a row is enough, so on the next set she pushes every range wider until it feels a little silly, and nine catch.</p>
+          <p>At the next trivia night her ranges look wide on the answer sheet, and Femi raises an eyebrow but doesn’t argue. Eight catch the answer, and the team wins by a point.</p>
+        </div>
+        <ol class="ns-strip" aria-label="The example at a glance">
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-target"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">She’s sure of all ten ranges, and only four catch the answer.</span></li>
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-ruler"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She counts hits on practice sets and widens her ranges after repeated misses.</span></li>
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-trophy"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">Eight of her ranges catch the answer, and the team wins.</span></li>
+        </ol>
+      </article>
+
+      <div class="ns-demo">
+        <p class="ns-kicker">Try it yourself &middot; 10 minutes</p>
+        <h3>Ten ranges, one count</h3>
+        <p class="ns-demo-intro">Keep the answers covered until the end, and don’t look anything up. Something to write on is all it takes.</p>
+        <div class="ns-demo-grid">
+          <ol class="ns-steps">
+            <li>For each question, write a low and a high number you’re 98 percent sure surround the true value, sure enough that you’d expect to miss about once in fifty.</li>
+            <li>Answer all ten, even the ones you know nothing about, since a wide range is allowed.</li>
+            <li>Uncover the answers and count how many of your ranges caught the true value.</li>
+            <li>Write down the count, along with how sure you felt while you were writing.</li>
+          </ol>
+          <div class="ns-demo-side">
+            <div class="ns-material">
+              <div class="ns-material-row"><span class="ns-material-lbl">1 to 5</span><span class="ns-material-txt is-long">(1) The year of the first Nobel Peace Prize · (2) The height of the Leaning Tower of Pisa, in meters · (3) The distance from Earth to the Moon, in kilometers · (4) The number of floors in the Empire State Building · (5) The year of the first modern Olympic Games</span></div>
+              <div class="ns-material-row"><span class="ns-material-lbl">6 to 10</span><span class="ns-material-txt is-long">(6) The number of countries that border Germany · (7) The length of the Golden Gate Bridge’s main span, in meters · (8) The year the Titanic sank · (9) The number of time zones in Russia · (10) The year the Eiffel Tower was finished</span></div>
+              <div class="ns-material-row"><span class="ns-material-lbl">Answers</span><span class="ns-material-txt is-long">(1) 1901 · (2) about 57 · (3) about 384,400 · (4) 102 · (5) 1896 · (6) 9 · (7) 1,280 · (8) 1912 · (9) 11 · (10) 1889</span></div>
+              <p class="ns-material-note">Cover the answers until you’ve written all ten ranges.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-lightbulb"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> If each range deserved 98 percent confidence, nine or ten should catch the answer, though ten questions can vary by chance. If several missed while you felt sure, that’s certainty running ahead of accuracy, which is overconfidence. A single miss proves little, but a handful is a warning that your ranges run too narrow, so try a new set with wider ones before you decide anything about yourself.</p></div>
+      </div>
+
+      <div class="ns-plan">
+        <div class="ns-plan-main">
+          <p class="ns-kicker">Step by step</p>
+          <h3>Let the count set your ranges</h3>
+          <p class="ns-plan-intro">Run it a few times over a week, with a fresh set each time.</p>
+          <ol class="ns-plan-steps">
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-list-checks"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></svg></span><div><strong>Pick ten things you half know.</strong> Choose quantities you can look up afterward, like a height, a distance, a year or a population, and don’t look until you’ve finished.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-ruler"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg></span><div><strong>Write 98 percent ranges.</strong> For each one, write a low and a high bound you’re 98 percent sure surround the true value.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-circle-check"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><div><strong>Look them up and count.</strong> Count how many ranges caught the answer. Ranges that deserve 98 percent should catch about nine or ten.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-triangle-alert"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg></span><div><strong>Treat fewer than nine as a warning.</strong> One set of ten can be unlucky, so it isn’t a verdict about you. If several missed, plan to make your next ranges wider.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-repeat"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><div><strong>Run a fresh set and compare.</strong> A few days later, try ten new quantities with wider ranges, and put the two counts side by side.</div></li>
+          </ol>
+          <div class="ns-callouts">
+            <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-circle-check"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Keep the count from every set of ten, with a word about how sure you felt. If the hits climb toward nine or ten as your ranges widen, your confidence and your accuracy are moving closer together.</p></div>
+            <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-life-buoy"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Wide ranges can feel like admitting you don’t know much. For questions like these you don’t, and a range that shows it is more useful than a narrow one that misses.</p></div>
+          </div>
+        </div>
+        <figure class="ns-card">
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 247: Let the count set your ranges. Step 1: Ten things you only half know. Step 2: Low and high bounds, 98 percent sure. Step 3: Look them up and count the hits. Step 4: Fewer than nine? A warning, not a verdict. Step 5: Fresh set, wider ranges, compare counts. How to tell it is working: Count the hits in each set of ten, and watch whether they climb toward nine or ten." width="1080" height="1350" loading="lazy"></a>
+          <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- ns-tryit:end -->
+
+    <div class="ep-section">
+      <h2>One-page summary</h2>
+      <p style="color: var(--muted);">Right-click &rarr; Save As to download. Or scan the QR code in the corner to come back here from print.</p>
+      <div class="ep-infographic">
+        <a href="infographic.png" target="_blank">
+          <img src="infographic.png" alt="How Certain Is “Almost Certain”? infographic, one-page summary">
+        </a>
+        <a href="infographic.png" download class="download">Download full-size PNG &darr;</a>
+      </div>
+    </div>
+
+    <div class="ep-section">
+      <h2>The science beat (5-second loop)</h2>
+      <div class="ep-broll">
+        <video src="broll.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+
+    <div class="ep-sources">
+      <h3>Sources</h3>
+      <ul>
+          <li>Bazerman, M. H. (2026). Judgment and decision making. In <em>Introduction to psychology: The full Noba collection</em> (pp. 754–767). Diener Education Fund. <a href="https://nobaproject.com/textbooks/introduction-to-psychology-the-full-noba-collection" target="_blank" rel="noopener">https://nobaproject.com/textbooks/introduction-to-psychology-the-full-noba-collection</a></li>
+      </ul>
+    </div>
+
+        <p class="ep-disclaimer">Educational content only. Not medical advice.</p>
+
+    <p style="text-align: center; margin: 1.5rem 0 .5rem; color: var(--muted); font-size: .92rem;">Also on Instagram: <a href="https://www.instagram.com/neurosensebrain/" target="_blank" rel="noopener" style="color: var(--teal); font-weight: 600;">@neurosensebrain</a></p>
+<a href="/neurosense/" class="ep-nav-back">&larr; Back to all episodes</a>
+  </div>
+</main>
+<footer>
+<div class="footer-inner">
+  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
+  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
+</div>
+<div class="footer-bottom">
+  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
+</div>
+</footer>
+
+<script src="/js/animate.js"></script>
+<script src="/js/peri.js"></script>
+<script src="/js/ns-tryit.js" defer></script>
+</body>
+</html>

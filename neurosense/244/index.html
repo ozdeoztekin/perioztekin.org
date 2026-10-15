@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Choice You Never Actually Made &middot; NeuroSense Episode 244 &middot; Peri Oztekin</title>
+  <meta name="description" content="NeuroSense Episode 244: The Choice You Never Actually Made. A default decides what happens if you do nothing, and people tend to stay with what is already in place.">
+  <link rel="canonical" href="https://perioztekin.org/neurosense/244/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/peri.css">
+  <link rel="stylesheet" href="/css/ns-tryit.css">
+  <meta property="og:title" content="The Choice You Never Actually Made &middot; NeuroSense">
+  <meta property="og:description" content="Defaults &amp; Decision Architecture">
+  <meta property="og:image" content="https://perioztekin.org/neurosense/244/thumb.png">
+  <meta property="og:url" content="https://perioztekin.org/neurosense/244/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+<style>
+  .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
+  .ep-tag {
+    display: inline-block; background: var(--accent-bg, rgba(126,232,222,.18));
+    color: #64748b;
+    font-size: .8rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; padding: .35rem .9rem; border-radius: 20px;
+    margin-bottom: 1.25rem;
+  }
+  .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
+  .ep-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .ep-video-wrap {
+    width: 100%; aspect-ratio: 9/16;
+    border-radius: var(--radius); overflow: hidden;
+    box-shadow: var(--shadow-lg); background: #000;
+  }
+  .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .ep-content h2 { margin-top: 0; }
+  .ep-list { padding-left: 1.4rem; }
+  .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
+  .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #64748b; margin-top: 1.5rem; }
+  .ep-protocol h3 { margin-top: 0; color: #64748b; }
+  .ep-section { margin: 3rem 0; }
+  .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
+  .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
+  .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
+  .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
+  .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
+  .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
+  .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .ep-sources ul { margin: 0; padding-left: 1.4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
+  .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
+  .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
+  @media (max-width: 860px) {
+    .ep-grid { grid-template-columns: 1fr; }
+    .ep-video-wrap { max-width: 360px; margin: 0 auto; }
+  }
+</style>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
+</head>
+<body>
+<header>
+<nav class="topnav" id="topnav">
+  <div class="brand-stack">
+    <a class="brand" href="/">Peri Oztekin</a>
+    <div class="brand-choice-line mind" aria-label="rotating brand line">
+      <span class="brand-brain" aria-hidden="true">
+        <svg id="brand-brain-image" class="brand-brain-image" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"></svg>
+      </span>
+      <span class="brand-choice-prefix">Your&nbsp;</span>
+      <span id="brand-choice-word" data-words="Mind,Thoughts,Feelings,Actions,Behavior">Mind</span>
+      <span class="brand-choice-suffix">&nbsp;Your Power</span>
+    </div>
+  </div>
+  <div class="nav-links" id="nav-links">
+    <a href="/">Home</a>
+    <a href="/academics/">Academics</a>
+    <a href="/projects/">Projects</a>
+    <a href="/research/">Research</a>
+    <a href="/neurosense/" class="active">NeuroSense</a>
+    <a href="/neurodivergent/">Neurodivergent</a>
+    <a href="/wellbeing/">Wellbeing</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact" class="nav-cta">Contact</a>
+  </div>
+  <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">&#9776;</button>
+</nav>
+</header>
+<main class="peri-page-shell">
+  <div class="container" style="padding-top: 2.5rem;">
+    <a href="/neurosense/" class="ep-nav-back">&larr; All episodes</a>
+    <span class="ep-tag" style="background: #64748b28; color: #64748b;">Episode 244 &middot; How the Brain Works</span>
+    <h1>The Choice You Never Actually Made</h1>
+    <p class="ep-meta">Defaults &amp; Decision Architecture</p>
+    <p class="ep-hook">A default decides what happens if you do nothing, and people tend to stay with what is already in place.</p>
+
+    <div class="ep-grid">
+      <div class="ep-video-wrap">
+        <iframe src="https://www.youtube.com/embed/1B_hNcszjYw"
+                title="The Choice You Never Actually Made"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+      <div class="ep-content">
+        <h2>The Science</h2>
+        <ul class="ep-list">
+          <li>An opt-in form makes joining the extra step and an opt-out form makes leaving the extra step; the options match, but the default differs.</li>
+          <li>People tend to stick with the status quo; one possible reason is that change brings uncertainty, which can feel uncomfortable.</li>
+          <li>Decision architecture arranges a choice so a predictable bias can work for people; enrolling employees automatically can raise retirement sign-ups.</li>
+        </ul>
+        <div class="ep-protocol">
+          <h3>The Protocol</h3>
+          <ul class="ep-list">
+          <li>Choose one app whose alerts keep interrupting your work.</li>
+          <li>Turn off its nonessential notifications once, in its settings, instead of resolving to ignore each alert.</li>
+          <li>Then leave the setting alone, so doing nothing now keeps the quieter default.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ns-tryit:start (generated by build_tryit.py; edit content/244.json, not this block) -->
+    <section class="ns-tryit" id="try-it" style="--t: #64748b; --t-soft: #64748b12; --t-line: #64748b40;">
+      <h2>See it in real life</h2>
+
+      <article class="ns-story">
+        <div class="ns-story-text">
+          <p class="ns-kicker">Example</p>
+          <h3>Banners over page 61</h3>
+          <p>“Your crops are ready,” says the banner that slides down over page 61. Anouk’s summer reading for English is a 340-page novel, due the first day of school, and she’s reading it on her phone because the library’s e-book was free and the paper copies had a waiting list. The banners come from a farming game her cousins got her hooked on, and they show up every few minutes.</p>
+          <p>Every night she promises herself she’ll ignore them. Mostly she does, but every so often she taps one, and twenty minutes later she’s back on the page, hunting for her place. On Tuesday she read eleven pages.</p>
+          <p>The game came with every alert switched on, and that setting is a default, meaning whatever happens if you do nothing. With alerts on from the start, quiet becomes the extra step, the way an opt-out form includes you unless you choose to withdraw. People tend to stick with what’s already in place, and one possible reason is that change brings uncertainty, which can feel uncomfortable. Anouk knows that part, because she worries about missing the game’s weekend harvest festival. Her nightly promise meant a fresh decision at every banner, and whenever she didn’t make it, the default won.</p>
+          <p>On Wednesday she opens the game’s settings and not the game. She switches off its notifications, the crops, the energy refills and the gifts from neighbors, which takes about a minute. Then she closes the settings and leaves them alone, so doing nothing now means a quiet page. She’ll visit the farm on purpose, after she reads.</p>
+          <p>That night she reads from page 61 to page 112 without a single banner. By Sunday she’s past page 200, and she finishes the last chapter on the porch with five days to spare.</p>
+        </div>
+        <ol class="ns-strip" aria-label="The example at a glance">
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-gamepad-2"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><line x1="6" x2="10" y1="11" y2="11" /><line x1="8" x2="8" y1="9" y2="13" /><line x1="15" x2="15.01" y1="12" y2="12" /><line x1="18" x2="18.01" y1="10" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">Game banners keep sliding over her book, and she reads eleven pages.</span></li>
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-bell-off"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742" /><path d="m2 2 20 20" /><path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">She turns off the game’s alerts once and leaves the setting alone.</span></li>
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-book-open"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">She reads past page 100 that night and finishes with days to spare.</span></li>
+        </ol>
+      </article>
+
+      <div class="ns-demo">
+        <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
+        <h3>The settings you never chose</h3>
+        <p class="ns-demo-intro">Use your phone, or any tablet or computer you use every day. This round is only for counting, so don’t change anything yet.</p>
+        <div class="ns-demo-grid">
+          <ol class="ns-steps">
+            <li>Open the notification settings and go down the list of apps one at a time.</li>
+            <li>For each app, ask whether you ever chose its alert setting yourself or whether it’s still the way it came, and tap the counter for every one you never touched.</li>
+            <li>Find the app that interrupted you most today and look at what its alerts are set to.</li>
+            <li>Write that app’s name down somewhere you’ll see it tomorrow, and close the settings.</li>
+          </ol>
+          <div class="ns-demo-side">
+            <div class="ns-widget" data-widget="tally" data-config="{&#34;title&#34;: &#34;Alerts you never chose&#34;, &#34;label&#34;: &#34;Tap once for each app whose alert setting is still the way it came.&#34;, &#34;button&#34;: &#34;+1&#34;}"><p class="ns-material-note">The timer needs JavaScript. A phone stopwatch works just as well.</p></div>
+          </div>
+        </div>
+        <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-lightbulb"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> If your count is high, most of what interrupts you was decided by whoever made the apps, and it stays that way for as long as you do nothing. That’s what a default is. The quieter option was there the whole time, a switch away, but leaving things as they are takes no step at all, and people tend to stick with what’s already in place.</p></div>
+      </div>
+
+      <div class="ns-plan">
+        <div class="ns-plan-main">
+          <p class="ns-kicker">Step by step</p>
+          <h3>One switch, then leave it</h3>
+          <p class="ns-plan-intro">Start with the app whose alerts pull you away most from work that takes focus.</p>
+          <ol class="ns-plan-steps">
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-smartphone"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg></span><div><strong>Choose one app.</strong> Pick the one whose alerts interrupt you most during homework, practice or anything else that needs your attention, and start with that one only.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-settings"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" /><circle cx="12" cy="12" r="3" /></svg></span><div><strong>Switch off its nonessential alerts once.</strong> Open the app’s settings or your phone’s notification settings and turn off what you don’t need, like rewards, reminders to come back and suggestions. Keep only alerts you’d be sorry to miss.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-hand"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" /><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" /><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" /><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" /></svg></span><div><strong>Leave the setting alone.</strong> Don’t switch it back on for a special event or a busy week, so that doing nothing keeps the quieter default.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-door-open"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M10 21H2" /><path d="M10 3H7a2 2 0 00-2 2v16" /><path d="M14 12h.01" /><path d="M19 21V5a2 2 0 00-1.675-1.974l-6.163-1.013A1 1 0 0010 3v18a1 1 0 001.124.992z" /><path d="M22 21h-3" /></svg></span><div><strong>Visit the app on purpose.</strong> Open it yourself when your work is done. That way you decide when to check, and the app doesn’t.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-calendar-check"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /><path d="m9 15 2 2 4-4" /></svg></span><div><strong>Compare a week later.</strong> Count something that matters, like pages read or problems finished, and compare it with a similar evening before the switch. If it helped, pick a second app.</div></li>
+          </ol>
+          <div class="ns-callouts">
+            <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-circle-check"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> Before you flip the switch, count how many alerts that app sends during one evening of work and how much you get done. A week later, count your work again on a similar evening and compare the two.</p></div>
+            <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-life-buoy"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> For the first few days you may worry about missing something in the app. Give it a set time after your work, so checking has a place and the switch can stay off.</p></div>
+          </div>
+        </div>
+        <figure class="ns-card">
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 244: One switch, then leave it. Step 1: Pick the app that interrupts you most. Step 2: Turn off its nonessential alerts once. Step 3: Leave the setting alone. Step 4: Open the app on purpose, after your work. Step 5: Compare your work a week later. How to tell it is working: Count what you finish in an evening before the switch and a week after it." width="1080" height="1350" loading="lazy"></a>
+          <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- ns-tryit:end -->
+
+    <div class="ep-section">
+      <h2>One-page summary</h2>
+      <p style="color: var(--muted);">Right-click &rarr; Save As to download. Or scan the QR code in the corner to come back here from print.</p>
+      <div class="ep-infographic">
+        <a href="infographic.png" target="_blank">
+          <img src="infographic.png" alt="The Choice You Never Actually Made infographic, one-page summary">
+        </a>
+        <a href="infographic.png" download class="download">Download full-size PNG &darr;</a>
+      </div>
+    </div>
+
+    <div class="ep-section">
+      <h2>The science beat (5-second loop)</h2>
+      <div class="ep-broll">
+        <video src="broll.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+
+    <div class="ep-sources">
+      <h3>Sources</h3>
+      <ul>
+          <li>Bazerman, M. H. (2026). Judgment and decision making. In <em>Introduction to psychology: The full Noba collection</em> (pp. 754–767). Diener Education Fund. <a href="https://nobaproject.com/textbooks/introduction-to-psychology-the-full-noba-collection" target="_blank" rel="noopener">https://nobaproject.com/textbooks/introduction-to-psychology-the-full-noba-collection</a></li>
+          <li>Huberman, A. (Host). (2023, July 24). Dr. Maya Shankar: How to shape your identity &amp; goals [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-maya-shankar-how-to-shape-your-identity-and-goals" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-maya-shankar-how-to-shape-your-identity-and-goals</a></li>
+      </ul>
+    </div>
+
+        <p class="ep-disclaimer">Educational content only. Not medical advice.</p>
+
+    <p style="text-align: center; margin: 1.5rem 0 .5rem; color: var(--muted); font-size: .92rem;">Also on Instagram: <a href="https://www.instagram.com/neurosensebrain/" target="_blank" rel="noopener" style="color: var(--teal); font-weight: 600;">@neurosensebrain</a></p>
+<a href="/neurosense/" class="ep-nav-back">&larr; Back to all episodes</a>
+  </div>
+</main>
+<footer>
+<div class="footer-inner">
+  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
+  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
+</div>
+<div class="footer-bottom">
+  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
+</div>
+</footer>
+
+<script src="/js/animate.js"></script>
+<script src="/js/peri.js"></script>
+<script src="/js/ns-tryit.js" defer></script>
+</body>
+</html>
