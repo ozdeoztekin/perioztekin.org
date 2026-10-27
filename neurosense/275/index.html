@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Calculator Can Be Right About the Wrong Input &middot; NeuroSense Episode 275 &middot; Peri Oztekin</title>
+  <meta name="description" content="NeuroSense Episode 275: The Calculator Can Be Right About the Wrong Input. A calculator computes exactly what you entered; a rough prediction made first can flag a wrong entry.">
+  <link rel="canonical" href="https://perioztekin.org/neurosense/275/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/peri.css">
+  <link rel="stylesheet" href="/css/ns-tryit.css">
+  <meta property="og:title" content="The Calculator Can Be Right About the Wrong Input &middot; NeuroSense">
+  <meta property="og:description" content="Number Sense &amp; Calculator Checks">
+  <meta property="og:image" content="https://perioztekin.org/neurosense/275/thumb.png">
+  <meta property="og:url" content="https://perioztekin.org/neurosense/275/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+<style>
+  .ep-meta { color: var(--muted); font-size: .98rem; margin: -.25rem 0 1.5rem; }
+  .ep-tag {
+    display: inline-block; background: var(--accent-bg, rgba(126,232,222,.18));
+    color: #27ae60;
+    font-size: .8rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; padding: .35rem .9rem; border-radius: 20px;
+    margin-bottom: 1.25rem;
+  }
+  .ep-hook { font-size: 1.18rem; color: var(--muted); margin: 0 0 2rem; max-width: 760px; }
+  .ep-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .ep-video-wrap {
+    width: 100%; aspect-ratio: 9/16;
+    border-radius: var(--radius); overflow: hidden;
+    box-shadow: var(--shadow-lg); background: #000;
+  }
+  .ep-video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .ep-content h2 { margin-top: 0; }
+  .ep-list { padding-left: 1.4rem; }
+  .ep-list li { margin-bottom: .65rem; line-height: 1.7; }
+  .ep-protocol { background: var(--card); padding: 1.75rem; border-radius: var(--radius); border-left: 4px solid #27ae60; margin-top: 1.5rem; }
+  .ep-protocol h3 { margin-top: 0; color: #27ae60; }
+  .ep-section { margin: 3rem 0; }
+  .ep-infographic { text-align: center; background: #0e1a30; padding: 1.5rem; border-radius: var(--radius); margin: 2.5rem 0; }
+  .ep-infographic img { max-width: 540px; width: 100%; height: auto; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); }
+  .ep-infographic .download { display: inline-block; margin-top: 1rem; color: #fff; opacity: .85; font-size: .9rem; }
+  .ep-broll { display: flex; justify-content: center; margin: 2rem 0; }
+  .ep-broll video { max-width: 320px; width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
+  .ep-sources { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem; margin-top: 2rem; }
+  .ep-sources h3 { margin-top: 0; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .ep-sources ul { margin: 0; padding-left: 1.4rem; }
+  .ep-sources li { font-size: .92rem; color: var(--text); margin-bottom: .4rem; overflow-wrap: anywhere; }
+  .ep-disclaimer { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: 1.5rem; text-align: center; }
+  .ep-nav-back { display: inline-block; margin: 2rem 0 .5rem; color: var(--teal); font-weight: 600; }
+  @media (max-width: 860px) {
+    .ep-grid { grid-template-columns: 1fr; }
+    .ep-video-wrap { max-width: 360px; margin: 0 auto; }
+  }
+</style>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7ebc45c5ac54d409d9bd1b6b91c3338"}'></script>
+</head>
+<body>
+<header>
+<nav class="topnav" id="topnav">
+  <div class="brand-stack">
+    <a class="brand" href="/">Peri Oztekin</a>
+    <div class="brand-choice-line mind" aria-label="rotating brand line">
+      <span class="brand-brain" aria-hidden="true">
+        <svg id="brand-brain-image" class="brand-brain-image" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"></svg>
+      </span>
+      <span class="brand-choice-prefix">Your&nbsp;</span>
+      <span id="brand-choice-word" data-words="Mind,Thoughts,Feelings,Actions,Behavior">Mind</span>
+      <span class="brand-choice-suffix">&nbsp;Your Power</span>
+    </div>
+  </div>
+  <div class="nav-links" id="nav-links">
+    <a href="/">Home</a>
+    <a href="/academics/">Academics</a>
+    <a href="/projects/">Projects</a>
+    <a href="/research/">Research</a>
+    <a href="/neurosense/" class="active">NeuroSense</a>
+    <a href="/neurodivergent/">Neurodivergent</a>
+    <a href="/wellbeing/">Wellbeing</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact" class="nav-cta">Contact</a>
+  </div>
+  <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">&#9776;</button>
+</nav>
+</header>
+<main class="peri-page-shell">
+  <div class="container" style="padding-top: 2.5rem;">
+    <a href="/neurosense/" class="ep-nav-back">&larr; All episodes</a>
+    <span class="ep-tag" style="background: #27ae6028; color: #27ae60;">Episode 275 &middot; Learning &amp; Memory</span>
+    <h1>The Calculator Can Be Right About the Wrong Input</h1>
+    <p class="ep-meta">Number Sense &amp; Calculator Checks</p>
+    <p class="ep-hook">A calculator computes exactly what you entered; a rough prediction made first can flag a wrong entry.</p>
+
+    <div class="ep-grid">
+      <div class="ep-video-wrap">
+        <iframe src="https://www.youtube.com/embed/T0VErnWpP9Y"
+                title="The Calculator Can Be Right About the Wrong Input"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+      <div class="ep-content">
+        <h2>The Science</h2>
+        <ul class="ep-list">
+          <li>A calculator performs the operation you entered, so a wrong number still produces a precise answer, and its decimal places will not warn you.</li>
+          <li>Knowing a formula stores a rule; working through problems makes you use it and notice where your answer fails. Those are different learning demands.</li>
+          <li>With numbers, active practice can build a sense of scale, roughly how large a result should be, an expectation formed apart from the calculator.</li>
+        </ul>
+        <div class="ep-protocol">
+          <h3>The Protocol</h3>
+          <ul class="ep-list">
+          <li>Predict the rough size first: a fifteen percent tip on a bill near fifty dollars should come to around seven or eight dollars.</li>
+          <li>Then calculate exactly; if the screen says hundreds of dollars, inspect the entry, the decimal placement or the operation.</li>
+          <li>Check the intended unit too, and give important work its detailed checks, since a plausible estimate cannot prove correctness.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ns-tryit:start (generated by build_tryit.py; edit content/275.json, not this block) -->
+    <section class="ns-tryit" id="try-it" style="--t: #27ae60; --t-soft: #27ae6012; --t-line: #27ae6040;">
+      <h2>See it in real life</h2>
+
+      <article class="ns-story">
+        <div class="ns-story-text">
+          <p class="ns-kicker">Example</p>
+          <h3>Three bowls of pho at $186.30 each</h3>
+          <p>Radek’s friends always hand him the check, because his calculator is open before anyone else’s. Last month at the bowling alley he read “two forty-three each” off his phone, and everyone paid it without checking, because it came with cents. A few minutes later the server came back with the folder. He had split the tip three ways and left out the bill.</p>
+          <p>Tonight it’s pho with Janek and Josefa after their last shift at the pool snack bar. The bill is $48.60, they want to leave fifteen percent, and Janek is already sliding the check across the table.</p>
+          <p>A calculator does exactly the operation you enter, so a wrong number or a wrong step still produces a precise answer, and its decimal places won’t warn you. Knowing a formula stores a rule, while working through problems makes you use it and notice when an answer fails. With numbers, that practice can build a sense of scale, roughly how large a result should be, an expectation formed apart from the calculator. Last month Radek had nothing to hold the screen up against.</p>
+          <p>This time, before he touches the phone, he sizes it up. Ten percent of about fifty is five dollars, and half of that again puts the tip around seven or eight, so each of them owes a little under twenty. Then he calculates, and the screen says $186.30 each. The mismatch tells him where to look, and he finds the decimal point in the bill typed one place too late. Entered again, it comes to $18.63. A sensible size doesn’t prove an answer right, so he checks it the long way too, multiplying his share back by three and comparing it with the bill plus the tip.</p>
+          <p>The folder goes back with the right amount in it. At the register the server counts it, looks over and gives them a thumbs-up on their way out.</p>
+        </div>
+        <ol class="ns-strip" aria-label="The example at a glance">
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-receipt"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M12 17V7" /><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" /><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /></svg></span><span class="ns-strip-lbl">Where it stalls</span><span class="ns-strip-txt">A share with cents on it fooled everyone, Radek included.</span></li>
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-calculator"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><rect width="16" height="20" x="4" y="2" rx="2" /><line x1="8" x2="16" y1="6" y2="6" /><line x1="16" x2="16" y1="14" y2="18" /><path d="M16 10h.01" /><path d="M12 10h.01" /><path d="M8 10h.01" /><path d="M12 14h.01" /><path d="M8 14h.01" /><path d="M12 18h.01" /><path d="M8 18h.01" /></svg></span><span class="ns-strip-lbl">What changes it</span><span class="ns-strip-txt">He estimates each share before he touches the calculator.</span></li>
+          <li><span class="ns-strip-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-badge-check"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><span class="ns-strip-lbl">What happens next</span><span class="ns-strip-txt">He spots the slipped decimal, and the folder goes back right.</span></li>
+        </ol>
+      </article>
+
+      <div class="ns-demo">
+        <p class="ns-kicker">Try it yourself &middot; 5 minutes</p>
+        <h3>Guess the size first</h3>
+        <p class="ns-demo-intro">Use a calculator or a phone and something to write on. One entry below gets slipped on purpose, so you can see what a wrong answer looks like.</p>
+        <div class="ns-demo-grid">
+          <ol class="ns-steps">
+            <li>Before you calculate anything, write a rough size for three things, a fifteen percent tip on $48.60, twelve notebooks at $3.85 each and a $64 jacket at 20 percent off.</li>
+            <li>Calculate each one exactly, but for the notebooks, type the price as 385, with no decimal point.</li>
+            <li>Put each screen next to your rough size and circle any answer that’s far off.</li>
+            <li>Fix the circled entry and calculate it again.</li>
+          </ol>
+        </div>
+        <div class="ns-notice"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-lightbulb"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /><path d="M9 18h6" /><path d="M10 22h4" /></svg></span><p><strong>What you&rsquo;ll probably notice.</strong> A slipped entry still gives a confident, exact answer, $4,620 for twelve notebooks, and nothing on the screen says it’s wrong. Your rough size, around $46, is what catches it. An answer that lands near your estimate is only sensible in size, though, since a wrong price or a slip that happens to land close can still get through.</p></div>
+      </div>
+
+      <div class="ns-plan">
+        <div class="ns-plan-main">
+          <p class="ns-kicker">Step by step</p>
+          <h3>Size it up, then press equals</h3>
+          <p class="ns-plan-intro">For any calculator answer you’re about to trust with money, a grade or a recipe.</p>
+          <ol class="ns-plan-steps">
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-scale"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M12 3v18" /><path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /><path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /><path d="M7 21h10" /></svg></span><div><strong>Predict the rough size first.</strong> Before you touch the calculator, ask whether the answer should be bigger or smaller than what you started with, and about how big. For a fifteen percent tip on a bill near fifty dollars, ten percent is about five, and half that again puts the tip around seven or eight.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-calculator"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><rect width="16" height="20" x="4" y="2" rx="2" /><line x1="8" x2="16" y1="6" y2="6" /><line x1="16" x2="16" y1="14" y2="18" /><path d="M16 10h.01" /><path d="M12 10h.01" /><path d="M8 10h.01" /><path d="M12 14h.01" /><path d="M8 14h.01" /><path d="M12 18h.01" /><path d="M8 18h.01" /></svg></span><div><strong>Then calculate exactly.</strong> Let the calculator do the precise part, which is the job it’s good at.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-search"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg></span><div><strong>Compare the screen with your guess.</strong> If they’re far apart, like hundreds of dollars where you expected eight, check the entry, the decimal point and the operation before you accept anything.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-ruler"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg></span><div><strong>Check the unit.</strong> Make sure the answer is in the unit you meant, like dollars rather than cents or feet rather than inches, since a conversion slip can survive correct arithmetic.</div></li>
+            <li><span class="ns-step-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-list-checks"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><path d="M13 5h8" /><path d="M13 12h8" /><path d="M13 19h8" /><path d="m3 17 2 2 4-4" /><path d="m3 7 2 2 4-4" /></svg></span><div><strong>Give important work its full check.</strong> An answer close to your estimate is only sensible in size. For anything that matters, check it in detail too, for example by working it backward.</div></li>
+          </ol>
+          <div class="ns-callouts">
+            <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-circle-check"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg></span><p><strong>How to tell it&rsquo;s working.</strong> For a week, write your rough size next to each calculator answer you use. Count how often the two disagreed and what you found when you looked, whether it was a slipped decimal, a wrong operation or an estimate that needed work.</p></div>
+            <div class="ns-callout"><span class="ns-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"
+  class="lucide lucide-life-buoy"
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+><circle cx="12" cy="12" r="10" /><path d="m4.93 4.93 4.24 4.24" /><path d="m14.83 9.17 4.24-4.24" /><path d="m14.83 14.83 4.24 4.24" /><path d="m9.17 14.83-4.24 4.24" /><circle cx="12" cy="12" r="4" /></svg></span><p><strong>When it gets hard.</strong> Estimating can feel slow with the calculator right there. Keep it rough, one or two digits, since its job is to catch answers that are wildly off, not to replace the calculation.</p></div>
+          </div>
+        </div>
+        <figure class="ns-card">
+          <a href="tryit.png" target="_blank"><img src="tryit.png" alt="Plan card for Episode 275: Size it up, then press equals. Step 1: Guess the rough size first. Step 2: Then calculate exactly. Step 3: Far off? Check entry, decimal, operation. Step 4: Check the unit too. Step 5: Important work gets the full check. How to tell it is working: Write your guess beside each answer, and count how often they disagree and why." width="1080" height="1350" loading="lazy"></a>
+          <figcaption><a href="tryit.png" download>Save this card &darr;</a></figcaption>
+        </figure>
+      </div>
+    </section>
+<!-- ns-tryit:end -->
+
+    <div class="ep-section">
+      <h2>One-page summary</h2>
+      <p style="color: var(--muted);">Right-click &rarr; Save As to download. Or scan the QR code in the corner to come back here from print.</p>
+      <div class="ep-infographic">
+        <a href="infographic.png" target="_blank">
+          <img src="infographic.png" alt="The Calculator Can Be Right About the Wrong Input infographic, one-page summary">
+        </a>
+        <a href="infographic.png" download class="download">Download full-size PNG &darr;</a>
+      </div>
+    </div>
+
+    <div class="ep-section">
+      <h2>The science beat (5-second loop)</h2>
+      <div class="ep-broll">
+        <video src="broll.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+
+    <div class="ep-sources">
+      <h3>Sources</h3>
+      <ul>
+          <li>Huberman, A. (Host). (2024, November 18). Dr. Terry Sejnowski: How to improve at learning using neuroscience &amp; AI (No. 203) [Audio podcast episode]. In <em>Huberman Lab</em>. Scicomm Media. <a href="https://www.hubermanlab.com/episode/dr-terry-sejnowski-how-to-improve-at-learning-using-neuroscience-ai" target="_blank" rel="noopener">https://www.hubermanlab.com/episode/dr-terry-sejnowski-how-to-improve-at-learning-using-neuroscience-ai</a></li>
+      </ul>
+    </div>
+
+        <p class="ep-disclaimer">Educational content only. Not medical advice.</p>
+
+    <p style="text-align: center; margin: 1.5rem 0 .5rem; color: var(--muted); font-size: .92rem;">Also on Instagram: <a href="https://www.instagram.com/neurosensebrain/" target="_blank" rel="noopener" style="color: var(--teal); font-weight: 600;">@neurosensebrain</a></p>
+<a href="/neurosense/" class="ep-nav-back">&larr; Back to all episodes</a>
+  </div>
+</main>
+<footer>
+<div class="footer-inner">
+  <div class="footer-logo">&#x1F9E0; Peri Oztekin</div>
+  <p>Neuroscience, brain-computer interfaces, and accessible science writing.</p>
+</div>
+<div class="footer-bottom">
+  Copyright &copy; <span id="cp-year"></span> Peri Oztekin &nbsp;|&nbsp; perioztekin.org
+</div>
+</footer>
+
+<script src="/js/animate.js"></script>
+<script src="/js/peri.js"></script>
+<script src="/js/ns-tryit.js" defer></script>
+</body>
+</html>
